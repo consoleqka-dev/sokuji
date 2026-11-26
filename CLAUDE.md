@@ -703,6 +703,10 @@ corrected on 2026-09-05.
 - **Tooltip**: @floating-ui/react powered tooltips with hover/click/focus triggers
 
 ### UI Design System
+- Art direction, brand rules (the display name is **ExTrans**; identifiers stay `sokuji`) and the
+  visual rules are in `DESIGN.md`; the review checklist for any UI change is `REVIEW.md`. The
+  Vietnamese user guide is `docs/user-guide/extrans-user-guide.vi.md`, regenerated with
+  `scripts/dev/record-user-guide.mjs`.
 - Two schemes, dark (the default, R1) and light, and an Appearance setting in Help
   (`settings.common.theme`: `system` | `light` | `dark`). Spec:
   `docs/superpowers/specs/2026-10-22-light-theme-design.md`.
