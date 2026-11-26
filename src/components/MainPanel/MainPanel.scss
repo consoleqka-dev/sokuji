@@ -306,7 +306,7 @@
       flex-shrink: 0;
 
       &:hover:not(:disabled) {
-        background: tk.$color-primary-hover;
+        background: tk.$color-primary-fill-hover;
         transform: scale(1.05);
       }
 
@@ -697,13 +697,14 @@
   }
 
   .main-action-btn {
-    background: tk.$color-primary-fill;
+    @include vars.primary-gradient;
     border: none;
-    color: tk.$color-on-primary;
-    padding: 6px 16px;
-    border-radius: 4px;
+    padding: 6px 18px;
+    border-radius: vars.$radius-pill;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    box-shadow: vars.$shadow-button;
     cursor: pointer;
     transition: all 0.2s ease;
     display: flex;
@@ -713,10 +714,11 @@
     justify-content: center;
     height: 28px;
 
-    &:hover:not(:disabled) { background: tk.$color-primary-hover; }
-    &:disabled { background: vars.$bg-elevated; color: vars.$text-dim; cursor: not-allowed; }
+    &:hover:not(:disabled) { filter: brightness(1.08); }
+    &:disabled { background: vars.$bg-elevated; color: vars.$text-dim; box-shadow: none; cursor: not-allowed; }
     &.stop {
       background: tk.$color-error;
+      box-shadow: none;
       &:hover { background: tk.$color-error-deep; }
     }
 
@@ -725,13 +727,12 @@
   }
 
   .session-button {
-    background: tk.$color-primary-fill;
+    @include vars.primary-gradient;
     border: none;
-    color: tk.$color-on-primary;
-    padding: 6px 12px;
-    border-radius: 6px;
+    padding: 6px 14px;
+    border-radius: vars.$radius-pill;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     transition: background-color 0.2s, transform 0.1s;
     display: flex;
@@ -739,10 +740,11 @@
     gap: 8px;
     height: 28px;
     position: relative;
-    box-shadow: 0 2px 6px vars.$shadow;
+    box-shadow: vars.$shadow-button;
 
-    &:hover { background: tk.$color-primary-hover; }
+    &:hover { filter: brightness(1.08); }
     &.active {
+      box-shadow: none;
       background: vars.$bg-elevated;
       color: vars.$text-primary;
       &:hover { background: vars.$bg-elevated-hover; }

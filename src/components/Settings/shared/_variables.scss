@@ -18,6 +18,7 @@ $color-primary:       tk.$color-primary;
 $color-primary-hover: tk.$color-primary-hover;
 $color-primary-fill:  tk.$color-primary-fill;
 $color-primary-fill-hover: tk.$color-primary-fill-hover;
+$color-primary-fill-end: tk.$color-primary-fill-end;
 $color-on-primary:    tk.$color-on-primary;
 
 // Status
@@ -115,9 +116,18 @@ $space-6:  24px;
 
 // --- Radii ---------------------------------------------------
 
-$radius-sm: 4px;
-$radius-md: 6px;
-$radius-lg: 8px;
+$radius-sm: 6px;
+$radius-md: 10px;
+$radius-lg: 14px;
+$radius-pill: 999px;   // primary and secondary buttons, segmented controls
+
+// --- Elevation -----------------------------------------------
+// Soft, long shadows that carry the scheme's shadow colour (blue in the light
+// scheme): a card at rest, and a card that floats (the wizard, a popover).
+
+$shadow-card:   0 10px 30px -12px $shadow-strong, 0 2px 8px $shadow;
+$shadow-float:  0 24px 50px -18px $shadow-strong, 0 4px 14px $shadow;
+$shadow-button: 0 10px 24px -10px color-mix(in srgb, $color-primary-fill 60%, transparent);
 
 // --- Transitions ---------------------------------------------
 
@@ -246,6 +256,13 @@ $jump-hint-run: $jump-hint-in + $jump-hint-blinks * $jump-hint-blink + $jump-hin
 @mixin state-selected-underline {
   color: $color-primary;
   border-bottom: 2px solid $color-primary;
+}
+
+// The accent as a surface: a cobalt to blue-cyan gradient behind a white label.
+// Both stops clear 4.5:1 against the label (theme.consistency.test.ts).
+@mixin primary-gradient {
+  background: linear-gradient(135deg, $color-primary-fill 0%, $color-primary-fill-end 100%);
+  color: $color-on-primary;
 }
 
 @mixin state-selected-fill {

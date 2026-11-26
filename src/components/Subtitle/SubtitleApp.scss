@@ -104,7 +104,7 @@
       white-space: nowrap;
     }
 
-    &:hover:not(:disabled) { background: tk.$color-primary-hover; }
+    &:hover:not(:disabled) { background: tk.$color-primary-fill-hover; }
 
     &:disabled {
       background: color-mix(in srgb, vars.$overlay-fg 9%, transparent);

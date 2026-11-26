@@ -4,11 +4,14 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  justify-content: center;
   border: none;
-  border-radius: vars.$radius-sm;
-  font-weight: vars.$weight-medium;
+  border-radius: vars.$radius-pill;
+  font-weight: vars.$weight-semibold;
+  letter-spacing: 0.02em;
   cursor: pointer;
-  transition: all vars.$transition-fast;
+  transition: background vars.$transition-fast, box-shadow vars.$transition-fast,
+    transform vars.$transition-fast, color vars.$transition-fast, filter vars.$transition-fast;
 
   &:focus-visible {
     @include vars.focus-ring;
@@ -21,17 +24,27 @@
   // --- Variants ---
 
   &--primary {
-    background: vars.$color-primary-fill;
-    color: vars.$color-on-primary;
+    @include vars.primary-gradient;
+    box-shadow: vars.$shadow-button;
 
     &:hover:not(:disabled) {
-      background: vars.$color-primary-fill-hover;
+      filter: brightness(1.08);
+      transform: translateY(-1px);
+    }
+
+    &:active:not(:disabled) {
+      transform: none;
+      box-shadow: none;
+    }
+
+    &:disabled {
+      box-shadow: none;
     }
   }
 
   &--secondary {
-    background: transparent;
-    border: 1px solid vars.$color-primary;
+    background: vars.$bg-control;
+    border: 1px solid color-mix(in srgb, vars.$color-primary 55%, transparent);
     color: vars.$color-primary;
 
     &:hover:not(:disabled) {
@@ -71,6 +84,11 @@
     border-radius: 50%;
     animation: settings-btn-spin 0.8s linear infinite;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .settings-btn { transition: none; }
+  .settings-btn--primary:hover:not(:disabled) { transform: none; }
 }
 
 @keyframes settings-btn-spin {

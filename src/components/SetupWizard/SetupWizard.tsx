@@ -206,6 +206,9 @@ const SetupWizard: React.FC<SetupWizardProps> = ({ variant, onClose }) => {
           </button>
         )}
       </header>
+      <div className="setup-wizard__meter" aria-hidden="true">
+        <span style={{ width: `${((draft.step + 1) / (LAST_STEP + 1)) * 100}%` }} />
+      </div>
 
       <main className="setup-wizard__body">
         {draft.step === 0 && <StepLanguage />}

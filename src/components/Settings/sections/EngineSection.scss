@@ -34,7 +34,7 @@
     align-self: flex-start; display: inline-flex; align-items: center; gap: 6px;
     background: tk.$color-primary-fill; color: tk.$color-on-primary; border: none; border-radius: 6px;
     padding: 6px 12px; font-size: 12px; cursor: pointer;
-    &:hover { background: tk.$color-primary-hover; }
+    &:hover { background: tk.$color-primary-fill-hover; }
     &:disabled { opacity: 0.5; cursor: default; }
     &--secondary { background: vars.$bg-elevated; color: vars.$text-primary; &:hover { background: vars.$bg-elevated-hover; } }
   }

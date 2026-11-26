@@ -20,7 +20,7 @@
   height: 28px;
   box-sizing: border-box;
   border: 1px solid var(--border-color, vars.$border-default);
-  border-radius: 6px;
+  border-radius: vars.$radius-pill;
   overflow: hidden;
   flex-shrink: 0;
 
@@ -58,22 +58,21 @@
       border-right: 1px solid var(--border-color, vars.$border-default);
     }
 
-    // The picker rounds its own frame and clips the segments to the padding
-    // box, whose radius is 6px minus the 1px frame = 5px. Carry that same 5px
-    // on the two end segments so a stroke a segment draws for itself (the
-    // --warn ring below) curves with the corner instead of being erased there
-    // by the clip. Nothing else changes: without a stroke the clip already
-    // rounded the fill, so every other state renders identically.
-    &:first-child { border-radius: 5px 0 0 5px; }
-    &:last-child  { border-radius: 0 5px 5px 0; }
+    // The picker rounds its own frame (a pill) and clips the segments to the
+    // padding box. Carry the same rounding on the two end segments so a stroke
+    // a segment draws for itself (the --warn ring below) curves with the
+    // corner instead of being erased there by the clip. Nothing else changes:
+    // without a stroke the clip already rounded the fill, so every other state
+    // renders identically.
+    &:first-child { border-radius: vars.$radius-pill 0 0 vars.$radius-pill; }
+    &:last-child  { border-radius: 0 vars.$radius-pill vars.$radius-pill 0; }
 
     &:hover:not(.mode-picker__segment--active):not(:disabled) {
       background: var(--bg-hover, vars.$bg-hover);
     }
 
     &--active {
-      background: tk.$color-primary-fill;
-      color: tk.$color-on-primary;
+      @include vars.primary-gradient;
     }
 
     // Devices for this mode aren't configured yet. The ring is inset so it

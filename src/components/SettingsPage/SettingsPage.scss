@@ -68,7 +68,9 @@
     @include vars.control-base;
     // A thin line at rest (the colour review); the focus ring stays clear.
     border-color: vars.$border-subtle;
-    padding: 6px 8px;
+    border-radius: vars.$radius-pill;
+    padding: 6px 12px;
+    &:focus-within { border-color: vars.$color-primary; box-shadow: 0 0 0 3px color-mix(in srgb, vars.$color-primary 15%, transparent); }
     input { flex: 1; min-width: 0; border: none; background: transparent; color: inherit; font: inherit; outline: none; }
   }
 
@@ -77,7 +79,7 @@
     flex-direction: column;
     gap: 2px;
     // On the line of the Back arrow and the search glass (owner, 2026-11-19); its items one step in from it.
-    h3 { margin: vars.$space-2 0 vars.$space-1; padding-inline: vars.$space-3; font-size: vars.$font-caption; font-weight: vars.$weight-medium; color: vars.$text-muted; }
+    h3 { margin: vars.$space-2 0 vars.$space-1; padding-inline: vars.$space-3; font-size: 11px; font-weight: vars.$weight-semibold; letter-spacing: 0.08em; text-transform: uppercase; color: vars.$text-muted; }
   }
 
   &__item {
@@ -96,7 +98,12 @@
     cursor: pointer;
     small { font-size: 11px; color: vars.$text-muted; display: inline-flex; align-items: center; gap: 3px; }
     &:hover { background: vars.$bg-hover; color: vars.$text-primary; }
-    &.is-current { background: color-mix(in srgb, vars.$color-primary 14%, transparent); color: vars.$text-primary; }
+    &.is-current {
+      background: color-mix(in srgb, vars.$color-primary 12%, transparent);
+      color: vars.$color-primary;
+      font-weight: vars.$weight-semibold;
+      box-shadow: inset 3px 0 0 vars.$color-primary;
+    }
     &:focus-visible { @include vars.focus-ring; }
   }
 
@@ -117,7 +124,7 @@
       max-width: 720px + 2 * 28px;
       box-sizing: border-box;
       padding: 20px 28px 8px;
-      h2 { margin: 0; font-size: 18px; font-weight: vars.$weight-semibold; line-height: 1.35; &:focus { outline: none; } }
+      h2 { margin: 0; font-size: 19px; font-weight: 700; letter-spacing: 0.01em; line-height: 1.35; &:focus { outline: none; } }
     }
   }
 

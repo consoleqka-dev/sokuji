@@ -65,23 +65,24 @@ const LIGHT = ':root[data-theme="light"]';
 const TONE_DARK = '[data-tone="dark"]';
 const TONE_LIGHT = '[data-tone="light"]';
 
-// The dark column of spec §2, verbatim (R1, R7: today's literals plus the collapses).
+// The dark column, pinned: the navy and blue palette of the 2026-11 restyle
+// (spec §2's roles, re-valued; the status hues stay the owner's).
 const DARK_PINNED: Record<string, string> = {
-  'bg-base': '#1a1a1a', 'bg-page': '#1e1e1e', 'bg-surface': '#252525', 'bg-bar': '#2a2a2a', 'bg-popover': '#2a2a2a',
-  'bg-control': '#333333', 'bg-hover': '#3a3a3a', 'bg-elevated': '#444444', 'bg-elevated-hover': '#555555', 'bg-dim': '#666666',
+  'bg-base': '#0a1124', 'bg-page': '#0d1530', 'bg-surface': '#121c3a', 'bg-bar': '#141f3f', 'bg-popover': '#172347',
+  'bg-control': '#1b2749', 'bg-hover': '#22305a', 'bg-elevated': '#2a3a68', 'bg-elevated-hover': '#344679', 'bg-dim': '#4b5c8a',
   'white': '#ffffff',
-  'text-primary': '#ffffff', 'text-secondary': '#cccccc', 'text-tertiary': '#aaaaaa', 'text-muted': '#888888',
-  'text-dim': '#666666', 'text-disabled': '#555555', 'text-source': '#9aa0a6', 'on-accent': '#ffffff',
-  'line': '#444444', 'line-subtle': '#333333', 'line-strong': '#555555',
-  'overlay-fg': '#ffffff', 'overlay-bg': '#000000', 'scrim': 'rgba(0,0,0,0.6)', 'shadow': 'rgba(0,0,0,0.3)', 'shadow-strong': 'rgba(0,0,0,0.5)',
-  'primary': '#0fbb8f', 'primary-hover': '#0da77f', 'primary-fill': '#008261', 'primary-fill-hover': '#006e52',
-  'speaker': 'var(--sk-primary)', 'speaker-fill': 'var(--sk-primary-fill)', 'speaker-person-3': '#005c45',
+  'text-primary': '#f3f6fc', 'text-secondary': '#c8d2e6', 'text-tertiary': '#a9b6d0', 'text-muted': '#8d9cbc',
+  'text-dim': '#6b7ba0', 'text-disabled': '#4f5e85', 'text-source': '#9cadcd', 'on-accent': '#ffffff',
+  'line': '#26345e', 'line-subtle': '#1c2950', 'line-strong': '#34467a',
+  'overlay-fg': '#ffffff', 'overlay-bg': '#000000', 'scrim': 'rgba(4,9,26,0.66)', 'shadow': 'rgba(2,6,20,0.4)', 'shadow-strong': 'rgba(2,6,20,0.6)',
+  'primary': '#6f9bff', 'primary-hover': '#8fb1ff', 'primary-fill': '#2d5bd2', 'primary-fill-hover': '#244bb3', 'primary-fill-end': '#1572b8',
+  'speaker': 'var(--sk-primary)', 'speaker-fill': 'var(--sk-primary-fill)', 'speaker-person-3': '#1d3f99',
   'participant': '#f39c12', 'participant-person-2': '#f8c471', 'participant-person-3': '#ca6f1e',
   'success': '#10a37f', 'error': '#e74c3c', 'error-deep': '#c0392b', 'warning': '#ffc107', 'recommended': '#f59e0b',
-  'degraded': '#f39c12', 'usage': '#e67e22', 'usage-hover': '#f39c12', 'usage-deep': '#d35400', 'info': '#4285f4',
-  'toolbar-icon': '#8a8a8a',
-  'waveform-speaker': '#0099ff', 'waveform-participant': '#f59e0b', 'waveform-output': '#ff9900',
-  'window-edge': '#000000', 'window-edge-inner': 'rgba(255,255,255,0.15)',
+  'degraded': '#f39c12', 'usage': '#e67e22', 'usage-hover': '#f39c12', 'usage-deep': '#d35400', 'info': '#38c3ee',
+  'toolbar-icon': '#8494b6',
+  'waveform-speaker': '#5b8cff', 'waveform-participant': '#f59e0b', 'waveform-output': '#22b8e6',
+  'window-edge': '#000000', 'window-edge-inner': 'rgba(255,255,255,0.12)',
 };
 
 // Spec §7: the light block's floors, each role against the background it sits on.
@@ -89,8 +90,17 @@ const SURFACES = ['bg-page', 'bg-surface', 'bg-control'];
 const LIGHT_FLOORS: [string, string, number][] = [
   ...['text-primary', 'text-secondary', 'text-tertiary', 'text-muted', 'text-source'].flatMap((fg) => SURFACES.map((bg): [string, string, number] => [fg, bg, 4.5])),
   ...['text-dim', 'toolbar-icon'].flatMap((fg) => SURFACES.map((bg): [string, string, number] => [fg, bg, 3])),
-  ...['primary-fill', 'error', 'usage'].map((bg): [string, string, number] => ['on-accent', bg, 4.5]),
+  ...['primary-fill', 'primary-fill-end', 'error', 'usage'].map((bg): [string, string, number] => ['on-accent', bg, 4.5]),
   ...['primary', 'participant', 'success', 'error', 'warning', 'degraded', 'info'].flatMap((fg) => ['bg-page', 'bg-surface'].map((bg): [string, string, number] => [fg, bg, 4.5])),
+];
+
+// The dark block's floors for the roles the restyle re-valued: body text and
+// the accent on the three surfaces, and the label on both ends of the accent
+// gradient and its hover.
+const DARK_FLOORS: [string, string, number][] = [
+  ...['text-primary', 'text-secondary', 'text-tertiary', 'text-muted', 'text-source', 'primary'].flatMap((fg) => SURFACES.map((bg): [string, string, number] => [fg, bg, 4.5])),
+  ...['text-dim', 'toolbar-icon'].flatMap((fg) => SURFACES.map((bg): [string, string, number] => [fg, bg, 3])),
+  ...['primary-fill', 'primary-fill-hover', 'primary-fill-end'].map((bg): [string, string, number] => ['on-accent', bg, 4.5]),
 ];
 
 /** `color-mix(in srgb, fg p, bg)`: a component-wise blend of the two sRGB colours, as a hex. */
@@ -125,7 +135,7 @@ describe('theme.scss', () => {
     expect(names(LIGHT)).toEqual(names(DARK));
     expect(names(TONE_DARK)).toEqual(names(DARK));
     expect(names(TONE_LIGHT)).toEqual(names(DARK));
-    expect(names(DARK)).toHaveLength(53);
+    expect(names(DARK)).toHaveLength(54);
   });
 
   it('sets color-scheme on the two root blocks only', () => {
@@ -147,6 +157,11 @@ describe('theme.scss', () => {
   it.each(LIGHT_FLOORS)('light: %s on %s reaches %s:1', (fg, bg, floor) => {
     const light = resolved(tokens(block(css, LIGHT)));
     expect(contrast(light.get(fg)!, light.get(bg)!)).toBeGreaterThanOrEqual(floor);
+  });
+
+  it.each(DARK_FLOORS)('dark: %s on %s reaches %s:1', (fg, bg, floor) => {
+    const dark = resolved(tokens(block(css, DARK)));
+    expect(contrast(dark.get(fg)!, dark.get(bg)!)).toBeGreaterThanOrEqual(floor);
   });
 
   // Status text drawn on its own pale tint — the warning banner, the GPU

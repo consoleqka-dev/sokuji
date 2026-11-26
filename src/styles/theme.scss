@@ -1,10 +1,12 @@
 // The app's colour tokens, one value per scheme (spec 2026-10-22 §2).
 //
 // Every chrome colour is a `--sk-*` custom property defined here and nowhere
-// else. The dark values are today's literals (R1, R7: pinned by
-// theme.consistency.test.ts); the light values are the website's light greys,
-// the accent and participant the owner picked, and status hues darkened to
-// clear the floors the same test checks. Components never read these names:
+// else. Both schemes follow one palette: a deep navy dark scheme and a pale
+// blue-grey light one, with a cobalt accent that runs into a blue-cyan
+// (`primary-fill` → `primary-fill-end`, the gradient behind a primary button).
+// The dark values are pinned by theme.consistency.test.ts; the light values
+// clear the contrast floors the same test checks. The participant amber and the
+// status hues keep their meanings and stay apart from the blue accent. Components never read these names:
 // they use the Sass aliases in `_tokens.scss` and
 // `components/Settings/shared/_variables.scss`.
 //
@@ -13,45 +15,46 @@
 // background's tone rather than the app's scheme (spec §3).
 
 $dark: (
-  // surfaces
-  'bg-base': #1a1a1a,
-  'bg-page': #1e1e1e,
-  'bg-surface': #252525,
-  'bg-bar': #2a2a2a,
-  'bg-popover': #2a2a2a,
-  'bg-control': #333333,
-  'bg-hover': #3a3a3a,
-  'bg-elevated': #444444,
-  'bg-elevated-hover': #555555,
-  'bg-dim': #666666,
+  // surfaces: deep navy, lighter as they rise
+  'bg-base': #0a1124,
+  'bg-page': #0d1530,
+  'bg-surface': #121c3a,
+  'bg-bar': #141f3f,
+  'bg-popover': #172347,
+  'bg-control': #1b2749,
+  'bg-hover': #22305a,
+  'bg-elevated': #2a3a68,
+  'bg-elevated-hover': #344679,
+  'bg-dim': #4b5c8a,
   'white': #ffffff,
-  // text
-  'text-primary': #ffffff,
-  'text-secondary': #cccccc,
-  'text-tertiary': #aaaaaa,
-  'text-muted': #888888,
-  'text-dim': #666666,
-  'text-disabled': #555555,
-  'text-source': #9aa0a6,
+  // text: cool blue-greys
+  'text-primary': #f3f6fc,
+  'text-secondary': #c8d2e6,
+  'text-tertiary': #a9b6d0,
+  'text-muted': #8d9cbc,
+  'text-dim': #6b7ba0,
+  'text-disabled': #4f5e85,
+  'text-source': #9cadcd,
   'on-accent': #ffffff,
   // lines
-  'line': #444444,
-  'line-subtle': #333333,
-  'line-strong': #555555,
+  'line': #26345e,
+  'line-subtle': #1c2950,
+  'line-strong': #34467a,
   // overlays
   'overlay-fg': #ffffff,
   'overlay-bg': #000000,
-  'scrim': rgba(0, 0, 0, 0.6),
-  'shadow': rgba(0, 0, 0, 0.3),
-  'shadow-strong': rgba(0, 0, 0, 0.5),
+  'scrim': rgba(4, 9, 26, 0.66),
+  'shadow': rgba(2, 6, 20, 0.4),
+  'shadow-strong': rgba(2, 6, 20, 0.6),
   // accent, people, status
-  'primary': #0fbb8f,
-  'primary-hover': #0da77f,
-  'primary-fill': #008261,
-  'primary-fill-hover': #006e52,
+  'primary': #6f9bff,
+  'primary-hover': #8fb1ff,
+  'primary-fill': #2d5bd2,
+  'primary-fill-hover': #244bb3,
+  'primary-fill-end': #1572b8,
   'speaker': var(--sk-primary),
   'speaker-fill': var(--sk-primary-fill),
-  'speaker-person-3': #005c45,
+  'speaker-person-3': #1d3f99,
   'participant': #f39c12,
   'participant-person-2': #f8c471,
   'participant-person-3': #ca6f1e,
@@ -64,56 +67,57 @@ $dark: (
   'usage': #e67e22,
   'usage-hover': #f39c12,
   'usage-deep': #d35400,
-  'info': #4285f4,
-  'toolbar-icon': #8a8a8a,
-  'waveform-speaker': #0099ff,
+  'info': #38c3ee,
+  'toolbar-icon': #8494b6,
+  'waveform-speaker': #5b8cff,
   'waveform-participant': #f59e0b,
-  'waveform-output': #ff9900,
+  'waveform-output': #22b8e6,
   // the desktop window's own edge (no system frame draws one): a black line, a faint light one inside it
   'window-edge': #000000,
-  'window-edge-inner': rgba(255, 255, 255, 0.15),
+  'window-edge-inner': rgba(255, 255, 255, 0.12),
 );
 
 $light: (
-  // surfaces
-  'bg-base': #f3f3f3,
+  // surfaces: white page on a pale blue-grey base
+  'bg-base': #eef3fb,
   'bg-page': #ffffff,
-  'bg-surface': #f7f7f8,
-  'bg-bar': #f3f3f3,
+  'bg-surface': #f6f9fd,
+  'bg-bar': #f2f6fc,
   'bg-popover': #ffffff,
   'bg-control': #ffffff,
-  'bg-hover': #ececec,
-  'bg-elevated': #e3e3e3,
-  'bg-elevated-hover': #d4d4d4,
-  'bg-dim': #c4c4c4,
+  'bg-hover': #e8eef9,
+  'bg-elevated': #dde6f4,
+  'bg-elevated-hover': #cdd9ee,
+  'bg-dim': #b3c1da,
   'white': #ffffff,
-  // text
-  'text-primary': #1a1a1a,
-  'text-secondary': #555555,
-  'text-tertiary': #666666,
-  'text-muted': #6b6b6b,
-  'text-dim': #8c8c8c,
-  'text-disabled': #a8a8a8,
-  'text-source': #5f6368,
+  // text: navy headings, slate body
+  'text-primary': #1e3056,
+  'text-secondary': #3a4d6e,
+  'text-tertiary': #46597a,
+  'text-muted': #52658a,
+  'text-dim': #7486a6,
+  'text-disabled': #a3b0c7,
+  'text-source': #4c5f7f,
   'on-accent': #ffffff,
   // lines
-  'line': #d9d9d9,
-  'line-subtle': #e5e5e5,
-  'line-strong': #c8c8c8,
-  // overlays
+  'line': #dbe3f1,
+  'line-subtle': #e6ecf6,
+  'line-strong': #c3cfe4,
+  // overlays: shadows carry the accent's blue
   'overlay-fg': #000000,
   'overlay-bg': #000000,
-  'scrim': rgba(0, 0, 0, 0.6),
-  'shadow': rgba(0, 0, 0, 0.15),
-  'shadow-strong': rgba(0, 0, 0, 0.2),
+  'scrim': rgba(19, 47, 120, 0.45),
+  'shadow': rgba(28, 70, 171, 0.14),
+  'shadow-strong': rgba(28, 70, 171, 0.24),
   // accent, people, status
-  'primary': #006d51,
-  'primary-hover': #005a43,
-  'primary-fill': #007255,
-  'primary-fill-hover': #005a43,
+  'primary': #1c46ab,
+  'primary-hover': #132f78,
+  'primary-fill': #1c46ab,
+  'primary-fill-hover': #163a8f,
+  'primary-fill-end': #1572b8,
   'speaker': var(--sk-primary),
   'speaker-fill': var(--sk-primary-fill),
-  'speaker-person-3': #004d38,
+  'speaker-person-3': #132f78,
   'participant': #b45309,
   'participant-person-2': #d97706,
   'participant-person-3': #92400e,
@@ -126,13 +130,13 @@ $light: (
   'usage': #aa390b,
   'usage-hover': #93330a,
   'usage-deep': #7a2a0b,
-  'info': #175dbe,
-  'toolbar-icon': #6e6e6e,
-  'waveform-speaker': #1a73e8,
+  'info': #085f80,
+  'toolbar-icon': #5f7193,
+  'waveform-speaker': #2a63d4,
   'waveform-participant': #b45309,
-  'waveform-output': #b45309,
-  // the desktop window's own edge: a grey line
-  'window-edge': rgba(0, 0, 0, 0.28),
+  'waveform-output': #0f8fbf,
+  // the desktop window's own edge: a navy-grey line
+  'window-edge': rgba(30, 48, 86, 0.28),
   'window-edge-inner': rgba(255, 255, 255, 0.6),
 );
 

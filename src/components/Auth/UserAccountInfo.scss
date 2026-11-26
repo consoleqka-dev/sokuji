@@ -422,7 +422,7 @@
     font-weight: 600;
     cursor: pointer;
 
-    &:hover { background: tk.$color-primary-hover; }
+    &:hover { background: tk.$color-primary-fill-hover; }
     &:focus-visible { outline: 2px solid tk.$color-primary; outline-offset: 2px; }
   }
 }

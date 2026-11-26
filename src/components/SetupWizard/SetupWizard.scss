@@ -6,7 +6,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: vars.$bg-base;
+  // The page behind the card: the base colour with two soft glows of the accent
+  // and the info hue at opposite corners.
+  background:
+    radial-gradient(600px 400px at 85% 10%, color-mix(in srgb, vars.$color-info 14%, transparent), transparent 70%),
+    radial-gradient(700px 500px at 0% 0%, color-mix(in srgb, vars.$color-primary 12%, transparent), transparent 70%),
+    vars.$bg-base;
   z-index: 1500; // above panels, below .auth-overlay-scrim (2000) so sign-in paints over it
   // A window narrower than the card used to press it against all four edges,
   // which reads as a broken layout rather than a dialog. The padding is the
@@ -23,9 +28,10 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background: vars.$bg-surface;
+    background: vars.$bg-page;
     border: 1px solid vars.$border-subtle;
     border-radius: vars.$radius-lg;
+    box-shadow: vars.$shadow-float;
     overflow: hidden;
   }
 
@@ -34,8 +40,21 @@
     align-items: center;
     gap: vars.$space-3;
     padding: vars.$space-4 vars.$space-5;
-    border-bottom: 1px solid vars.$border-subtle;
-    h1 { margin: 0; font-size: 16px; font-weight: vars.$weight-semibold; color: vars.$text-primary; }
+    h1 { margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 0.02em; color: vars.$text-primary; }
+  }
+
+  // How far along the steps are: a hairline track with the accent gradient on it.
+  &__meter {
+    height: 3px;
+    background: vars.$border-subtle;
+    > span {
+      display: block;
+      height: 100%;
+      border-radius: 0 vars.$radius-pill vars.$radius-pill 0;
+      background: linear-gradient(90deg, vars.$color-primary-fill, vars.$color-info);
+      transition: width vars.$transition-normal;
+    }
+    @media (prefers-reduced-motion: reduce) { > span { transition: none; } }
   }
 
   // Electron's window is frameless (electron/main.js: frame: false) and the only
@@ -44,10 +63,14 @@
   // before setup is finished.
   &--first-run &__header { -webkit-app-region: drag; }
   &__close, &__header select { -webkit-app-region: no-drag; }
-  &__progress { margin-left: auto; font-size: vars.$font-caption; color: vars.$text-muted; }
+  &__progress {
+    margin-left: auto; padding: 2px 10px; border-radius: vars.$radius-pill;
+    font-size: vars.$font-caption; font-weight: vars.$weight-semibold; color: vars.$color-primary;
+    background: color-mix(in srgb, vars.$color-primary 10%, transparent);
+  }
   &__close {
     width: 28px; height: 28px; display: flex; align-items: center; justify-content: center;
-    border: 1px solid vars.$border-default; border-radius: vars.$radius-md; background: transparent; color: vars.$text-secondary; cursor: pointer;
+    border: 1px solid vars.$border-default; border-radius: vars.$radius-pill; background: transparent; color: vars.$text-secondary; cursor: pointer;
     &:hover { border-color: vars.$color-primary; color: vars.$text-primary; }
     &:focus-visible { @include vars.focus-ring; }
   }
@@ -58,13 +81,15 @@
   &__footer {
     display: flex; align-items: center; gap: vars.$space-2;
     padding: vars.$space-3 vars.$space-5; border-top: 1px solid vars.$border-subtle;
+    background: vars.$bg-surface;
     box-shadow: 0 -8px 12px -8px vars.$shadow-strong;
+    .settings-btn--md { min-width: 96px; padding: 10px 20px; }
   }
   &__spacer { flex: 1; }
 }
 
 .setup-step {
-  h2 { margin: 0 0 vars.$space-2; font-size: vars.$font-title; color: vars.$text-primary; }
+  h2 { margin: 0 0 vars.$space-2; font-size: 15px; font-weight: 700; letter-spacing: 0.01em; color: vars.$text-primary; }
   > p { margin: 0 0 vars.$space-4; font-size: vars.$font-body; color: vars.$text-secondary; }
   // A line that introduces the control under it, not the step: lighter than the
   // step's own lede so the two do not read as one paragraph.
@@ -81,15 +106,24 @@
 
 .setup-card {
   @include vars.option-row;
+  position: relative;
   display: flex; flex-direction: column; gap: vars.$space-1;
-  padding: vars.$space-3; cursor: pointer;
+  padding: vars.$space-3 14px; cursor: pointer;
+  background: vars.$bg-surface;
+  border-radius: vars.$radius-md;
+  transition: border-color vars.$transition-fast, background-color vars.$transition-fast,
+    box-shadow vars.$transition-fast, transform vars.$transition-fast;
   input { position: absolute; opacity: 0; width: 1px; height: 1px; }
-  &:hover { @include vars.option-row-hover; }
-  &.is-selected { @include vars.option-row-selected; }
+  &:hover { @include vars.option-row-hover; box-shadow: vars.$shadow-card; transform: translateY(-1px); }
+  &.is-selected {
+    @include vars.option-row-selected;
+    box-shadow: inset 3px 0 0 vars.$color-primary, vars.$shadow-card;
+  }
+  @media (prefers-reduced-motion: reduce) { transition: none; &:hover { transform: none; } }
   &.is-disabled { @include vars.disabled-state; }
   &:has(input:focus-visible) { @include vars.focus-ring; }
   &__title { font-weight: vars.$weight-medium; color: vars.$text-primary; display: flex; align-items: center; gap: vars.$space-2; }
-  &__badge { font-style: normal; font-size: 10px; padding: 1px 6px; border-radius: 10px; background: color-mix(in srgb, vars.$color-primary 15%, transparent); color: vars.$color-primary; }
+  &__badge { font-style: normal; font-size: 10px; font-weight: vars.$weight-semibold; padding: 1px 8px; border-radius: vars.$radius-pill; background: color-mix(in srgb, vars.$color-primary 15%, transparent); color: vars.$color-primary; }
   &__desc { font-size: vars.$font-caption; color: vars.$text-secondary; }
   &__sets, &__cost, &__reason { font-size: vars.$font-caption; color: vars.$text-muted; }
   &__reason { color: vars.$color-warning; }

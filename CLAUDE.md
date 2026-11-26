@@ -723,10 +723,10 @@ corrected on 2026-09-05.
   `useConversationColours`, over `useScheme` in `src/lib/theme/`); the display popover's first
   chip in each conversation row is "Follow theme". The subtitle's defaults are fixed.
 - Guards: `src/styles/theme.consistency.test.ts` (the four blocks agree, the dark block is pinned,
-  the light block clears the contrast floors, every `--sk-` a stylesheet references is defined) and
+  the light block clears the contrast floors, the dark block's text and accent fill clear theirs, every `--sk-` a stylesheet references is defined) and
   `src/styles/colourLedger.consistency.test.ts` (an exact count of colour literals per file; the
   allow-list is brand marks, the user colour presets and defaults, the viewer and the dev
-  previews). Light accent `#007255` as a fill and `#006d51` as text; dark accent `#0fbb8f`; error `#e74c3c` / `#ad3327`. Light status text also clears 4.5:1 on its own 10–15% tint.
+  previews). Navy and blue palette: light accent `#1c46ab` (fill and text), dark accent text `#6f9bff` on fill `#2d5bd2`; primary actions are a 135° gradient from `--sk-primary-fill` to `--sk-primary-fill-end` (`#1572b8`) through the `primary-gradient` mixin in `_variables.scss`; error `#e74c3c` / `#ad3327`. The popup (`extension/popup.css`, plain CSS) mirrors these values in its own `--pp-*` variables. Light status text also clears 4.5:1 on its own 10–15% tint.
 - Component styles defined in colocated SCSS files (e.g., `SettingsPage.scss`)
 - Lucide React icons with consistent sizing (14-16px)
 
