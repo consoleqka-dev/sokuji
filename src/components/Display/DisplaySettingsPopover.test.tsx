@@ -263,7 +263,7 @@ describe('DisplaySettingsPopover', () => {
     expect(bgFirstChip.getAttribute('aria-label')).toBe('Follow theme');
     expect(sourceFirstChip.getAttribute('aria-label')).toBe('Follow theme');
     expect(translationFirstChip.getAttribute('aria-label')).toBe('Follow theme');
-    expect(bgFirstChip.style.getPropertyValue('--follow-dark')).toBe('#1f1f1f');
+    expect(bgFirstChip.style.getPropertyValue('--follow-dark')).toBe('#0d1530');
     expect(sourceFirstChip.style.getPropertyValue('--follow-dark')).toBe('#9aa0a6');
     expect(translationFirstChip.style.getPropertyValue('--follow-dark')).toBe('#e8e8e8');
   });
@@ -290,7 +290,7 @@ describe('conversation colours follow the theme until set', () => {
   it('the first chip is "Follow theme", split between the dark and light colours, selected while nothing is stored', () => {
     useConversationDisplayStore.setState({ bgColor: null, sourceTextColor: null, translationTextColor: null } as never);
     const { container } = render(<DisplaySettingsPopover source="conversation" />);
-    const dark = ['#1f1f1f', '#9aa0a6', '#e8e8e8'];
+    const dark = ['#0d1530', '#9aa0a6', '#e8e8e8'];
     const light = ['#ffffff', '#5f6368', '#1a1a1a'];
     for (const field of [0, 1, 2]) {
       const chip = firstChip(container, field);
@@ -307,7 +307,7 @@ describe('conversation colours follow the theme until set', () => {
     scheme.current = 'light';
     useConversationDisplayStore.setState({ bgColor: null, sourceTextColor: null, translationTextColor: null } as never);
     const { container } = render(<DisplaySettingsPopover source="conversation" />);
-    expect(firstChip(container, 0).style.getPropertyValue('--follow-dark')).toBe('#1f1f1f');
+    expect(firstChip(container, 0).style.getPropertyValue('--follow-dark')).toBe('#0d1530');
     expect(firstChip(container, 0).style.getPropertyValue('--follow-light')).toBe('#ffffff');
     expect(firstChip(container, 0).classList.contains('selected')).toBe(true);
     expect(bg(customChip(container, 0))).toMatch(/^(#ffffff|rgb\(255,255,255\))$/);

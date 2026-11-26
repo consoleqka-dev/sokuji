@@ -77,7 +77,7 @@
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
   position: relative;
-  background: var(--conversation-bg-color, #1f1f1f);
+  background: var(--conversation-bg-color, #0d1530);
 
   &::-webkit-scrollbar { width: 6px; }
   &::-webkit-scrollbar-track { background: transparent; }

@@ -130,7 +130,7 @@ describe('MainPanel resolves an unset conversation colour from the scheme', () =
     await act(() => getAppSession().audio());
     const wrapper = () => container.querySelector('.main-panel-wrapper') as HTMLElement;
     const tone = () => container.querySelector('.conversation-display')?.getAttribute('data-tone');
-    expect(wrapper().style.getPropertyValue('--conversation-bg-color')).toBe('#1f1f1f');
+    expect(wrapper().style.getPropertyValue('--conversation-bg-color')).toBe('#0d1530');
     expect(wrapper().style.getPropertyValue('--conversation-source-color')).toBe('#9aa0a6');
     expect(wrapper().style.getPropertyValue('--conversation-translation-color')).toBe('#e8e8e8');
     expect(tone()).toBe('dark');

@@ -53,7 +53,7 @@ describe('conversationDisplayStore', () => {
   });
 
   it("the follow-theme colours: dark is today's set, light is the white set", () => {
-    expect(CONVERSATION_SCHEME_COLOURS.dark).toEqual({ bgColor: '#1f1f1f', sourceTextColor: '#9aa0a6', translationTextColor: '#e8e8e8' });
+    expect(CONVERSATION_SCHEME_COLOURS.dark).toEqual({ bgColor: '#0d1530', sourceTextColor: '#9aa0a6', translationTextColor: '#e8e8e8' });
     expect(CONVERSATION_SCHEME_COLOURS.light).toEqual({ bgColor: '#ffffff', sourceTextColor: '#5f6368', translationTextColor: '#1a1a1a' });
   });
 

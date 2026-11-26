@@ -68,6 +68,7 @@ body {
     radial-gradient(260px 180px at 100% 0%, var(--pp-glow-a), transparent 70%),
     radial-gradient(260px 200px at 0% 0%, var(--pp-glow-b), transparent 70%),
     var(--pp-bg);
+  background-repeat: no-repeat;
   color: var(--pp-text);
   min-width: 320px;
   max-width: 400px;

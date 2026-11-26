@@ -32,8 +32,8 @@ interface ConversationDisplayState {
 }
 
 // ──────────── The scheme's colours (exported for popover preset wiring) ────────────
-// The dark set is what the conversation has always been drawn in.
-export const CONVERSATION_DISPLAY_DEFAULT_BG_COLOR = '#1f1f1f';
+// The dark set: the page navy (--sk-bg-page) under the original text colours.
+export const CONVERSATION_DISPLAY_DEFAULT_BG_COLOR = '#0d1530';
 export const CONVERSATION_DISPLAY_DEFAULT_SOURCE_TEXT_COLOR = '#9aa0a6';
 export const CONVERSATION_DISPLAY_DEFAULT_TRANSLATION_TEXT_COLOR = '#e8e8e8';
 
