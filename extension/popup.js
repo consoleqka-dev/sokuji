@@ -467,7 +467,7 @@ function setupEventListeners(tabId, isSupported, currentHostname) {
             error_message: fallbackError.message
           });
           
-          alert('Unable to open Sokuji. Please try refreshing the page.');
+          alert('Unable to open ExTrans. Please try refreshing the page.');
         }
       }
     });

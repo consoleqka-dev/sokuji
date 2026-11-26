@@ -355,7 +355,7 @@ describe("a record's notes", () => {
       'wallet-frozen': 'Your Kizuna AI wallet is frozen.',
       'not-member': 'You are no longer a member of the organization that pays for Kizuna AI.',
       'too-large': 'This record is too long for Kizuna AI to write notes from.',
-      'update-required': 'Update Sokuji to write notes with Kizuna AI.',
+      'update-required': 'Update ExTrans to write notes with Kizuna AI.',
     };
     for (const code of new Set([...Object.values(FINAL_CODES), 'sign-in', 'unavailable'])) {
       render(<RecordNotes {...props({ notes: failed(`notes:${code}`) })} />);

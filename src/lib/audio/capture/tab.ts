@@ -73,7 +73,7 @@ export async function openTab(
     const cause = recorder.beginFailure === undefined ? null : describeCause(recorder.beginFailure);
     const why = cause === null ? '' : ` (${cause})`;
     const remedy = cause?.includes(NOT_INVOKED)
-      ? 'Click the Sokuji icon in the browser toolbar on the meeting tab, then start again.'
+      ? 'Click the ExTrans icon in the browser toolbar on the meeting tab, then start again.'
       : 'Reload the tab and try again.';
     throw new Error(`The meeting tab could not be captured${why}. ${remedy}`);
   }

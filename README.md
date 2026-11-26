@@ -21,16 +21,20 @@
 </p>
 
 <p align="center">
+  ExTrans is based on <a href="https://github.com/kizuna-ai-lab/sokuji">Sokuji</a> by Kizuna AI Lab, licensed under AGPL-3.0.
+</p>
+
+<p align="center">
   English | <a href="docs/README.ja.md">日本語</a> | <a href="docs/README.zh.md">中文</a> | <a href="docs/README.vi.md">Tiếng Việt</a>
 </p>
 
 ---
 
-## Why Sokuji?
+## Why ExTrans?
 
 Built by [Kizuna AI Lab](https://github.com/kizuna-ai-lab) — we use AI to break language and accessibility barriers, creating genuine human connections. "Kizuna" (絆) means "bond" in Japanese, and Sokuji (即時) is our flagship tool to make real-time communication possible across any language.
 
-Sokuji is a cross-platform live speech translation app for desktop and browser. It supports **Local Inference** — on-device ASR, translation, and TTS powered by WASM and WebGPU, with no API key required, no expensive GPU needed, fully offline, and completely private. It also integrates with cloud providers including OpenAI, Google Gemini, Palabra.ai, Kizuna AI, Doubao AST 2.0, Soniox, and OpenAI-compatible APIs.
+ExTrans is a cross-platform live speech translation app for desktop and browser. It supports **Local Inference** — on-device ASR, translation, and TTS powered by WASM and WebGPU, with no API key required, no expensive GPU needed, fully offline, and completely private. It also integrates with cloud providers including OpenAI, Google Gemini, Palabra.ai, Kizuna AI, Doubao AST 2.0, Soniox, and OpenAI-compatible APIs.
 
 ---
 
@@ -38,7 +42,7 @@ Sokuji is a cross-platform live speech translation app for desktop and browser. 
 
 ```mermaid
 graph LR
-    A["🗣️ You speak<br/>(any language)"] --> B["🎙️ Sokuji"]
+    A["🗣️ You speak<br/>(any language)"] --> B["🎙️ ExTrans"]
     B --> C{"Choose one"}
     C -->|"☁️ Cloud"| D["OpenAI · Gemini<br/>Palabra · Doubao..."]
     C -->|"🖥️ Local"| E["On-device AI<br/>ASR → Translate → TTS<br/>(fully offline, no GPU)"]
@@ -73,7 +77,7 @@ https://github.com/user-attachments/assets/f48e2bee-4cad-4b40-b551-8ba59fb5652a
 
 ## Install
 
-Sokuji is available as a **Desktop App** and a **Browser Extension** — same features, different reach.
+ExTrans is available as a **Desktop App** and a **Browser Extension** — same features, different reach.
 
 | | Desktop App | Browser Extension |
 |---|---|---|
@@ -128,7 +132,7 @@ npm run electron:build      # Production
 
 ## Two-Way Translation for Bilingual Meetings
 
-Two people, two languages, one conversation. Sokuji auto-detects which
+Two people, two languages, one conversation. ExTrans auto-detects which
 language is being spoken and translates it into the other — in both
 directions, in real time. Set Language A and Language B, capture system
 audio and microphone together, and everyone follows along.
@@ -147,7 +151,7 @@ audio and microphone together, and everyone follows along.
 
 ### Local Inference (Edge AI)
 
-Run everything on your device — no API keys, no internet once models are downloaded, no expensive GPU, complete privacy. Powered by WASM and WebGPU, Sokuji runs efficiently on any modern browser using your existing CPU and integrated graphics.
+Run everything on your device — no API keys, no internet once models are downloaded, no expensive GPU, complete privacy. Powered by WASM and WebGPU, ExTrans runs efficiently on any modern browser using your existing CPU and integrated graphics.
 
 - **44 ASR models** (23 offline + 10 streaming + 11 WebGPU including Whisper, Cohere Transcribe, Voxtral, Granite Speech) covering 99+ languages
 - **75 translation models** — 69 Opus-MT language pairs + 6 multilingual LLMs (Qwen 2.5 / 3 / 3.5, Hunyuan-MT 1.5, TranslateGemma) with WebGPU

@@ -200,7 +200,7 @@ function showPermissionError(permissionError: any): void {
       permissionUrl = chrome.runtime.getURL('permission.html');
     }
 
-    errorMessage += 'Please allow microphone access to use Sokuji. ';
+    errorMessage += 'Please allow microphone access to use ExTrans. ';
 
     if (permissionUrl) {
       errorMessage += `<a href="${permissionUrl}" target="_blank" style="color: white; text-decoration: underline; font-weight: bold;">Click here</a> to grant microphone permission, or `;

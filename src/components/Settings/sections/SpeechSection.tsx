@@ -218,8 +218,8 @@ function HeldKeyBox({ locked }: { locked: boolean }) {
   };
   if (turnMode === 'auto') return null;
   const said: Array<[string, string]> = turnMode === 'push-to-talk'
-    ? [[t('settingsPage.lineup.uses.held', 'While held'), t('settingsPage.lineup.uses.talkHeld', 'Sokuji listens; when you let go, that stretch is translated and the other side hears the translation. With Passthrough on, the other side also hears your own voice, quietly.')],
-      [t('settingsPage.lineup.uses.notHeld', 'While not held'), t('settingsPage.lineup.uses.talkNotHeld', 'Sokuji does not listen; nothing you say is translated or reaches the other side.')]]
+    ? [[t('settingsPage.lineup.uses.held', 'While held'), t('settingsPage.lineup.uses.talkHeld', 'ExTrans listens; when you let go, that stretch is translated and the other side hears the translation. With Passthrough on, the other side also hears your own voice, quietly.')],
+      [t('settingsPage.lineup.uses.notHeld', 'While not held'), t('settingsPage.lineup.uses.talkNotHeld', 'ExTrans does not listen; nothing you say is translated or reaches the other side.')]]
     : [[t('settingsPage.lineup.uses.held', 'While held'), t('settingsPage.lineup.uses.translateHeld', 'What you say is translated; the other side hears only the translation, not your own voice.')],
       [t('settingsPage.lineup.uses.notHeld', 'While not held'), t('settingsPage.lineup.uses.translateNotHeld', 'Your own voice goes straight to the other side, untranslated.')]];
   const space = pushKeyLabel(DEFAULT_PUSH_KEY, isMacOS());

@@ -70,7 +70,7 @@ const FAILURE_WORDS: Record<string, string> = {
   'wallet-frozen': 'Your Kizuna AI wallet is frozen.',
   'not-member': 'You are no longer a member of the organization that pays for Kizuna AI.',
   'too-large': 'This record is too long for Kizuna AI to write notes from.',
-  'update-required': 'Update Sokuji to write notes with Kizuna AI.',
+  'update-required': 'Update ExTrans to write notes with Kizuna AI.',
 };
 /** The reasons the account can change: the failure leads there (the Kizuna AI row of Accounts and keys). */
 const ACCOUNT_REASONS = new Set(['notes:sign-in', 'notes:no-balance', 'notes:wallet-frozen', 'notes:not-member']);

@@ -62,12 +62,12 @@
     },
     "echoCancellation": "回声消除",
     "echoCancellationTooltip": {
-      "app": "仅 Sokuji — 麦克风收进 Sokuji 播放的翻译语音时将其消除。麦克风是 BlackHole 等虚拟声卡时请选择此项。",
+      "app": "仅 ExTrans — 麦克风收进 ExTrans 播放的翻译语音时将其消除。麦克风是 BlackHole 等虚拟声卡时请选择此项。",
       "browser": "仅浏览器 — 麦克风收进本浏览器播放的声音（包括会议标签页）时将其消除。麦克风是传送其他应用声音的 BlackHole 等虚拟声卡时请选择此项。",
       "all": "全部声音 — 连其他应用从扬声器播放的声音（例如会议软件）也一并消除。用作麦克风的虚拟声卡传送的正是这些声音，因此会变成静音。"
     },
     "echoCancellationMode": {
-      "app": "仅 Sokuji",
+      "app": "仅 ExTrans",
       "browser": "仅浏览器",
       "all": "全部声音"
     },
@@ -368,9 +368,9 @@
     "virtualMicrophone": "虚拟麦克风",
     "virtualMicrophoneNotice": "虚拟麦克风说明",
     "iUnderstand": "我明白了",
-    "virtualMicWarningTitle": "这是由Sokuji创建的虚拟麦克风。",
+    "virtualMicWarningTitle": "这是由ExTrans创建的虚拟麦克风。",
     "virtualMicWarningText1": "请不要在此处选择此设备。相反，请在您的视频会议应用程序（如Google Meet、Zoom、Microsoft Teams等）中使用此虚拟麦克风来接收实时语音翻译输出。",
-    "virtualMicWarningText2": "为了让Sokuji正常工作，请从列表中选择您的实际物理麦克风。",
+    "virtualMicWarningText2": "为了让ExTrans正常工作，请从列表中选择您的实际物理麦克风。",
     "realVoicePassthrough": "原声直通",
     "passthroughManagedByPushToTranslate": "按住翻译模式下原声直通自动管理：未按住按键时以 100% 音量直通，按住时进行录音翻译、不直通。",
     "speechTitle": "语音",
@@ -427,7 +427,7 @@
     "participantFellBackToSystemAudio": "所选应用的采集已停止，现在改为翻译整个系统的声音。请重新选择该应用以缩小范围。",
     "loopbackMicNotice": "环回输入提示",
     "loopbackMicWarningTitle": "该输入设备会重新采集本机正在播放的声音。",
-    "loopbackMicWarningText1": "「立体声混音」或「Monitor of ...」这类环回输入录制的是系统自身的音频输出。在包含 Sokuji 翻译语音的会话中，Sokuji 会听到并循环翻译自己。",
+    "loopbackMicWarningText1": "「立体声混音」或「Monitor of ...」这类环回输入录制的是系统自身的音频输出。在包含 ExTrans 翻译语音的会话中，ExTrans 会听到并循环翻译自己。",
     "loopbackMicWarningText2": "如果这种路由是有意为之，设备会保持选中；正常使用请改选真实麦克风。",
     "participantNoAudioYet": "所选来源尚未传来任何音频。如果它正在播放却没有译文，请在 系统设置 > 隐私与安全性 > 仅系统录音 中允许 Sokuji（macOS），然后重新开始会话。",
     "audioCaptureUnprovenNotice": "尚未捕获到音频",
@@ -473,7 +473,7 @@
     "verificationEmailFailed": "发送验证邮件失败。请重试",
     "alreadyVerified": "您的邮箱已经验证！",
     "cooldownMessage": "请等待 {{seconds}} 秒",
-    "checkYourEmail": "验证邮件已发送。请在收件箱中完成验证后返回，Sokuji 会自动识别。",
+    "checkYourEmail": "验证邮件已发送。请在收件箱中完成验证后返回，ExTrans 会自动识别。",
     "emailVerifiedToast": "邮箱已验证",
     "sessionExpired": "登录状态已失效，请重新登录。",
     "forgotPassword": "忘记密码？",
@@ -497,16 +497,16 @@
   },
   "simpleConfig": {
     "interfaceLanguage": "界面语言",
-    "interfaceLanguageDesc": "这会更改Sokuji菜单和按钮的语言。它不会影响您可以在哪些语言之间翻译。",
+    "interfaceLanguageDesc": "这会更改ExTrans菜单和按钮的语言。它不会影响您可以在哪些语言之间翻译。",
     "translationLanguages": "翻译语言",
     "translationLanguagesDesc": "选择您说的语言（我的语言）和您想要听到翻译的语言（对方语言）。如果您不确定自己会说哪种语言，请选择“自动检测”。",
     "yourLanguage": "我的语言",
     "userAccount": "用户账户",
     "userAccountTooltip": "对于拥有技术知识和自己API密钥的用户，无论是否登录都可以使用自己的API密钥。用户账户是为希望简化设置、无需复杂配置的新用户设计的。",
-    "signInRequired": "注册后即可使用 Sokuji 自带的翻译服务，无需申请任何 API key。也可以继续使用你自己的服务商和密钥。",
+    "signInRequired": "注册后即可使用 ExTrans 自带的翻译服务，无需申请任何 API key。也可以继续使用你自己的服务商和密钥。",
     "targetLanguage": "对方语言",
     "microphone": "麦克风",
-    "microphoneDesc": "选择用于捕获您语音的麦克风。对着此麦克风说您的语言，Sokuji会实时翻译麦克风接收到的所有内容。",
+    "microphoneDesc": "选择用于捕获您语音的麦克风。对着此麦克风说您的语言，ExTrans会实时翻译麦克风接收到的所有内容。",
     "swapLanguages": "交换语言",
     "swapNotSpoken": "该语音服务无法反向朗读这两种语言。",
     "textOnly": "仅文本",
@@ -715,7 +715,7 @@
       "scopeLabel": "包含",
       "scopeItemAria": "{{scope}} — {{line}}",
       "scopeEmpty": "未选择任何内容",
-      "headerTitle": "Sokuji 对话导出",
+      "headerTitle": "ExTrans 对话导出",
       "headerSessionStarted": "会话开始时间",
       "headerExported": "导出时间",
       "headerProvider": "服务商",
@@ -959,7 +959,7 @@
     "gpuSoftwareOnly": "GPU 加速不可用 — 正在使用 CPU 运行",
     "gpuUnavailable": "GPU 加速不可用",
     "gpuSlowWarning": "本地模型仍可使用，但转录和翻译会明显变慢。",
-    "gpuWaylandRemedy": "在 Wayland 会话中 Chromium 无法使用 GPU。使用 --ozone-platform=x11 启动 Sokuji 可恢复加速。",
+    "gpuWaylandRemedy": "在 Wayland 会话中 Chromium 无法使用 GPU。使用 --ozone-platform=x11 启动 ExTrans 可恢复加速。",
     "othersGroup": "其他模型",
     "requiresGpu": "需要 GPU",
     "licenseConsent": {
@@ -970,7 +970,7 @@
       "viewLicense": "查看完整许可文本",
       "nonCommercial": "该许可仅允许非商业用途——请勿在任何商业产品或服务中使用此模型。",
       "restrictedTerms": "该许可并非开源许可，它对模型及其输出的使用方式设有条件——在依赖它之前请阅读许可全文。",
-      "disclaimer": "Sokuji 与模型作者无任何关联或合作关系。此集成为非官方提供,按现状提供,不附带任何形式的保证。",
+      "disclaimer": "ExTrans 与模型作者无任何关联或合作关系。此集成为非官方提供,按现状提供,不附带任何形式的保证。",
       "attribution": "署名:{{attribution}}",
       "cancel": "取消",
       "accept": "我已了解——仅限非商业用途",
@@ -1052,9 +1052,9 @@
     "linuxMigrateTitle": "有新版本 v{{version}}"
   },
   "audioSystem": {
-    "pactlMissingBody": "未检测到 pactl（PulseAudio 命令行工具），Sokuji 无法创建虚拟麦克风/扬声器。请安装后重试：",
+    "pactlMissingBody": "未检测到 pactl（PulseAudio 命令行工具），ExTrans 无法创建虚拟麦克风/扬声器。请安装后重试：",
     "installCommand": "sudo apt install pulseaudio-utils",
-    "unavailableBody": "Sokuji 无法创建虚拟麦克风/扬声器，请确认 PulseAudio 或 PipeWire 正在运行。",
+    "unavailableBody": "ExTrans 无法创建虚拟麦克风/扬声器，请确认 PulseAudio 或 PipeWire 正在运行。",
     "retry": "重试",
     "retrying": "重试中...",
     "macDriverNotLoadedBody": "Sokuji 的虚拟麦克风已安装，但 macOS 没有加载它，会议软件听不到你的翻译。点击修复，macOS 会要求输入管理员密码。",
@@ -1065,12 +1065,12 @@
   },
   "vbCable": {
     "title": "让对方听到翻译",
-    "body": "会议软件通过虚拟麦克风接收翻译语音。在 Windows 上，这需要 VB-CABLE——VB-Audio 提供的免费驱动。不装它，Sokuji 的其他功能照常可用。",
+    "body": "会议软件通过虚拟麦克风接收翻译语音。在 Windows 上，这需要 VB-CABLE——VB-Audio 提供的免费驱动。不装它，ExTrans 的其他功能照常可用。",
     "install": "安装 VB-CABLE",
     "about": "了解 VB-CABLE",
     "adminOnce": "Windows 会请求一次管理员权限。",
     "installingTitle": "正在安装 VB-CABLE…",
-    "installingBody": "请在 Windows 的提示中点“是”，然后在 VB-CABLE 的窗口里点 “Install Driver”。装好后 Sokuji 会立刻识别。",
+    "installingBody": "请在 Windows 的提示中点“是”，然后在 VB-CABLE 的窗口里点 “Install Driver”。装好后 ExTrans 会立刻识别。",
     "installingBusy": "正在安装…",
     "failedTitle": "VB-CABLE 没有装上",
     "failedBody": "安装被取消，或者没有完成。可以重试，也可以去 VB-Audio 官网自己安装。",
@@ -1083,7 +1083,7 @@
     "storeStep3": "点 “Install Driver”，然后重启电脑。",
     "openWebsite": "打开 VB-Audio 官网",
     "checkAgain": "重新检测",
-    "picksUp": "装好后 Sokuji 会自动识别。",
+    "picksUp": "装好后 ExTrans 会自动识别。",
     "notNow": "以后再说"
   },
   "subtitle": {
@@ -1182,7 +1182,7 @@
     "previewChargedToBalance": "试听会合成一小段样本，并从您的账户余额中扣费。",
     "previewFailed": "无法为这个声音合成试听。",
     "renameFailed": "无法重命名这个声音。",
-    "recordStartFailed": "无法开始录音。请检查是否已连接麦克风，以及是否允许 Sokuji 使用麦克风。",
+    "recordStartFailed": "无法开始录音。请检查是否已连接麦克风，以及是否允许 ExTrans 使用麦克风。",
     "previewLanguageUnsupported": "该模型所支持的语言中没有可用的示例句。",
     "previewNeedsBalance": "请先为账户充值余额，再试听此声音。",
     "previewNeedsSessionStopped": "请先结束会话，再试听此声音。",
@@ -1290,10 +1290,10 @@
     }
   },
   "echoNotice": {
-    "ttsEcho": "您的扬声器正把 Sokuji 的翻译语音送回麦克风。",
+    "ttsEcho": "您的扬声器正把 ExTrans 的翻译语音送回麦克风。",
     "meetingEcho": "扬声器播放的会议声音正进入麦克风。",
     "farEndEcho": "某位参会者的设备正把您的翻译回声传回会议。",
-    "selfCapture": "对方音频来源正在采集 Sokuji 自己的声音。",
+    "selfCapture": "对方音频来源正在采集 ExTrans 自己的声音。",
     "routingLoop": "所选输入设备正在直接采集本机播放的声音。",
     "actionHeadphones": "使用耳机即可切断回路。",
     "actionAskRemote": "请该参会者佩戴耳机。",
@@ -1315,7 +1315,7 @@
     "clearAllKeepsPicks": "你的选择会被记住，模型再次下载后会自动恢复。"
   },
   "setup": {
-    "title": "设置 Sokuji",
+    "title": "设置 ExTrans",
     "stepOf": "第 {{current}} 步，共 {{total}} 步",
     "back": "上一步",
     "next": "下一步",
@@ -1325,12 +1325,12 @@
     "rerun": "重新运行设置向导",
     "steps": {
       "language": {
-        "title": "Sokuji 用什么语言和你交流？",
+        "title": "ExTrans 用什么语言和你交流？",
         "desc": "这是菜单和按钮的语言。翻译用的语言稍后再选。",
         "label": "界面语言"
       },
       "scenario": {
-        "title": "你想用 Sokuji 做什么？",
+        "title": "你想用 ExTrans 做什么？",
         "desc": "选最接近的一个，之后都可以改。"
       },
       "path": {
@@ -1472,7 +1472,7 @@
     "steps": {
       "welcome": {
         "title": "设置完成",
-        "content": "Sokuji 已按你的场景配置好。下面用不到一分钟认一下界面。"
+        "content": "ExTrans 已按你的场景配置好。下面用不到一分钟认一下界面。"
       },
       "mode-picker": {
         "title": "翻译模式",
@@ -1483,7 +1483,7 @@
       },
       "microphone": {
         "title": "你的麦克风",
-        "content": "你的声音从这里进来，已选好系统默认设备。不要选 Sokuji 虚拟麦克风——那个是给会议软件用的。"
+        "content": "你的声音从这里进来，已选好系统默认设备。不要选 ExTrans 虚拟麦克风——那个是给会议软件用的。"
       },
       "monitor": {
         "title": "听一听翻译后的自己",
@@ -1492,15 +1492,15 @@
       "output-routing": {
         "title": "对方怎么听到你",
         "content": "你的翻译语音会送到一个虚拟麦克风；在会议软件里把它选为麦克风。",
-        "content_extension": "在 Google Meet、Zoom 或 Teams 里，把麦克风选为「Sokuji Virtual Microphone」。Sokuji 会自动把它加到支持的会议网站。",
-        "content_electronLinux": "Sokuji 已在本机创建了虚拟麦克风。在会议软件里把它选为麦克风。",
-        "content_electronOther": "需要一个虚拟声卡（例如 VB-Cable）。把 Sokuji 的输出接到它，再在会议软件里把它选为麦克风。"
+        "content_extension": "在 Google Meet、Zoom 或 Teams 里，把麦克风选为「ExTrans Virtual Microphone」。ExTrans 会自动把它加到支持的会议网站。",
+        "content_electronLinux": "ExTrans 已在本机创建了虚拟麦克风。在会议软件里把它选为麦克风。",
+        "content_electronOther": "需要一个虚拟声卡（例如 VB-Cable）。把 ExTrans 的输出接到它，再在会议软件里把它选为麦克风。"
       },
       "participant-source": {
         "title": "对方的声音",
-        "content": "Sokuji 在这里听对方说话。",
+        "content": "ExTrans 在这里听对方说话。",
         "content_electron": "选择要翻译的应用，或整个系统音频。对方的原声照常播放。",
-        "content_extension": "Sokuji 翻译当前标签页的声音。对方的原声照常播放。"
+        "content_extension": "ExTrans 翻译当前标签页的声音。对方的原声照常播放。"
       },
       "subtitle": {
         "title": "字幕模式",
@@ -1562,7 +1562,7 @@
     "lineup_source_not_fixed": "{{provider}} 需要知道所说的语言。请选择具体语言来代替“自动检测”，或选择其他翻译服务。",
     "lineup_pair_not_translated": "{{provider}} 不支持 {{source}} → {{target}} 的翻译。请选择其他语言，或选择其他翻译服务。",
     "lineup_face_to_face_apart": "“面对面”需要由同一个服务完成转写和翻译。请为翻译也选择 {{provider}}，或把“对方在哪里”设为“在线会议”。",
-    "session_in_use": "另一个窗口或设备正在使用此账户。请在那里停止会话；如果 Sokuji 刚刚意外关闭，请 1 分钟后重试。",
+    "session_in_use": "另一个窗口或设备正在使用此账户。请在那里停止会话；如果 ExTrans 刚刚意外关闭，请 1 分钟后重试。",
     "previous_session_ending": "您的上一个会话仍在结束中。请 1 分钟后重试。",
     "app_capture_lost_using_system_audio": "应用采集已停止，现在改为翻译整个系统的声音。",
     "app_capture_monitor_missing": "应用采集未能启动，现在改为翻译整个系统的声音。",
@@ -1591,7 +1591,7 @@
     "mic_now_using": "现在使用麦克风「{{device}}」。",
     "mic_in_use": "麦克风「{{device}}」正被 {{apps}} 占用。请关闭 {{apps}} 后重新开始，或选择其他麦克风。",
     "mic_unreadable": "Windows 无法打开麦克风「{{device}}」。可能有其他应用占用了它，或者它的驱动没有响应。请关闭正在使用它的应用或重新连接麦克风，然后重新开始。",
-    "mic_blocked": "Windows 不允许 Sokuji 使用麦克风。请在 设置 › 隐私和安全性 › 麦克风 中打开桌面应用的麦克风访问权限，然后重新开始。",
+    "mic_blocked": "Windows 不允许 ExTrans 使用麦克风。请在 设置 › 隐私和安全性 › 麦克风 中打开桌面应用的麦克风访问权限，然后重新开始。",
     "speaker_tts_missing": "对方听到的翻译只显示文字：没有能说{{target}}的语音模型。",
     "participant_tts_missing": "我听到的翻译只显示文字：没有能说{{target}}的语音模型。",
     "participant_tts_over_budget": "我听到的翻译只显示文字：内存不够同时加载对方的语音模型。",
@@ -1604,8 +1604,8 @@
     "not_org_member_unnamed": "您已不在所属的组织中。",
     "org_wallet_frozen": "{{organization}} 的账户已暂停。请联系其所有者，或使用您自己的余额。",
     "org_wallet_frozen_unnamed": "该组织的账户已暂停。请联系其所有者，或使用您自己的余额。",
-    "org_wallet_frozen_owner": "{{organization}} 的账户已暂停。请联系 Sokuji 支持团队，或使用您自己的余额。",
-    "org_wallet_frozen_owner_unnamed": "该组织的账户已暂停。请联系 Sokuji 支持团队，或使用您自己的余额。",
+    "org_wallet_frozen_owner": "{{organization}} 的账户已暂停。请联系 ExTrans 支持团队，或使用您自己的余额。",
+    "org_wallet_frozen_owner_unnamed": "该组织的账户已暂停。请联系 ExTrans 支持团队，或使用您自己的余额。",
     "model_missing": "该服务不提供此模型：{{detail}}",
     "quota": "该服务的账号已没有余额：{{detail}}",
     "text_model_unset": "请在“语言与会话组成”中为翻译选择模型，或输入模型名称。",
@@ -1613,7 +1613,7 @@
     "address_invalid": "兼容服务的地址无法使用：{{detail}}"
   },
   "viewer": {
-    "title": "Sokuji 字幕",
+    "title": "ExTrans 字幕",
     "connecting": "正在连接…",
     "original": "原文",
     "enter": {
@@ -1671,7 +1671,7 @@
     },
     "shortcuts": "+ − 字号 · B 双语 · F 全屏 · End 回到当前",
     "transcript": {
-      "header": "Sokuji 字幕，保存于 {{time}}"
+      "header": "ExTrans 字幕，保存于 {{time}}"
     },
     "present": {
       "title": "用手机或电脑看字幕",
@@ -1684,7 +1684,7 @@
       "androidChrome": "安卓 Chrome 打不开？在「设置 → 应用 → Chrome → 权限 → 附近设备」里允许。",
       "watching": "在看：{{count}}",
       "fullscreen": "全屏",
-      "windowTitle": "Sokuji 投屏页",
+      "windowTitle": "ExTrans 投屏页",
       "ended": "分享已结束"
     }
   },
@@ -1904,8 +1904,8 @@
         "key": "按键",
         "held": "按住时",
         "notHeld": "没按住时",
-        "talkHeld": "Sokuji 听你说话；松开后，这一段送去翻译，对方听到译文。开了原声直通时，对方还会小声听到你的原声。",
-        "talkNotHeld": "Sokuji 不听，你说的话既不翻译，也传不到对方。",
+        "talkHeld": "ExTrans 听你说话；松开后，这一段送去翻译，对方听到译文。开了原声直通时，对方还会小声听到你的原声。",
+        "talkNotHeld": "ExTrans 不听，你说的话既不翻译，也传不到对方。",
         "translateHeld": "你说的话送去翻译，对方只听到译文，听不到你的原声。",
         "translateNotHeld": "你的原声直接传给对方，不翻译。",
         "change": "更改",
@@ -2061,7 +2061,7 @@
     "foundInNotes": "在纪要中找到",
     "foundInTitle": "在标题中找到",
     "unavailable": "无法打开历史。",
-    "unavailableNewer": "这份历史由更新版本的 Sokuji 写入。请更新 Sokuji 后再打开。",
+    "unavailableNewer": "这份历史由更新版本的 ExTrans 写入。请更新 ExTrans 后再打开。",
     "failed": "没有成功，请再试一次。",
     "me": "我",
     "other": "对方",
@@ -2175,7 +2175,7 @@
       "wallet-frozen": "你的 Kizuna AI 钱包已被冻结。",
       "not-member": "你已经不是为 Kizuna AI 付费的那个组织的成员了。",
       "too-large": "这条记录太长，Kizuna AI 没法据此写纪要。",
-      "update-required": "要用 Kizuna AI 写纪要，请先更新 Sokuji。",
+      "update-required": "要用 Kizuna AI 写纪要，请先更新 ExTrans。",
       "other": "写纪要的服务拒绝了请求。"
     },
     "notesLatestFailed": "最近一次没能写成：{{reason}}",

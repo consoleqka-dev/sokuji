@@ -62,12 +62,12 @@
     },
     "echoCancellation": "Echo Cancellation",
     "echoCancellationTooltip": {
-      "app": "Sokuji only — Removes Sokuji's translated speech if the microphone picks it up. Choose this when the microphone is a virtual cable such as BlackHole.",
+      "app": "ExTrans only — Removes ExTrans's translated speech if the microphone picks it up. Choose this when the microphone is a virtual cable such as BlackHole.",
       "browser": "Browser only — Removes what this browser plays, meeting tabs included, if the microphone picks it up. Choose this when the microphone is a virtual cable such as BlackHole carrying another app's sound.",
       "all": "All sounds — Also removes what other apps play through the speakers, such as a meeting app. A virtual cable used as the microphone carries exactly that sound, so it would go silent."
     },
     "echoCancellationMode": {
-      "app": "Sokuji only",
+      "app": "ExTrans only",
       "browser": "Browser only",
       "all": "All sounds"
     },
@@ -368,12 +368,12 @@
     "virtualMicrophone": "Virtual microphone",
     "virtualMicrophoneNotice": "Virtual Microphone Notice",
     "iUnderstand": "I understand",
-    "virtualMicWarningTitle": "This is a virtual microphone created by Sokuji.",
+    "virtualMicWarningTitle": "This is a virtual microphone created by ExTrans.",
     "virtualMicWarningText1": "Please do not select this device here. Instead, use this virtual microphone in your video conferencing applications (like Google Meet, Zoom, Microsoft Teams, etc.) to receive the live speech translation output.",
-    "virtualMicWarningText2": "For Sokuji to work properly, please select your actual physical microphone from the list.",
+    "virtualMicWarningText2": "For ExTrans to work properly, please select your actual physical microphone from the list.",
     "loopbackMicNotice": "Loopback Input Notice",
     "loopbackMicWarningTitle": "This input re-captures what this computer is playing.",
-    "loopbackMicWarningText1": "Loopback inputs like \"Stereo Mix\" or a \"Monitor of ...\" device record the system's own audio output. During a session that includes Sokuji's translated speech, Sokuji would hear and translate itself in a loop.",
+    "loopbackMicWarningText1": "Loopback inputs like \"Stereo Mix\" or a \"Monitor of ...\" device record the system's own audio output. During a session that includes ExTrans's translated speech, ExTrans would hear and translate itself in a loop.",
     "loopbackMicWarningText2": "The device stays selected in case this routing is intentional, but for normal use please pick a physical microphone instead.",
     "realVoicePassthrough": "Passthrough",
     "passthroughManagedByPushToTranslate": "In Push-to-Translate mode, passthrough is automatic — it plays at 100% volume when you're not holding the key, and stops (audio goes to translation) while you hold it.",
@@ -473,7 +473,7 @@
     "verificationEmailFailed": "Failed to send verification email. Please try again",
     "alreadyVerified": "Your email is already verified!",
     "cooldownMessage": "Please wait {{seconds}} seconds",
-    "checkYourEmail": "Verification e-mail sent. Finish it in your inbox and come back — Sokuji picks it up automatically.",
+    "checkYourEmail": "Verification e-mail sent. Finish it in your inbox and come back — ExTrans picks it up automatically.",
     "emailVerifiedToast": "E-mail verified",
     "sessionExpired": "Your session has expired. Please sign in again.",
     "forgotPassword": "Forgot Password?",
@@ -497,16 +497,16 @@
   },
   "simpleConfig": {
     "interfaceLanguage": "Interface Language",
-    "interfaceLanguageDesc": "This changes the language of Sokuji's menus and buttons. It does NOT affect which languages you can translate between.",
+    "interfaceLanguageDesc": "This changes the language of ExTrans's menus and buttons. It does NOT affect which languages you can translate between.",
     "translationLanguages": "Translation Languages",
     "translationLanguagesDesc": "Choose which language you speak (My language) and which language you want to hear the translation in (Other's language). Select \"Auto Detect\" if you're unsure which language you'll be speaking.",
     "yourLanguage": "My Language",
     "userAccount": "User Account",
     "userAccountTooltip": "For users with technical knowledge and their own API keys, you can use your own API key whether logged in or not. User Account is designed for new users who prefer a simplified setup without complex configuration.",
-    "signInRequired": "Sign up to use Sokuji's built-in translation service — no API key needed. You can also keep using your own provider and key.",
+    "signInRequired": "Sign up to use ExTrans's built-in translation service — no API key needed. You can also keep using your own provider and key.",
     "targetLanguage": "Other's Language",
     "microphone": "Microphone",
-    "microphoneDesc": "Select the microphone to capture your speech. Speak your language into this microphone, and Sokuji will translate everything it hears in real-time.",
+    "microphoneDesc": "Select the microphone to capture your speech. Speak your language into this microphone, and ExTrans will translate everything it hears in real-time.",
     "swapLanguages": "Swap languages",
     "swapNotSpoken": "The speech service does not read these languages the other way round.",
     "textOnly": "Text Only",
@@ -715,7 +715,7 @@
       "scopeLabel": "Include",
       "scopeItemAria": "{{scope}} — {{line}}",
       "scopeEmpty": "Nothing selected",
-      "headerTitle": "Sokuji conversation export",
+      "headerTitle": "ExTrans conversation export",
       "headerSessionStarted": "Session started",
       "headerExported": "Exported",
       "headerProvider": "Provider",
@@ -831,7 +831,7 @@
     "reconnectingAttempt": "Reconnecting... (attempt {{attempt}}, {{seconds}} s)"
   },
   "setup": {
-    "title": "Set up Sokuji",
+    "title": "Set up ExTrans",
     "stepOf": "Step {{current}} of {{total}}",
     "back": "Back",
     "next": "Next",
@@ -841,7 +841,7 @@
     "rerun": "Run setup again",
     "steps": {
       "language": {
-        "title": "Which language should Sokuji speak to you in?",
+        "title": "Which language should ExTrans speak to you in?",
         "desc": "This is the language of menus and buttons. You choose the languages to translate between later.",
         "label": "Interface language"
       },
@@ -958,7 +958,7 @@
       "offlineNotice": "The recognition model is downloaded after setup, from Settings → Models and storage. Translation uses Bing and speech uses Edge: nothing to download and no account; the text to translate and the translation to speak are sent to Microsoft.",
       "pendingKey": "You can add the key later in Settings → Accounts and keys. Start stays locked until it validates.",
       "pendingSignIn": "You can sign in later from the account button. Start stays locked until then.",
-      "offlineHardware": "Sokuji runs well with a GPU and enough VRAM; on CPU alone it is noticeably slower.",
+      "offlineHardware": "ExTrans runs well with a GPU and enough VRAM; on CPU alone it is noticeably slower.",
       "openaiOneKey": "This one key serves OpenAI Realtime, Translate and Live.",
       "baseUrl": "Address",
       "baseUrlPlaceholder": "Address, such as https://openrouter.ai/api/v1",
@@ -988,7 +988,7 @@
     "steps": {
       "welcome": {
         "title": "You're set up",
-        "content": "Sokuji is configured for your scenario. Here is a short look around — it takes under a minute."
+        "content": "ExTrans is configured for your scenario. Here is a short look around — it takes under a minute."
       },
       "mode-picker": {
         "title": "Translation mode",
@@ -999,7 +999,7 @@
       },
       "microphone": {
         "title": "Your microphone",
-        "content": "Your speech comes in here. The system default is already selected. Do not pick the Sokuji virtual microphone — that one is for your meeting app."
+        "content": "Your speech comes in here. The system default is already selected. Do not pick the ExTrans virtual microphone — that one is for your meeting app."
       },
       "monitor": {
         "title": "Hear yourself translated",
@@ -1008,15 +1008,15 @@
       "output-routing": {
         "title": "How the other side hears you",
         "content": "Your translated voice goes to a virtual microphone; pick it as the mic in your meeting app.",
-        "content_extension": "In Google Meet, Zoom or Teams, choose \"Sokuji Virtual Microphone\" as your microphone. Sokuji adds it to supported meeting sites automatically.",
-        "content_electronLinux": "Sokuji created a virtual microphone on this system. Choose it as the microphone in your meeting app.",
-        "content_electronOther": "You need a virtual audio cable (for example VB-Cable). Send Sokuji's output to it, and choose it as the microphone in your meeting app."
+        "content_extension": "In Google Meet, Zoom or Teams, choose \"ExTrans Virtual Microphone\" as your microphone. ExTrans adds it to supported meeting sites automatically.",
+        "content_electronLinux": "ExTrans created a virtual microphone on this system. Choose it as the microphone in your meeting app.",
+        "content_electronOther": "You need a virtual audio cable (for example VB-Cable). Send ExTrans's output to it, and choose it as the microphone in your meeting app."
       },
       "participant-source": {
         "title": "The other side's voice",
-        "content": "Sokuji listens to the other side here.",
+        "content": "ExTrans listens to the other side here.",
         "content_electron": "Choose the app to translate, or all system audio. Their original voice keeps playing as usual.",
-        "content_extension": "Sokuji translates the audio of the current tab. Their original voice keeps playing as usual."
+        "content_extension": "ExTrans translates the audio of the current tab. Their original voice keeps playing as usual."
       },
       "subtitle": {
         "title": "Subtitle mode",
@@ -1191,7 +1191,7 @@
     "gpuSoftwareOnly": "GPU acceleration unavailable — running on the CPU",
     "gpuUnavailable": "GPU acceleration unavailable",
     "gpuSlowWarning": "Local models will still work, but transcription and translation will be noticeably slower.",
-    "gpuWaylandRemedy": "On a Wayland session, Chromium cannot use the GPU for this. Starting Sokuji with --ozone-platform=x11 restores acceleration.",
+    "gpuWaylandRemedy": "On a Wayland session, Chromium cannot use the GPU for this. Starting ExTrans with --ozone-platform=x11 restores acceleration.",
     "othersGroup": "Other models",
     "requiresGpu": "Requires a GPU",
     "licenseConsent": {
@@ -1202,7 +1202,7 @@
       "viewLicense": "View the full license text",
       "nonCommercial": "This license permits non-commercial use only — do not use this model in any commercial product or service.",
       "restrictedTerms": "This is not an open-source license. It sets conditions on how the model and its output may be used — read the full text before you rely on it.",
-      "disclaimer": "Sokuji is not affiliated with the model authors and has no relationship with them. This integration is unofficial and provided as-is, without warranty of any kind.",
+      "disclaimer": "ExTrans is not affiliated with the model authors and has no relationship with them. This integration is unofficial and provided as-is, without warranty of any kind.",
       "attribution": "Attribution: {{attribution}}",
       "cancel": "Cancel",
       "accept": "I understand — non-commercial only",
@@ -1284,9 +1284,9 @@
     "linuxMigrateTitle": "New version v{{version}} available"
   },
   "audioSystem": {
-    "pactlMissingBody": "pactl (PulseAudio command-line tools) was not found, so Sokuji couldn't set up its virtual microphone/speaker. Install it, then retry:",
+    "pactlMissingBody": "pactl (PulseAudio command-line tools) was not found, so ExTrans couldn't set up its virtual microphone/speaker. Install it, then retry:",
     "installCommand": "sudo apt install pulseaudio-utils",
-    "unavailableBody": "Sokuji couldn't set up its virtual microphone/speaker. Make sure PulseAudio or PipeWire is running.",
+    "unavailableBody": "ExTrans couldn't set up its virtual microphone/speaker. Make sure PulseAudio or PipeWire is running.",
     "retry": "Retry",
     "retrying": "Retrying...",
     "macDriverNotLoadedBody": "Sokuji's virtual microphone is installed, but macOS hasn't loaded it, so meeting apps can't hear your translation. Repair it; macOS will ask for your administrator password.",
@@ -1297,12 +1297,12 @@
   },
   "vbCable": {
     "title": "Let the other side hear the translation",
-    "body": "Meeting apps take the spoken translation through a virtual microphone. On Windows that is VB-CABLE, a free driver from VB-Audio. Everything else in Sokuji works without it.",
+    "body": "Meeting apps take the spoken translation through a virtual microphone. On Windows that is VB-CABLE, a free driver from VB-Audio. Everything else in ExTrans works without it.",
     "install": "Install VB-CABLE",
     "about": "About VB-CABLE",
     "adminOnce": "Windows asks for administrator permission once.",
     "installingTitle": "Installing VB-CABLE…",
-    "installingBody": "Approve the Windows prompt, then click \"Install Driver\" in the VB-CABLE window. Sokuji picks it up as soon as it is installed.",
+    "installingBody": "Approve the Windows prompt, then click \"Install Driver\" in the VB-CABLE window. ExTrans picks it up as soon as it is installed.",
     "installingBusy": "Installing…",
     "failedTitle": "VB-CABLE wasn't installed",
     "failedBody": "The installation was cancelled or didn't finish. Try again, or install it yourself from VB-Audio's website.",
@@ -1315,7 +1315,7 @@
     "storeStep3": "Click \"Install Driver\", then restart your PC.",
     "openWebsite": "Open VB-Audio website",
     "checkAgain": "Check again",
-    "picksUp": "Sokuji picks it up automatically once it is installed.",
+    "picksUp": "ExTrans picks it up automatically once it is installed.",
     "notNow": "Not now"
   },
   "subtitle": {
@@ -1502,7 +1502,7 @@
     "previewChargedToBalance": "Previewing synthesizes a short sample and is charged to your account balance.",
     "previewFailed": "Could not synthesize a preview for this voice.",
     "renameFailed": "Could not rename this voice.",
-    "recordStartFailed": "Could not start recording. Check that a microphone is connected and that Sokuji may use it.",
+    "recordStartFailed": "Could not start recording. Check that a microphone is connected and that ExTrans may use it.",
     "previewLanguageUnsupported": "This model has no sample sentence in a language it speaks.",
     "previewNeedsBalance": "Top up your balance to preview this voice.",
     "previewNeedsSessionStopped": "Stop the session to preview this voice.",
@@ -1522,10 +1522,10 @@
     "refreshList": "Refresh voice list"
   },
   "echoNotice": {
-    "ttsEcho": "Your speakers are feeding Sokuji's translated speech back into the microphone.",
+    "ttsEcho": "Your speakers are feeding ExTrans's translated speech back into the microphone.",
     "meetingEcho": "Meeting audio from your speakers is reaching the microphone.",
     "farEndEcho": "A participant's device is echoing your translation back into the meeting.",
-    "selfCapture": "Other's audio source is capturing Sokuji's own audio.",
+    "selfCapture": "Other's audio source is capturing ExTrans's own audio.",
     "routingLoop": "The selected input device is capturing this computer's playback directly.",
     "actionHeadphones": "Using headphones will break the loop.",
     "actionAskRemote": "Ask that participant to use headphones.",
@@ -1574,7 +1574,7 @@
     "lineup_source_not_fixed": "{{provider}} needs to know the spoken language. Choose it instead of “Auto Detect”, or choose another translation service.",
     "lineup_pair_not_translated": "{{provider}} does not translate {{source}} into {{target}}. Choose other languages, or another translation service.",
     "lineup_face_to_face_apart": "Face-to-face needs one service to transcribe and translate. Choose {{provider}} for translation too, or set “Other side” to “In a meeting”.",
-    "session_in_use": "Another window or device is using this account. Stop the session there, or if Sokuji just closed unexpectedly, try again in a minute.",
+    "session_in_use": "Another window or device is using this account. Stop the session there, or if ExTrans just closed unexpectedly, try again in a minute.",
     "previous_session_ending": "Your previous session is still ending. Please try again in a minute.",
     "app_capture_lost_using_system_audio": "The app capture stopped, so all system audio is being translated instead.",
     "app_capture_monitor_missing": "The app capture didn't start, so all system audio is being translated instead.",
@@ -1603,7 +1603,7 @@
     "mic_now_using": "Now using the microphone “{{device}}”.",
     "mic_in_use": "The microphone “{{device}}” is in use by {{apps}}. Close {{apps}} and start again, or choose another microphone.",
     "mic_unreadable": "Windows could not open the microphone “{{device}}”. Another app may be holding it, or its driver stopped responding. Close apps that use it or reconnect it, then start again.",
-    "mic_blocked": "Windows is not letting Sokuji use the microphone. Turn on microphone access for desktop apps in Settings › Privacy & security › Microphone, then start again.",
+    "mic_blocked": "Windows is not letting ExTrans use the microphone. Turn on microphone access for desktop apps in Settings › Privacy & security › Microphone, then start again.",
     "speaker_tts_missing": "Translation the other side hears is text only: no speech model speaks {{target}}.",
     "participant_tts_missing": "Translation I hear is text only: no speech model speaks {{target}}.",
     "participant_tts_over_budget": "Translation I hear is text only: not enough memory to load the other side's speech model too.",
@@ -1616,8 +1616,8 @@
     "not_org_member_unnamed": "You're no longer in your organization.",
     "org_wallet_frozen": "{{organization}}'s account is paused. Contact its owner, or use your own balance.",
     "org_wallet_frozen_unnamed": "The organization's account is paused. Contact its owner, or use your own balance.",
-    "org_wallet_frozen_owner": "{{organization}}'s account is paused. Contact Sokuji support, or use your own balance.",
-    "org_wallet_frozen_owner_unnamed": "The organization's account is paused. Contact Sokuji support, or use your own balance.",
+    "org_wallet_frozen_owner": "{{organization}}'s account is paused. Contact ExTrans support, or use your own balance.",
+    "org_wallet_frozen_owner_unnamed": "The organization's account is paused. Contact ExTrans support, or use your own balance.",
     "model_missing": "The service does not offer this model: {{detail}}",
     "quota": "The service account has no credit left: {{detail}}",
     "text_model_unset": "Choose a model for the translation, or type its name, in “Languages and line-up”.",
@@ -1658,7 +1658,7 @@
     "errorListen": "Could not start sharing: {{reason}}"
   },
   "viewer": {
-    "title": "Sokuji captions",
+    "title": "ExTrans captions",
     "connecting": "Connecting…",
     "original": "Original",
     "enter": {
@@ -1716,7 +1716,7 @@
     },
     "shortcuts": "+ − text size · B both languages · F full screen · End back to live",
     "transcript": {
-      "header": "Sokuji captions, saved {{time}}"
+      "header": "ExTrans captions, saved {{time}}"
     },
     "present": {
       "title": "Read the captions on your phone or computer",
@@ -1729,7 +1729,7 @@
       "androidChrome": "Android Chrome won't open it? Allow it in Settings → Apps → Chrome → Permissions → Nearby devices.",
       "watching": "Watching: {{count}}",
       "fullscreen": "Full screen",
-      "windowTitle": "Sokuji projector page",
+      "windowTitle": "ExTrans projector page",
       "ended": "Sharing has ended"
     }
   },
@@ -1904,8 +1904,8 @@
         "key": "Key",
         "held": "While held",
         "notHeld": "While not held",
-        "talkHeld": "Sokuji listens; when you let go, that stretch is translated and the other side hears the translation. With Passthrough on, the other side also hears your own voice, quietly.",
-        "talkNotHeld": "Sokuji does not listen; nothing you say is translated or reaches the other side.",
+        "talkHeld": "ExTrans listens; when you let go, that stretch is translated and the other side hears the translation. With Passthrough on, the other side also hears your own voice, quietly.",
+        "talkNotHeld": "ExTrans does not listen; nothing you say is translated or reaches the other side.",
         "translateHeld": "What you say is translated; the other side hears only the translation, not your own voice.",
         "translateNotHeld": "Your own voice goes straight to the other side, untranslated.",
         "change": "Change",
@@ -2061,7 +2061,7 @@
     "foundInNotes": "Found in the notes",
     "foundInTitle": "Found in the title",
     "unavailable": "History could not be opened.",
-    "unavailableNewer": "This History was written by a newer version of Sokuji. Update Sokuji to open it.",
+    "unavailableNewer": "This History was written by a newer version of ExTrans. Update ExTrans to open it.",
     "failed": "That did not work. Try again.",
     "me": "Me",
     "other": "Other",
@@ -2175,7 +2175,7 @@
       "wallet-frozen": "Your Kizuna AI wallet is frozen.",
       "not-member": "You are no longer a member of the organization that pays for Kizuna AI.",
       "too-large": "This record is too long for Kizuna AI to write notes from.",
-      "update-required": "Update Sokuji to write notes with Kizuna AI.",
+      "update-required": "Update ExTrans to write notes with Kizuna AI.",
       "other": "The notes service refused the request."
     },
     "notesLatestFailed": "The latest attempt could not be written: {{reason}}",

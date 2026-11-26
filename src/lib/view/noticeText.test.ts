@@ -66,7 +66,7 @@ describe('noticeText', () => {
       .toBe('The microphone “Microphone (AU05)” is in use by Zoom Meetings. Close Zoom Meetings and start again, or choose another microphone.');
     expect(noticeText(plainT, { code: MIC_UNREADABLE, message: 'x', params: { device: 'Microphone (AU05)' } }))
       .toMatch(/^Windows could not open the microphone “Microphone \(AU05\)”\./);
-    expect(noticeText(plainT, { code: MIC_BLOCKED, message: 'x' })).toMatch(/^Windows is not letting Sokuji use the microphone\./);
+    expect(noticeText(plainT, { code: MIC_BLOCKED, message: 'x' })).toMatch(/^Windows is not letting ExTrans use the microphone\./);
   });
 
   describe('a line-up that cannot run', () => {
@@ -204,7 +204,7 @@ describe('noticeText', () => {
 
   it("words a managed lease's refusal by what blocked it: a session elsewhere, or the previous one still ending", () => {
     expect(noticeText(t, { code: 'session_in_use', message: 'x' }))
-      .toBe('notices.session_in_use|Another window or device is using this account. Stop the session there, or if Sokuji just closed unexpectedly, try again in a minute.');
+      .toBe('notices.session_in_use|Another window or device is using this account. Stop the session there, or if ExTrans just closed unexpectedly, try again in a minute.');
     expect(noticeText(t, { code: 'previous_session_ending', message: 'x' }))
       .toBe('notices.previous_session_ending|Your previous session is still ending. Please try again in a minute.');
   });
@@ -348,7 +348,7 @@ describe('organization refusal notices', () => {
     expect(noticeText(plainT, { code: 'org_wallet_frozen', message: 'x', params: { ...org, role: 'member' } }))
       .toBe("Acme's account is paused. Contact its owner, or use your own balance.");
     expect(noticeText(plainT, { code: 'org_wallet_frozen', message: 'x', params: { ...org, role: 'owner' } }))
-      .toBe("Acme's account is paused. Contact Sokuji support, or use your own balance.");
+      .toBe("Acme's account is paused. Contact ExTrans support, or use your own balance.");
   });
   it('does not crash on a stale quota with no organization', () => {
     expect(noticeText(plainT, { code: 'not_org_member', message: 'x' })).toBe("You're no longer in your organization.");
@@ -356,7 +356,7 @@ describe('organization refusal notices', () => {
   });
   it('keeps the owner wording when the name is missing, through the unnamed variant', () => {
     expect(noticeText(plainT, { code: 'org_wallet_frozen', message: 'x', params: { role: 'owner' } }))
-      .toBe("The organization's account is paused. Contact Sokuji support, or use your own balance.");
+      .toBe("The organization's account is paused. Contact ExTrans support, or use your own balance.");
   });
   it('words an owner with no organization name as the owner, so the text matches the Top up action', () => {
     expect(noticeText(plainT, { code: 'org_insufficient_balance', message: 'x', params: { role: 'owner' } }))

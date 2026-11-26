@@ -1,12 +1,12 @@
 🗣️ Nói bằng ngôn ngữ của bạn. Được hiểu bằng ngôn ngữ của họ. Ngay lập tức.
 
-Sokuji là công cụ dịch giọng nói thời gian thực được hỗ trợ bởi AI, hoạt động trực tiếp trong các cuộc họp video của bạn — không cần ứng dụng bổ sung, không cần sao chép-dán, không có khoảng lặng khó xử. Chỉ cần nói tự nhiên, lời nói của bạn sẽ được dịch và phát thành tiếng bằng ngôn ngữ của đồng nghiệp, trong thời gian thực.
+ExTrans là công cụ dịch giọng nói thời gian thực được hỗ trợ bởi AI, hoạt động trực tiếp trong các cuộc họp video của bạn — không cần ứng dụng bổ sung, không cần sao chép-dán, không có khoảng lặng khó xử. Chỉ cần nói tự nhiên, lời nói của bạn sẽ được dịch và phát thành tiếng bằng ngôn ngữ của đồng nghiệp, trong thời gian thực.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ✅ TẠI SAO CHỌN SOKUJI?
 
-Khác với các công cụ dịch văn bản hay bot họp cồng kềnh, Sokuji cung cấp dịch giọng nói sang giọng nói, hòa nhập tự nhiên vào cuộc trò chuyện của bạn:
+Khác với các công cụ dịch văn bản hay bot họp cồng kềnh, ExTrans cung cấp dịch giọng nói sang giọng nói, hòa nhập tự nhiên vào cuộc trò chuyện của bạn:
 
 • Dịch giọng nói thời gian thực — Lời nói của bạn được dịch VÀ đọc thành tiếng, không chỉ hiển thị dưới dạng văn bản
 • Micro ảo — Người khác nghe bản dịch trực tiếp qua âm thanh cuộc họp, không cần thiết lập gì ở phía họ
@@ -20,15 +20,15 @@ Khác với các công cụ dịch văn bản hay bot họp cồng kềnh, Sokuj
 
 🖥️ HOẠT ĐỘNG Ở NƠI BẠN LÀM VIỆC
 
-Sokuji hoạt động mượt mà với tất cả các nền tảng họp video chính trên web. Dù là cuộc họp nhóm, cuộc gọi với khách hàng hay hội nghị trực tuyến, chỉ cần chọn "Sokuji Virtual Microphone" trong cài đặt âm thanh cuộc họp và bạn đã sẵn sàng. Sokuji hỗ trợ bất kỳ công cụ họp trên web nào cho phép chọn micro.
+ExTrans hoạt động mượt mà với tất cả các nền tảng họp video chính trên web. Dù là cuộc họp nhóm, cuộc gọi với khách hàng hay hội nghị trực tuyến, chỉ cần chọn "ExTrans Virtual Microphone" trong cài đặt âm thanh cuộc họp và bạn đã sẵn sàng. ExTrans hỗ trợ bất kỳ công cụ họp trên web nào cho phép chọn micro.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🚀 CÁCH HOẠT ĐỘNG (3 Bước Đơn Giản)
 
 1. Mở cuộc họp video trên bất kỳ nền tảng được hỗ trợ nào
-2. Nhấp vào biểu tượng Sokuji và cấu hình nhà cung cấp AI & ngôn ngữ
-3. Chọn "Sokuji Virtual Microphone" làm micro — xong!
+2. Nhấp vào biểu tượng ExTrans và cấu hình nhà cung cấp AI & ngôn ngữ
+3. Chọn "ExTrans Virtual Microphone" làm micro — xong!
 
 Đồng nghiệp của bạn tự động nghe giọng nói đã dịch. Không cần cài đặt hay thiết lập gì ở phía họ.
 
@@ -48,7 +48,7 @@ Sokuji hoạt động mượt mà với tất cả các nền tảng họp video
 
 🔒 QUYỀN RIÊNG TƯ LÀ TRÊN HẾT — GIỌNG NÓI CỦA BẠN THUỘC VỀ BẠN
 
-Sokuji được xây dựng để dữ liệu giọng nói của bạn KHÔNG BAO GIỜ chạm đến máy chủ của chúng tôi. Bằng kiến trúc, không phải bằng chính sách.
+ExTrans được xây dựng để dữ liệu giọng nói của bạn KHÔNG BAO GIỜ chạm đến máy chủ của chúng tôi. Bằng kiến trúc, không phải bằng chính sách.
 
 • Không thu thập dữ liệu — Chúng tôi không có máy chủ nào nhận âm thanh của bạn. Về mặt kỹ thuật, chúng tôi không thể nghe cuộc trò chuyện của bạn
 • Chế độ AI ngoại tuyến — Sử dụng mô hình AI tích hợp chạy 100% trên thiết bị của bạn. Giọng nói không bao giờ rời khỏi máy tính. Hoàn toàn miễn phí
@@ -70,6 +70,6 @@ Sokuji được xây dựng để dữ liệu giọng nói của bạn KHÔNG BA
 
 Chúng tôi rất muốn nghe từ bạn!
 • Báo cáo vấn đề: github.com/kizuna-ai-lab/sokuji/issues
-• Cho chúng tôi một ngôi sao trên GitHub nếu bạn thấy Sokuji hữu ích ⭐
+• Cho chúng tôi một ngôi sao trên GitHub nếu bạn thấy ExTrans hữu ích ⭐
 
 Made with ❤️ by Kizuna AI Lab

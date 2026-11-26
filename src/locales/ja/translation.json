@@ -62,12 +62,12 @@
     },
     "echoCancellation": "エコーキャンセル",
     "echoCancellationTooltip": {
-      "app": "Sokuji のみ — マイクが拾った Sokuji の翻訳音声を除去します。マイクが BlackHole などの仮想オーディオデバイスの場合はこちらを選んでください。",
+      "app": "ExTrans のみ — マイクが拾った ExTrans の翻訳音声を除去します。マイクが BlackHole などの仮想オーディオデバイスの場合はこちらを選んでください。",
       "browser": "ブラウザのみ — マイクが拾ったこのブラウザの音（会議のタブを含む）を除去します。マイクが他のアプリの音を運ぶ BlackHole などの仮想オーディオデバイスの場合はこちらを選んでください。",
       "all": "すべての音 — 会議アプリなど、他のアプリがスピーカーから再生する音も除去します。マイクとして使う仮想オーディオデバイスはまさにその音を運ぶため、無音になります。"
     },
     "echoCancellationMode": {
-      "app": "Sokuji のみ",
+      "app": "ExTrans のみ",
       "browser": "ブラウザのみ",
       "all": "すべての音"
     },
@@ -368,9 +368,9 @@
     "virtualMicrophone": "仮想マイク",
     "virtualMicrophoneNotice": "仮想マイクについて",
     "iUnderstand": "理解しました",
-    "virtualMicWarningTitle": "これはSokujiによって作成された仮想マイクです。",
+    "virtualMicWarningTitle": "これはExTransによって作成された仮想マイクです。",
     "virtualMicWarningText1": "このデバイスをここで選択しないでください。代わりに、ビデオ会議アプリケーション（Google Meet、Zoom、Microsoft Teamsなど）でこの仮想マイクを使用して、リアルタイム音声翻訳出力を受信してください。",
-    "virtualMicWarningText2": "Sokujiが正常に動作するには、リストから実際の物理マイクを選択してください。",
+    "virtualMicWarningText2": "ExTransが正常に動作するには、リストから実際の物理マイクを選択してください。",
     "realVoicePassthrough": "原音パススルー",
     "passthroughManagedByPushToTranslate": "プッシュトゥトランスレートでは原音声の直通が自動で管理されます。キーを押していない間は100%の音量で直通し、押している間は録音・翻訳が行われ直通しません。",
     "speechTitle": "音声",
@@ -427,7 +427,7 @@
     "participantFellBackToSystemAudio": "選択したアプリケーションのキャプチャが停止したため、代わりにシステム音声全体が翻訳されています。範囲を絞り直すには、アプリケーションをもう一度選択してください。",
     "loopbackMicNotice": "ループバック入力の注意",
     "loopbackMicWarningTitle": "この入力はこのコンピューターの再生音を再取り込みします。",
-    "loopbackMicWarningText1": "「ステレオミキサー」や「Monitor of ...」のようなループバック入力は、システム自身の音声出力を録音します。Sokuji の翻訳音声を含むセッションでは、Sokuji が自分自身を聞き取り、ループ状に翻訳してしまいます。",
+    "loopbackMicWarningText1": "「ステレオミキサー」や「Monitor of ...」のようなループバック入力は、システム自身の音声出力を録音します。ExTrans の翻訳音声を含むセッションでは、ExTrans が自分自身を聞き取り、ループ状に翻訳してしまいます。",
     "loopbackMicWarningText2": "意図的なルーティングの場合に備えてデバイスは選択されたままにしますが、通常の利用では物理マイクを選んでください。",
     "participantNoAudioYet": "選択したソースからまだ音声が届いていません。再生中なのに翻訳されない場合は、システム設定 > プライバシーとセキュリティ > システムオーディオ録音のみ で Sokuji を許可し（macOS）、セッションをもう一度開始してください。",
     "audioCaptureUnprovenNotice": "まだ音声を取得できていません",
@@ -473,7 +473,7 @@
     "verificationEmailFailed": "認証メールの送信に失敗しました。もう一度お試しください",
     "alreadyVerified": "メールは既に認証されています！",
     "cooldownMessage": "{{seconds}}秒お待ちください",
-    "checkYourEmail": "認証メールを送信しました。受信トレイで認証を完了して戻ってきてください — Sokujiが自動的に検知します。",
+    "checkYourEmail": "認証メールを送信しました。受信トレイで認証を完了して戻ってきてください — ExTransが自動的に検知します。",
     "emailVerifiedToast": "メール認証済み",
     "sessionExpired": "セッションの有効期限が切れました。もう一度サインインしてください。",
     "forgotPassword": "パスワードをお忘れですか？",
@@ -497,16 +497,16 @@
   },
   "simpleConfig": {
     "interfaceLanguage": "インターフェース言語",
-    "interfaceLanguageDesc": "これはSokujiのメニューとボタンの言語を変更します。翻訳可能な言語には影響しません。",
+    "interfaceLanguageDesc": "これはExTransのメニューとボタンの言語を変更します。翻訳可能な言語には影響しません。",
     "translationLanguages": "翻訳言語",
     "translationLanguagesDesc": "話す言語（自分の言語）と翻訳を聞きたい言語（相手の言語）を選択します。自分がどの言語を話すか不明な場合は「自動検出」を選択してください。",
     "yourLanguage": "自分の言語",
     "userAccount": "ユーザーアカウント",
     "userAccountTooltip": "技術的な知識と独自のAPIキーをお持ちのユーザーは、ログインの有無に関わらず独自のAPIキーを使用できます。ユーザーアカウントは、複雑な設定なしで簡単にセットアップしたい新規ユーザー向けに設計されています。",
-    "signInRequired": "サインアップすると、APIキーなしでSokuji内蔵の翻訳サービスを利用できます。これまで通り、自分のプロバイダーとAPIキーを使い続けることもできます。",
+    "signInRequired": "サインアップすると、APIキーなしでExTrans内蔵の翻訳サービスを利用できます。これまで通り、自分のプロバイダーとAPIキーを使い続けることもできます。",
     "targetLanguage": "相手の言語",
     "microphone": "マイクロフォン",
-    "microphoneDesc": "音声を取り込むマイクを選択してください。このマイクに向かってあなたの言語で話すと、Sokujiがリアルタイムで聞こえるすべてを翻訳します。",
+    "microphoneDesc": "音声を取り込むマイクを選択してください。このマイクに向かってあなたの言語で話すと、ExTransがリアルタイムで聞こえるすべてを翻訳します。",
     "swapLanguages": "言語を入れ替え",
     "swapNotSpoken": "この音声サービスは、これらの言語を逆向きには読み上げられません。",
     "textOnly": "テキストのみ",
@@ -715,7 +715,7 @@
       "scopeLabel": "含める",
       "scopeItemAria": "{{scope}} — {{line}}",
       "scopeEmpty": "何も選択されていません",
-      "headerTitle": "Sokuji 会話エクスポート",
+      "headerTitle": "ExTrans 会話エクスポート",
       "headerSessionStarted": "セッション開始",
       "headerExported": "エクスポート日時",
       "headerProvider": "プロバイダー",
@@ -959,7 +959,7 @@
     "gpuSoftwareOnly": "GPU アクセラレーションを利用できません — CPU で実行中",
     "gpuUnavailable": "GPU アクセラレーションを利用できません",
     "gpuSlowWarning": "ローカルモデルは動作しますが、文字起こしと翻訳は明らかに遅くなります。",
-    "gpuWaylandRemedy": "Wayland セッションでは Chromium が GPU を利用できません。--ozone-platform=x11 を付けて Sokuji を起動すると高速化が戻ります。",
+    "gpuWaylandRemedy": "Wayland セッションでは Chromium が GPU を利用できません。--ozone-platform=x11 を付けて ExTrans を起動すると高速化が戻ります。",
     "othersGroup": "その他のモデル",
     "requiresGpu": "GPUが必要です",
     "licenseConsent": {
@@ -970,7 +970,7 @@
       "viewLicense": "ライセンス全文を表示",
       "nonCommercial": "このライセンスは非商用利用のみを許可しています。商用の製品やサービスでこのモデルを使用しないでください。",
       "restrictedTerms": "これはオープンソースライセンスではありません。モデルとその出力の使い方に条件が付いています。利用を前提にする前に全文をお読みください。",
-      "disclaimer": "Sokuji はモデルの作者と提携しておらず、いかなる関係もありません。この統合は非公式であり、現状のまま、いかなる保証もなく提供されます。",
+      "disclaimer": "ExTrans はモデルの作者と提携しておらず、いかなる関係もありません。この統合は非公式であり、現状のまま、いかなる保証もなく提供されます。",
       "attribution": "帰属表示:{{attribution}}",
       "cancel": "キャンセル",
       "accept": "理解しました — 非商用のみ",
@@ -1052,9 +1052,9 @@
     "linuxMigrateTitle": "新しいバージョン v{{version}} が利用できます"
   },
   "audioSystem": {
-    "pactlMissingBody": "pactl（PulseAudio のコマンドラインツール）が見つからなかったため、Sokuji は仮想マイク/スピーカーを設定できませんでした。インストールしてから再試行してください：",
+    "pactlMissingBody": "pactl（PulseAudio のコマンドラインツール）が見つからなかったため、ExTrans は仮想マイク/スピーカーを設定できませんでした。インストールしてから再試行してください：",
     "installCommand": "sudo apt install pulseaudio-utils",
-    "unavailableBody": "Sokuji は仮想マイク/スピーカーを設定できませんでした。PulseAudio または PipeWire が実行されていることを確認してください。",
+    "unavailableBody": "ExTrans は仮想マイク/スピーカーを設定できませんでした。PulseAudio または PipeWire が実行されていることを確認してください。",
     "retry": "再試行",
     "retrying": "再試行中...",
     "macDriverNotLoadedBody": "Sokuji の仮想マイクはインストールされていますが、macOS に読み込まれていないため、会議アプリに翻訳が届きません。修復すると、macOS が管理者パスワードを求めます。",
@@ -1065,12 +1065,12 @@
   },
   "vbCable": {
     "title": "相手に翻訳を聞かせる",
-    "body": "会議アプリは、音声の翻訳を仮想マイク経由で受け取ります。Windows では VB-Audio の無料ドライバー VB-CABLE がその役割を担います。これがなくても、Sokuji のほかの機能はそのまま使えます。",
+    "body": "会議アプリは、音声の翻訳を仮想マイク経由で受け取ります。Windows では VB-Audio の無料ドライバー VB-CABLE がその役割を担います。これがなくても、ExTrans のほかの機能はそのまま使えます。",
     "install": "VB-CABLE をインストール",
     "about": "VB-CABLE について",
     "adminOnce": "Windows が一度だけ管理者の許可を求めます。",
     "installingTitle": "VB-CABLE をインストールしています…",
-    "installingBody": "Windows の確認画面で許可してから、VB-CABLE のウィンドウで「Install Driver」をクリックしてください。インストールが終わると Sokuji がすぐに認識します。",
+    "installingBody": "Windows の確認画面で許可してから、VB-CABLE のウィンドウで「Install Driver」をクリックしてください。インストールが終わると ExTrans がすぐに認識します。",
     "installingBusy": "インストール中…",
     "failedTitle": "VB-CABLE はインストールされませんでした",
     "failedBody": "インストールがキャンセルされたか、完了しませんでした。もう一度試すか、VB-Audio のウェブサイトからご自身でインストールしてください。",
@@ -1083,7 +1083,7 @@
     "storeStep3": "「Install Driver」をクリックしてから、PC を再起動します。",
     "openWebsite": "VB-Audio のウェブサイトを開く",
     "checkAgain": "もう一度確認",
-    "picksUp": "インストールされると Sokuji が自動で認識します。",
+    "picksUp": "インストールされると ExTrans が自動で認識します。",
     "notNow": "今はしない"
   },
   "subtitle": {
@@ -1182,7 +1182,7 @@
     "previewChargedToBalance": "試聴すると短いサンプルが合成され、アカウントの残高から差し引かれます。",
     "previewFailed": "この音声のプレビューを合成できませんでした。",
     "renameFailed": "この音声の名前を変更できませんでした。",
-    "recordStartFailed": "録音を開始できませんでした。マイクが接続され、Sokuji にマイクの使用が許可されているか確認してください。",
+    "recordStartFailed": "録音を開始できませんでした。マイクが接続され、ExTrans にマイクの使用が許可されているか確認してください。",
     "previewLanguageUnsupported": "このモデルには、話せる言語のサンプル文がありません。",
     "previewNeedsBalance": "この音声を試聴するには残高をチャージしてください。",
     "previewNeedsSessionStopped": "この音声を試聴するにはセッションを終了してください。",
@@ -1290,10 +1290,10 @@
     }
   },
   "echoNotice": {
-    "ttsEcho": "スピーカーから出た Sokuji の翻訳音声がマイクに回り込んでいます。",
+    "ttsEcho": "スピーカーから出た ExTrans の翻訳音声がマイクに回り込んでいます。",
     "meetingEcho": "スピーカーから出た会議の音声がマイクに届いています。",
     "farEndEcho": "参加者のデバイスがあなたの翻訳を会議にエコーとして返しています。",
-    "selfCapture": "相手の音声ソースが Sokuji 自身の音声を取り込んでいます。",
+    "selfCapture": "相手の音声ソースが ExTrans 自身の音声を取り込んでいます。",
     "routingLoop": "選択中の入力デバイスがこのコンピューターの再生音を直接取り込んでいます。",
     "actionHeadphones": "ヘッドホンを使うとループを断ち切れます。",
     "actionAskRemote": "その参加者にヘッドホンの使用を依頼してください。",
@@ -1315,7 +1315,7 @@
     "clearAllKeepsPicks": "選択内容は保存され、モデルを再度ダウンロードすると復元されます。"
   },
   "setup": {
-    "title": "Sokuji のセットアップ",
+    "title": "ExTrans のセットアップ",
     "stepOf": "ステップ {{current}} / {{total}}",
     "back": "戻る",
     "next": "次へ",
@@ -1325,7 +1325,7 @@
     "rerun": "セットアップをやり直す",
     "steps": {
       "language": {
-        "title": "Sokuji の表示言語は？",
+        "title": "ExTrans の表示言語は？",
         "desc": "メニューやボタンの言語です。翻訳する言語は後で選びます。",
         "label": "表示言語"
       },
@@ -1442,7 +1442,7 @@
       "ownKeyDesc": "このキーはこの端末にだけ保存され、提供元へはこの端末から直接接続します。Kizuna AI に渡ることはありません。利用料は提供元にお支払いいただきます。",
       "guide": "キーの取得方法",
       "onFile": "キーは保存済みです。空欄のままにすると、そのまま使われます。",
-      "offlineHardware": "GPU と十分な VRAM があれば Sokuji は快適に動きます。CPU のみでは明らかに遅くなります。",
+      "offlineHardware": "GPU と十分な VRAM があれば ExTrans は快適に動きます。CPU のみでは明らかに遅くなります。",
       "openaiOneKey": "このキー 1 つで OpenAI Realtime・Translate・Live のすべてに使えます。",
       "baseUrl": "アドレス",
       "baseUrlPlaceholder": "アドレス（例: https://openrouter.ai/api/v1）",
@@ -1472,7 +1472,7 @@
     "steps": {
       "welcome": {
         "title": "セットアップ完了",
-        "content": "Sokuji はあなたのシナリオに合わせて設定されました。1 分足らずで画面を案内します。"
+        "content": "ExTrans はあなたのシナリオに合わせて設定されました。1 分足らずで画面を案内します。"
       },
       "mode-picker": {
         "title": "翻訳モード",
@@ -1483,7 +1483,7 @@
       },
       "microphone": {
         "title": "あなたのマイク",
-        "content": "あなたの声はここから入ります。システム既定のデバイスが選ばれています。Sokuji 仮想マイクは選ばないでください——それは会議アプリ用です。"
+        "content": "あなたの声はここから入ります。システム既定のデバイスが選ばれています。ExTrans 仮想マイクは選ばないでください——それは会議アプリ用です。"
       },
       "monitor": {
         "title": "翻訳された自分の声を聞く",
@@ -1492,13 +1492,13 @@
       "output-routing": {
         "title": "相手にはどう聞こえるか",
         "content": "翻訳音声は仮想マイクに送られます。会議アプリでそれをマイクとして選んでください。",
-        "content_extension": "Google Meet、Zoom、Teams で「Sokuji Virtual Microphone」をマイクに選んでください。対応する会議サイトには Sokuji が自動で追加します。",
-        "content_electronLinux": "Sokuji がこのシステムに仮想マイクを作成しました。会議アプリでそれをマイクに選んでください。",
-        "content_electronOther": "仮想オーディオケーブル（例：VB-Cable）が必要です。Sokuji の出力をそこへ送り、会議アプリでそれをマイクに選んでください。"
+        "content_extension": "Google Meet、Zoom、Teams で「ExTrans Virtual Microphone」をマイクに選んでください。対応する会議サイトには ExTrans が自動で追加します。",
+        "content_electronLinux": "ExTrans がこのシステムに仮想マイクを作成しました。会議アプリでそれをマイクに選んでください。",
+        "content_electronOther": "仮想オーディオケーブル（例：VB-Cable）が必要です。ExTrans の出力をそこへ送り、会議アプリでそれをマイクに選んでください。"
       },
       "participant-source": {
         "title": "相手の声",
-        "content": "Sokuji はここで相手の声を聞きます。",
+        "content": "ExTrans はここで相手の声を聞きます。",
         "content_electron": "翻訳するアプリ、またはシステム音声全体を選びます。相手の元の声はそのまま流れます。",
         "content_extension": "現在のタブの音声を翻訳します。相手の元の声はそのまま流れます。"
       },
@@ -1562,7 +1562,7 @@
     "lineup_source_not_fixed": "{{provider}} には話される言語の指定が必要です。「自動検出」の代わりに言語を選ぶか、別の翻訳サービスを選んでください。",
     "lineup_pair_not_translated": "{{provider}} は {{source}} → {{target}} の翻訳に対応していません。別の言語を選ぶか、別の翻訳サービスを選んでください。",
     "lineup_face_to_face_apart": "「対面」では、文字起こしと翻訳を1つのサービスで行う必要があります。翻訳にも {{provider}} を選ぶか、「相手の場所」を「オンライン会議」にしてください。",
-    "session_in_use": "別のウィンドウまたはデバイスがこのアカウントを使用しています。そちらでセッションを停止するか、Sokuji が予期せず終了した直後の場合は、1 分ほどしてから再試行してください。",
+    "session_in_use": "別のウィンドウまたはデバイスがこのアカウントを使用しています。そちらでセッションを停止するか、ExTrans が予期せず終了した直後の場合は、1 分ほどしてから再試行してください。",
     "previous_session_ending": "前回のセッションはまだ終了処理中です。1 分ほどしてから再試行してください。",
     "app_capture_lost_using_system_audio": "アプリのキャプチャが停止したため、代わりにシステム音声全体が翻訳されています。",
     "app_capture_monitor_missing": "アプリのキャプチャが開始しなかったため、代わりにシステム音声全体が翻訳されています。",
@@ -1591,7 +1591,7 @@
     "mic_now_using": "マイク「{{device}}」を使用しています。",
     "mic_in_use": "マイク「{{device}}」は{{apps}}が使用中です。{{apps}}を終了してからもう一度開始するか、別のマイクを選んでください。",
     "mic_unreadable": "Windows がマイク「{{device}}」を開けませんでした。ほかのアプリが使用中か、ドライバーが応答していない可能性があります。マイクを使っているアプリを終了するか、マイクを接続し直してから、もう一度開始してください。",
-    "mic_blocked": "Windows の設定により、Sokuji がマイクを使用できません。設定 › プライバシーとセキュリティ › マイク で、デスクトップ アプリのマイクへのアクセスをオンにしてから、もう一度開始してください。",
+    "mic_blocked": "Windows の設定により、ExTrans がマイクを使用できません。設定 › プライバシーとセキュリティ › マイク で、デスクトップ アプリのマイクへのアクセスをオンにしてから、もう一度開始してください。",
     "speaker_tts_missing": "相手に聞こえる翻訳は文字のみです: {{target}}を話せる音声モデルがありません。",
     "participant_tts_missing": "自分に聞こえる翻訳は文字のみです: {{target}}を話せる音声モデルがありません。",
     "participant_tts_over_budget": "自分に聞こえる翻訳は文字のみです: 相手側の音声モデルも読み込むにはメモリが足りません。",
@@ -1604,8 +1604,8 @@
     "not_org_member_unnamed": "所属していた組織のメンバーではなくなりました。",
     "org_wallet_frozen": "{{organization}} のアカウントは一時停止されています。オーナーにお問い合わせいただくか、ご自身の残高をご利用ください。",
     "org_wallet_frozen_unnamed": "組織のアカウントは一時停止されています。オーナーにお問い合わせいただくか、ご自身の残高をご利用ください。",
-    "org_wallet_frozen_owner": "{{organization}} のアカウントは一時停止されています。Sokuji サポートにお問い合わせいただくか、ご自身の残高をご利用ください。",
-    "org_wallet_frozen_owner_unnamed": "組織のアカウントは一時停止されています。Sokuji サポートにお問い合わせいただくか、ご自身の残高をご利用ください。",
+    "org_wallet_frozen_owner": "{{organization}} のアカウントは一時停止されています。ExTrans サポートにお問い合わせいただくか、ご自身の残高をご利用ください。",
+    "org_wallet_frozen_owner_unnamed": "組織のアカウントは一時停止されています。ExTrans サポートにお問い合わせいただくか、ご自身の残高をご利用ください。",
     "model_missing": "このサービスはこのモデルを提供していません: {{detail}}",
     "quota": "サービスのアカウントにクレジットが残っていません: {{detail}}",
     "text_model_unset": "「言語と構成」で翻訳のモデルを選ぶか、モデル名を入力してください。",
@@ -1613,7 +1613,7 @@
     "address_invalid": "互換サービスのアドレスは使えません: {{detail}}"
   },
   "viewer": {
-    "title": "Sokuji 字幕",
+    "title": "ExTrans 字幕",
     "connecting": "接続中…",
     "original": "原文",
     "enter": {
@@ -1671,7 +1671,7 @@
     },
     "shortcuts": "+ − 文字サイズ · B 両方の言語 · F 全画面 · End 最新に戻る",
     "transcript": {
-      "header": "Sokuji 字幕（{{time}} 保存）"
+      "header": "ExTrans 字幕（{{time}} 保存）"
     },
     "present": {
       "title": "お手元のスマートフォンやパソコンで字幕をご覧ください",
@@ -1684,7 +1684,7 @@
       "androidChrome": "Android の Chrome で開けない場合は、「設定 → アプリ → Chrome → 権限 → 付近のデバイス」で許可してください。",
       "watching": "閲覧中：{{count}}",
       "fullscreen": "全画面表示",
-      "windowTitle": "Sokuji 投影ページ",
+      "windowTitle": "ExTrans 投影ページ",
       "ended": "共有は終了しました"
     }
   },
@@ -1904,8 +1904,8 @@
         "key": "キー",
         "held": "押しているとき",
         "notHeld": "押していないとき",
-        "talkHeld": "Sokuji が聞き取ります。離すと、その区切りが翻訳され、相手には翻訳が聞こえます。原音パススルーがオンのときは、自分の声も小さく相手に届きます。",
-        "talkNotHeld": "Sokuji は聞き取りません。何を話しても翻訳されず、相手にも届きません。",
+        "talkHeld": "ExTrans が聞き取ります。離すと、その区切りが翻訳され、相手には翻訳が聞こえます。原音パススルーがオンのときは、自分の声も小さく相手に届きます。",
+        "talkNotHeld": "ExTrans は聞き取りません。何を話しても翻訳されず、相手にも届きません。",
         "translateHeld": "話した内容が翻訳されます。相手に聞こえるのは翻訳だけで、自分の声は届きません。",
         "translateNotHeld": "自分の声が翻訳されずにそのまま相手へ届きます。",
         "change": "変更",
@@ -2061,7 +2061,7 @@
     "foundInNotes": "メモ内で見つかりました",
     "foundInTitle": "タイトル内で見つかりました",
     "unavailable": "履歴を開けませんでした。",
-    "unavailableNewer": "この履歴は新しいバージョンの Sokuji で書かれています。開くには Sokuji を更新してください。",
+    "unavailableNewer": "この履歴は新しいバージョンの ExTrans で書かれています。開くには ExTrans を更新してください。",
     "failed": "うまくいきませんでした。もう一度お試しください。",
     "me": "自分",
     "other": "相手",
@@ -2175,7 +2175,7 @@
       "wallet-frozen": "Kizuna AI のウォレットは凍結されています。",
       "not-member": "Kizuna AI の料金を支払う組織のメンバーではなくなりました。",
       "too-large": "この記録は長すぎるため、Kizuna AI ではメモを書けません。",
-      "update-required": "Kizuna AI でメモを書くには、Sokuji を更新してください。",
+      "update-required": "Kizuna AI でメモを書くには、ExTrans を更新してください。",
       "other": "メモのサービスがリクエストを拒否しました。"
     },
     "notesLatestFailed": "最新の試みは書けませんでした：{{reason}}",

@@ -1,15 +1,15 @@
 {
   "extensionName": {
-    "message": "Sokuji - AI-vergadervertaler"
+    "message": "ExTrans - AI-vergadervertaler"
   },
   "extensionDescription": {
     "message": "AI-aangedreven directe spraakvertaling voor alle videovergaderingen. Doorbreek taalbarrières met realtime stemvertaling."
   },
   "popupTitle": {
-    "message": "Sokuji - Ondersteunde Sites"
+    "message": "ExTrans - Ondersteunde Sites"
   },
   "openSokuji": {
-    "message": "Sokuji Openen"
+    "message": "ExTrans Openen"
   },
   "chromeWebStore": {
     "message": "Chrome Web Store"
@@ -18,7 +18,7 @@
     "message": "Edge-invoegtoepassingen"
   },
   "sokujiAvailable": {
-    "message": "✓ Sokuji is beschikbaar op $SITE_NAME$!",
+    "message": "✓ ExTrans is beschikbaar op $SITE_NAME$!",
     "placeholders": {
       "site_name": {
         "content": "$1",
@@ -27,25 +27,25 @@
     }
   },
   "clickToStart": {
-    "message": "Klik op \"Sokuji Openen\" hieronder om realtime vertaling te starten."
+    "message": "Klik op \"ExTrans Openen\" hieronder om realtime vertaling te starten."
   },
   "quickStart": {
     "message": "Snelle Start:"
   },
   "quickStartInstructions": {
-    "message": "Selecteer in uw vergadering \"Sokuji Virtual Microphone\" als microfoon → Begin met spreken!"
+    "message": "Selecteer in uw vergadering \"ExTrans Virtual Microphone\" als microfoon → Begin met spreken!"
   },
   "gatherTownTitle": {
-    "message": "Sokuji voor Gather Town"
+    "message": "ExTrans voor Gather Town"
   },
   "gatherTownGuidance": {
-    "message": "Om Sokuji te gebruiken, selecteer <strong>\"Sokuji Virtual Microphone\"</strong> in uw microfooninstellingen."
+    "message": "Om ExTrans te gebruiken, selecteer <strong>\"ExTrans Virtual Microphone\"</strong> in uw microfooninstellingen."
   },
   "wherebyTitle": {
-    "message": "Sokuji voor Whereby"
+    "message": "ExTrans voor Whereby"
   },
   "wherebyGuidance": {
-    "message": "Om Sokuji te gebruiken, selecteer <strong>\"Sokuji Virtual Microphone\"</strong> in de microfooninstellingen en <strong>schakel ruisonderdrukking uit</strong> voor betere prestaties."
+    "message": "Om ExTrans te gebruiken, selecteer <strong>\"ExTrans Virtual Microphone\"</strong> in de microfooninstellingen en <strong>schakel ruisonderdrukking uit</strong> voor betere prestaties."
   },
   "gotIt": {
     "message": "Begrepen"
@@ -54,37 +54,37 @@
     "message": "Later herinneren"
   },
   "defaultTitle": {
-    "message": "Sokuji"
+    "message": "ExTrans"
   },
   "defaultGuidance": {
-    "message": "Om Sokuji te gebruiken, selecteer \"Sokuji Virtual Microphone\" in uw microfooninstellingen."
+    "message": "Om ExTrans te gebruiken, selecteer \"ExTrans Virtual Microphone\" in uw microfooninstellingen."
   },
   "discordTitle": {
-    "message": "Sokuji voor Discord"
+    "message": "ExTrans voor Discord"
   },
   "discordGuidance": {
-    "message": "Om Sokuji te gebruiken, selecteer <strong>\"Sokuji Virtual Microphone\"</strong> in uw microfooninstellingen en <strong>schakel Ruisonderdrukking uit</strong> in de Discord-spraakinstellingen voor betere prestaties."
+    "message": "Om ExTrans te gebruiken, selecteer <strong>\"ExTrans Virtual Microphone\"</strong> in uw microfooninstellingen en <strong>schakel Ruisonderdrukking uit</strong> in de Discord-spraakinstellingen voor betere prestaties."
   },
   "slackTitle": {
-    "message": "Sokuji voor Slack"
+    "message": "ExTrans voor Slack"
   },
   "slackGuidance": {
-    "message": "Om Sokuji in Slack Huddles te gebruiken, <strong>start een Huddle</strong>, selecteer dan <strong>\"Sokuji Virtual Microphone\"</strong> in je video- en microfooninstellingen, en <strong>schakel ruisonderdrukking uit</strong> in audio- en videovoorkeuren voor betere prestaties."
+    "message": "Om ExTrans in Slack Huddles te gebruiken, <strong>start een Huddle</strong>, selecteer dan <strong>\"ExTrans Virtual Microphone\"</strong> in je video- en microfooninstellingen, en <strong>schakel ruisonderdrukking uit</strong> in audio- en videovoorkeuren voor betere prestaties."
   },
   "teamsTitle": {
-    "message": "Sokuji voor Microsoft Teams"
+    "message": "ExTrans voor Microsoft Teams"
   },
   "teamsGuidance": {
-    "message": "Als u de volledige lijst met audioapparaten niet ziet in de Teams-instellingen:<br><strong>1)</strong> Schakel de Sokuji-extensie tijdelijk uit en vernieuw de pagina<br><strong>2)</strong> Sta Teams toegang tot uw microfoon en camera toe wanneer daarom wordt gevraagd<br><strong>3)</strong> Schakel de Sokuji-extensie opnieuw in en vernieuw de pagina opnieuw<br><strong>4)</strong> Sta Sokuji toegang tot uw microfoon toe wanneer daarom wordt gevraagd. Nu zou u zowel echte apparaten als <strong>\"Sokuji Virtual Microphone\"</strong> in uw instellingen moeten zien."
+    "message": "Als u de volledige lijst met audioapparaten niet ziet in de Teams-instellingen:<br><strong>1)</strong> Schakel de ExTrans-extensie tijdelijk uit en vernieuw de pagina<br><strong>2)</strong> Sta Teams toegang tot uw microfoon en camera toe wanneer daarom wordt gevraagd<br><strong>3)</strong> Schakel de ExTrans-extensie opnieuw in en vernieuw de pagina opnieuw<br><strong>4)</strong> Sta ExTrans toegang tot uw microfoon toe wanneer daarom wordt gevraagd. Nu zou u zowel echte apparaten als <strong>\"ExTrans Virtual Microphone\"</strong> in uw instellingen moeten zien."
   },
   "jitsiTitle": {
-    "message": "Sokuji voor Jitsi Meet"
+    "message": "ExTrans voor Jitsi Meet"
   },
   "jitsiGuidance": {
-    "message": "Om Sokuji in Jitsi Meet te gebruiken, open <strong>Settings > Devices</strong> en selecteer <strong>\"Sokuji Virtual Microphone\"</strong> als uw microfoon. Open vervolgens <strong>Advanced audio settings</strong> en <strong>schakel Ruisonderdrukking, Echo-onderdrukking en Automatische versterkingsregeling uit</strong> voor heldere vertaalde audio."
+    "message": "Om ExTrans in Jitsi Meet te gebruiken, open <strong>Settings > Devices</strong> en selecteer <strong>\"ExTrans Virtual Microphone\"</strong> als uw microfoon. Open vervolgens <strong>Advanced audio settings</strong> en <strong>schakel Ruisonderdrukking, Echo-onderdrukking en Automatische versterkingsregeling uit</strong> voor heldere vertaalde audio."
   },
   "unsupportedHeadline": {
-    "message": "Sokuji is nog niet beschikbaar op $HOSTNAME$.",
+    "message": "ExTrans is nog niet beschikbaar op $HOSTNAME$.",
     "placeholders": {
       "hostname": {
         "content": "$1",
@@ -102,7 +102,7 @@
     "message": "Desktop-app downloaden"
   },
   "browserSitesHeading": {
-    "message": "Liever de browser? Sokuji werkt op deze sites — klik om te openen:"
+    "message": "Liever de browser? ExTrans werkt op deze sites — klik om te openen:"
   },
   "requestSiteLink": {
     "message": "Vraag een site aan"
@@ -114,6 +114,6 @@
     "message": "Dit tabblad kon niet worden gedetecteerd"
   },
   "detectFailBody": {
-    "message": "Ververs de pagina en open Sokuji opnieuw."
+    "message": "Ververs de pagina en open ExTrans opnieuw."
   }
 }

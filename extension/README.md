@@ -1,6 +1,8 @@
-# Sokuji Browser Extension
+# ExTrans Browser Extension
 
 AI-powered instant speech translation for all video meetings. Break language barriers with real-time voice translation.
+
+ExTrans is based on [Sokuji](https://github.com/kizuna-ai-lab/sokuji) by Kizuna AI Lab, licensed under AGPL-3.0.
 
 ## Features
 
@@ -24,30 +26,30 @@ AI-powered instant speech translation for all video meetings. Break language bar
 
 ### 1. Extension Icon Behavior
 
-When you click the Sokuji extension icon:
+When you click the ExTrans extension icon:
 
-- **On supported sites**: Shows a popup with quick start instructions and an "Open Sokuji" button
+- **On supported sites**: Shows a popup with quick start instructions and an "Open ExTrans" button
 - **On unsupported sites**: Shows a popup listing all supported sites with helpful navigation
 
 ### 2. Getting Started on Supported Sites
 
 1. Navigate to a supported video meeting platform
-2. Click the Sokuji extension icon
-3. Click "Open Sokuji" in the popup
+2. Click the ExTrans extension icon
+3. Click "Open ExTrans" in the popup
 4. Configure your API key (OpenAI or Gemini) in the settings.
-5. Select "Sokuji Virtual Microphone" as your microphone in the meeting
+5. Select "ExTrans Virtual Microphone" as your microphone in the meeting
 6. Start speaking to see real-time translation!
 
 ### 3. Platform-Specific Notes
 
 #### Gather Town
 - Works with Gather Town's spatial audio features (both classic and v2 versions)
-- Select "Sokuji Virtual Microphone" in Gather Town's audio settings
+- Select "ExTrans Virtual Microphone" in Gather Town's audio settings
 - The extension automatically detects when you're in a Gather Town space
 - Supports both proximity-based conversations and larger group meetings
 
 #### Zoom
-- Requires selecting "Sokuji Virtual Microphone" in Zoom's audio settings
+- Requires selecting "ExTrans Virtual Microphone" in Zoom's audio settings
 - For optimal performance, set background noise suppression to "Browser built-in noise suppression"
 - Works in both main Zoom meetings and breakout rooms
 
@@ -73,7 +75,7 @@ Install directly from the [Chrome Web Store](https://chromewebstore.google.com/d
 3. Open Chrome and go to `chrome://extensions/`
 4. Enable "Developer mode" in the top right corner
 5. Click "Load unpacked" and select the extracted folder
-6. The Sokuji extension will be installed and ready to use
+6. The ExTrans extension will be installed and ready to use
 
 ## Development
 
@@ -133,13 +135,13 @@ extension/
 
 ### Virtual Microphone Issues
 
-1. Ensure you've selected "Sokuji Virtual Microphone" in your meeting platform
+1. Ensure you've selected "ExTrans Virtual Microphone" in your meeting platform
 2. Check microphone permissions in Chrome
 3. Verify your API key for the selected provider (OpenAI/Gemini) is configured correctly
 
 ### Audio Quality Issues
 
-1. Check your input device selection in Sokuji settings
+1. Check your input device selection in ExTrans settings
 2. Adjust noise reduction settings
 3. Ensure stable internet connection for API calls
 

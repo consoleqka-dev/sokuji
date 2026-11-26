@@ -1,15 +1,15 @@
 {
   "extensionName": {
-    "message": "Sokuji - KI-Meeting-Übersetzer"
+    "message": "ExTrans - KI-Meeting-Übersetzer"
   },
   "extensionDescription": {
     "message": "KI-gestützte Sofort-Sprachübersetzung für alle Videomeetings. Durchbrechen Sie Sprachbarrieren mit Echtzeit-Sprachübersetzung."
   },
   "popupTitle": {
-    "message": "Sokuji - Unterstützte Websites"
+    "message": "ExTrans - Unterstützte Websites"
   },
   "openSokuji": {
-    "message": "Sokuji öffnen"
+    "message": "ExTrans öffnen"
   },
   "chromeWebStore": {
     "message": "Chrome Web Store"
@@ -18,7 +18,7 @@
     "message": "Edge-Add-Ons"
   },
   "sokujiAvailable": {
-    "message": "✓ Sokuji ist auf $SITE_NAME$ verfügbar!",
+    "message": "✓ ExTrans ist auf $SITE_NAME$ verfügbar!",
     "placeholders": {
       "site_name": {
         "content": "$1",
@@ -27,25 +27,25 @@
     }
   },
   "clickToStart": {
-    "message": "Klicken Sie unten auf \"Sokuji öffnen\", um die Echtzeit-Übersetzung zu starten."
+    "message": "Klicken Sie unten auf \"ExTrans öffnen\", um die Echtzeit-Übersetzung zu starten."
   },
   "quickStart": {
     "message": "Schnellstart:"
   },
   "quickStartInstructions": {
-    "message": "Im Meeting \"Sokuji Virtual Microphone\" als Mikrofon auswählen → Sprechen beginnen!"
+    "message": "Im Meeting \"ExTrans Virtual Microphone\" als Mikrofon auswählen → Sprechen beginnen!"
   },
   "gatherTownTitle": {
-    "message": "Sokuji für Gather Town"
+    "message": "ExTrans für Gather Town"
   },
   "gatherTownGuidance": {
-    "message": "Um Sokuji zu verwenden, wählen Sie <strong>\"Sokuji Virtual Microphone\"</strong> in Ihren Mikrofoneinstellungen aus."
+    "message": "Um ExTrans zu verwenden, wählen Sie <strong>\"ExTrans Virtual Microphone\"</strong> in Ihren Mikrofoneinstellungen aus."
   },
   "wherebyTitle": {
-    "message": "Sokuji für Whereby"
+    "message": "ExTrans für Whereby"
   },
   "wherebyGuidance": {
-    "message": "Um Sokuji zu verwenden, wählen Sie <strong>\"Sokuji Virtual Microphone\"</strong> in den Mikrofoneinstellungen und <strong>deaktivieren Sie die Rauschunterdrückung</strong> für bessere Leistung."
+    "message": "Um ExTrans zu verwenden, wählen Sie <strong>\"ExTrans Virtual Microphone\"</strong> in den Mikrofoneinstellungen und <strong>deaktivieren Sie die Rauschunterdrückung</strong> für bessere Leistung."
   },
   "gotIt": {
     "message": "Verstanden"
@@ -54,37 +54,37 @@
     "message": "Später erinnern"
   },
   "defaultTitle": {
-    "message": "Sokuji"
+    "message": "ExTrans"
   },
   "defaultGuidance": {
-    "message": "Um Sokuji zu verwenden, wählen Sie bitte \"Sokuji Virtual Microphone\" in Ihren Mikrofoneinstellungen aus."
+    "message": "Um ExTrans zu verwenden, wählen Sie bitte \"ExTrans Virtual Microphone\" in Ihren Mikrofoneinstellungen aus."
   },
   "discordTitle": {
-    "message": "Sokuji für Discord"
+    "message": "ExTrans für Discord"
   },
   "discordGuidance": {
-    "message": "Um Sokuji zu verwenden, wählen Sie bitte <strong>\"Sokuji Virtual Microphone\"</strong> in Ihren Mikrofoneinstellungen aus und <strong>deaktivieren Sie die Rauschunterdrückung</strong> in den Discord-Spracheinstellungen für bessere Leistung."
+    "message": "Um ExTrans zu verwenden, wählen Sie bitte <strong>\"ExTrans Virtual Microphone\"</strong> in Ihren Mikrofoneinstellungen aus und <strong>deaktivieren Sie die Rauschunterdrückung</strong> in den Discord-Spracheinstellungen für bessere Leistung."
   },
   "slackTitle": {
-    "message": "Sokuji für Slack"
+    "message": "ExTrans für Slack"
   },
   "slackGuidance": {
-    "message": "Um Sokuji in Slack Huddles zu verwenden, <strong>starten Sie bitte einen Huddle</strong>, wählen Sie dann <strong>\"Sokuji Virtual Microphone\"</strong> in Ihren Video- und Mikrofon-Einstellungen aus und <strong>deaktivieren Sie die Rauschunterdrückung</strong> in den Audio- und Video-Einstellungen für bessere Leistung."
+    "message": "Um ExTrans in Slack Huddles zu verwenden, <strong>starten Sie bitte einen Huddle</strong>, wählen Sie dann <strong>\"ExTrans Virtual Microphone\"</strong> in Ihren Video- und Mikrofon-Einstellungen aus und <strong>deaktivieren Sie die Rauschunterdrückung</strong> in den Audio- und Video-Einstellungen für bessere Leistung."
   },
   "teamsTitle": {
-    "message": "Sokuji für Microsoft Teams"
+    "message": "ExTrans für Microsoft Teams"
   },
   "teamsGuidance": {
-    "message": "Wenn Sie die vollständige Audiogeräteliste in den Teams-Einstellungen nicht sehen:<br><strong>1)</strong> Deaktivieren Sie vorübergehend die Sokuji-Erweiterung und aktualisieren Sie die Seite<br><strong>2)</strong> Erlauben Sie Teams den Zugriff auf Ihr Mikrofon und Ihre Kamera, wenn Sie dazu aufgefordert werden<br><strong>3)</strong> Aktivieren Sie die Sokuji-Erweiterung erneut und aktualisieren Sie die Seite erneut<br><strong>4)</strong> Erlauben Sie Sokuji den Zugriff auf Ihr Mikrofon, wenn Sie dazu aufgefordert werden. Jetzt sollten Sie sowohl echte Geräte als auch <strong>\"Sokuji Virtual Microphone\"</strong> in Ihren Einstellungen sehen."
+    "message": "Wenn Sie die vollständige Audiogeräteliste in den Teams-Einstellungen nicht sehen:<br><strong>1)</strong> Deaktivieren Sie vorübergehend die ExTrans-Erweiterung und aktualisieren Sie die Seite<br><strong>2)</strong> Erlauben Sie Teams den Zugriff auf Ihr Mikrofon und Ihre Kamera, wenn Sie dazu aufgefordert werden<br><strong>3)</strong> Aktivieren Sie die ExTrans-Erweiterung erneut und aktualisieren Sie die Seite erneut<br><strong>4)</strong> Erlauben Sie ExTrans den Zugriff auf Ihr Mikrofon, wenn Sie dazu aufgefordert werden. Jetzt sollten Sie sowohl echte Geräte als auch <strong>\"ExTrans Virtual Microphone\"</strong> in Ihren Einstellungen sehen."
   },
   "jitsiTitle": {
-    "message": "Sokuji für Jitsi Meet"
+    "message": "ExTrans für Jitsi Meet"
   },
   "jitsiGuidance": {
-    "message": "Um Sokuji in Jitsi Meet zu verwenden, öffnen Sie <strong>Settings > Devices</strong> und wählen Sie <strong>\"Sokuji Virtual Microphone\"</strong> als Mikrofon aus. Öffnen Sie dann <strong>Advanced audio settings</strong> und <strong>deaktivieren Sie Rauschunterdrückung, Echounterdrückung und automatische Verstärkungsregelung</strong> für klaren übersetzten Ton."
+    "message": "Um ExTrans in Jitsi Meet zu verwenden, öffnen Sie <strong>Settings > Devices</strong> und wählen Sie <strong>\"ExTrans Virtual Microphone\"</strong> als Mikrofon aus. Öffnen Sie dann <strong>Advanced audio settings</strong> und <strong>deaktivieren Sie Rauschunterdrückung, Echounterdrückung und automatische Verstärkungsregelung</strong> für klaren übersetzten Ton."
   },
   "unsupportedHeadline": {
-    "message": "Sokuji ist auf $HOSTNAME$ noch nicht verfügbar.",
+    "message": "ExTrans ist auf $HOSTNAME$ noch nicht verfügbar.",
     "placeholders": {
       "hostname": {
         "content": "$1",
@@ -102,7 +102,7 @@
     "message": "Desktop-App herunterladen"
   },
   "browserSitesHeading": {
-    "message": "Lieber den Browser? Sokuji funktioniert auf diesen Seiten — zum Öffnen klicken:"
+    "message": "Lieber den Browser? ExTrans funktioniert auf diesen Seiten — zum Öffnen klicken:"
   },
   "requestSiteLink": {
     "message": "Website vorschlagen"
@@ -114,6 +114,6 @@
     "message": "Dieser Tab konnte nicht erkannt werden"
   },
   "detectFailBody": {
-    "message": "Seite neu laden und Sokuji erneut öffnen."
+    "message": "Seite neu laden und ExTrans erneut öffnen."
   }
 }

@@ -85,7 +85,7 @@ const LicenseConsentModal: React.FC<LicenseConsentModalProps> = ({ isOpen, licen
         <p>
           {t(
             'models.licenseConsent.disclaimer',
-            'Sokuji is not affiliated with the model authors and has no relationship with them. This integration is unofficial and provided as-is, without warranty of any kind.'
+            'ExTrans is not affiliated with the model authors and has no relationship with them. This integration is unofficial and provided as-is, without warranty of any kind.'
           )}
         </p>
         <p>

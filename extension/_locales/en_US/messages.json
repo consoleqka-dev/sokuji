@@ -1,15 +1,15 @@
 {
   "extensionName": {
-    "message": "Sokuji - AI Meeting Translator"
+    "message": "ExTrans - AI Meeting Translator"
   },
   "extensionDescription": {
     "message": "AI-powered instant speech translation for all video meetings. Break language barriers with real-time voice translation."
   },
   "popupTitle": {
-    "message": "Sokuji - Supported Sites"
+    "message": "ExTrans - Supported Sites"
   },
   "openSokuji": {
-    "message": "Open Sokuji"
+    "message": "Open ExTrans"
   },
   "chromeWebStore": {
     "message": "Chrome Web Store"
@@ -18,7 +18,7 @@
     "message": "Edge Add-ons"
   },
   "sokujiAvailable": {
-    "message": "✓ Sokuji is available on $SITE_NAME$!",
+    "message": "✓ ExTrans is available on $SITE_NAME$!",
     "placeholders": {
       "site_name": {
         "content": "$1",
@@ -27,25 +27,25 @@
     }
   },
   "clickToStart": {
-    "message": "Click \"Open Sokuji\" below to start real-time translation."
+    "message": "Click \"Open ExTrans\" below to start real-time translation."
   },
   "quickStart": {
     "message": "Quick Start:"
   },
   "quickStartInstructions": {
-    "message": "In your meeting, choose \"Sokuji Virtual Microphone\" as the microphone → Start speaking!"
+    "message": "In your meeting, choose \"ExTrans Virtual Microphone\" as the microphone → Start speaking!"
   },
   "gatherTownTitle": {
-    "message": "Sokuji for Gather Town"
+    "message": "ExTrans for Gather Town"
   },
   "gatherTownGuidance": {
-    "message": "To use Sokuji, please select <strong>\"Sokuji Virtual Microphone\"</strong> in your microphone settings."
+    "message": "To use ExTrans, please select <strong>\"ExTrans Virtual Microphone\"</strong> in your microphone settings."
   },
   "wherebyTitle": {
-    "message": "Sokuji for Whereby"
+    "message": "ExTrans for Whereby"
   },
   "wherebyGuidance": {
-    "message": "To use Sokuji, please select <strong>\"Sokuji Virtual Microphone\"</strong> in your microphone settings and <strong>disable Noise reduction</strong> for better performance."
+    "message": "To use ExTrans, please select <strong>\"ExTrans Virtual Microphone\"</strong> in your microphone settings and <strong>disable Noise reduction</strong> for better performance."
   },
   "gotIt": {
     "message": "Got it"
@@ -54,37 +54,37 @@
     "message": "Remind me later"
   },
   "defaultTitle": {
-    "message": "Sokuji"
+    "message": "ExTrans"
   },
   "defaultGuidance": {
-    "message": "To use Sokuji, please select \"Sokuji Virtual Microphone\" in your microphone settings."
+    "message": "To use ExTrans, please select \"ExTrans Virtual Microphone\" in your microphone settings."
   },
   "discordTitle": {
-    "message": "Sokuji for Discord"
+    "message": "ExTrans for Discord"
   },
   "discordGuidance": {
-    "message": "To use Sokuji, please select <strong>\"Sokuji Virtual Microphone\"</strong> in your microphone settings and <strong>disable Noise Suppression</strong> in Discord's Voice settings for better performance."
+    "message": "To use ExTrans, please select <strong>\"ExTrans Virtual Microphone\"</strong> in your microphone settings and <strong>disable Noise Suppression</strong> in Discord's Voice settings for better performance."
   },
   "slackTitle": {
-    "message": "Sokuji for Slack"
+    "message": "ExTrans for Slack"
   },
   "slackGuidance": {
-    "message": "To use Sokuji in Slack Huddles, please <strong>start a Huddle</strong>, then select <strong>\"Sokuji Virtual Microphone\"</strong> in your Video and Mic settings, and <strong>disable Noise Suppression</strong> in Audio & Video preferences for better performance."
+    "message": "To use ExTrans in Slack Huddles, please <strong>start a Huddle</strong>, then select <strong>\"ExTrans Virtual Microphone\"</strong> in your Video and Mic settings, and <strong>disable Noise Suppression</strong> in Audio & Video preferences for better performance."
   },
   "teamsTitle": {
-    "message": "Sokuji for Microsoft Teams"
+    "message": "ExTrans for Microsoft Teams"
   },
   "teamsGuidance": {
-    "message": "If you don't see the complete audio device list in Teams settings:<br><strong>1)</strong> Temporarily disable the Sokuji extension and refresh the page<br><strong>2)</strong> Allow Teams to access your microphone and camera when prompted<br><strong>3)</strong> Re-enable Sokuji extension and refresh the page again<br><strong>4)</strong> Allow Sokuji to access your microphone when prompted<br>Now you should see both real and <strong>\"Sokuji Virtual Microphone\"</strong> devices in your settings."
+    "message": "If you don't see the complete audio device list in Teams settings:<br><strong>1)</strong> Temporarily disable the ExTrans extension and refresh the page<br><strong>2)</strong> Allow Teams to access your microphone and camera when prompted<br><strong>3)</strong> Re-enable ExTrans extension and refresh the page again<br><strong>4)</strong> Allow ExTrans to access your microphone when prompted<br>Now you should see both real and <strong>\"ExTrans Virtual Microphone\"</strong> devices in your settings."
   },
   "jitsiTitle": {
-    "message": "Sokuji for Jitsi Meet"
+    "message": "ExTrans for Jitsi Meet"
   },
   "jitsiGuidance": {
-    "message": "To use Sokuji in Jitsi Meet, open <strong>Settings > Devices</strong> and select <strong>\"Sokuji Virtual Microphone\"</strong> as your microphone. Then open <strong>Advanced audio settings</strong> and <strong>turn off Noise suppression, Echo cancellation, and Automatic gain control</strong> for clear translated audio."
+    "message": "To use ExTrans in Jitsi Meet, open <strong>Settings > Devices</strong> and select <strong>\"ExTrans Virtual Microphone\"</strong> as your microphone. Then open <strong>Advanced audio settings</strong> and <strong>turn off Noise suppression, Echo cancellation, and Automatic gain control</strong> for clear translated audio."
   },
   "unsupportedHeadline": {
-    "message": "Sokuji isn't available on $HOSTNAME$ yet.",
+    "message": "ExTrans isn't available on $HOSTNAME$ yet.",
     "placeholders": {
       "hostname": {
         "content": "$1",
@@ -102,7 +102,7 @@
     "message": "Download desktop app"
   },
   "browserSitesHeading": {
-    "message": "Prefer the browser? Sokuji works on these — click to open:"
+    "message": "Prefer the browser? ExTrans works on these — click to open:"
   },
   "requestSiteLink": {
     "message": "Request a site"
@@ -114,6 +114,6 @@
     "message": "Couldn't detect this tab"
   },
   "detectFailBody": {
-    "message": "Refresh the page and reopen Sokuji."
+    "message": "Refresh the page and reopen ExTrans."
   }
 }

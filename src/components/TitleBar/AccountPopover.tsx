@@ -87,7 +87,7 @@ const AccountPopover: React.FC<AccountPopoverProps> = ({ open, anchorEl, onClose
             <>
               <p className="account-popover__msg">
                 {t('simpleConfig.signInRequired',
-                   "Sign up to use Sokuji's built-in translation service — no API key needed. You can also keep using your own provider and key.")}
+                   "Sign up to use ExTrans's built-in translation service — no API key needed. You can also keep using your own provider and key.")}
               </p>
               <div className="account-popover__btns">
                 <button

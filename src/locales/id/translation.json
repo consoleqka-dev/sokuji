@@ -62,12 +62,12 @@
     },
     "echoCancellation": "Peredam Gema",
     "echoCancellationTooltip": {
-      "app": "Hanya Sokuji — Menghapus ucapan terjemahan Sokuji jika tertangkap mikrofon. Pilih ini jika mikrofon adalah kabel virtual seperti BlackHole.",
+      "app": "Hanya ExTrans — Menghapus ucapan terjemahan ExTrans jika tertangkap mikrofon. Pilih ini jika mikrofon adalah kabel virtual seperti BlackHole.",
       "browser": "Hanya browser — Menghapus suara yang diputar browser ini, termasuk tab rapat, jika tertangkap mikrofon. Pilih ini jika mikrofon adalah kabel virtual seperti BlackHole yang membawa suara aplikasi lain.",
       "all": "Semua suara — Juga menghapus suara yang diputar aplikasi lain melalui speaker, seperti aplikasi rapat. Kabel virtual yang dipakai sebagai mikrofon membawa suara itu, sehingga akan menjadi senyap."
     },
     "echoCancellationMode": {
-      "app": "Hanya Sokuji",
+      "app": "Hanya ExTrans",
       "browser": "Hanya browser",
       "all": "Semua suara"
     },
@@ -368,9 +368,9 @@
     "virtualMicrophone": "Mikrofon virtual",
     "virtualMicrophoneNotice": "Pemberitahuan mikrofon virtual",
     "iUnderstand": "Saya mengerti",
-    "virtualMicWarningTitle": "Ini adalah mikrofon virtual yang dibuat oleh Sokuji.",
+    "virtualMicWarningTitle": "Ini adalah mikrofon virtual yang dibuat oleh ExTrans.",
     "virtualMicWarningText1": "Jangan pilih perangkat ini di sini. Gunakan mikrofon virtual ini di aplikasi konferensi video Anda (seperti Google Meet, Zoom, Microsoft Teams, dll.) untuk menerima output terjemahan suara real-time.",
-    "virtualMicWarningText2": "Agar Sokuji berfungsi dengan benar, pilih mikrofon fisik asli Anda dari daftar.",
+    "virtualMicWarningText2": "Agar ExTrans berfungsi dengan benar, pilih mikrofon fisik asli Anda dari daftar.",
     "realVoicePassthrough": "Passthrough",
     "passthroughManagedByPushToTranslate": "Dalam mode Tekan untuk Terjemahkan, passthrough dikelola otomatis: diputar pada volume 100% saat Anda tidak menahan tombol, dan berhenti (audio dikirim ke terjemahan) saat Anda menahan tombol.",
     "speechTitle": "Suara",
@@ -427,7 +427,7 @@
     "participantFellBackToSystemAudio": "Penangkapan aplikasi yang dipilih berhenti, jadi seluruh audio sistem kini diterjemahkan. Pilih kembali aplikasinya untuk mempersempit cakupan.",
     "loopbackMicNotice": "Pemberitahuan Input Loopback",
     "loopbackMicWarningTitle": "Input ini menangkap kembali apa yang diputar komputer ini.",
-    "loopbackMicWarningText1": "Input loopback seperti \"Stereo Mix\" atau perangkat \"Monitor of ...\" merekam keluaran audio sistem itu sendiri. Dalam sesi yang menyertakan suara terjemahan Sokuji, Sokuji akan mendengar dan menerjemahkan dirinya sendiri dalam loop.",
+    "loopbackMicWarningText1": "Input loopback seperti \"Stereo Mix\" atau perangkat \"Monitor of ...\" merekam keluaran audio sistem itu sendiri. Dalam sesi yang menyertakan suara terjemahan ExTrans, ExTrans akan mendengar dan menerjemahkan dirinya sendiri dalam loop.",
     "loopbackMicWarningText2": "Perangkat tetap terpilih jika perutean ini disengaja, tetapi untuk penggunaan normal pilihlah mikrofon fisik.",
     "participantNoAudioYet": "Belum ada audio yang masuk dari sumber yang dipilih. Jika sumber sedang diputar tetapi tidak ada yang diterjemahkan, izinkan Sokuji di System Settings > Privacy & Security > System Audio Recording Only (macOS), lalu mulai sesi lagi.",
     "audioCaptureUnprovenNotice": "Belum ada yang ditangkap",
@@ -473,7 +473,7 @@
     "verificationEmailFailed": "Gagal mengirim email verifikasi. Silakan coba lagi",
     "alreadyVerified": "Email Anda sudah diverifikasi!",
     "cooldownMessage": "Silakan tunggu {{seconds}} detik",
-    "checkYourEmail": "Email verifikasi terkirim. Selesaikan di kotak masuk Anda lalu kembali — Sokuji akan mendeteksinya secara otomatis.",
+    "checkYourEmail": "Email verifikasi terkirim. Selesaikan di kotak masuk Anda lalu kembali — ExTrans akan mendeteksinya secara otomatis.",
     "emailVerifiedToast": "Email terverifikasi",
     "sessionExpired": "Sesi Anda telah berakhir. Silakan masuk lagi.",
     "forgotPassword": "Lupa Kata Sandi?",
@@ -497,16 +497,16 @@
   },
   "simpleConfig": {
     "interfaceLanguage": "Bahasa Antarmuka",
-    "interfaceLanguageDesc": "Ini mengubah bahasa menu dan tombol Sokuji. Ini TIDAK mempengaruhi bahasa mana yang dapat Anda terjemahkan.",
+    "interfaceLanguageDesc": "Ini mengubah bahasa menu dan tombol ExTrans. Ini TIDAK mempengaruhi bahasa mana yang dapat Anda terjemahkan.",
     "translationLanguages": "Bahasa Terjemahan",
     "translationLanguagesDesc": "Pilih bahasa yang Anda gunakan (Bahasa saya) dan bahasa yang ingin Anda dengar terjemahannya (Bahasa lawan bicara). Pilih \"Deteksi Otomatis\" jika Anda tidak yakin bahasa apa yang akan Anda gunakan.",
     "yourLanguage": "Bahasa saya",
     "userAccount": "Akun Pengguna",
     "userAccountTooltip": "Pengguna teknis dapat menggunakan kunci API mereka sendiri. Akun Pengguna dirancang untuk pengaturan yang disederhanakan.",
-    "signInRequired": "Daftar untuk menggunakan layanan terjemahan bawaan Sokuji — tanpa kunci API. Anda juga tetap dapat menggunakan penyedia dan kunci Anda sendiri.",
+    "signInRequired": "Daftar untuk menggunakan layanan terjemahan bawaan ExTrans — tanpa kunci API. Anda juga tetap dapat menggunakan penyedia dan kunci Anda sendiri.",
     "targetLanguage": "Bahasa lawan bicara",
     "microphone": "Mikrofon",
-    "microphoneDesc": "Pilih mikrofon untuk menangkap ucapan Anda. Berbicara dalam bahasa Anda ke mikrofon ini, dan Sokuji akan menerjemahkan semua yang didengarnya secara real-time.",
+    "microphoneDesc": "Pilih mikrofon untuk menangkap ucapan Anda. Berbicara dalam bahasa Anda ke mikrofon ini, dan ExTrans akan menerjemahkan semua yang didengarnya secara real-time.",
     "swapLanguages": "Tukar bahasa",
     "swapNotSpoken": "Layanan ucapan tidak membacakan bahasa-bahasa ini dalam arah sebaliknya.",
     "textOnly": "Teks saja",
@@ -715,7 +715,7 @@
       "scopeLabel": "Sertakan",
       "scopeItemAria": "{{scope}} — {{line}}",
       "scopeEmpty": "Tidak ada yang dipilih",
-      "headerTitle": "Ekspor percakapan Sokuji",
+      "headerTitle": "Ekspor percakapan ExTrans",
       "headerSessionStarted": "Sesi dimulai",
       "headerExported": "Diekspor",
       "headerProvider": "Penyedia",
@@ -959,7 +959,7 @@
     "gpuSoftwareOnly": "Akselerasi GPU tidak tersedia — berjalan di CPU",
     "gpuUnavailable": "Akselerasi GPU tidak tersedia",
     "gpuSlowWarning": "Model lokal tetap berfungsi, tetapi transkripsi dan terjemahan akan terasa jauh lebih lambat.",
-    "gpuWaylandRemedy": "Pada sesi Wayland, Chromium tidak dapat menggunakan GPU untuk ini. Menjalankan Sokuji dengan --ozone-platform=x11 memulihkan akselerasi.",
+    "gpuWaylandRemedy": "Pada sesi Wayland, Chromium tidak dapat menggunakan GPU untuk ini. Menjalankan ExTrans dengan --ozone-platform=x11 memulihkan akselerasi.",
     "othersGroup": "Model lainnya",
     "requiresGpu": "Memerlukan GPU",
     "licenseConsent": {
@@ -970,7 +970,7 @@
       "viewLicense": "Lihat teks lisensi lengkap",
       "nonCommercial": "Lisensi ini hanya mengizinkan penggunaan nonkomersial — jangan gunakan model ini dalam produk atau layanan komersial apa pun.",
       "restrictedTerms": "Ini bukan lisensi sumber terbuka. Lisensi ini menetapkan syarat tentang cara model dan keluarannya boleh digunakan — baca teks lengkapnya sebelum Anda mengandalkannya.",
-      "disclaimer": "Sokuji tidak berafiliasi dengan pembuat model dan tidak memiliki hubungan apa pun dengan mereka. Integrasi ini tidak resmi dan disediakan apa adanya, tanpa jaminan apa pun.",
+      "disclaimer": "ExTrans tidak berafiliasi dengan pembuat model dan tidak memiliki hubungan apa pun dengan mereka. Integrasi ini tidak resmi dan disediakan apa adanya, tanpa jaminan apa pun.",
       "attribution": "Atribusi: {{attribution}}",
       "cancel": "Batal",
       "accept": "Saya mengerti — hanya nonkomersial",
@@ -1052,9 +1052,9 @@
     "linuxMigrateTitle": "Versi baru v{{version}} tersedia"
   },
   "audioSystem": {
-    "pactlMissingBody": "pactl (alat baris perintah PulseAudio) tidak ditemukan, sehingga Sokuji tidak dapat menyiapkan mikrofon/speaker virtualnya. Instal, lalu coba lagi:",
+    "pactlMissingBody": "pactl (alat baris perintah PulseAudio) tidak ditemukan, sehingga ExTrans tidak dapat menyiapkan mikrofon/speaker virtualnya. Instal, lalu coba lagi:",
     "installCommand": "sudo apt install pulseaudio-utils",
-    "unavailableBody": "Sokuji tidak dapat menyiapkan mikrofon/speaker virtualnya. Pastikan PulseAudio atau PipeWire sedang berjalan.",
+    "unavailableBody": "ExTrans tidak dapat menyiapkan mikrofon/speaker virtualnya. Pastikan PulseAudio atau PipeWire sedang berjalan.",
     "retry": "Coba lagi",
     "retrying": "Mencoba lagi...",
     "macDriverNotLoadedBody": "Mikrofon virtual Sokuji sudah terpasang, tetapi macOS belum memuatnya, jadi aplikasi rapat tidak bisa mendengar terjemahan Anda. Perbaiki; macOS akan meminta kata sandi administrator Anda.",
@@ -1065,12 +1065,12 @@
   },
   "vbCable": {
     "title": "Biarkan pihak lain mendengar terjemahan",
-    "body": "Aplikasi rapat menerima terjemahan lisan melalui mikrofon virtual. Di Windows, itu adalah VB-CABLE, driver gratis dari VB-Audio. Semua fitur lain di Sokuji tetap berfungsi tanpanya.",
+    "body": "Aplikasi rapat menerima terjemahan lisan melalui mikrofon virtual. Di Windows, itu adalah VB-CABLE, driver gratis dari VB-Audio. Semua fitur lain di ExTrans tetap berfungsi tanpanya.",
     "install": "Pasang VB-CABLE",
     "about": "Tentang VB-CABLE",
     "adminOnce": "Windows akan meminta izin administrator sekali.",
     "installingTitle": "Memasang VB-CABLE…",
-    "installingBody": "Setujui perintah Windows, lalu klik \"Install Driver\" di jendela VB-CABLE. Sokuji akan mengenalinya begitu terpasang.",
+    "installingBody": "Setujui perintah Windows, lalu klik \"Install Driver\" di jendela VB-CABLE. ExTrans akan mengenalinya begitu terpasang.",
     "installingBusy": "Memasang…",
     "failedTitle": "VB-CABLE tidak terpasang",
     "failedBody": "Pemasangan dibatalkan atau tidak selesai. Coba lagi, atau pasang sendiri dari situs web VB-Audio.",
@@ -1083,7 +1083,7 @@
     "storeStep3": "Klik \"Install Driver\", lalu mulai ulang PC Anda.",
     "openWebsite": "Buka situs web VB-Audio",
     "checkAgain": "Periksa lagi",
-    "picksUp": "Sokuji akan mengenalinya secara otomatis setelah terpasang.",
+    "picksUp": "ExTrans akan mengenalinya secara otomatis setelah terpasang.",
     "notNow": "Nanti saja"
   },
   "subtitle": {
@@ -1182,7 +1182,7 @@
     "previewChargedToBalance": "Pratinjau mensintesis klip pendek dan dikenakan biaya dari saldo akun Anda.",
     "previewFailed": "Tidak dapat membuat pratinjau untuk suara ini.",
     "renameFailed": "Tidak dapat mengganti nama suara ini.",
-    "recordStartFailed": "Tidak dapat mulai merekam. Pastikan mikrofon terhubung dan Sokuji diizinkan menggunakannya.",
+    "recordStartFailed": "Tidak dapat mulai merekam. Pastikan mikrofon terhubung dan ExTrans diizinkan menggunakannya.",
     "previewLanguageUnsupported": "Model ini tidak memiliki kalimat contoh dalam bahasa yang dapat diucapkannya.",
     "previewNeedsBalance": "Isi ulang saldo Anda untuk mendengarkan pratinjau suara ini.",
     "previewNeedsSessionStopped": "Akhiri sesi untuk mendengarkan pratinjau suara ini.",
@@ -1290,10 +1290,10 @@
     }
   },
   "echoNotice": {
-    "ttsEcho": "Speaker Anda mengembalikan suara terjemahan Sokuji ke mikrofon.",
+    "ttsEcho": "Speaker Anda mengembalikan suara terjemahan ExTrans ke mikrofon.",
     "meetingEcho": "Audio rapat dari speaker Anda sampai ke mikrofon.",
     "farEndEcho": "Perangkat seorang peserta menggemakan terjemahan Anda kembali ke rapat.",
-    "selfCapture": "Sumber audio lawan bicara menangkap audio Sokuji sendiri.",
+    "selfCapture": "Sumber audio lawan bicara menangkap audio ExTrans sendiri.",
     "routingLoop": "Perangkat input yang dipilih menangkap langsung pemutaran komputer ini.",
     "actionHeadphones": "Menggunakan headphone akan memutus loop.",
     "actionAskRemote": "Minta peserta itu menggunakan headphone.",
@@ -1315,7 +1315,7 @@
     "clearAllKeepsPicks": "Pilihan Anda akan diingat dan kembali diterapkan saat model diunduh lagi."
   },
   "setup": {
-    "title": "Siapkan Sokuji",
+    "title": "Siapkan ExTrans",
     "stepOf": "Langkah {{current}} dari {{total}}",
     "back": "Kembali",
     "next": "Lanjut",
@@ -1325,7 +1325,7 @@
     "rerun": "Jalankan pengaturan lagi",
     "steps": {
       "language": {
-        "title": "Sokuji berbicara dalam bahasa apa kepada Anda?",
+        "title": "ExTrans berbicara dalam bahasa apa kepada Anda?",
         "desc": "Ini adalah bahasa menu dan tombol. Anda memilih bahasa untuk diterjemahkan nanti.",
         "label": "Bahasa Antarmuka"
       },
@@ -1442,7 +1442,7 @@
       "guide": "Cara mendapatkan kunci ini",
       "verifyEmail": "Sudah masuk. Buka tautan yang kami kirim ke email Anda untuk memverifikasi alamat Anda — kredit uji coba akan diberikan setelah itu.",
       "onFile": "Kunci sudah tersimpan — biarkan kosong untuk mempertahankannya.",
-      "offlineHardware": "Sokuji berjalan lancar dengan GPU dan VRAM yang cukup; hanya dengan CPU terasa jauh lebih lambat.",
+      "offlineHardware": "ExTrans berjalan lancar dengan GPU dan VRAM yang cukup; hanya dengan CPU terasa jauh lebih lambat.",
       "openaiOneKey": "Satu kunci ini dipakai untuk OpenAI Realtime, Translate, dan Live.",
       "baseUrl": "Alamat",
       "baseUrlPlaceholder": "Alamat, misalnya https://openrouter.ai/api/v1",
@@ -1472,7 +1472,7 @@
     "steps": {
       "welcome": {
         "title": "Anda sudah siap",
-        "content": "Sokuji sudah dikonfigurasi sesuai skenario Anda. Berikut tur singkat — kurang dari satu menit."
+        "content": "ExTrans sudah dikonfigurasi sesuai skenario Anda. Berikut tur singkat — kurang dari satu menit."
       },
       "mode-picker": {
         "title": "Mode terjemahan",
@@ -1483,7 +1483,7 @@
       },
       "microphone": {
         "title": "Mikrofon Anda",
-        "content": "Ucapan Anda masuk di sini. Perangkat default sistem sudah dipilih. Jangan pilih mikrofon virtual Sokuji — itu digunakan untuk aplikasi rapat Anda."
+        "content": "Ucapan Anda masuk di sini. Perangkat default sistem sudah dipilih. Jangan pilih mikrofon virtual ExTrans — itu digunakan untuk aplikasi rapat Anda."
       },
       "monitor": {
         "title": "Dengarkan suara terjemahan Anda",
@@ -1492,15 +1492,15 @@
       "output-routing": {
         "title": "Bagaimana lawan bicara mendengar Anda",
         "content": "Suara terjemahan Anda dikirim ke mikrofon virtual; pilih itu sebagai mikrofon di aplikasi rapat Anda.",
-        "content_extension": "Di Google Meet, Zoom, atau Teams, pilih \"Sokuji Virtual Microphone\" sebagai mikrofon Anda. Sokuji menambahkannya secara otomatis ke situs rapat yang didukung.",
-        "content_electronLinux": "Sokuji membuat mikrofon virtual di sistem ini. Pilih itu sebagai mikrofon di aplikasi rapat Anda.",
-        "content_electronOther": "Anda memerlukan kabel audio virtual (misalnya VB-Cable). Arahkan output Sokuji ke situ, lalu pilih itu sebagai mikrofon di aplikasi rapat Anda."
+        "content_extension": "Di Google Meet, Zoom, atau Teams, pilih \"ExTrans Virtual Microphone\" sebagai mikrofon Anda. ExTrans menambahkannya secara otomatis ke situs rapat yang didukung.",
+        "content_electronLinux": "ExTrans membuat mikrofon virtual di sistem ini. Pilih itu sebagai mikrofon di aplikasi rapat Anda.",
+        "content_electronOther": "Anda memerlukan kabel audio virtual (misalnya VB-Cable). Arahkan output ExTrans ke situ, lalu pilih itu sebagai mikrofon di aplikasi rapat Anda."
       },
       "participant-source": {
         "title": "Suara lawan bicara",
-        "content": "Sokuji mendengarkan lawan bicara di sini.",
+        "content": "ExTrans mendengarkan lawan bicara di sini.",
         "content_electron": "Pilih aplikasi yang akan diterjemahkan, atau seluruh audio sistem. Suara asli mereka tetap diputar seperti biasa.",
-        "content_extension": "Sokuji menerjemahkan audio dari tab saat ini. Suara asli mereka tetap diputar seperti biasa."
+        "content_extension": "ExTrans menerjemahkan audio dari tab saat ini. Suara asli mereka tetap diputar seperti biasa."
       },
       "subtitle": {
         "title": "Mode subtitle",
@@ -1562,7 +1562,7 @@
     "lineup_source_not_fixed": "{{provider}} perlu mengetahui bahasa yang diucapkan. Pilih bahasa itu sebagai ganti “Deteksi Otomatis”, atau pilih layanan terjemahan lain.",
     "lineup_pair_not_translated": "{{provider}} tidak menerjemahkan {{source}} → {{target}}. Pilih bahasa lain, atau layanan terjemahan lain.",
     "lineup_face_to_face_apart": "“Tatap muka” memerlukan satu layanan untuk transkripsi dan terjemahan. Pilih {{provider}} juga untuk terjemahan, atau atur “Posisi lawan bicara” ke “Dalam rapat”.",
-    "session_in_use": "Jendela atau perangkat lain sedang menggunakan akun ini. Hentikan sesi di sana, atau jika Sokuji baru saja tertutup secara tiba-tiba, coba lagi dalam satu menit.",
+    "session_in_use": "Jendela atau perangkat lain sedang menggunakan akun ini. Hentikan sesi di sana, atau jika ExTrans baru saja tertutup secara tiba-tiba, coba lagi dalam satu menit.",
     "previous_session_ending": "Sesi Anda sebelumnya masih dalam proses berakhir. Silakan coba lagi dalam satu menit.",
     "app_capture_lost_using_system_audio": "Penangkapan aplikasi berhenti, jadi seluruh audio sistem kini diterjemahkan.",
     "app_capture_monitor_missing": "Penangkapan aplikasi tidak dimulai, jadi seluruh audio sistem kini diterjemahkan.",
@@ -1591,7 +1591,7 @@
     "mic_now_using": "Sekarang menggunakan mikrofon “{{device}}”.",
     "mic_in_use": "Mikrofon “{{device}}” sedang digunakan oleh {{apps}}. Tutup {{apps}} lalu mulai lagi, atau pilih mikrofon lain.",
     "mic_unreadable": "Windows tidak dapat membuka mikrofon “{{device}}”. Mungkin aplikasi lain sedang menggunakannya, atau drivernya berhenti merespons. Tutup aplikasi yang menggunakannya atau sambungkan ulang, lalu mulai lagi.",
-    "mic_blocked": "Windows tidak mengizinkan Sokuji menggunakan mikrofon. Aktifkan akses mikrofon untuk aplikasi desktop di Pengaturan › Privasi & keamanan › Mikrofon, lalu mulai lagi.",
+    "mic_blocked": "Windows tidak mengizinkan ExTrans menggunakan mikrofon. Aktifkan akses mikrofon untuk aplikasi desktop di Pengaturan › Privasi & keamanan › Mikrofon, lalu mulai lagi.",
     "speaker_tts_missing": "Terjemahan yang didengar pihak lain hanya berupa teks: tidak ada model suara yang berbicara {{target}}.",
     "participant_tts_missing": "Terjemahan yang saya dengar hanya berupa teks: tidak ada model suara yang berbicara {{target}}.",
     "participant_tts_over_budget": "Terjemahan yang saya dengar hanya berupa teks: memori tidak cukup untuk memuat model suara pihak lain juga.",
@@ -1604,8 +1604,8 @@
     "not_org_member_unnamed": "Anda tidak lagi menjadi anggota organisasi Anda.",
     "org_wallet_frozen": "Akun {{organization}} dijeda. Hubungi pemiliknya, atau gunakan saldo pribadi Anda.",
     "org_wallet_frozen_unnamed": "Akun organisasi dijeda. Hubungi pemiliknya, atau gunakan saldo pribadi Anda.",
-    "org_wallet_frozen_owner": "Akun {{organization}} dijeda. Hubungi dukungan Sokuji, atau gunakan saldo pribadi Anda.",
-    "org_wallet_frozen_owner_unnamed": "Akun organisasi dijeda. Hubungi dukungan Sokuji, atau gunakan saldo pribadi Anda.",
+    "org_wallet_frozen_owner": "Akun {{organization}} dijeda. Hubungi dukungan ExTrans, atau gunakan saldo pribadi Anda.",
+    "org_wallet_frozen_owner_unnamed": "Akun organisasi dijeda. Hubungi dukungan ExTrans, atau gunakan saldo pribadi Anda.",
     "model_missing": "Layanan tidak menyediakan model ini: {{detail}}",
     "quota": "Akun layanan sudah tidak punya saldo: {{detail}}",
     "text_model_unset": "Pilih model untuk terjemahan, atau ketik namanya, di “Bahasa dan susunan”.",
@@ -1613,7 +1613,7 @@
     "address_invalid": "Alamat layanan yang kompatibel tidak dapat digunakan: {{detail}}"
   },
   "viewer": {
-    "title": "Subtitle Sokuji",
+    "title": "Subtitle ExTrans",
     "connecting": "Menghubungkan…",
     "original": "Asli",
     "enter": {
@@ -1671,7 +1671,7 @@
     },
     "shortcuts": "+ − ukuran teks · B kedua bahasa · F layar penuh · End ke terbaru",
     "transcript": {
-      "header": "Subtitle Sokuji, disimpan {{time}}"
+      "header": "Subtitle ExTrans, disimpan {{time}}"
     },
     "present": {
       "title": "Baca subtitle di ponsel atau komputer Anda",
@@ -1684,7 +1684,7 @@
       "androidChrome": "Chrome di Android tidak bisa membukanya? Izinkan di Setelan → Aplikasi → Chrome → Izin → Perangkat di sekitar.",
       "watching": "Menonton: {{count}}",
       "fullscreen": "Layar penuh",
-      "windowTitle": "Halaman proyektor Sokuji",
+      "windowTitle": "Halaman proyektor ExTrans",
       "ended": "Berbagi telah berakhir"
     }
   },
@@ -1904,8 +1904,8 @@
         "key": "Tombol",
         "held": "Saat ditahan",
         "notHeld": "Saat tidak ditahan",
-        "talkHeld": "Sokuji mendengarkan; setelah Anda melepas tombol, potongan itu diterjemahkan dan pihak lain mendengar terjemahannya. Saat Passthrough aktif, pihak lain juga mendengar suara Anda sendiri dengan pelan.",
-        "talkNotHeld": "Sokuji tidak mendengarkan; apa pun yang Anda ucapkan tidak diterjemahkan dan tidak sampai ke pihak lain.",
+        "talkHeld": "ExTrans mendengarkan; setelah Anda melepas tombol, potongan itu diterjemahkan dan pihak lain mendengar terjemahannya. Saat Passthrough aktif, pihak lain juga mendengar suara Anda sendiri dengan pelan.",
+        "talkNotHeld": "ExTrans tidak mendengarkan; apa pun yang Anda ucapkan tidak diterjemahkan dan tidak sampai ke pihak lain.",
         "translateHeld": "Ucapan Anda diterjemahkan; pihak lain hanya mendengar terjemahannya, bukan suara Anda sendiri.",
         "translateNotHeld": "Suara Anda sendiri langsung sampai ke pihak lain, tanpa diterjemahkan.",
         "change": "Ubah",
@@ -2061,7 +2061,7 @@
     "foundInNotes": "Ditemukan di catatan",
     "foundInTitle": "Ditemukan di judul",
     "unavailable": "Riwayat tidak dapat dibuka.",
-    "unavailableNewer": "Riwayat ini ditulis oleh versi Sokuji yang lebih baru. Perbarui Sokuji untuk membukanya.",
+    "unavailableNewer": "Riwayat ini ditulis oleh versi ExTrans yang lebih baru. Perbarui ExTrans untuk membukanya.",
     "failed": "Itu tidak berhasil. Coba lagi.",
     "me": "Saya",
     "other": "Lawan bicara",
@@ -2175,7 +2175,7 @@
       "wallet-frozen": "Dompet Kizuna AI Anda dibekukan.",
       "not-member": "Anda bukan lagi anggota organisasi yang membayar Kizuna AI.",
       "too-large": "Rekaman ini terlalu panjang untuk ditulis catatannya oleh Kizuna AI.",
-      "update-required": "Perbarui Sokuji untuk menulis catatan dengan Kizuna AI.",
+      "update-required": "Perbarui ExTrans untuk menulis catatan dengan Kizuna AI.",
       "other": "Layanan catatan menolak permintaan."
     },
     "notesLatestFailed": "Percobaan terakhir tidak bisa ditulis: {{reason}}",

@@ -110,7 +110,7 @@ export function HistoryCategory(_props: CategoryBodyProps) {
   let folderLine: ReactNode = null;
   if (status && !status.available) {
     folderLine = status.reason === 'newer'
-      ? t('history.unavailableNewer', 'This History was written by a newer version of Sokuji. Update Sokuji to open it.')
+      ? t('history.unavailableNewer', 'This History was written by a newer version of ExTrans. Update ExTrans to open it.')
       : t('history.unavailable', 'History could not be opened.');
   } else if (status) {
     folderLine = (

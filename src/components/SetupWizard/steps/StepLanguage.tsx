@@ -33,7 +33,7 @@ const StepLanguage: React.FC = () => {
 
   return (
     <section className="setup-step">
-      <h2>{t('setup.steps.language.title', 'Which language should Sokuji speak to you in?')}</h2>
+      <h2>{t('setup.steps.language.title', 'Which language should ExTrans speak to you in?')}</h2>
       <p>{t('setup.steps.language.desc', 'This is the language of menus and buttons. You choose the languages to translate between later.')}</p>
       <label className="setup-field">
         <span>{t('setup.steps.language.label', 'Interface language')}</span>

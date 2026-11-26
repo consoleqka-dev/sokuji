@@ -1,12 +1,12 @@
 🗣️ Speak your language. Be understood in theirs. Instantly.
 
-Sokuji is an AI-powered real-time speech translator that works directly inside your video meetings — no extra apps, no copy-pasting, no awkward pauses. Just speak naturally, and your words are translated and spoken aloud in your teammate's language, in real time.
+ExTrans is an AI-powered real-time speech translator that works directly inside your video meetings — no extra apps, no copy-pasting, no awkward pauses. Just speak naturally, and your words are translated and spoken aloud in your teammate's language, in real time.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ✅ WHY SOKUJI?
 
-Unlike text-based translators or clunky meeting bots, Sokuji provides voice-to-voice translation that flows naturally into your conversation:
+Unlike text-based translators or clunky meeting bots, ExTrans provides voice-to-voice translation that flows naturally into your conversation:
 
 • Real-time voice translation — Your speech is translated AND spoken aloud, not just displayed as text
 • Virtual microphone — Others hear the translation directly through their meeting audio, no setup needed on their end
@@ -20,15 +20,15 @@ Unlike text-based translators or clunky meeting bots, Sokuji provides voice-to-v
 
 🖥️ WORKS WHERE YOU WORK
 
-Sokuji works seamlessly with all major web-based video meeting platforms. Whether you're on a team call, a client meeting, or a virtual conference, just select "Sokuji Virtual Microphone" in your meeting's audio settings and you're ready to go. It supports any web-based meeting tool that allows microphone selection.
+ExTrans works seamlessly with all major web-based video meeting platforms. Whether you're on a team call, a client meeting, or a virtual conference, just select "ExTrans Virtual Microphone" in your meeting's audio settings and you're ready to go. It supports any web-based meeting tool that allows microphone selection.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🚀 HOW IT WORKS (3 Simple Steps)
 
 1. Open your video meeting on any supported platform
-2. Click the Sokuji icon and configure your AI provider & languages
-3. Select "Sokuji Virtual Microphone" as your mic — done!
+2. Click the ExTrans icon and configure your AI provider & languages
+3. Select "ExTrans Virtual Microphone" as your mic — done!
 
 Your colleagues hear the translated voice automatically. No installation or setup needed on their side.
 
@@ -48,7 +48,7 @@ Your colleagues hear the translated voice automatically. No installation or setu
 
 🔒 PRIVACY-FIRST — YOUR VOICE STAYS YOURS
 
-Sokuji is built so that your voice data NEVER touches our servers. By architecture, not by policy.
+ExTrans is built so that your voice data NEVER touches our servers. By architecture, not by policy.
 
 • Zero data collection — We have no server that receives your audio. It's technically impossible for us to hear your conversations
 • Offline AI mode — Use built-in AI models that run 100% on your device. Your voice never leaves your computer. Completely free
@@ -70,6 +70,6 @@ Sokuji is built so that your voice data NEVER touches our servers. By architectu
 
 We'd love to hear from you!
 • Report issues: github.com/kizuna-ai-lab/sokuji/issues
-• Star us on GitHub if you find Sokuji useful ⭐
+• Star us on GitHub if you find ExTrans useful ⭐
 
 Made with ❤️ by Kizuna AI Lab

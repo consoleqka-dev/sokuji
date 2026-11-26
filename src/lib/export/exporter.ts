@@ -49,7 +49,7 @@ export function exportWords(t: (key: string, defaultValue: string, params?: Reco
       person: (n) => t('mainPanel.displayMode.person', 'Speaker {{n}}', { n }),
     },
     header: {
-      title: t('mainPanel.export.headerTitle', 'Sokuji conversation export'),
+      title: t('mainPanel.export.headerTitle', 'ExTrans conversation export'),
       sessionStarted: t('mainPanel.export.headerSessionStarted', 'Session started'),
       exported: t('mainPanel.export.headerExported', 'Exported'),
       provider: t('mainPanel.export.headerProvider', 'Provider'),

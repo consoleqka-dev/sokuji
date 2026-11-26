@@ -27,7 +27,7 @@ const note = vi.fn();
 const notify = { note };
 
 const CONTENT = [
-  'Sokuji conversation export',
+  'ExTrans conversation export',
   'Generated: 2026-09-18 15:30:00',
   '',
   '[15:30:01] Me:    MY-ORIGINAL',

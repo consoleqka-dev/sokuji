@@ -61,7 +61,7 @@ export const GpuAccelerationNotice: React.FC = () => {
           <p className="gpu-acceleration-notice__text">
             {t(
               'models.gpuWaylandRemedy',
-              'On a Wayland session, Chromium cannot use the GPU for this. Starting Sokuji with --ozone-platform=x11 restores acceleration.',
+              'On a Wayland session, Chromium cannot use the GPU for this. Starting ExTrans with --ozone-platform=x11 restores acceleration.',
             )}
           </p>
         )}

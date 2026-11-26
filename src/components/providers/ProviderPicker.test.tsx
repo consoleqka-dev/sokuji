@@ -301,7 +301,7 @@ describe('ProviderPicker', () => {
       expect(document.querySelector('.provider-select option[value="managed-a"]')?.textContent).toBe('simpleSettings.recommendedOption');
       expect(document.querySelector('.provider-select option[value="fake"]')?.textContent).toBe('providers.fake.name');
       // A hosted provider carries its engine in text: the two hosted providers share one name (owner, 2026-11-15).
-      expect(document.querySelector('.provider-select option[value="managed-b"]')?.textContent).toBe('providers.managed-b.name (Sokuji)');
+      expect(document.querySelector('.provider-select option[value="managed-b"]')?.textContent).toBe('providers.managed-b.name (ExTrans)');
     });
 
     it('recommends nothing when no managed provider is offered', async () => {
@@ -372,11 +372,11 @@ describe('ProviderPicker', () => {
       // No vendor: the local provider's own note takes the credit's place (owner, 2026-11-15).
       expect(localOption?.querySelector('.powered-by')?.textContent).toBe('providers.local_inference.note');
 
-      // The fake provider declares vendor: 'Sokuji' — the credit renders
+      // The fake provider declares vendor: 'ExTrans' — the credit renders
       // beside its name.
       const fakeOption = document.querySelector('.provider-select option[value="fake"]');
       expect(fakeOption?.querySelector('.provider-select__icon')?.firstElementChild).not.toBeNull();
-      expect(fakeOption?.querySelector('.powered-by-vendor')?.textContent).toBe('Sokuji');
+      expect(fakeOption?.querySelector('.powered-by-vendor')?.textContent).toBe('ExTrans');
 
       // The closed control mirrors the selected option (today's <selectedcontent>).
       expect(document.querySelector('.provider-select selectedcontent')).not.toBeNull();

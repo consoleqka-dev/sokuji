@@ -62,12 +62,12 @@
     },
     "echoCancellation": "Ekoeliminering",
     "echoCancellationTooltip": {
-      "app": "Bara Sokuji — Tar bort Sokujis översatta tal om mikrofonen fångar upp det. Välj detta när mikrofonen är en virtuell kabel som BlackHole.",
+      "app": "Bara ExTrans — Tar bort ExTranss översatta tal om mikrofonen fångar upp det. Välj detta när mikrofonen är en virtuell kabel som BlackHole.",
       "browser": "Bara webbläsaren — Tar bort det som den här webbläsaren spelar upp, mötesflikar inräknade, om mikrofonen fångar upp det. Välj detta när mikrofonen är en virtuell kabel som BlackHole som bär ljud från en annan app.",
       "all": "Alla ljud — Tar även bort det som andra appar spelar upp i högtalarna, till exempel en mötesapp. En virtuell kabel som används som mikrofon bär just det ljudet och skulle bli tyst."
     },
     "echoCancellationMode": {
-      "app": "Bara Sokuji",
+      "app": "Bara ExTrans",
       "browser": "Bara webbläsaren",
       "all": "Alla ljud"
     },
@@ -368,9 +368,9 @@
     "virtualMicrophone": "Virtuell mikrofon",
     "virtualMicrophoneNotice": "Meddelande om virtuell mikrofon",
     "iUnderstand": "Jag förstår",
-    "virtualMicWarningTitle": "Detta är en virtuell mikrofon skapad av Sokuji.",
+    "virtualMicWarningTitle": "Detta är en virtuell mikrofon skapad av ExTrans.",
     "virtualMicWarningText1": "Välj inte den här enheten här. Använd istället denna virtuella mikrofon i dina videokonferensapplikationer (som Google Meet, Zoom, Microsoft Teams osv.) för att ta emot den direktöversatta talutmatningen.",
-    "virtualMicWarningText2": "För att Sokuji ska fungera korrekt, välj din faktiska fysiska mikrofon från listan.",
+    "virtualMicWarningText2": "För att ExTrans ska fungera korrekt, välj din faktiska fysiska mikrofon från listan.",
     "realVoicePassthrough": "Genomslussning",
     "passthroughManagedByPushToTranslate": "I läget Push-to-Translate hanteras genomsläppet automatiskt: det spelas upp med 100 % volym när du inte håller ner tangenten och stoppas (ljudet skickas till översättning) medan du håller ner den.",
     "speechTitle": "Tal",
@@ -427,7 +427,7 @@
     "participantFellBackToSystemAudio": "Insamlingen av den valda applikationen stoppades, så nu översätts allt systemljud i stället. Välj applikationen igen för att begränsa omfattningen.",
     "loopbackMicNotice": "Loopback-ingångsnotis",
     "loopbackMicWarningTitle": "Den här ingången fångar igen det som datorn spelar upp.",
-    "loopbackMicWarningText1": "Loopback-ingångar som \"Stereo Mix\" eller en \"Monitor of ...\"-enhet spelar in systemets egen ljudutgång. I en session med Sokujis översatta tal skulle Sokuji höra och översätta sig själv i en slinga.",
+    "loopbackMicWarningText1": "Loopback-ingångar som \"Stereo Mix\" eller en \"Monitor of ...\"-enhet spelar in systemets egen ljudutgång. I en session med ExTranss översatta tal skulle ExTrans höra och översätta sig själv i en slinga.",
     "loopbackMicWarningText2": "Enheten förblir vald om denna routning är avsiktlig, men välj en fysisk mikrofon för normal användning.",
     "participantNoAudioYet": "Inget ljud har kommit från den valda källan ännu. Om den spelar upp och inget översätts, tillåt Sokuji under Systeminställningar > Integritet och säkerhet > Endast inspelning av systemljud (macOS) och starta sessionen igen.",
     "audioCaptureUnprovenNotice": "Inget har fångats ännu",
@@ -473,7 +473,7 @@
     "verificationEmailFailed": "Kunde inte skicka verifieringsmail. Försök igen",
     "alreadyVerified": "Din e-post är redan verifierad!",
     "cooldownMessage": "Vänta {{seconds}} sekunder",
-    "checkYourEmail": "Verifieringsmail skickat. Slutför det i din inkorg och kom tillbaka — Sokuji upptäcker det automatiskt.",
+    "checkYourEmail": "Verifieringsmail skickat. Slutför det i din inkorg och kom tillbaka — ExTrans upptäcker det automatiskt.",
     "emailVerifiedToast": "E-post verifierad",
     "sessionExpired": "Din session har gått ut. Logga in igen.",
     "forgotPassword": "Glömt lösenord?",
@@ -497,16 +497,16 @@
   },
   "simpleConfig": {
     "interfaceLanguage": "Gränssnittsspråk",
-    "interfaceLanguageDesc": "Detta ändrar språket för Sokujis menyer och knappar. Det påverkar INTE språken du kan översätta mellan.",
+    "interfaceLanguageDesc": "Detta ändrar språket för ExTranss menyer och knappar. Det påverkar INTE språken du kan översätta mellan.",
     "translationLanguages": "Översättningsspråk",
     "translationLanguagesDesc": "Välj vilket språk du talar (Mitt språk) och vilket språk du vill höra översättningen på (Den andras språk). Välj 'Automatisk Detektion' om du inte är säker på vilket språk du kommer att tala.",
     "yourLanguage": "Mitt språk",
     "userAccount": "Användarkonto",
     "userAccountTooltip": "Tekniska användare kan använda sina egna API-nycklar. Användarkonto designat för förenklad installation.",
-    "signInRequired": "Registrera dig för att använda Sokujis inbyggda översättningstjänst — ingen API-nyckel behövs. Du kan också fortsätta använda din egen leverantör och nyckel.",
+    "signInRequired": "Registrera dig för att använda ExTranss inbyggda översättningstjänst — ingen API-nyckel behövs. Du kan också fortsätta använda din egen leverantör och nyckel.",
     "targetLanguage": "Den andras språk",
     "microphone": "Mikrofon",
-    "microphoneDesc": "Välj mikrofon för att fånga ditt tal. Tala ditt språk i denna mikrofon, och Sokuji kommer att översätta allt den hör i realtid.",
+    "microphoneDesc": "Välj mikrofon för att fånga ditt tal. Tala ditt språk i denna mikrofon, och ExTrans kommer att översätta allt den hör i realtid.",
     "swapLanguages": "Byt språk",
     "swapNotSpoken": "Taltjänsten läser inte upp de här språken åt andra hållet.",
     "textOnly": "Endast text",
@@ -715,7 +715,7 @@
       "scopeLabel": "Inkludera",
       "scopeItemAria": "{{scope}} — {{line}}",
       "scopeEmpty": "Inget valt",
-      "headerTitle": "Sokuji konversationsexport",
+      "headerTitle": "ExTrans konversationsexport",
       "headerSessionStarted": "Sessionen startade",
       "headerExported": "Exporterad",
       "headerProvider": "Leverantör",
@@ -959,7 +959,7 @@
     "gpuSoftwareOnly": "GPU-acceleration är inte tillgänglig — körs på processorn",
     "gpuUnavailable": "GPU-acceleration är inte tillgänglig",
     "gpuSlowWarning": "Lokala modeller fungerar fortfarande, men transkribering och översättning blir märkbart långsammare.",
-    "gpuWaylandRemedy": "I en Wayland-session kan Chromium inte använda GPU:n för detta. Att starta Sokuji med --ozone-platform=x11 återställer accelerationen.",
+    "gpuWaylandRemedy": "I en Wayland-session kan Chromium inte använda GPU:n för detta. Att starta ExTrans med --ozone-platform=x11 återställer accelerationen.",
     "othersGroup": "Övriga modeller",
     "requiresGpu": "Kräver en GPU",
     "licenseConsent": {
@@ -970,7 +970,7 @@
       "viewLicense": "Visa den fullständiga licenstexten",
       "nonCommercial": "Denna licens tillåter endast icke-kommersiell användning — använd inte modellen i kommersiella produkter eller tjänster.",
       "restrictedTerms": "Detta är inte en öppen källkodslicens. Den ställer villkor för hur modellen och dess utdata får användas — läs hela texten innan du förlitar dig på den.",
-      "disclaimer": "Sokuji är inte anslutet till modellens upphovspersoner och har ingen relation till dem. Denna integration är inofficiell och tillhandahålls i befintligt skick utan någon garanti.",
+      "disclaimer": "ExTrans är inte anslutet till modellens upphovspersoner och har ingen relation till dem. Denna integration är inofficiell och tillhandahålls i befintligt skick utan någon garanti.",
       "attribution": "Erkännande: {{attribution}}",
       "cancel": "Avbryt",
       "accept": "Jag förstår — endast icke-kommersiellt",
@@ -1052,9 +1052,9 @@
     "linuxMigrateTitle": "Ny version v{{version}} tillgänglig"
   },
   "audioSystem": {
-    "pactlMissingBody": "pactl (PulseAudios kommandoradsverktyg) hittades inte, så Sokuji kunde inte konfigurera sin virtuella mikrofon/högtalare. Installera det och försök igen:",
+    "pactlMissingBody": "pactl (PulseAudios kommandoradsverktyg) hittades inte, så ExTrans kunde inte konfigurera sin virtuella mikrofon/högtalare. Installera det och försök igen:",
     "installCommand": "sudo apt install pulseaudio-utils",
-    "unavailableBody": "Sokuji kunde inte konfigurera sin virtuella mikrofon/högtalare. Kontrollera att PulseAudio eller PipeWire körs.",
+    "unavailableBody": "ExTrans kunde inte konfigurera sin virtuella mikrofon/högtalare. Kontrollera att PulseAudio eller PipeWire körs.",
     "retry": "Försök igen",
     "retrying": "Försöker igen...",
     "macDriverNotLoadedBody": "Sokujis virtuella mikrofon är installerad, men macOS har inte läst in den, så mötesappar hör inte din översättning. Reparera den; macOS ber om ditt administratörslösenord.",
@@ -1065,12 +1065,12 @@
   },
   "vbCable": {
     "title": "Låt motparten höra översättningen",
-    "body": "Mötesappar tar emot den talade översättningen via en virtuell mikrofon. I Windows är det VB-CABLE, en kostnadsfri drivrutin från VB-Audio. Allt annat i Sokuji fungerar utan den.",
+    "body": "Mötesappar tar emot den talade översättningen via en virtuell mikrofon. I Windows är det VB-CABLE, en kostnadsfri drivrutin från VB-Audio. Allt annat i ExTrans fungerar utan den.",
     "install": "Installera VB-CABLE",
     "about": "Om VB-CABLE",
     "adminOnce": "Windows ber om administratörsbehörighet en gång.",
     "installingTitle": "Installerar VB-CABLE…",
-    "installingBody": "Godkänn Windows-frågan och klicka sedan på \"Install Driver\" i VB-CABLE-fönstret. Sokuji hittar den så snart den är installerad.",
+    "installingBody": "Godkänn Windows-frågan och klicka sedan på \"Install Driver\" i VB-CABLE-fönstret. ExTrans hittar den så snart den är installerad.",
     "installingBusy": "Installerar…",
     "failedTitle": "VB-CABLE installerades inte",
     "failedBody": "Installationen avbröts eller slutfördes inte. Försök igen, eller installera den själv från VB-Audios webbplats.",
@@ -1083,7 +1083,7 @@
     "storeStep3": "Klicka på \"Install Driver\" och starta sedan om datorn.",
     "openWebsite": "Öppna VB-Audios webbplats",
     "checkAgain": "Kontrollera igen",
-    "picksUp": "Sokuji hittar den automatiskt när den är installerad.",
+    "picksUp": "ExTrans hittar den automatiskt när den är installerad.",
     "notNow": "Inte nu"
   },
   "subtitle": {
@@ -1182,7 +1182,7 @@
     "previewChargedToBalance": "Att lyssna på en förhandsgranskning syntetiserar ett kort ljudklipp och debiteras ditt kontosaldo.",
     "previewFailed": "Det gick inte att skapa en förhandsgranskning för den här rösten.",
     "renameFailed": "Det gick inte att byta namn på den här rösten.",
-    "recordStartFailed": "Inspelningen kunde inte starta. Kontrollera att en mikrofon är ansluten och att Sokuji får använda den.",
+    "recordStartFailed": "Inspelningen kunde inte starta. Kontrollera att en mikrofon är ansluten och att ExTrans får använda den.",
     "previewLanguageUnsupported": "Den här modellen har ingen exempelmening på ett språk den talar.",
     "previewNeedsBalance": "Fyll på ditt saldo för att lyssna på en förhandsgranskning av den här rösten.",
     "previewNeedsSessionStopped": "Avsluta sessionen för att lyssna på en förhandsgranskning av den här rösten.",
@@ -1290,10 +1290,10 @@
     }
   },
   "echoNotice": {
-    "ttsEcho": "Dina högtalare matar tillbaka Sokujis översatta tal in i mikrofonen.",
+    "ttsEcho": "Dina högtalare matar tillbaka ExTranss översatta tal in i mikrofonen.",
     "meetingEcho": "Mötesljud från dina högtalare når mikrofonen.",
     "farEndEcho": "En deltagares enhet ekar tillbaka din översättning in i mötet.",
-    "selfCapture": "Den andras ljudkälla fångar Sokujis eget ljud.",
+    "selfCapture": "Den andras ljudkälla fångar ExTranss eget ljud.",
     "routingLoop": "Den valda ingångsenheten fångar direkt den här datorns uppspelning.",
     "actionHeadphones": "Hörlurar bryter slingan.",
     "actionAskRemote": "Be den deltagaren att använda hörlurar.",
@@ -1315,7 +1315,7 @@
     "clearAllKeepsPicks": "Dina val sparas och återställs när modellerna laddas ner igen."
   },
   "setup": {
-    "title": "Konfigurera Sokuji",
+    "title": "Konfigurera ExTrans",
     "stepOf": "Steg {{current}} av {{total}}",
     "back": "Tillbaka",
     "next": "Nästa",
@@ -1325,7 +1325,7 @@
     "rerun": "Kör konfigurationen igen",
     "steps": {
       "language": {
-        "title": "Vilket språk ska Sokuji tala till dig på?",
+        "title": "Vilket språk ska ExTrans tala till dig på?",
         "desc": "Detta är språket för menyer och knappar. Du väljer vilka språk som ska översättas mellan senare.",
         "label": "Gränssnittsspråk"
       },
@@ -1442,7 +1442,7 @@
       "guide": "Så här skaffar du den här nyckeln",
       "verifyEmail": "Inloggad. Öppna länken vi skickade via e-post för att verifiera din adress — provkrediten läggs till så snart du gör det.",
       "onFile": "En nyckel är redan sparad — lämna detta tomt för att behålla den.",
-      "offlineHardware": "Sokuji fungerar bra med en GPU och tillräckligt med VRAM; med bara CPU är det märkbart långsammare.",
+      "offlineHardware": "ExTrans fungerar bra med en GPU och tillräckligt med VRAM; med bara CPU är det märkbart långsammare.",
       "openaiOneKey": "Den här enda nyckeln gäller för OpenAI Realtime, Translate och Live.",
       "baseUrl": "Adress",
       "baseUrlPlaceholder": "Adress, till exempel https://openrouter.ai/api/v1",
@@ -1472,7 +1472,7 @@
     "steps": {
       "welcome": {
         "title": "Du är klar",
-        "content": "Sokuji är konfigurerat för ditt scenario. Här är en kort rundtur — den tar mindre än en minut."
+        "content": "ExTrans är konfigurerat för ditt scenario. Här är en kort rundtur — den tar mindre än en minut."
       },
       "mode-picker": {
         "title": "Översättningsläge",
@@ -1483,7 +1483,7 @@
       },
       "microphone": {
         "title": "Din mikrofon",
-        "content": "Ditt tal kommer in här. Systemets standard är redan vald. Välj inte Sokujis virtuella mikrofon — den är till för din mötesapplikation."
+        "content": "Ditt tal kommer in här. Systemets standard är redan vald. Välj inte ExTranss virtuella mikrofon — den är till för din mötesapplikation."
       },
       "monitor": {
         "title": "Hör dig själv översatt",
@@ -1492,15 +1492,15 @@
       "output-routing": {
         "title": "Hur den andra sidan hör dig",
         "content": "Din översatta röst går till en virtuell mikrofon; välj den som mikrofon i din mötesapplikation.",
-        "content_extension": "I Google Meet, Zoom eller Teams, välj \"Sokuji Virtual Microphone\" som din mikrofon. Sokuji lägger till den automatiskt på webbplatser för möten som stöds.",
-        "content_electronLinux": "Sokuji skapade en virtuell mikrofon på det här systemet. Välj den som mikrofon i din mötesapplikation.",
-        "content_electronOther": "Du behöver en virtuell ljudkabel (till exempel VB-Cable). Skicka Sokujis utmatning till den, och välj den som mikrofon i din mötesapplikation."
+        "content_extension": "I Google Meet, Zoom eller Teams, välj \"ExTrans Virtual Microphone\" som din mikrofon. ExTrans lägger till den automatiskt på webbplatser för möten som stöds.",
+        "content_electronLinux": "ExTrans skapade en virtuell mikrofon på det här systemet. Välj den som mikrofon i din mötesapplikation.",
+        "content_electronOther": "Du behöver en virtuell ljudkabel (till exempel VB-Cable). Skicka ExTranss utmatning till den, och välj den som mikrofon i din mötesapplikation."
       },
       "participant-source": {
         "title": "Den andra sidans röst",
-        "content": "Sokuji lyssnar på den andra sidan här.",
+        "content": "ExTrans lyssnar på den andra sidan här.",
         "content_electron": "Välj appen som ska översättas, eller allt systemljud. Deras ursprungliga röst fortsätter att spelas upp som vanligt.",
-        "content_extension": "Sokuji översätter ljudet från den aktiva webbläsarfliken. Deras ursprungliga röst fortsätter att spelas upp som vanligt."
+        "content_extension": "ExTrans översätter ljudet från den aktiva webbläsarfliken. Deras ursprungliga röst fortsätter att spelas upp som vanligt."
       },
       "subtitle": {
         "title": "Undertextläge",
@@ -1562,7 +1562,7 @@
     "lineup_source_not_fixed": "{{provider}} behöver veta vilket språk som talas. Välj det i stället för ”Automatisk Detektion”, eller välj en annan översättningstjänst.",
     "lineup_pair_not_translated": "{{provider}} översätter inte {{source}} → {{target}}. Välj andra språk, eller en annan översättningstjänst.",
     "lineup_face_to_face_apart": "”På plats” behöver en tjänst som både transkriberar och översätter. Välj {{provider}} även för översättningen, eller ställ in ”Var finns den andra” på ”På ett möte”.",
-    "session_in_use": "Ett annat fönster eller en annan enhet använder det här kontot. Stoppa sessionen där, eller försök igen om en minut om Sokuji just stängdes oväntat.",
+    "session_in_use": "Ett annat fönster eller en annan enhet använder det här kontot. Stoppa sessionen där, eller försök igen om en minut om ExTrans just stängdes oväntat.",
     "previous_session_ending": "Din föregående session håller fortfarande på att avslutas. Försök igen om en minut.",
     "app_capture_lost_using_system_audio": "Appinsamlingen stoppades, så nu översätts allt systemljud i stället.",
     "app_capture_monitor_missing": "Appinsamlingen startade inte, så nu översätts allt systemljud i stället.",
@@ -1591,7 +1591,7 @@
     "mic_now_using": "Nu används mikrofonen ”{{device}}”.",
     "mic_in_use": "Mikrofonen ”{{device}}” används av {{apps}}. Stäng {{apps}} och starta igen, eller välj en annan mikrofon.",
     "mic_unreadable": "Windows kunde inte öppna mikrofonen ”{{device}}”. En annan app kanske använder den, eller så svarar inte dess drivrutin. Stäng appar som använder den eller anslut den igen och starta sedan igen.",
-    "mic_blocked": "Windows låter inte Sokuji använda mikrofonen. Aktivera mikrofonåtkomst för skrivbordsappar under Inställningar › Sekretess och säkerhet › Mikrofon och starta sedan igen.",
+    "mic_blocked": "Windows låter inte ExTrans använda mikrofonen. Aktivera mikrofonåtkomst för skrivbordsappar under Inställningar › Sekretess och säkerhet › Mikrofon och starta sedan igen.",
     "speaker_tts_missing": "Översättning som motparten hör visas bara som text: ingen talmodell talar {{target}}.",
     "participant_tts_missing": "Översättning som jag hör visas bara som text: ingen talmodell talar {{target}}.",
     "participant_tts_over_budget": "Översättning som jag hör visas bara som text: inte tillräckligt med minne för att även läsa in motpartens talmodell.",
@@ -1604,8 +1604,8 @@
     "not_org_member_unnamed": "Du ingår inte längre i din organisation.",
     "org_wallet_frozen": "Kontot för {{organization}} är pausat. Kontakta ägaren eller använd ditt eget saldo.",
     "org_wallet_frozen_unnamed": "Organisationens konto är pausat. Kontakta ägaren eller använd ditt eget saldo.",
-    "org_wallet_frozen_owner": "Kontot för {{organization}} är pausat. Kontakta Sokujis support eller använd ditt eget saldo.",
-    "org_wallet_frozen_owner_unnamed": "Organisationens konto är pausat. Kontakta Sokujis support eller använd ditt eget saldo.",
+    "org_wallet_frozen_owner": "Kontot för {{organization}} är pausat. Kontakta ExTranss support eller använd ditt eget saldo.",
+    "org_wallet_frozen_owner_unnamed": "Organisationens konto är pausat. Kontakta ExTranss support eller använd ditt eget saldo.",
     "model_missing": "Tjänsten erbjuder inte den här modellen: {{detail}}",
     "quota": "Kontot hos tjänsten har inget saldo kvar: {{detail}}",
     "text_model_unset": "Välj en modell för översättningen, eller skriv dess namn, under ”Språk och uppsättning”.",
@@ -1613,7 +1613,7 @@
     "address_invalid": "Den kompatibla tjänstens adress kan inte användas: {{detail}}"
   },
   "viewer": {
-    "title": "Sokuji-undertexter",
+    "title": "ExTrans-undertexter",
     "connecting": "Ansluter…",
     "original": "Original",
     "enter": {
@@ -1671,7 +1671,7 @@
     },
     "shortcuts": "+ − textstorlek · B båda språken · F helskärm · End tillbaka till live",
     "transcript": {
-      "header": "Sokuji-undertexter, sparade {{time}}"
+      "header": "ExTrans-undertexter, sparade {{time}}"
     },
     "present": {
       "title": "Läs undertexterna i din telefon eller dator",
@@ -1684,7 +1684,7 @@
       "androidChrome": "Öppnar inte Chrome på Android sidan? Tillåt det i Inställningar → Appar → Chrome → Behörigheter → Enheter i närheten.",
       "watching": "Tittare: {{count}}",
       "fullscreen": "Helskärm",
-      "windowTitle": "Sokujis projektorsida",
+      "windowTitle": "ExTranss projektorsida",
       "ended": "Delningen har avslutats"
     }
   },
@@ -1904,8 +1904,8 @@
         "key": "Tangent",
         "held": "När den hålls ned",
         "notHeld": "När den inte hålls ned",
-        "talkHeld": "Sokuji lyssnar; när du släpper tangenten översätts det stycket och motparten hör översättningen. När ”Genomslussning” är på hör motparten även din egen röst, på låg volym.",
-        "talkNotHeld": "Sokuji lyssnar inte; inget du säger översätts eller når motparten.",
+        "talkHeld": "ExTrans lyssnar; när du släpper tangenten översätts det stycket och motparten hör översättningen. När ”Genomslussning” är på hör motparten även din egen röst, på låg volym.",
+        "talkNotHeld": "ExTrans lyssnar inte; inget du säger översätts eller når motparten.",
         "translateHeld": "Det du säger översätts; motparten hör bara översättningen, inte din egen röst.",
         "translateNotHeld": "Din egen röst går direkt till motparten, oöversatt.",
         "change": "Ändra",
@@ -2061,7 +2061,7 @@
     "foundInNotes": "Hittades i anteckningarna",
     "foundInTitle": "Hittades i titeln",
     "unavailable": "Historiken kunde inte öppnas.",
-    "unavailableNewer": "Den här historiken skrevs av en nyare version av Sokuji. Uppdatera Sokuji för att öppna den.",
+    "unavailableNewer": "Den här historiken skrevs av en nyare version av ExTrans. Uppdatera ExTrans för att öppna den.",
     "failed": "Det fungerade inte. Försök igen.",
     "me": "Jag",
     "other": "Den andra",
@@ -2175,7 +2175,7 @@
       "wallet-frozen": "Din plånbok hos Kizuna AI är spärrad.",
       "not-member": "Du är inte längre medlem i organisationen som betalar för Kizuna AI.",
       "too-large": "Den här inspelningen är för lång för att Kizuna AI ska kunna skriva anteckningar från den.",
-      "update-required": "Uppdatera Sokuji för att skriva anteckningar med Kizuna AI.",
+      "update-required": "Uppdatera ExTrans för att skriva anteckningar med Kizuna AI.",
       "other": "Anteckningstjänsten avvisade begäran."
     },
     "notesLatestFailed": "Det senaste försöket kunde inte skrivas: {{reason}}",

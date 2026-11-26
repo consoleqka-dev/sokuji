@@ -63,7 +63,7 @@ describe('autoSaveConversation', () => {
   it('saves the whole conversation, header first, one block per exchange', async () => {
     expect(await autoSaveConversation(legs, info, { note })).toBe('saved');
     const [content, filename, mime] = downloadFile.mock.calls[0];
-    expect(content).toMatch(/^Sokuji conversation export\nSession started: .+\nExported: /);
+    expect(content).toMatch(/^ExTrans conversation export\nSession started: .+\nExported: /);
     expect(content).toContain('Provider: fake\nModels: asr=fake\n');
     expect(content).toMatch(/\[\d{2}:\d{2}:\d{2}\] Me\n  今日は天気がいいですね。公園に行きましょう。\n  → 今天天气很好。我们去公园吧。\n/);
     expect(filename).toMatch(/^sokuji-conversation-\d{8}-\d{6}\.txt$/);

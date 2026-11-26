@@ -1,15 +1,15 @@
 {
   "extensionName": {
-    "message": "Sokuji - מתרגם פגישות AI"
+    "message": "ExTrans - מתרגם פגישות AI"
   },
   "extensionDescription": {
     "message": "תרגום דיבור מיידי מבוסס בינה מלאכותית לכל פגישות הווידאו. שבירת מחסומי השפה עם תרגום קולי בזמן אמת."
   },
   "popupTitle": {
-    "message": "Sokuji - אתרים נתמכים"
+    "message": "ExTrans - אתרים נתמכים"
   },
   "openSokuji": {
-    "message": "פתח Sokuji"
+    "message": "פתח ExTrans"
   },
   "chromeWebStore": {
     "message": "חנות האינטרנט של Chrome"
@@ -18,7 +18,7 @@
     "message": "תוספות Edge"
   },
   "sokujiAvailable": {
-    "message": "✓ Sokuji זמין ב-$SITE_NAME$!",
+    "message": "✓ ExTrans זמין ב-$SITE_NAME$!",
     "placeholders": {
       "site_name": {
         "content": "$1",
@@ -27,25 +27,25 @@
     }
   },
   "clickToStart": {
-    "message": "לחץ על \"פתח Sokuji\" למטה כדי להתחיל תרגום בזמן אמת."
+    "message": "לחץ על \"פתח ExTrans\" למטה כדי להתחיל תרגום בזמן אמת."
   },
   "quickStart": {
     "message": "התחלה מהירה:"
   },
   "quickStartInstructions": {
-    "message": "בפגישה, בחר \"Sokuji Virtual Microphone\" כמיקרופון ← התחל לדבר!"
+    "message": "בפגישה, בחר \"ExTrans Virtual Microphone\" כמיקרופון ← התחל לדבר!"
   },
   "gatherTownTitle": {
-    "message": "Sokuji for Gather Town"
+    "message": "ExTrans for Gather Town"
   },
   "gatherTownGuidance": {
-    "message": "כדי להשתמש ב-Sokuji, בחר <strong>\"Sokuji Virtual Microphone\"</strong> בהגדרות המיקרופון שלך."
+    "message": "כדי להשתמש ב-ExTrans, בחר <strong>\"ExTrans Virtual Microphone\"</strong> בהגדרות המיקרופון שלך."
   },
   "wherebyTitle": {
-    "message": "Sokuji for Whereby"
+    "message": "ExTrans for Whereby"
   },
   "wherebyGuidance": {
-    "message": "כדי להשתמש ב-Sokuji, אנא בחר <strong>\"Sokuji Virtual Microphone\"</strong> בהגדרות המיקרופון ו<strong>השבת את הפחתת הרעש</strong> לביצועים טובים יותר."
+    "message": "כדי להשתמש ב-ExTrans, אנא בחר <strong>\"ExTrans Virtual Microphone\"</strong> בהגדרות המיקרופון ו<strong>השבת את הפחתת הרעש</strong> לביצועים טובים יותר."
   },
   "gotIt": {
     "message": "הבנתי"
@@ -54,37 +54,37 @@
     "message": "הזכר לי מאוחר יותר"
   },
   "defaultTitle": {
-    "message": "Sokuji"
+    "message": "ExTrans"
   },
   "defaultGuidance": {
-    "message": "כדי להשתמש ב-Sokuji, אנא בחר \"Sokuji Virtual Microphone\" בהגדרות המיקרופון שלך."
+    "message": "כדי להשתמש ב-ExTrans, אנא בחר \"ExTrans Virtual Microphone\" בהגדרות המיקרופון שלך."
   },
   "discordTitle": {
-    "message": "Sokuji for Discord"
+    "message": "ExTrans for Discord"
   },
   "discordGuidance": {
-    "message": "כדי להשתמש ב-Sokuji, אנא בחר <strong>\"Sokuji Virtual Microphone\"</strong> בהגדרות המיקרופון שלך ו<strong>השבת את דיכוי הרעש</strong> בהגדרות הקול של Discord לביצועים טובים יותר."
+    "message": "כדי להשתמש ב-ExTrans, אנא בחר <strong>\"ExTrans Virtual Microphone\"</strong> בהגדרות המיקרופון שלך ו<strong>השבת את דיכוי הרעש</strong> בהגדרות הקול של Discord לביצועים טובים יותר."
   },
   "slackTitle": {
-    "message": "Sokuji for Slack"
+    "message": "ExTrans for Slack"
   },
   "slackGuidance": {
-    "message": "To use Sokuji in Slack Huddles, please <strong>start a Huddle</strong>, then select <strong>\"Sokuji Virtual Microphone\"</strong> in your Video and Mic settings, and <strong>disable Noise Suppression</strong> in Audio & Video preferences for better performance."
+    "message": "To use ExTrans in Slack Huddles, please <strong>start a Huddle</strong>, then select <strong>\"ExTrans Virtual Microphone\"</strong> in your Video and Mic settings, and <strong>disable Noise Suppression</strong> in Audio & Video preferences for better performance."
   },
   "teamsTitle": {
-    "message": "Sokuji עבור Microsoft Teams"
+    "message": "ExTrans עבור Microsoft Teams"
   },
   "teamsGuidance": {
-    "message": "אם אינך רואה את רשימת מכשירי השמע המלאה בהגדרות Teams:<br><strong>1)</strong> השבת זמנית את התוסף Sokuji ורענן את הדף<br><strong>2)</strong> אפשר ל-Teams גישה למיקרופון ולמצלמה שלך כשתתבקש<br><strong>3)</strong> הפעל מחדש את התוסף Sokuji ורענן את הדף שוב<br><strong>4)</strong> אפשר ל-Sokuji גישה למיקרופון שלך כשתתבקש. כעת אתה אמור לראות גם מכשירים אמיתיים וגם <strong>\"Sokuji Virtual Microphone\"</strong> בהגדרות שלך."
+    "message": "אם אינך רואה את רשימת מכשירי השמע המלאה בהגדרות Teams:<br><strong>1)</strong> השבת זמנית את התוסף ExTrans ורענן את הדף<br><strong>2)</strong> אפשר ל-Teams גישה למיקרופון ולמצלמה שלך כשתתבקש<br><strong>3)</strong> הפעל מחדש את התוסף ExTrans ורענן את הדף שוב<br><strong>4)</strong> אפשר ל-ExTrans גישה למיקרופון שלך כשתתבקש. כעת אתה אמור לראות גם מכשירים אמיתיים וגם <strong>\"ExTrans Virtual Microphone\"</strong> בהגדרות שלך."
   },
   "jitsiTitle": {
-    "message": "Sokuji for Jitsi Meet"
+    "message": "ExTrans for Jitsi Meet"
   },
   "jitsiGuidance": {
-    "message": "כדי להשתמש ב-Sokuji ב-Jitsi Meet, פתח את <strong>Settings > Devices</strong> ובחר <strong>\"Sokuji Virtual Microphone\"</strong> כמיקרופון שלך. לאחר מכן פתח את <strong>Advanced audio settings</strong> ו<strong>השבת את הפחתת הרעש, ביטול ההד ובקרת ההגבר האוטומטית</strong> לקבלת אודיו מתורגם ברור."
+    "message": "כדי להשתמש ב-ExTrans ב-Jitsi Meet, פתח את <strong>Settings > Devices</strong> ובחר <strong>\"ExTrans Virtual Microphone\"</strong> כמיקרופון שלך. לאחר מכן פתח את <strong>Advanced audio settings</strong> ו<strong>השבת את הפחתת הרעש, ביטול ההד ובקרת ההגבר האוטומטית</strong> לקבלת אודיו מתורגם ברור."
   },
   "unsupportedHeadline": {
-    "message": "Sokuji אינו זמין עדיין ב-$HOSTNAME$.",
+    "message": "ExTrans אינו זמין עדיין ב-$HOSTNAME$.",
     "placeholders": {
       "hostname": {
         "content": "$1",
@@ -102,7 +102,7 @@
     "message": "הורד את אפליקציית שולחן העבודה"
   },
   "browserSitesHeading": {
-    "message": "מעדיפ/ה את הדפדפן? Sokuji עובד באתרים האלו — לחץ/י לפתיחה:"
+    "message": "מעדיפ/ה את הדפדפן? ExTrans עובד באתרים האלו — לחץ/י לפתיחה:"
   },
   "requestSiteLink": {
     "message": "בקש/י אתר"
@@ -114,6 +114,6 @@
     "message": "לא ניתן לזהות כרטיסייה זו"
   },
   "detectFailBody": {
-    "message": "רענן/י את הדף ופתח/י מחדש את Sokuji."
+    "message": "רענן/י את הדף ופתח/י מחדש את ExTrans."
   }
 }

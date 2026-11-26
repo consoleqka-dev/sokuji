@@ -29,7 +29,7 @@ describe('conversationExporter', () => {
   it("copies without a header and writes a file with one: when the session started and when it was exported, the run's own provider and models", () => {
     expect(exporter().text(FULL_SCOPE, false)).toBe('[10:00:05] Me\n  今日は天気がいいですね。\n  → 今天天气很好。\n');
     expect(exporter().text(FULL_SCOPE, true)).toBe([
-      'Sokuji conversation export',
+      'ExTrans conversation export',
       'Session started: 2026-09-24 10:00:00',
       'Exported: 2026-09-24 10:01:00',
       'Provider: fake',
@@ -50,7 +50,7 @@ describe('conversationExporter', () => {
     const mixed = exporter({ info: { provider: 'kizunaai_soniox', stages, models: { asrModel: 'a', ttsModel: 't' }, startedAt: started } });
     const header = mixed.text(FULL_SCOPE, true).split('\n');
     expect(header.slice(0, 6)).toEqual([
-      'Sokuji conversation export',
+      'ExTrans conversation export',
       'Session started: 2026-09-24 10:00:00',
       'Exported: 2026-09-24 10:01:00',
       'Provider: transcription=kizunaai_soniox, translation=kizunaai_soniox, speech=edge',
@@ -153,7 +153,7 @@ describe('rowsExporter', () => {
   it('writes each row at its clock time with its speaker, and its sentences as one line', () => {
     expect(rowsOut().text(FULL_SCOPE, false)).toBe('[10:00:05] Speaker 1\n  Welcome. Let us start.\n\n[10:01:05] Speaker 2\n  好的。开始吧。\n');
     expect(rowsOut().text(FULL_SCOPE, true).split('\n').slice(0, 5)).toEqual([
-      'Sokuji conversation export', 'Session started: 2026-09-24 10:00:00', 'Exported: 2026-09-24 10:01:00', 'Provider: soniox', '',
+      'ExTrans conversation export', 'Session started: 2026-09-24 10:00:00', 'Exported: 2026-09-24 10:01:00', 'Provider: soniox', '',
     ]);
   });
 

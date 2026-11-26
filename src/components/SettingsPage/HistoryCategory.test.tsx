@@ -78,7 +78,7 @@ describe('history and notes', () => {
     history.status = { available: false, reason: 'newer', dir: '' };
     render(<HistoryCategory locked={false} />);
     await settle();
-    expect(screen.getByText('This History was written by a newer version of Sokuji. Update Sokuji to open it.')).toBeInTheDocument();
+    expect(screen.getByText('This History was written by a newer version of ExTrans. Update ExTrans to open it.')).toBeInTheDocument();
   });
 });
 

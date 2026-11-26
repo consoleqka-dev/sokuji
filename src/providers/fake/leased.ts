@@ -66,7 +66,7 @@ export const fakeLeasedProvider: Provider<FakeLeasedSettings, FakeLeasedCredenti
   kind: 'managed',
   platforms: ['electron', 'extension', 'web'],
   icon: KeyRound,
-  vendor: 'Sokuji',
+  vendor: 'ExTrans',
   settings: { key: 'fakeLeased', defaults: FAKE_LEASED_DEFAULTS, migrate: migrateFakeLeasedSettings },
   Settings: FakeLeasedSettingsView,
   credentials: {

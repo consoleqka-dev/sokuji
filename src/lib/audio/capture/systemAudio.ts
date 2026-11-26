@@ -92,7 +92,7 @@ interface ConnectAnswer {
 }
 
 const SILENT_MESSAGE =
-  'No audio has come through from the selected source yet: it may be silent, or Sokuji may lack permission to record it.';
+  'No audio has come through from the selected source yet: it may be silent, or ExTrans may lack permission to record it.';
 
 export async function openSystemAudio(
   settings: SystemAudioSettings,

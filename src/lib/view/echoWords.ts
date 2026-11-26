@@ -4,7 +4,7 @@ import type { EchoCause } from '../modern-audio/EchoMonitor';
 export const ECHO_WORDS: Readonly<Record<EchoCause, { message: string; fallback: string; action: string; actionFallback: string }>> = {
   'tts-echo': {
     message: 'echoNotice.ttsEcho',
-    fallback: "Your speakers are feeding Sokuji's translated speech back into the microphone.",
+    fallback: "Your speakers are feeding ExTrans's translated speech back into the microphone.",
     action: 'echoNotice.actionHeadphones',
     actionFallback: 'Using headphones will break the loop.',
   },
@@ -22,7 +22,7 @@ export const ECHO_WORDS: Readonly<Record<EchoCause, { message: string; fallback:
   },
   'self-capture': {
     message: 'echoNotice.selfCapture',
-    fallback: "The participant source is capturing Sokuji's own audio.",
+    fallback: "The participant source is capturing ExTrans's own audio.",
     action: 'echoNotice.actionPickApp',
     actionFallback: 'Pick the meeting application as the participant source instead of system audio.',
   },

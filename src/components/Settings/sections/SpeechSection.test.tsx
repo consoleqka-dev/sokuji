@@ -332,8 +332,8 @@ describe('SpeechSection — the box under the modes, as the mock lists it', () =
     expect(keyRow(container).firstElementChild?.textContent).toBe('Key');
     expect(keyName(container)).toBe('Space');
     expect(said(container)).toEqual([
-      ['While held', 'Sokuji listens; when you let go, that stretch is translated and the other side hears the translation. With Passthrough on, the other side also hears your own voice, quietly.'],
-      ['While not held', 'Sokuji does not listen; nothing you say is translated or reaches the other side.'],
+      ['While held', 'ExTrans listens; when you let go, that stretch is translated and the other side hears the translation. With Passthrough on, the other side also hears your own voice, quietly.'],
+      ['While not held', 'ExTrans does not listen; nothing you say is translated or reaches the other side.'],
     ]);
   });
 

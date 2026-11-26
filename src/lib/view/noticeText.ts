@@ -78,7 +78,7 @@ export const NOTICE_WORDS: Readonly<Record<string, string>> = {
   lineup_pair_not_translated: '{{provider}} does not translate {{source}} into {{target}}. Choose other languages, or another translation service.',
   lineup_face_to_face_apart: 'Face-to-face needs one service to transcribe and translate. Choose {{provider}} for translation too, or set “Other side” to “In a meeting”.',
   // A managed lease refused a start, by what blocks the account (its 409's `blocker`).
-  session_in_use: 'Another window or device is using this account. Stop the session there, or if Sokuji just closed unexpectedly, try again in a minute.',
+  session_in_use: 'Another window or device is using this account. Stop the session there, or if ExTrans just closed unexpectedly, try again in a minute.',
   previous_session_ending: 'Your previous session is still ending. Please try again in a minute.',
   // A managed lease or the start gate refused an organization-paid start, or a running session's organization ended it. `_owner` is the owner's
   // wording of the row, and `_unnamed` the sentence for a stale quota that no longer names the organization.
@@ -90,8 +90,8 @@ export const NOTICE_WORDS: Readonly<Record<string, string>> = {
   not_org_member_unnamed: "You're no longer in your organization.",
   org_wallet_frozen: "{{organization}}'s account is paused. Contact its owner, or use your own balance.",
   org_wallet_frozen_unnamed: "The organization's account is paused. Contact its owner, or use your own balance.",
-  org_wallet_frozen_owner: "{{organization}}'s account is paused. Contact Sokuji support, or use your own balance.",
-  org_wallet_frozen_owner_unnamed: "The organization's account is paused. Contact Sokuji support, or use your own balance.",
+  org_wallet_frozen_owner: "{{organization}}'s account is paused. Contact ExTrans support, or use your own balance.",
+  org_wallet_frozen_owner_unnamed: "The organization's account is paused. Contact ExTrans support, or use your own balance.",
   // The capture's degradations.
   app_capture_lost_using_system_audio: 'The app capture stopped, so all system audio is being translated instead.',
   app_capture_monitor_missing: "The app capture didn't start, so all system audio is being translated instead.",
@@ -104,7 +104,7 @@ export const NOTICE_WORDS: Readonly<Record<string, string>> = {
   // A Windows microphone that would not open at Start (spec 2026-10-13 §3).
   mic_in_use: 'The microphone “{{device}}” is in use by {{apps}}. Close {{apps}} and start again, or choose another microphone.',
   mic_unreadable: 'Windows could not open the microphone “{{device}}”. Another app may be holding it, or its driver stopped responding. Close apps that use it or reconnect it, then start again.',
-  mic_blocked: 'Windows is not letting Sokuji use the microphone. Turn on microphone access for desktop apps in Settings › Privacy & security › Microphone, then start again.',
+  mic_blocked: 'Windows is not letting ExTrans use the microphone. Turn on microphone access for desktop apps in Settings › Privacy & security › Microphone, then start again.',
   no_microphone: 'Configure devices for this mode to start.',
   // Readiness (a provider's check).
   local_models_missing: 'Please download the required models in Settings to start.',

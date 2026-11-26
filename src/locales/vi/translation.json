@@ -62,12 +62,12 @@
     },
     "echoCancellation": "Khử tiếng vọng",
     "echoCancellationTooltip": {
-      "app": "Chỉ Sokuji — Loại bỏ giọng dịch của Sokuji nếu micro thu vào. Chọn mục này khi micro là một cáp ảo như BlackHole.",
+      "app": "Chỉ ExTrans — Loại bỏ giọng dịch của ExTrans nếu micro thu vào. Chọn mục này khi micro là một cáp ảo như BlackHole.",
       "browser": "Chỉ trình duyệt — Loại bỏ âm thanh trình duyệt này phát, kể cả các thẻ cuộc họp, nếu micro thu vào. Chọn mục này khi micro là một cáp ảo như BlackHole mang âm thanh của ứng dụng khác.",
       "all": "Mọi âm thanh — Loại bỏ cả âm thanh các ứng dụng khác phát qua loa, chẳng hạn ứng dụng họp. Cáp ảo dùng làm micro mang chính âm thanh đó nên sẽ bị im lặng."
     },
     "echoCancellationMode": {
-      "app": "Chỉ Sokuji",
+      "app": "Chỉ ExTrans",
       "browser": "Chỉ trình duyệt",
       "all": "Mọi âm thanh"
     },
@@ -368,9 +368,9 @@
     "virtualMicrophone": "Micro ảo",
     "virtualMicrophoneNotice": "Thông báo micro ảo",
     "iUnderstand": "Tôi đã hiểu",
-    "virtualMicWarningTitle": "Đây là micro ảo do Sokuji tạo ra.",
+    "virtualMicWarningTitle": "Đây là micro ảo do ExTrans tạo ra.",
     "virtualMicWarningText1": "Vui lòng không chọn thiết bị này tại đây. Thay vào đó, hãy sử dụng micro ảo này trong các ứng dụng hội nghị truyền hình của bạn (như Google Meet, Zoom, Microsoft Teams, v.v.) để nhận đầu ra dịch giọng nói trực tiếp.",
-    "virtualMicWarningText2": "Để Sokuji hoạt động đúng, vui lòng chọn micro vật lý thực của bạn từ danh sách.",
+    "virtualMicWarningText2": "Để ExTrans hoạt động đúng, vui lòng chọn micro vật lý thực của bạn từ danh sách.",
     "realVoicePassthrough": "Chuyển tiếp",
     "passthroughManagedByPushToTranslate": "Ở chế độ Nhấn để dịch, truyền âm gốc được quản lý tự động: phát ở âm lượng 100% khi bạn không giữ phím, và dừng lại (âm thanh được đưa vào dịch) khi bạn giữ phím.",
     "speechTitle": "Giọng nói",
@@ -427,7 +427,7 @@
     "participantFellBackToSystemAudio": "Việc thu ứng dụng đã chọn đã dừng, nên toàn bộ âm thanh hệ thống đang được dịch thay thế. Hãy chọn lại ứng dụng để thu hẹp phạm vi.",
     "loopbackMicNotice": "Lưu ý đầu vào loopback",
     "loopbackMicWarningTitle": "Đầu vào này thu lại những gì máy tính đang phát.",
-    "loopbackMicWarningText1": "Các đầu vào loopback như \"Stereo Mix\" hoặc thiết bị \"Monitor of ...\" ghi lại chính đầu ra âm thanh của hệ thống. Trong phiên có giọng dịch của Sokuji, Sokuji sẽ nghe và dịch chính mình theo vòng lặp.",
+    "loopbackMicWarningText1": "Các đầu vào loopback như \"Stereo Mix\" hoặc thiết bị \"Monitor of ...\" ghi lại chính đầu ra âm thanh của hệ thống. Trong phiên có giọng dịch của ExTrans, ExTrans sẽ nghe và dịch chính mình theo vòng lặp.",
     "loopbackMicWarningText2": "Thiết bị vẫn được chọn phòng khi cách định tuyến này là chủ ý, nhưng khi dùng bình thường hãy chọn micro vật lý.",
     "participantNoAudioYet": "Chưa có âm thanh nào từ nguồn đã chọn. Nếu nguồn đang phát mà không có gì được dịch, hãy cho phép Sokuji trong System Settings > Privacy & Security > System Audio Recording Only (macOS), rồi bắt đầu lại phiên.",
     "audioCaptureUnprovenNotice": "Chưa thu được gì",
@@ -473,7 +473,7 @@
     "verificationEmailFailed": "Không thể gửi email xác minh. Vui lòng thử lại",
     "alreadyVerified": "Email của bạn đã được xác minh!",
     "cooldownMessage": "Vui lòng đợi {{seconds}} giây",
-    "checkYourEmail": "Đã gửi email xác minh. Hãy hoàn tất trong hộp thư rồi quay lại — Sokuji sẽ tự động nhận biết.",
+    "checkYourEmail": "Đã gửi email xác minh. Hãy hoàn tất trong hộp thư rồi quay lại — ExTrans sẽ tự động nhận biết.",
     "emailVerifiedToast": "Email đã xác minh",
     "sessionExpired": "Phiên của bạn đã hết hạn. Vui lòng đăng nhập lại.",
     "forgotPassword": "Quên mật khẩu?",
@@ -497,16 +497,16 @@
   },
   "simpleConfig": {
     "interfaceLanguage": "Ngôn ngữ giao diện",
-    "interfaceLanguageDesc": "Điều này thay đổi ngôn ngữ của menu và nút của Sokuji. Nó KHÔNG ảnh hưởng đến các ngôn ngữ bạn có thể dịch giữa.",
+    "interfaceLanguageDesc": "Điều này thay đổi ngôn ngữ của menu và nút của ExTrans. Nó KHÔNG ảnh hưởng đến các ngôn ngữ bạn có thể dịch giữa.",
     "translationLanguages": "Ngôn ngữ dịch",
     "translationLanguagesDesc": "Chọn ngôn ngữ bạn nói (Ngôn ngữ của tôi) và ngôn ngữ bạn muốn nghe bản dịch (Ngôn ngữ đối phương). Chọn 'Tự Động Phát Hiện' nếu bạn không chắc mình sẽ nói ngôn ngữ nào.",
     "yourLanguage": "Ngôn ngữ của tôi",
     "userAccount": "Tài khoản người dùng",
     "userAccountTooltip": "Người dùng kỹ thuật có thể sử dụng khóa API riêng của họ. Tài khoản người dùng được thiết kế cho cài đặt đơn giản.",
-    "signInRequired": "Đăng ký để sử dụng dịch vụ dịch thuật tích hợp của Sokuji — không cần khóa API. Bạn cũng có thể tiếp tục dùng nhà cung cấp và khóa của riêng mình.",
+    "signInRequired": "Đăng ký để sử dụng dịch vụ dịch thuật tích hợp của ExTrans — không cần khóa API. Bạn cũng có thể tiếp tục dùng nhà cung cấp và khóa của riêng mình.",
     "targetLanguage": "Ngôn ngữ đối phương",
     "microphone": "Microphone",
-    "microphoneDesc": "Chọn microphone để ghi lại giọng nói của bạn. Nói bằng ngôn ngữ của bạn vào microphone này, và Sokuji sẽ dịch mọi thứ nó nghe thấy theo thời gian thực.",
+    "microphoneDesc": "Chọn microphone để ghi lại giọng nói của bạn. Nói bằng ngôn ngữ của bạn vào microphone này, và ExTrans sẽ dịch mọi thứ nó nghe thấy theo thời gian thực.",
     "swapLanguages": "Đổi ngôn ngữ",
     "swapNotSpoken": "Dịch vụ giọng nói không đọc các ngôn ngữ này theo chiều ngược lại.",
     "textOnly": "Chỉ văn bản",
@@ -715,7 +715,7 @@
       "scopeLabel": "Bao gồm",
       "scopeItemAria": "{{scope}} — {{line}}",
       "scopeEmpty": "Chưa chọn gì",
-      "headerTitle": "Xuất hội thoại Sokuji",
+      "headerTitle": "Xuất hội thoại ExTrans",
       "headerSessionStarted": "Bắt đầu phiên",
       "headerExported": "Đã xuất",
       "headerProvider": "Nhà cung cấp",
@@ -959,7 +959,7 @@
     "gpuSoftwareOnly": "Không có tăng tốc GPU — đang chạy trên CPU",
     "gpuUnavailable": "Không có tăng tốc GPU",
     "gpuSlowWarning": "Các mô hình cục bộ vẫn hoạt động, nhưng việc phiên âm và dịch sẽ chậm hơn đáng kể.",
-    "gpuWaylandRemedy": "Trong phiên Wayland, Chromium không thể dùng GPU cho việc này. Khởi chạy Sokuji với --ozone-platform=x11 sẽ khôi phục tăng tốc.",
+    "gpuWaylandRemedy": "Trong phiên Wayland, Chromium không thể dùng GPU cho việc này. Khởi chạy ExTrans với --ozone-platform=x11 sẽ khôi phục tăng tốc.",
     "othersGroup": "Mô hình khác",
     "requiresGpu": "Yêu cầu GPU",
     "licenseConsent": {
@@ -970,7 +970,7 @@
       "viewLicense": "Xem toàn văn giấy phép",
       "nonCommercial": "Giấy phép này chỉ cho phép sử dụng phi thương mại — không sử dụng mô hình này trong bất kỳ sản phẩm hoặc dịch vụ thương mại nào.",
       "restrictedTerms": "Đây không phải giấy phép nguồn mở. Giấy phép này đặt ra điều kiện về cách sử dụng mô hình và kết quả đầu ra của nó — hãy đọc toàn văn trước khi dựa vào nó.",
-      "disclaimer": "Sokuji không liên kết với các tác giả của mô hình và không có bất kỳ quan hệ nào với họ. Tích hợp này không chính thức và được cung cấp nguyên trạng, không kèm bất kỳ bảo đảm nào.",
+      "disclaimer": "ExTrans không liên kết với các tác giả của mô hình và không có bất kỳ quan hệ nào với họ. Tích hợp này không chính thức và được cung cấp nguyên trạng, không kèm bất kỳ bảo đảm nào.",
       "attribution": "Ghi công: {{attribution}}",
       "cancel": "Hủy",
       "accept": "Tôi hiểu — chỉ dùng phi thương mại",
@@ -1052,9 +1052,9 @@
     "linuxMigrateTitle": "Phiên bản mới v{{version}} khả dụng"
   },
   "audioSystem": {
-    "pactlMissingBody": "Không tìm thấy pactl (công cụ dòng lệnh của PulseAudio), vì vậy Sokuji không thể thiết lập micro/loa ảo. Hãy cài đặt rồi thử lại:",
+    "pactlMissingBody": "Không tìm thấy pactl (công cụ dòng lệnh của PulseAudio), vì vậy ExTrans không thể thiết lập micro/loa ảo. Hãy cài đặt rồi thử lại:",
     "installCommand": "sudo apt install pulseaudio-utils",
-    "unavailableBody": "Sokuji không thể thiết lập micro/loa ảo. Hãy đảm bảo PulseAudio hoặc PipeWire đang chạy.",
+    "unavailableBody": "ExTrans không thể thiết lập micro/loa ảo. Hãy đảm bảo PulseAudio hoặc PipeWire đang chạy.",
     "retry": "Thử lại",
     "retrying": "Đang thử lại...",
     "macDriverNotLoadedBody": "Micro ảo của Sokuji đã được cài đặt nhưng macOS chưa tải nó, nên các ứng dụng họp không nghe được bản dịch của bạn. Hãy sửa nó; macOS sẽ yêu cầu mật khẩu quản trị viên của bạn.",
@@ -1065,12 +1065,12 @@
   },
   "vbCable": {
     "title": "Để bên kia nghe bản dịch",
-    "body": "Các ứng dụng họp nhận bản dịch nói qua một micro ảo. Trên Windows, đó là VB-CABLE, một trình điều khiển miễn phí của VB-Audio. Mọi tính năng khác của Sokuji vẫn hoạt động khi không có nó.",
+    "body": "Các ứng dụng họp nhận bản dịch nói qua một micro ảo. Trên Windows, đó là VB-CABLE, một trình điều khiển miễn phí của VB-Audio. Mọi tính năng khác của ExTrans vẫn hoạt động khi không có nó.",
     "install": "Cài đặt VB-CABLE",
     "about": "Giới thiệu VB-CABLE",
     "adminOnce": "Windows sẽ hỏi quyền quản trị viên một lần.",
     "installingTitle": "Đang cài đặt VB-CABLE…",
-    "installingBody": "Hãy chấp thuận lời nhắc của Windows, sau đó nhấp \"Install Driver\" trong cửa sổ VB-CABLE. Sokuji sẽ nhận ra ngay khi cài đặt xong.",
+    "installingBody": "Hãy chấp thuận lời nhắc của Windows, sau đó nhấp \"Install Driver\" trong cửa sổ VB-CABLE. ExTrans sẽ nhận ra ngay khi cài đặt xong.",
     "installingBusy": "Đang cài đặt…",
     "failedTitle": "Chưa cài đặt được VB-CABLE",
     "failedBody": "Quá trình cài đặt đã bị hủy hoặc chưa hoàn tất. Hãy thử lại, hoặc tự cài đặt từ trang web của VB-Audio.",
@@ -1083,7 +1083,7 @@
     "storeStep3": "Nhấp \"Install Driver\", sau đó khởi động lại máy tính.",
     "openWebsite": "Mở trang web VB-Audio",
     "checkAgain": "Kiểm tra lại",
-    "picksUp": "Sokuji sẽ tự động nhận ra sau khi cài đặt.",
+    "picksUp": "ExTrans sẽ tự động nhận ra sau khi cài đặt.",
     "notNow": "Để sau"
   },
   "subtitle": {
@@ -1182,7 +1182,7 @@
     "previewChargedToBalance": "Nghe thử sẽ tổng hợp một đoạn mẫu ngắn và trừ vào số dư tài khoản của bạn.",
     "previewFailed": "Không thể tạo bản nghe thử cho giọng nói này.",
     "renameFailed": "Không thể đổi tên giọng nói này.",
-    "recordStartFailed": "Không thể bắt đầu ghi âm. Hãy kiểm tra micro đã được kết nối và Sokuji được phép dùng micro.",
+    "recordStartFailed": "Không thể bắt đầu ghi âm. Hãy kiểm tra micro đã được kết nối và ExTrans được phép dùng micro.",
     "previewLanguageUnsupported": "Mô hình này không có câu mẫu bằng ngôn ngữ mà nó có thể nói.",
     "previewNeedsBalance": "Nạp thêm số dư để nghe thử giọng nói này.",
     "previewNeedsSessionStopped": "Kết thúc phiên để nghe thử giọng nói này.",
@@ -1290,10 +1290,10 @@
     }
   },
   "echoNotice": {
-    "ttsEcho": "Loa của bạn đang đưa giọng dịch của Sokuji quay lại micro.",
+    "ttsEcho": "Loa của bạn đang đưa giọng dịch của ExTrans quay lại micro.",
     "meetingEcho": "Âm thanh cuộc họp từ loa đang lọt vào micro.",
     "farEndEcho": "Thiết bị của một người tham gia đang dội bản dịch của bạn trở lại cuộc họp.",
-    "selfCapture": "Nguồn âm thanh đối phương đang thu chính âm thanh của Sokuji.",
+    "selfCapture": "Nguồn âm thanh đối phương đang thu chính âm thanh của ExTrans.",
     "routingLoop": "Thiết bị đầu vào đã chọn đang thu trực tiếp âm thanh phát của máy tính này.",
     "actionHeadphones": "Dùng tai nghe sẽ cắt vòng lặp.",
     "actionAskRemote": "Hãy đề nghị người tham gia đó dùng tai nghe.",
@@ -1315,7 +1315,7 @@
     "clearAllKeepsPicks": "Lựa chọn của bạn được ghi nhớ và sẽ quay lại khi mô hình được tải xuống lần nữa."
   },
   "setup": {
-    "title": "Cài đặt Sokuji",
+    "title": "Cài đặt ExTrans",
     "stepOf": "Bước {{current}}/{{total}}",
     "back": "Quay lại",
     "next": "Tiếp theo",
@@ -1325,7 +1325,7 @@
     "rerun": "Chạy lại cài đặt",
     "steps": {
       "language": {
-        "title": "Sokuji nên nói với bạn bằng ngôn ngữ nào?",
+        "title": "ExTrans nên nói với bạn bằng ngôn ngữ nào?",
         "desc": "Đây là ngôn ngữ của menu và nút bấm. Ngôn ngữ cần dịch sẽ chọn ở bước sau.",
         "label": "Ngôn ngữ giao diện"
       },
@@ -1442,7 +1442,7 @@
       "guide": "Cách lấy khóa này",
       "verifyEmail": "Đã đăng nhập. Hãy mở liên kết chúng tôi gửi qua email để xác minh — tín dụng dùng thử sẽ được cộng ngay sau đó.",
       "onFile": "Đã lưu một khóa — để trống nếu muốn giữ khóa cũ.",
-      "offlineHardware": "Sokuji chạy tốt nếu có GPU và đủ VRAM; chỉ có CPU thì chậm hơn nhiều.",
+      "offlineHardware": "ExTrans chạy tốt nếu có GPU và đủ VRAM; chỉ có CPU thì chậm hơn nhiều.",
       "openaiOneKey": "Một khóa này dùng chung cho OpenAI Realtime, Translate và Live.",
       "baseUrl": "Địa chỉ",
       "baseUrlPlaceholder": "Địa chỉ, ví dụ https://openrouter.ai/api/v1",
@@ -1472,7 +1472,7 @@
     "steps": {
       "welcome": {
         "title": "Bạn đã sẵn sàng",
-        "content": "Sokuji đã được cấu hình theo kịch bản của bạn. Đây là một vòng giới thiệu ngắn — chưa đến một phút."
+        "content": "ExTrans đã được cấu hình theo kịch bản của bạn. Đây là một vòng giới thiệu ngắn — chưa đến một phút."
       },
       "mode-picker": {
         "title": "Chế độ dịch",
@@ -1483,7 +1483,7 @@
       },
       "microphone": {
         "title": "Micro của bạn",
-        "content": "Giọng nói của bạn được thu ở đây. Thiết bị mặc định của hệ thống đã được chọn sẵn. Đừng chọn micro ảo Sokuji — đó là dành cho ứng dụng họp của bạn."
+        "content": "Giọng nói của bạn được thu ở đây. Thiết bị mặc định của hệ thống đã được chọn sẵn. Đừng chọn micro ảo ExTrans — đó là dành cho ứng dụng họp của bạn."
       },
       "monitor": {
         "title": "Nghe giọng đã dịch của bạn",
@@ -1492,15 +1492,15 @@
       "output-routing": {
         "title": "Cách đối phương nghe bạn",
         "content": "Giọng nói đã dịch của bạn được gửi đến micro ảo; hãy chọn nó làm micro trong ứng dụng họp của bạn.",
-        "content_extension": "Trong Google Meet, Zoom hoặc Teams, hãy chọn \"Sokuji Virtual Microphone\" làm micro của bạn. Sokuji tự động thêm nó vào các trang họp được hỗ trợ.",
-        "content_electronLinux": "Sokuji đã tạo một micro ảo trên hệ thống này. Hãy chọn nó làm micro trong ứng dụng họp của bạn.",
-        "content_electronOther": "Bạn cần một cáp âm thanh ảo (ví dụ VB-Cable). Gửi đầu ra của Sokuji đến đó, và chọn nó làm micro trong ứng dụng họp của bạn."
+        "content_extension": "Trong Google Meet, Zoom hoặc Teams, hãy chọn \"ExTrans Virtual Microphone\" làm micro của bạn. ExTrans tự động thêm nó vào các trang họp được hỗ trợ.",
+        "content_electronLinux": "ExTrans đã tạo một micro ảo trên hệ thống này. Hãy chọn nó làm micro trong ứng dụng họp của bạn.",
+        "content_electronOther": "Bạn cần một cáp âm thanh ảo (ví dụ VB-Cable). Gửi đầu ra của ExTrans đến đó, và chọn nó làm micro trong ứng dụng họp của bạn."
       },
       "participant-source": {
         "title": "Giọng nói của đối phương",
-        "content": "Sokuji lắng nghe đối phương ở đây.",
+        "content": "ExTrans lắng nghe đối phương ở đây.",
         "content_electron": "Chọn ứng dụng cần dịch, hoặc toàn bộ âm thanh hệ thống. Giọng nói gốc của họ vẫn phát bình thường.",
-        "content_extension": "Sokuji dịch âm thanh của tab hiện tại. Giọng nói gốc của họ vẫn phát bình thường."
+        "content_extension": "ExTrans dịch âm thanh của tab hiện tại. Giọng nói gốc của họ vẫn phát bình thường."
       },
       "subtitle": {
         "title": "Chế độ phụ đề",
@@ -1562,7 +1562,7 @@
     "lineup_source_not_fixed": "{{provider}} cần biết ngôn ngữ được nói. Hãy chọn ngôn ngữ đó thay cho “Tự động phát hiện”, hoặc chọn một dịch vụ dịch khác.",
     "lineup_pair_not_translated": "{{provider}} không dịch {{source}} → {{target}}. Hãy chọn ngôn ngữ khác, hoặc một dịch vụ dịch khác.",
     "lineup_face_to_face_apart": "“Mặt đối mặt” cần một dịch vụ vừa chép lời vừa dịch. Hãy chọn {{provider}} cho cả khâu dịch, hoặc đặt “Phía bên kia” thành “Trong cuộc họp”.",
-    "session_in_use": "Một cửa sổ hoặc thiết bị khác đang dùng tài khoản này. Hãy dừng phiên ở đó, hoặc nếu Sokuji vừa đóng đột ngột, hãy thử lại sau một phút.",
+    "session_in_use": "Một cửa sổ hoặc thiết bị khác đang dùng tài khoản này. Hãy dừng phiên ở đó, hoặc nếu ExTrans vừa đóng đột ngột, hãy thử lại sau một phút.",
     "previous_session_ending": "Phiên trước của bạn vẫn đang kết thúc. Vui lòng thử lại sau một phút.",
     "app_capture_lost_using_system_audio": "Việc thu ứng dụng đã dừng, nên toàn bộ âm thanh hệ thống đang được dịch thay thế.",
     "app_capture_monitor_missing": "Việc thu ứng dụng chưa bắt đầu, nên toàn bộ âm thanh hệ thống đang được dịch thay thế.",
@@ -1591,7 +1591,7 @@
     "mic_now_using": "Đang dùng micro “{{device}}”.",
     "mic_in_use": "Micro “{{device}}” đang được {{apps}} sử dụng. Hãy đóng {{apps}} rồi bắt đầu lại, hoặc chọn micro khác.",
     "mic_unreadable": "Windows không mở được micro “{{device}}”. Có thể một ứng dụng khác đang dùng nó, hoặc trình điều khiển của nó không phản hồi. Hãy đóng các ứng dụng đang dùng nó hoặc kết nối lại, rồi bắt đầu lại.",
-    "mic_blocked": "Windows không cho phép Sokuji dùng micro. Hãy bật quyền truy cập micro cho ứng dụng máy tính trong Cài đặt › Quyền riêng tư & bảo mật › Micro, rồi bắt đầu lại.",
+    "mic_blocked": "Windows không cho phép ExTrans dùng micro. Hãy bật quyền truy cập micro cho ứng dụng máy tính trong Cài đặt › Quyền riêng tư & bảo mật › Micro, rồi bắt đầu lại.",
     "speaker_tts_missing": "Bản dịch bên kia nghe chỉ hiển thị chữ: không có mô hình giọng nói nào nói được {{target}}.",
     "participant_tts_missing": "Bản dịch tôi nghe chỉ hiển thị chữ: không có mô hình giọng nói nào nói được {{target}}.",
     "participant_tts_over_budget": "Bản dịch tôi nghe chỉ hiển thị chữ: không đủ bộ nhớ để tải thêm mô hình giọng nói của bên kia.",
@@ -1604,8 +1604,8 @@
     "not_org_member_unnamed": "Bạn không còn thuộc tổ chức của mình nữa.",
     "org_wallet_frozen": "Tài khoản của {{organization}} đã bị tạm dừng. Hãy liên hệ chủ sở hữu, hoặc dùng số dư cá nhân của bạn.",
     "org_wallet_frozen_unnamed": "Tài khoản của tổ chức đã bị tạm dừng. Hãy liên hệ chủ sở hữu, hoặc dùng số dư cá nhân của bạn.",
-    "org_wallet_frozen_owner": "Tài khoản của {{organization}} đã bị tạm dừng. Hãy liên hệ bộ phận hỗ trợ Sokuji, hoặc dùng số dư cá nhân của bạn.",
-    "org_wallet_frozen_owner_unnamed": "Tài khoản của tổ chức đã bị tạm dừng. Hãy liên hệ bộ phận hỗ trợ Sokuji, hoặc dùng số dư cá nhân của bạn.",
+    "org_wallet_frozen_owner": "Tài khoản của {{organization}} đã bị tạm dừng. Hãy liên hệ bộ phận hỗ trợ ExTrans, hoặc dùng số dư cá nhân của bạn.",
+    "org_wallet_frozen_owner_unnamed": "Tài khoản của tổ chức đã bị tạm dừng. Hãy liên hệ bộ phận hỗ trợ ExTrans, hoặc dùng số dư cá nhân của bạn.",
     "model_missing": "Dịch vụ không cung cấp mô hình này: {{detail}}",
     "quota": "Tài khoản dịch vụ đã hết tín dụng: {{detail}}",
     "text_model_unset": "Chọn mô hình cho bản dịch, hoặc nhập tên mô hình, trong “Ngôn ngữ và cách phối hợp”.",
@@ -1613,7 +1613,7 @@
     "address_invalid": "Không thể dùng địa chỉ của dịch vụ tương thích: {{detail}}"
   },
   "viewer": {
-    "title": "Phụ đề Sokuji",
+    "title": "Phụ đề ExTrans",
     "connecting": "Đang kết nối…",
     "original": "Bản gốc",
     "enter": {
@@ -1671,7 +1671,7 @@
     },
     "shortcuts": "+ − cỡ chữ · B hai ngôn ngữ · F toàn màn hình · End về mới nhất",
     "transcript": {
-      "header": "Phụ đề Sokuji, lưu lúc {{time}}"
+      "header": "Phụ đề ExTrans, lưu lúc {{time}}"
     },
     "present": {
       "title": "Đọc phụ đề trên điện thoại hoặc máy tính của bạn",
@@ -1684,7 +1684,7 @@
       "androidChrome": "Chrome trên Android không mở được? Hãy cho phép trong Cài đặt → Ứng dụng → Chrome → Quyền → Thiết bị ở gần.",
       "watching": "Đang xem: {{count}}",
       "fullscreen": "Toàn màn hình",
-      "windowTitle": "Trang trình chiếu Sokuji",
+      "windowTitle": "Trang trình chiếu ExTrans",
       "ended": "Đã kết thúc chia sẻ"
     }
   },
@@ -1904,8 +1904,8 @@
         "key": "Phím",
         "held": "Khi giữ",
         "notHeld": "Khi không giữ",
-        "talkHeld": "Sokuji lắng nghe; khi bạn thả phím, đoạn đó được dịch và bên kia nghe bản dịch. Khi bật “Chuyển tiếp”, bên kia cũng nghe thấy giọng của chính bạn ở âm lượng nhỏ.",
-        "talkNotHeld": "Sokuji không lắng nghe; những gì bạn nói không được dịch và không đến được bên kia.",
+        "talkHeld": "ExTrans lắng nghe; khi bạn thả phím, đoạn đó được dịch và bên kia nghe bản dịch. Khi bật “Chuyển tiếp”, bên kia cũng nghe thấy giọng của chính bạn ở âm lượng nhỏ.",
+        "talkNotHeld": "ExTrans không lắng nghe; những gì bạn nói không được dịch và không đến được bên kia.",
         "translateHeld": "Những gì bạn nói được dịch; bên kia chỉ nghe bản dịch, không nghe giọng của chính bạn.",
         "translateNotHeld": "Giọng của chính bạn đến thẳng bên kia, không dịch.",
         "change": "Đổi",
@@ -2061,7 +2061,7 @@
     "foundInNotes": "Tìm thấy trong ghi chú",
     "foundInTitle": "Tìm thấy trong tiêu đề",
     "unavailable": "Không mở được lịch sử.",
-    "unavailableNewer": "Lịch sử này được ghi bởi phiên bản Sokuji mới hơn. Hãy cập nhật Sokuji để mở.",
+    "unavailableNewer": "Lịch sử này được ghi bởi phiên bản ExTrans mới hơn. Hãy cập nhật ExTrans để mở.",
     "failed": "Không thành công. Hãy thử lại.",
     "me": "Tôi",
     "other": "Đối phương",
@@ -2175,7 +2175,7 @@
       "wallet-frozen": "Ví Kizuna AI của bạn đang bị đóng băng.",
       "not-member": "Bạn không còn là thành viên của tổ chức trả phí cho Kizuna AI.",
       "too-large": "Bản ghi này quá dài để Kizuna AI viết ghi chú.",
-      "update-required": "Hãy cập nhật Sokuji để viết ghi chú bằng Kizuna AI.",
+      "update-required": "Hãy cập nhật ExTrans để viết ghi chú bằng Kizuna AI.",
       "other": "Dịch vụ ghi chú đã từ chối yêu cầu."
     },
     "notesLatestFailed": "Lần thử gần nhất không viết được: {{reason}}",

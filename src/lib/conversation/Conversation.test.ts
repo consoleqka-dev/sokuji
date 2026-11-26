@@ -214,7 +214,7 @@ describe('Conversation — notices and closing', () => {
     const [notice] = conv.snapshot().notices;
     expect(notice).toMatchObject({ code: 'org_wallet_frozen', params: { organization: 'Acme', role: 'owner' } });
     const t = ((_key: string, o: { defaultValue: string } & Record<string, string>) => o.defaultValue.replace(/\{\{(\w+)\}\}/g, (_m, k: string) => o[k])) as unknown as Parameters<typeof noticeText>[0];
-    expect(noticeText(t, notice)).toBe("Acme's account is paused. Contact Sokuji support, or use your own balance.");
+    expect(noticeText(t, notice)).toBe("Acme's account is paused. Contact ExTrans support, or use your own balance.");
   });
 
   it('finalizes every open segment on failed, since nothing follows it', () => {

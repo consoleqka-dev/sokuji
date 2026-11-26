@@ -79,7 +79,7 @@ export const fakeProvider: Provider<FakeSettings, FakeCredentials, FakeConfig> &
   kind: 'own-key',
   platforms: ['electron', 'extension', 'web'],
   icon: FlaskConical,
-  vendor: 'Sokuji',
+  vendor: 'ExTrans',
 
   settings: { key: 'fake', defaults: FAKE_DEFAULTS, migrate: migrateFakeSettings },
   Settings: FakeSettingsView,

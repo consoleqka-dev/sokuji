@@ -62,12 +62,12 @@
     },
     "echoCancellation": "Kaiunpoisto",
     "echoCancellationTooltip": {
-      "app": "Vain Sokuji — Poistaa Sokujin käännetyn puheen, jos mikrofoni poimii sen. Valitse tämä, kun mikrofoni on virtuaalinen kaapeli, kuten BlackHole.",
+      "app": "Vain ExTrans — Poistaa ExTransn käännetyn puheen, jos mikrofoni poimii sen. Valitse tämä, kun mikrofoni on virtuaalinen kaapeli, kuten BlackHole.",
       "browser": "Vain selain — Poistaa tämän selaimen toistaman äänen kokousvälilehdet mukaan lukien, jos mikrofoni poimii sen. Valitse tämä, kun mikrofoni on virtuaalinen kaapeli, kuten BlackHole, joka välittää toisen sovelluksen ääntä.",
       "all": "Kaikki äänet — Poistaa myös äänen, jonka muut sovellukset toistavat kaiuttimista, kuten kokoussovelluksen. Mikrofonina käytetty virtuaalinen kaapeli välittää juuri tätä ääntä, joten se hiljenisi."
     },
     "echoCancellationMode": {
-      "app": "Vain Sokuji",
+      "app": "Vain ExTrans",
       "browser": "Vain selain",
       "all": "Kaikki äänet"
     },
@@ -368,9 +368,9 @@
     "virtualMicrophone": "Virtuaalimikrofoni",
     "virtualMicrophoneNotice": "Virtuaalimikrofonin ilmoitus",
     "iUnderstand": "Ymmärrän",
-    "virtualMicWarningTitle": "Tämä on Sokujin luoma virtuaalimikrofoni.",
+    "virtualMicWarningTitle": "Tämä on ExTransn luoma virtuaalimikrofoni.",
     "virtualMicWarningText1": "Älä valitse tätä laitetta tässä. Käytä sen sijaan tätä virtuaalimikrofonia videokokoussovelluksissasi (kuten Google Meet, Zoom, Microsoft Teams jne.) vastaanottaaksesi reaaliaikaisen puheenkäännöksen.",
-    "virtualMicWarningText2": "Jotta Sokuji toimisi oikein, valitse luettelosta todellinen fyysinen mikrofonisi.",
+    "virtualMicWarningText2": "Jotta ExTrans toimisi oikein, valitse luettelosta todellinen fyysinen mikrofonisi.",
     "realVoicePassthrough": "Läpivienti",
     "passthroughManagedByPushToTranslate": "Paina ja käännä -tilassa läpisyöttö hallitaan automaattisesti: ääni kuuluu 100 %:n voimakkuudella, kun et pidä näppäintä pohjassa, ja pysähtyy (ääni ohjataan käännökseen), kun pidät näppäintä pohjassa.",
     "speechTitle": "Puhe",
@@ -427,7 +427,7 @@
     "participantFellBackToSystemAudio": "Valitun sovelluksen kaappaus pysähtyi, joten nyt käännetään kaikki järjestelmän ääni. Rajaa takaisin valitsemalla sovellus uudelleen.",
     "loopbackMicNotice": "Loopback-tulon huomautus",
     "loopbackMicWarningTitle": "Tämä tulo tallentaa uudelleen sen, mitä tietokone toistaa.",
-    "loopbackMicWarningText1": "Loopback-tulot kuten \"Stereo Mix\" tai \"Monitor of ...\" -laitteet äänittävät järjestelmän omaa äänilähtöä. Istunnossa, joka sisältää Sokujin käännetyn puheen, Sokuji kuulisi ja kääntäisi itseään silmukassa.",
+    "loopbackMicWarningText1": "Loopback-tulot kuten \"Stereo Mix\" tai \"Monitor of ...\" -laitteet äänittävät järjestelmän omaa äänilähtöä. Istunnossa, joka sisältää ExTransn käännetyn puheen, ExTrans kuulisi ja kääntäisi itseään silmukassa.",
     "loopbackMicWarningText2": "Laite pysyy valittuna, jos tämä reititys on tarkoituksellinen, mutta tavalliseen käyttöön valitse fyysinen mikrofoni.",
     "participantNoAudioYet": "Valitusta lähteestä ei ole vielä tullut ääntä. Jos se toistaa eikä mitään käännetä, salli Sokuji kohdassa Järjestelmäasetukset > Tietosuoja ja turvallisuus > Vain järjestelmän äänen tallennus (macOS) ja aloita istunto uudelleen.",
     "audioCaptureUnprovenNotice": "Mitään ei ole vielä kaapattu",
@@ -473,7 +473,7 @@
     "verificationEmailFailed": "Vahvistussähköpostin lähetys epäonnistui. Yritä uudelleen",
     "alreadyVerified": "Sähköpostisi on jo vahvistettu!",
     "cooldownMessage": "Odota {{seconds}} sekuntia",
-    "checkYourEmail": "Vahvistussähköposti lähetetty. Viimeistele se saapuneet-kansiossasi ja palaa takaisin — Sokuji huomaa sen automaattisesti.",
+    "checkYourEmail": "Vahvistussähköposti lähetetty. Viimeistele se saapuneet-kansiossasi ja palaa takaisin — ExTrans huomaa sen automaattisesti.",
     "emailVerifiedToast": "Sähköposti vahvistettu",
     "sessionExpired": "Istuntosi on vanhentunut. Kirjaudu sisään uudelleen.",
     "forgotPassword": "Unohditko salasanan?",
@@ -497,16 +497,16 @@
   },
   "simpleConfig": {
     "interfaceLanguage": "Käyttöliittymän kieli",
-    "interfaceLanguageDesc": "Tämä muuttaa Sokuji:n valikoiden ja painikkeiden kieltä. Se EI vaikuta siihen, minkä kielten välillä voit kääntää.",
+    "interfaceLanguageDesc": "Tämä muuttaa ExTrans:n valikoiden ja painikkeiden kieltä. Se EI vaikuta siihen, minkä kielten välillä voit kääntää.",
     "translationLanguages": "Käännöskielet",
     "translationLanguagesDesc": "Valitse, mitä kieltä puhut (Minun kieleni) ja millä kielellä haluat kuulla käännöksen (Toisen kieli). Valitse \"Automaattinen tunnistus\" jos et ole varma, mitä kieltä puhut.",
     "yourLanguage": "Minun kieleni",
     "userAccount": "Käyttäjätili",
     "userAccountTooltip": "Tekniset käyttäjät voivat käyttää omia API-avaimiaan. Käyttäjätili on suunniteltu yksinkertaistettuun asennukseen.",
-    "signInRequired": "Rekisteröidy käyttääksesi Sokujin sisäänrakennettua käännöspalvelua — API-avainta ei tarvita. Voit myös jatkaa oman palveluntarjoajasi ja avaimesi käyttöä.",
+    "signInRequired": "Rekisteröidy käyttääksesi ExTransn sisäänrakennettua käännöspalvelua — API-avainta ei tarvita. Voit myös jatkaa oman palveluntarjoajasi ja avaimesi käyttöä.",
     "targetLanguage": "Toisen kieli",
     "microphone": "Mikrofoni",
-    "microphoneDesc": "Valitse mikrofoni puheesi kaappaamiseen. Puhu kielelläsi tähän mikrofoniin, niin Sokuji kääntää kaiken mitä se kuulee reaaliajassa.",
+    "microphoneDesc": "Valitse mikrofoni puheesi kaappaamiseen. Puhu kielelläsi tähän mikrofoniin, niin ExTrans kääntää kaiken mitä se kuulee reaaliajassa.",
     "swapLanguages": "Vaihda kielet",
     "swapNotSpoken": "Puhepalvelu ei lue näitä kieliä toisin päin.",
     "textOnly": "Vain teksti",
@@ -715,7 +715,7 @@
       "scopeLabel": "Sisällytä",
       "scopeItemAria": "{{scope}} — {{line}}",
       "scopeEmpty": "Ei valintoja",
-      "headerTitle": "Sokuji-keskustelun vienti",
+      "headerTitle": "ExTrans-keskustelun vienti",
       "headerSessionStarted": "Istunto alkoi",
       "headerExported": "Viety",
       "headerProvider": "Palveluntarjoaja",
@@ -959,7 +959,7 @@
     "gpuSoftwareOnly": "GPU-kiihdytys ei ole käytettävissä — suoritetaan suorittimella",
     "gpuUnavailable": "GPU-kiihdytys ei ole käytettävissä",
     "gpuSlowWarning": "Paikalliset mallit toimivat edelleen, mutta litterointi ja kääntäminen ovat huomattavasti hitaampia.",
-    "gpuWaylandRemedy": "Wayland-istunnossa Chromium ei voi käyttää näytönohjainta tähän. Sokujin käynnistäminen valitsimella --ozone-platform=x11 palauttaa kiihdytyksen.",
+    "gpuWaylandRemedy": "Wayland-istunnossa Chromium ei voi käyttää näytönohjainta tähän. ExTransn käynnistäminen valitsimella --ozone-platform=x11 palauttaa kiihdytyksen.",
     "othersGroup": "Muut mallit",
     "requiresGpu": "Vaatii GPU:n",
     "licenseConsent": {
@@ -970,7 +970,7 @@
       "viewLicense": "Näytä koko lisenssiteksti",
       "nonCommercial": "Tämä lisenssi sallii vain ei-kaupallisen käytön — älä käytä tätä mallia kaupallisissa tuotteissa tai palveluissa.",
       "restrictedTerms": "Tämä ei ole avoimen lähdekoodin lisenssi. Se asettaa ehtoja mallin ja sen tuotosten käytölle — lue koko teksti ennen kuin luotat siihen.",
-      "disclaimer": "Sokuji ei ole sidoksissa mallin tekijöihin eikä sillä ole heihin mitään suhdetta. Tämä integraatio on epävirallinen ja tarjotaan sellaisenaan ilman minkäänlaista takuuta.",
+      "disclaimer": "ExTrans ei ole sidoksissa mallin tekijöihin eikä sillä ole heihin mitään suhdetta. Tämä integraatio on epävirallinen ja tarjotaan sellaisenaan ilman minkäänlaista takuuta.",
       "attribution": "Tekijätiedot: {{attribution}}",
       "cancel": "Peruuta",
       "accept": "Ymmärrän — vain ei-kaupallinen käyttö",
@@ -1052,9 +1052,9 @@
     "linuxMigrateTitle": "Uusi versio v{{version}} saatavilla"
   },
   "audioSystem": {
-    "pactlMissingBody": "pactl (PulseAudion komentorivityökalut) ei löytynyt, joten Sokuji ei voinut määrittää virtuaalista mikrofonia/kaiutinta. Asenna se ja yritä sitten uudelleen:",
+    "pactlMissingBody": "pactl (PulseAudion komentorivityökalut) ei löytynyt, joten ExTrans ei voinut määrittää virtuaalista mikrofonia/kaiutinta. Asenna se ja yritä sitten uudelleen:",
     "installCommand": "sudo apt install pulseaudio-utils",
-    "unavailableBody": "Sokuji ei voinut määrittää virtuaalista mikrofonia/kaiutinta. Varmista, että PulseAudio tai PipeWire on käynnissä.",
+    "unavailableBody": "ExTrans ei voinut määrittää virtuaalista mikrofonia/kaiutinta. Varmista, että PulseAudio tai PipeWire on käynnissä.",
     "retry": "Yritä uudelleen",
     "retrying": "Yritetään uudelleen...",
     "macDriverNotLoadedBody": "Sokujin virtuaalinen mikrofoni on asennettu, mutta macOS ei ole ladannut sitä, joten kokoussovellukset eivät kuule käännöstäsi. Korjaa se; macOS pyytää ylläpitäjän salasanaa.",
@@ -1065,12 +1065,12 @@
   },
   "vbCable": {
     "title": "Anna toisen osapuolen kuulla käännös",
-    "body": "Kokoussovellukset vastaanottavat puhutun käännöksen virtuaalimikrofonin kautta. Windowsissa se on VB-CABLE, VB-Audion ilmainen ajuri. Kaikki muu Sokujissa toimii ilman sitä.",
+    "body": "Kokoussovellukset vastaanottavat puhutun käännöksen virtuaalimikrofonin kautta. Windowsissa se on VB-CABLE, VB-Audion ilmainen ajuri. Kaikki muu ExTransssa toimii ilman sitä.",
     "install": "Asenna VB-CABLE",
     "about": "Tietoja VB-CABLEsta",
     "adminOnce": "Windows pyytää järjestelmänvalvojan oikeuksia kerran.",
     "installingTitle": "Asennetaan VB-CABLEa…",
-    "installingBody": "Hyväksy Windowsin kehote ja napsauta sitten VB-CABLE-ikkunassa \"Install Driver\". Sokuji tunnistaa sen heti, kun se on asennettu.",
+    "installingBody": "Hyväksy Windowsin kehote ja napsauta sitten VB-CABLE-ikkunassa \"Install Driver\". ExTrans tunnistaa sen heti, kun se on asennettu.",
     "installingBusy": "Asennetaan…",
     "failedTitle": "VB-CABLEa ei asennettu",
     "failedBody": "Asennus peruttiin tai se ei valmistunut. Yritä uudelleen tai asenna se itse VB-Audion sivustolta.",
@@ -1083,7 +1083,7 @@
     "storeStep3": "Napsauta \"Install Driver\" ja käynnistä tietokone sitten uudelleen.",
     "openWebsite": "Avaa VB-Audion sivusto",
     "checkAgain": "Tarkista uudelleen",
-    "picksUp": "Sokuji tunnistaa sen automaattisesti, kun se on asennettu.",
+    "picksUp": "ExTrans tunnistaa sen automaattisesti, kun se on asennettu.",
     "notNow": "Ei nyt"
   },
   "subtitle": {
@@ -1182,7 +1182,7 @@
     "previewChargedToBalance": "Esikatselu syntetisoi lyhyen näytteen, ja sen hinta veloitetaan saldostasi.",
     "previewFailed": "Tämän äänen esikatselua ei voitu luoda.",
     "renameFailed": "Tämän äänen nimeä ei voitu muuttaa.",
-    "recordStartFailed": "Tallennusta ei voitu aloittaa. Tarkista, että mikrofoni on liitetty ja että Sokuji saa käyttää sitä.",
+    "recordStartFailed": "Tallennusta ei voitu aloittaa. Tarkista, että mikrofoni on liitetty ja että ExTrans saa käyttää sitä.",
     "previewLanguageUnsupported": "Tällä mallilla ei ole esimerkkilausetta kielellä, jota se puhuu.",
     "previewNeedsBalance": "Lataa saldoasi kuunnellaksesi tämän äänen esikatselun.",
     "previewNeedsSessionStopped": "Lopeta istunto kuunnellaksesi tämän äänen esikatselun.",
@@ -1290,10 +1290,10 @@
     }
   },
   "echoNotice": {
-    "ttsEcho": "Kaiuttimesi syöttävät Sokujin käännetyn puheen takaisin mikrofoniin.",
+    "ttsEcho": "Kaiuttimesi syöttävät ExTransn käännetyn puheen takaisin mikrofoniin.",
     "meetingEcho": "Kokouksen ääni kaiuttimista kantautuu mikrofoniin.",
     "farEndEcho": "Osallistujan laite kaiuttaa käännöksesi takaisin kokoukseen.",
-    "selfCapture": "Toisen äänilähde tallentaa Sokujin omaa ääntä.",
+    "selfCapture": "Toisen äänilähde tallentaa ExTransn omaa ääntä.",
     "routingLoop": "Valittu äänitulolaite tallentaa suoraan tämän tietokoneen toistoa.",
     "actionHeadphones": "Kuulokkeiden käyttö katkaisee silmukan.",
     "actionAskRemote": "Pyydä osallistujaa käyttämään kuulokkeita.",
@@ -1315,7 +1315,7 @@
     "clearAllKeepsPicks": "Valintasi muistetaan ja palautuvat, kun mallit ladataan uudelleen."
   },
   "setup": {
-    "title": "Määritä Sokuji",
+    "title": "Määritä ExTrans",
     "stepOf": "Vaihe {{current}}/{{total}}",
     "back": "Takaisin",
     "next": "Seuraava",
@@ -1325,7 +1325,7 @@
     "rerun": "Käynnistä asennus uudelleen",
     "steps": {
       "language": {
-        "title": "Millä kielellä Sokujin tulisi puhua sinulle?",
+        "title": "Millä kielellä ExTransn tulisi puhua sinulle?",
         "desc": "Tämä on valikoiden ja painikkeiden kieli. Valitset myöhemmin kielet, joiden välillä käännät.",
         "label": "Käyttöliittymän kieli"
       },
@@ -1442,7 +1442,7 @@
       "guide": "Näin hankit tämän avaimen",
       "verifyEmail": "Kirjauduttu sisään. Avaa sähköpostitse lähettämämme linkki vahvistaaksesi osoitteesi — kokeilusaldo tulee voimaan, kun teet niin.",
       "onFile": "Avain on jo tallennettu — jätä tämä tyhjäksi säilyttääksesi sen.",
-      "offlineHardware": "Sokuji toimii hyvin näytönohjaimella, jossa on riittävästi muistia; pelkällä suorittimella se on selvästi hitaampi.",
+      "offlineHardware": "ExTrans toimii hyvin näytönohjaimella, jossa on riittävästi muistia; pelkällä suorittimella se on selvästi hitaampi.",
       "openaiOneKey": "Tämä yksi avain käy OpenAI Realtimelle, Translatelle ja Livelle.",
       "baseUrl": "Osoite",
       "baseUrlPlaceholder": "Osoite, esimerkiksi https://openrouter.ai/api/v1",
@@ -1472,7 +1472,7 @@
     "steps": {
       "welcome": {
         "title": "Olet valmis",
-        "content": "Sokuji on määritetty skenaariosi mukaan. Tässä lyhyt kierros — se kestää alle minuutin."
+        "content": "ExTrans on määritetty skenaariosi mukaan. Tässä lyhyt kierros — se kestää alle minuutin."
       },
       "mode-picker": {
         "title": "Käännöstila",
@@ -1483,7 +1483,7 @@
       },
       "microphone": {
         "title": "Mikrofonisi",
-        "content": "Puheesi tulee tänne. Järjestelmän oletuslaite on jo valittuna. Älä valitse Sokujin virtuaalimikrofonia — se on tarkoitettu kokoussovellukseesi."
+        "content": "Puheesi tulee tänne. Järjestelmän oletuslaite on jo valittuna. Älä valitse ExTransn virtuaalimikrofonia — se on tarkoitettu kokoussovellukseesi."
       },
       "monitor": {
         "title": "Kuuntele itseäsi käännettynä",
@@ -1492,15 +1492,15 @@
       "output-routing": {
         "title": "Miten toinen osapuoli kuulee sinut",
         "content": "Käännetty äänesi ohjautuu virtuaalimikrofoniin; valitse se mikrofoniksi kokoussovelluksessasi.",
-        "content_extension": "Valitse Google Meetissä, Zoomissa tai Teamsissa mikrofoniksi \"Sokuji Virtual Microphone\". Sokuji lisää sen automaattisesti tuettuihin kokoussivustoihin.",
-        "content_electronLinux": "Sokuji loi virtuaalimikrofonin tähän järjestelmään. Valitse se mikrofoniksi kokoussovelluksessasi.",
-        "content_electronOther": "Tarvitset virtuaalisen äänikaapelin (esimerkiksi VB-Cable). Ohjaa Sokujin äänilähtö siihen ja valitse se mikrofoniksi kokoussovelluksessasi."
+        "content_extension": "Valitse Google Meetissä, Zoomissa tai Teamsissa mikrofoniksi \"ExTrans Virtual Microphone\". ExTrans lisää sen automaattisesti tuettuihin kokoussivustoihin.",
+        "content_electronLinux": "ExTrans loi virtuaalimikrofonin tähän järjestelmään. Valitse se mikrofoniksi kokoussovelluksessasi.",
+        "content_electronOther": "Tarvitset virtuaalisen äänikaapelin (esimerkiksi VB-Cable). Ohjaa ExTransn äänilähtö siihen ja valitse se mikrofoniksi kokoussovelluksessasi."
       },
       "participant-source": {
         "title": "Toisen osapuolen ääni",
-        "content": "Sokuji kuuntelee toista osapuolta täältä.",
+        "content": "ExTrans kuuntelee toista osapuolta täältä.",
         "content_electron": "Valitse käännettävä sovellus tai koko järjestelmän ääni. Heidän alkuperäinen äänensä jatkuu normaalisti.",
-        "content_extension": "Sokuji kääntää nykyisen välilehden äänen. Heidän alkuperäinen äänensä jatkuu normaalisti."
+        "content_extension": "ExTrans kääntää nykyisen välilehden äänen. Heidän alkuperäinen äänensä jatkuu normaalisti."
       },
       "subtitle": {
         "title": "Tekstitystila",
@@ -1562,7 +1562,7 @@
     "lineup_source_not_fixed": "Palvelun {{provider}} on tiedettävä puhuttu kieli. Valitse se asetuksen ”Automaattinen tunnistus” sijaan tai valitse toinen käännöspalvelu.",
     "lineup_pair_not_translated": "{{provider}} ei käännä suuntaa {{source}} → {{target}}. Valitse muut kielet tai toinen käännöspalvelu.",
     "lineup_face_to_face_apart": "”Kasvokkain” tarvitsee yhden palvelun, joka sekä litteroi että kääntää. Valitse {{provider}} myös käännökseen tai aseta ”Missä toinen on” arvoon ”Kokouksessa”.",
-    "session_in_use": "Toinen ikkuna tai laite käyttää tätä tiliä. Lopeta istunto siellä, tai jos Sokuji sulkeutui juuri odottamatta, yritä uudelleen minuutin kuluttua.",
+    "session_in_use": "Toinen ikkuna tai laite käyttää tätä tiliä. Lopeta istunto siellä, tai jos ExTrans sulkeutui juuri odottamatta, yritä uudelleen minuutin kuluttua.",
     "previous_session_ending": "Edellinen istuntosi on vielä päättymässä. Yritä uudelleen minuutin kuluttua.",
     "app_capture_lost_using_system_audio": "Sovelluksen kaappaus pysähtyi, joten nyt käännetään kaikki järjestelmän ääni.",
     "app_capture_monitor_missing": "Sovelluksen kaappaus ei käynnistynyt, joten nyt käännetään kaikki järjestelmän ääni.",
@@ -1591,7 +1591,7 @@
     "mic_now_using": "Nyt käytetään mikrofonia ”{{device}}”.",
     "mic_in_use": "Mikrofoni ”{{device}}” on käytössä ({{apps}}). Sulje {{apps}} ja aloita uudelleen, tai valitse toinen mikrofoni.",
     "mic_unreadable": "Windows ei voinut avata mikrofonia ”{{device}}”. Toinen sovellus saattaa käyttää sitä, tai sen ohjain on lakannut vastaamasta. Sulje sitä käyttävät sovellukset tai liitä se uudelleen ja aloita sitten uudelleen.",
-    "mic_blocked": "Windows ei anna Sokujin käyttää mikrofonia. Salli työpöytäsovellusten mikrofonin käyttö kohdassa Asetukset › Tietosuoja ja suojaus › Mikrofoni ja aloita sitten uudelleen.",
+    "mic_blocked": "Windows ei anna ExTransn käyttää mikrofonia. Salli työpöytäsovellusten mikrofonin käyttö kohdassa Asetukset › Tietosuoja ja suojaus › Mikrofoni ja aloita sitten uudelleen.",
     "speaker_tts_missing": "Käännös, jonka toinen osapuoli kuulee, näkyy vain tekstinä: mikään puhemalli ei puhu kieltä {{target}}.",
     "participant_tts_missing": "Käännös, jonka kuulen, näkyy vain tekstinä: mikään puhemalli ei puhu kieltä {{target}}.",
     "participant_tts_over_budget": "Käännös, jonka kuulen, näkyy vain tekstinä: muisti ei riitä lataamaan myös toisen osapuolen puhemallia.",
@@ -1604,8 +1604,8 @@
     "not_org_member_unnamed": "Et kuulu enää organisaatioosi.",
     "org_wallet_frozen": "Organisaation {{organization}} tili on keskeytetty. Ota yhteyttä sen omistajaan tai käytä omaa saldoasi.",
     "org_wallet_frozen_unnamed": "Organisaation tili on keskeytetty. Ota yhteyttä sen omistajaan tai käytä omaa saldoasi.",
-    "org_wallet_frozen_owner": "Organisaation {{organization}} tili on keskeytetty. Ota yhteyttä Sokujin tukeen tai käytä omaa saldoasi.",
-    "org_wallet_frozen_owner_unnamed": "Organisaation tili on keskeytetty. Ota yhteyttä Sokujin tukeen tai käytä omaa saldoasi.",
+    "org_wallet_frozen_owner": "Organisaation {{organization}} tili on keskeytetty. Ota yhteyttä ExTransn tukeen tai käytä omaa saldoasi.",
+    "org_wallet_frozen_owner_unnamed": "Organisaation tili on keskeytetty. Ota yhteyttä ExTransn tukeen tai käytä omaa saldoasi.",
     "model_missing": "Palvelu ei tarjoa tätä mallia: {{detail}}",
     "quota": "Palvelun tilillä ei ole enää saldoa: {{detail}}",
     "text_model_unset": "Valitse käännökselle malli tai kirjoita sen nimi kohdassa ”Kielet ja kokoonpano”.",
@@ -1613,7 +1613,7 @@
     "address_invalid": "Yhteensopivan palvelun osoitetta ei voi käyttää: {{detail}}"
   },
   "viewer": {
-    "title": "Sokuji-tekstitys",
+    "title": "ExTrans-tekstitys",
     "connecting": "Yhdistetään…",
     "original": "Alkuperäinen",
     "enter": {
@@ -1671,7 +1671,7 @@
     },
     "shortcuts": "+ − fonttikoko · B molemmat kielet · F koko näyttö · End takaisin uusimpaan",
     "transcript": {
-      "header": "Sokuji-tekstitys, tallennettu {{time}}"
+      "header": "ExTrans-tekstitys, tallennettu {{time}}"
     },
     "present": {
       "title": "Lue tekstitys puhelimella tai tietokoneella",
@@ -1684,7 +1684,7 @@
       "androidChrome": "Eikö Chrome avaa sivua Androidissa? Salli se kohdassa Asetukset → Sovellukset → Chrome → Käyttöoikeudet → Lähellä olevat laitteet.",
       "watching": "Katsojia: {{count}}",
       "fullscreen": "Koko näyttö",
-      "windowTitle": "Sokuji-projektorisivu",
+      "windowTitle": "ExTrans-projektorisivu",
       "ended": "Jakaminen on päättynyt"
     }
   },
@@ -1904,8 +1904,8 @@
         "key": "Näppäin",
         "held": "Kun pidät pohjassa",
         "notHeld": "Kun et pidä pohjassa",
-        "talkHeld": "Sokuji kuuntelee; kun päästät irti, se pätkä käännetään ja toinen osapuoli kuulee käännöksen. Kun Läpivienti on päällä, toinen osapuoli kuulee hiljaa myös oman äänesi.",
-        "talkNotHeld": "Sokuji ei kuuntele; mitään, mitä sanot, ei käännetä eikä välitetä toiselle osapuolelle.",
+        "talkHeld": "ExTrans kuuntelee; kun päästät irti, se pätkä käännetään ja toinen osapuoli kuulee käännöksen. Kun Läpivienti on päällä, toinen osapuoli kuulee hiljaa myös oman äänesi.",
+        "talkNotHeld": "ExTrans ei kuuntele; mitään, mitä sanot, ei käännetä eikä välitetä toiselle osapuolelle.",
         "translateHeld": "Se, mitä sanot, käännetään; toinen osapuoli kuulee vain käännöksen, ei omaa ääntäsi.",
         "translateNotHeld": "Oma äänesi menee kääntämättä suoraan toiselle osapuolelle.",
         "change": "Vaihda",
@@ -2061,7 +2061,7 @@
     "foundInNotes": "Löytyi muistiinpanoista",
     "foundInTitle": "Löytyi otsikosta",
     "unavailable": "Historiaa ei voitu avata.",
-    "unavailableNewer": "Tämän historian kirjoitti Sokujin uudempi versio. Avaa se päivittämällä Sokuji.",
+    "unavailableNewer": "Tämän historian kirjoitti ExTransn uudempi versio. Avaa se päivittämällä ExTrans.",
     "failed": "Se ei onnistunut. Yritä uudelleen.",
     "me": "Minä",
     "other": "Toinen",
@@ -2175,7 +2175,7 @@
       "wallet-frozen": "Kizuna AI -lompakkosi on jäädytetty.",
       "not-member": "Et ole enää sen organisaation jäsen, joka maksaa Kizuna AI:n.",
       "too-large": "Tämä tallenne on liian pitkä, jotta Kizuna AI voisi kirjoittaa siitä muistiinpanot.",
-      "update-required": "Päivitä Sokuji, jotta voit kirjoittaa muistiinpanoja Kizuna AI:lla.",
+      "update-required": "Päivitä ExTrans, jotta voit kirjoittaa muistiinpanoja Kizuna AI:lla.",
       "other": "Muistiinpanopalvelu hylkäsi pyynnön."
     },
     "notesLatestFailed": "Viimeisintä yritystä ei voitu kirjoittaa: {{reason}}",

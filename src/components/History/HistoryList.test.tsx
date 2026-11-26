@@ -272,7 +272,7 @@ describe('the History list', () => {
   it('says why when History cannot be opened', async () => {
     status = { available: false, reason: 'newer', dir: '' };
     await renderList();
-    expect(screen.getByText('This History was written by a newer version of Sokuji. Update Sokuji to open it.')).toBeInTheDocument();
+    expect(screen.getByText('This History was written by a newer version of ExTrans. Update ExTrans to open it.')).toBeInTheDocument();
     expect(screen.queryByRole('searchbox')).toBeNull();
     fireEvent.click(screen.getByRole('button', { name: 'Back to the session' }));
     expect(onClose).toHaveBeenCalledTimes(1);

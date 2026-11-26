@@ -114,7 +114,7 @@ export const HistoryList: React.FC<HistoryListProps> = ({ hidden = false }) => {
         <div className="settings-page__body">
           <p className="history-list__empty" role="status">
             {status.reason === 'newer'
-              ? t('history.unavailableNewer', 'This History was written by a newer version of Sokuji. Update Sokuji to open it.')
+              ? t('history.unavailableNewer', 'This History was written by a newer version of ExTrans. Update ExTrans to open it.')
               : t('history.unavailable', 'History could not be opened.')}
           </p>
         </div>

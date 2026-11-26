@@ -66,7 +66,7 @@ export const fakeTranslatorProvider: Provider<FakeTranslatorSettings, FakeTransl
   kind: 'own-key',
   platforms: ['electron', 'extension', 'web'],
   icon: Languages,
-  vendor: 'Sokuji',
+  vendor: 'ExTrans',
 
   settings: { key: 'fakeTranslator', defaults: FAKE_TRANSLATOR_DEFAULTS, migrate: migrateFakeTranslatorSettings },
   Settings: () => null,

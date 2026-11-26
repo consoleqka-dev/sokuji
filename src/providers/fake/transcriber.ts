@@ -95,7 +95,7 @@ export const fakeTranscriberProvider: Provider<FakeTranscriberSettings, FakeTran
   kind: 'own-key',
   platforms: ['electron', 'extension', 'web'],
   icon: Ear,
-  vendor: 'Sokuji',
+  vendor: 'ExTrans',
 
   settings: { key: 'fakeTranscriber', defaults: FAKE_TRANSCRIBER_DEFAULTS, migrate: migrateFakeTranscriberSettings },
   Settings: () => null,

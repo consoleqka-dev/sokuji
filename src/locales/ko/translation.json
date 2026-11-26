@@ -62,12 +62,12 @@
     },
     "echoCancellation": "에코 제거",
     "echoCancellationTooltip": {
-      "app": "Sokuji만 — 마이크에 들어온 Sokuji의 번역 음성을 제거합니다. 마이크가 BlackHole 같은 가상 오디오 장치라면 이 옵션을 선택하세요.",
+      "app": "ExTrans만 — 마이크에 들어온 ExTrans의 번역 음성을 제거합니다. 마이크가 BlackHole 같은 가상 오디오 장치라면 이 옵션을 선택하세요.",
       "browser": "브라우저만 — 마이크에 들어온 이 브라우저의 소리(회의 탭 포함)를 제거합니다. 마이크가 다른 앱의 소리를 전달하는 BlackHole 같은 가상 오디오 장치라면 이 옵션을 선택하세요.",
       "all": "모든 소리 — 회의 앱처럼 다른 앱이 스피커로 재생하는 소리도 제거합니다. 마이크로 쓰는 가상 오디오 장치는 바로 그 소리를 전달하므로 무음이 됩니다."
     },
     "echoCancellationMode": {
-      "app": "Sokuji만",
+      "app": "ExTrans만",
       "browser": "브라우저만",
       "all": "모든 소리"
     },
@@ -368,9 +368,9 @@
     "virtualMicrophone": "가상 마이크",
     "virtualMicrophoneNotice": "가상 마이크 안내",
     "iUnderstand": "이해했습니다",
-    "virtualMicWarningTitle": "이것은 Sokuji에서 생성한 가상 마이크입니다.",
+    "virtualMicWarningTitle": "이것은 ExTrans에서 생성한 가상 마이크입니다.",
     "virtualMicWarningText1": "여기서 이 장치를 선택하지 마세요. 대신 비디오 회의 애플리케이션(Google Meet, Zoom, Microsoft Teams 등)에서 이 가상 마이크를 사용하여 실시간 음성 번역 출력을 받으세요.",
-    "virtualMicWarningText2": "Sokuji가 제대로 작동하려면 목록에서 실제 물리적 마이크를 선택하세요.",
+    "virtualMicWarningText2": "ExTrans가 제대로 작동하려면 목록에서 실제 물리적 마이크를 선택하세요.",
     "realVoicePassthrough": "원음 패스스루",
     "passthroughManagedByPushToTranslate": "푸시 투 트랜슬레이트 모드에서는 음성 패스스루가 자동으로 관리됩니다. 키를 누르지 않을 때는 100% 음량으로 패스스루되고, 누르고 있는 동안에는 녹음·번역이 진행되어 패스스루되지 않습니다.",
     "speechTitle": "음성",
@@ -427,7 +427,7 @@
     "participantFellBackToSystemAudio": "선택한 애플리케이션의 캡처가 중지되어 지금은 시스템 오디오 전체가 번역되고 있습니다. 범위를 다시 좁히려면 애플리케이션을 다시 선택하세요.",
     "loopbackMicNotice": "루프백 입력 알림",
     "loopbackMicWarningTitle": "이 입력은 이 컴퓨터가 재생하는 소리를 다시 캡처합니다.",
-    "loopbackMicWarningText1": "\"Stereo Mix\"나 \"Monitor of ...\" 같은 루프백 입력은 시스템 자체의 오디오 출력을 녹음합니다. Sokuji의 번역 음성이 포함된 세션에서는 Sokuji가 자기 자신을 듣고 루프로 번역하게 됩니다.",
+    "loopbackMicWarningText1": "\"Stereo Mix\"나 \"Monitor of ...\" 같은 루프백 입력은 시스템 자체의 오디오 출력을 녹음합니다. ExTrans의 번역 음성이 포함된 세션에서는 ExTrans가 자기 자신을 듣고 루프로 번역하게 됩니다.",
     "loopbackMicWarningText2": "의도적인 라우팅일 수 있어 장치 선택은 유지되지만, 일반적인 사용에는 실제 마이크를 선택하세요.",
     "participantNoAudioYet": "선택한 소스에서 아직 오디오가 들어오지 않았습니다. 재생 중인데도 번역되지 않는다면 시스템 설정 > 개인정보 보호 및 보안 > 시스템 오디오 녹음만에서 Sokuji를 허용한 뒤(macOS) 세션을 다시 시작하세요.",
     "audioCaptureUnprovenNotice": "아직 캡처된 오디오가 없습니다",
@@ -473,7 +473,7 @@
     "verificationEmailFailed": "인증 이메일을 보내지 못했습니다. 다시 시도해 주세요",
     "alreadyVerified": "이메일이 이미 인증되었습니다!",
     "cooldownMessage": "{{seconds}}초 기다려 주세요",
-    "checkYourEmail": "인증 이메일을 보냈습니다. 받은편지함에서 인증을 완료하고 돌아오세요 — Sokuji가 자동으로 인식합니다.",
+    "checkYourEmail": "인증 이메일을 보냈습니다. 받은편지함에서 인증을 완료하고 돌아오세요 — ExTrans가 자동으로 인식합니다.",
     "emailVerifiedToast": "이메일 인증됨",
     "sessionExpired": "세션이 만료되었습니다. 다시 로그인해 주세요.",
     "forgotPassword": "비밀번호를 잊으셨나요?",
@@ -497,16 +497,16 @@
   },
   "simpleConfig": {
     "interfaceLanguage": "인터페이스 언어",
-    "interfaceLanguageDesc": "Sokuji의 메뉴와 버튼 언어를 변경합니다. 번역할 수 있는 언어에는 영향을 주지 않습니다.",
+    "interfaceLanguageDesc": "ExTrans의 메뉴와 버튼 언어를 변경합니다. 번역할 수 있는 언어에는 영향을 주지 않습니다.",
     "translationLanguages": "번역 언어",
     "translationLanguagesDesc": "내가 말하는 언어(내 언어)와 번역을 듣고 싶은 언어(상대방 언어)를 선택하세요. 내가 어떤 언어로 말할지 확실하지 않다면 '자동 감지'를 선택하세요.",
     "yourLanguage": "내 언어",
     "userAccount": "사용자 계정",
     "userAccountTooltip": "기술적 지식과 자신의 API 키를 가진 사용자의 경우, 로그인 여부와 관계없이 자신의 API 키를 사용할 수 있습니다. 사용자 계정은 복잡한 구성 없이 간단한 설정을 선호하는 신규 사용자를 위해 설계되었습니다.",
-    "signInRequired": "회원가입하면 API 키 없이 Sokuji의 내장 번역 서비스를 사용할 수 있습니다. 기존처럼 자신의 제공업체와 API 키를 계속 사용해도 됩니다.",
+    "signInRequired": "회원가입하면 API 키 없이 ExTrans의 내장 번역 서비스를 사용할 수 있습니다. 기존처럼 자신의 제공업체와 API 키를 계속 사용해도 됩니다.",
     "targetLanguage": "상대방 언어",
     "microphone": "마이크",
-    "microphoneDesc": "음성을 캡처할 마이크를 선택하세요. 이 마이크에 당신의 언어로 말하면, Sokuji가 들리는 모든 것을 실시간으로 번역합니다.",
+    "microphoneDesc": "음성을 캡처할 마이크를 선택하세요. 이 마이크에 당신의 언어로 말하면, ExTrans가 들리는 모든 것을 실시간으로 번역합니다.",
     "swapLanguages": "언어 전환",
     "swapNotSpoken": "이 음성 서비스는 이 언어들을 반대 방향으로 읽지 못합니다.",
     "textOnly": "텍스트만",
@@ -715,7 +715,7 @@
       "scopeLabel": "포함",
       "scopeItemAria": "{{scope}} — {{line}}",
       "scopeEmpty": "선택된 항목 없음",
-      "headerTitle": "Sokuji 대화 내보내기",
+      "headerTitle": "ExTrans 대화 내보내기",
       "headerSessionStarted": "세션 시작",
       "headerExported": "내보낸 시각",
       "headerProvider": "제공자",
@@ -959,7 +959,7 @@
     "gpuSoftwareOnly": "GPU 가속을 사용할 수 없음 — CPU에서 실행 중",
     "gpuUnavailable": "GPU 가속을 사용할 수 없음",
     "gpuSlowWarning": "로컬 모델은 계속 작동하지만 전사와 번역이 눈에 띄게 느려집니다.",
-    "gpuWaylandRemedy": "Wayland 세션에서는 Chromium이 이 작업에 GPU를 사용할 수 없습니다. --ozone-platform=x11 옵션으로 Sokuji를 실행하면 가속이 복원됩니다.",
+    "gpuWaylandRemedy": "Wayland 세션에서는 Chromium이 이 작업에 GPU를 사용할 수 없습니다. --ozone-platform=x11 옵션으로 ExTrans를 실행하면 가속이 복원됩니다.",
     "othersGroup": "기타 모델",
     "requiresGpu": "GPU 필요",
     "licenseConsent": {
@@ -970,7 +970,7 @@
       "viewLicense": "전체 라이선스 보기",
       "nonCommercial": "이 라이선스는 비상업적 사용만 허용합니다. 상업용 제품이나 서비스에 이 모델을 사용하지 마세요.",
       "restrictedTerms": "이 라이선스는 오픈 소스가 아닙니다. 모델과 그 출력의 사용 방식에 조건을 둡니다. 이에 의존하기 전에 전문을 읽어 보세요.",
-      "disclaimer": "Sokuji는 모델 제작자와 아무런 제휴 관계가 없습니다. 이 통합은 비공식이며 어떠한 보증도 없이 있는 그대로 제공됩니다.",
+      "disclaimer": "ExTrans는 모델 제작자와 아무런 제휴 관계가 없습니다. 이 통합은 비공식이며 어떠한 보증도 없이 있는 그대로 제공됩니다.",
       "attribution": "저작자 표시: {{attribution}}",
       "cancel": "취소",
       "accept": "이해했습니다 — 비상업적 사용만",
@@ -1052,9 +1052,9 @@
     "linuxMigrateTitle": "새 버전 v{{version}} 사용 가능"
   },
   "audioSystem": {
-    "pactlMissingBody": "pactl(PulseAudio 명령줄 도구)를 찾을 수 없어 Sokuji가 가상 마이크/스피커를 설정하지 못했습니다. 설치한 후 다시 시도하세요:",
+    "pactlMissingBody": "pactl(PulseAudio 명령줄 도구)를 찾을 수 없어 ExTrans가 가상 마이크/스피커를 설정하지 못했습니다. 설치한 후 다시 시도하세요:",
     "installCommand": "sudo apt install pulseaudio-utils",
-    "unavailableBody": "Sokuji가 가상 마이크/스피커를 설정하지 못했습니다. PulseAudio 또는 PipeWire가 실행 중인지 확인하세요.",
+    "unavailableBody": "ExTrans가 가상 마이크/스피커를 설정하지 못했습니다. PulseAudio 또는 PipeWire가 실행 중인지 확인하세요.",
     "retry": "다시 시도",
     "retrying": "다시 시도하는 중...",
     "macDriverNotLoadedBody": "Sokuji의 가상 마이크가 설치되어 있지만 macOS가 불러오지 않아 회의 앱에서 번역을 들을 수 없습니다. 복구하면 macOS가 관리자 암호를 요청합니다.",
@@ -1065,12 +1065,12 @@
   },
   "vbCable": {
     "title": "상대방이 번역을 듣게 하기",
-    "body": "회의 앱은 가상 마이크를 통해 음성 번역을 받습니다. Windows에서는 VB-Audio의 무료 드라이버인 VB-CABLE이 그 역할을 합니다. 이것이 없어도 Sokuji의 다른 기능은 모두 사용할 수 있습니다.",
+    "body": "회의 앱은 가상 마이크를 통해 음성 번역을 받습니다. Windows에서는 VB-Audio의 무료 드라이버인 VB-CABLE이 그 역할을 합니다. 이것이 없어도 ExTrans의 다른 기능은 모두 사용할 수 있습니다.",
     "install": "VB-CABLE 설치",
     "about": "VB-CABLE 정보",
     "adminOnce": "Windows가 관리자 권한을 한 번 요청합니다.",
     "installingTitle": "VB-CABLE 설치 중…",
-    "installingBody": "Windows 확인 창에서 허용한 다음, VB-CABLE 창에서 \"Install Driver\"를 클릭하세요. 설치되면 Sokuji가 바로 인식합니다.",
+    "installingBody": "Windows 확인 창에서 허용한 다음, VB-CABLE 창에서 \"Install Driver\"를 클릭하세요. 설치되면 ExTrans가 바로 인식합니다.",
     "installingBusy": "설치 중…",
     "failedTitle": "VB-CABLE이 설치되지 않았습니다",
     "failedBody": "설치가 취소되었거나 완료되지 않았습니다. 다시 시도하거나 VB-Audio 웹사이트에서 직접 설치하세요.",
@@ -1083,7 +1083,7 @@
     "storeStep3": "\"Install Driver\"를 클릭한 다음 PC를 다시 시작하세요.",
     "openWebsite": "VB-Audio 웹사이트 열기",
     "checkAgain": "다시 확인",
-    "picksUp": "설치되면 Sokuji가 자동으로 인식합니다.",
+    "picksUp": "설치되면 ExTrans가 자동으로 인식합니다.",
     "notNow": "나중에"
   },
   "subtitle": {
@@ -1182,7 +1182,7 @@
     "previewChargedToBalance": "미리 듣기를 하면 짧은 샘플이 합성되며 계정 잔액에서 차감됩니다.",
     "previewFailed": "이 음성의 미리 듣기를 합성할 수 없습니다.",
     "renameFailed": "이 음성의 이름을 변경할 수 없습니다.",
-    "recordStartFailed": "녹음을 시작할 수 없습니다. 마이크가 연결되어 있고 Sokuji에 마이크 사용 권한이 있는지 확인하세요.",
+    "recordStartFailed": "녹음을 시작할 수 없습니다. 마이크가 연결되어 있고 ExTrans에 마이크 사용 권한이 있는지 확인하세요.",
     "previewLanguageUnsupported": "이 모델은 지원하는 언어로 된 샘플 문장이 없습니다.",
     "previewNeedsBalance": "이 음성을 미리 들으려면 잔액을 충전하세요.",
     "previewNeedsSessionStopped": "이 음성을 미리 들으려면 세션을 종료하세요.",
@@ -1290,10 +1290,10 @@
     }
   },
   "echoNotice": {
-    "ttsEcho": "스피커에서 나온 Sokuji의 번역 음성이 마이크로 되돌아오고 있습니다.",
+    "ttsEcho": "스피커에서 나온 ExTrans의 번역 음성이 마이크로 되돌아오고 있습니다.",
     "meetingEcho": "스피커의 회의 오디오가 마이크에 들어오고 있습니다.",
     "farEndEcho": "한 참가자의 기기가 회의에 번역을 에코로 되돌리고 있습니다.",
-    "selfCapture": "상대방 오디오 소스가 Sokuji 자체 오디오를 캡처하고 있습니다.",
+    "selfCapture": "상대방 오디오 소스가 ExTrans 자체 오디오를 캡처하고 있습니다.",
     "routingLoop": "선택한 입력 장치가 이 컴퓨터의 재생을 직접 캡처하고 있습니다.",
     "actionHeadphones": "헤드폰을 사용하면 루프가 끊어집니다.",
     "actionAskRemote": "해당 참가자에게 헤드폰 사용을 요청하세요.",
@@ -1315,7 +1315,7 @@
     "clearAllKeepsPicks": "선택 항목은 저장되며, 모델을 다시 다운로드하면 복원됩니다."
   },
   "setup": {
-    "title": "Sokuji 설정",
+    "title": "ExTrans 설정",
     "stepOf": "{{current}}/{{total}}단계",
     "back": "뒤로",
     "next": "다음",
@@ -1325,7 +1325,7 @@
     "rerun": "설정 다시 실행",
     "steps": {
       "language": {
-        "title": "Sokuji가 어떤 언어로 안내할까요?",
+        "title": "ExTrans가 어떤 언어로 안내할까요?",
         "desc": "메뉴와 버튼에 사용되는 언어입니다. 번역할 언어는 나중에 선택합니다.",
         "label": "인터페이스 언어"
       },
@@ -1442,7 +1442,7 @@
       "guide": "이 키를 받는 방법",
       "verifyEmail": "로그인되었습니다. 이메일로 보내드린 링크를 열어 주소를 인증하세요 — 인증하면 체험 크레딧이 지급됩니다.",
       "onFile": "이미 저장된 키가 있습니다 — 그대로 두면 유지됩니다.",
-      "offlineHardware": "GPU와 충분한 VRAM이 있으면 Sokuji가 원활하게 동작하고, CPU만으로는 눈에 띄게 느립니다.",
+      "offlineHardware": "GPU와 충분한 VRAM이 있으면 ExTrans가 원활하게 동작하고, CPU만으로는 눈에 띄게 느립니다.",
       "openaiOneKey": "이 키 하나로 OpenAI Realtime, Translate, Live를 모두 씁니다.",
       "baseUrl": "주소",
       "baseUrlPlaceholder": "주소 (예: https://openrouter.ai/api/v1)",
@@ -1472,7 +1472,7 @@
     "steps": {
       "welcome": {
         "title": "설정이 완료되었습니다",
-        "content": "Sokuji가 선택한 시나리오에 맞게 설정되었습니다. 짧게 둘러보겠습니다 — 1분이 채 걸리지 않습니다."
+        "content": "ExTrans가 선택한 시나리오에 맞게 설정되었습니다. 짧게 둘러보겠습니다 — 1분이 채 걸리지 않습니다."
       },
       "mode-picker": {
         "title": "번역 모드",
@@ -1483,7 +1483,7 @@
       },
       "microphone": {
         "title": "내 마이크",
-        "content": "내 음성이 여기로 들어옵니다. 시스템 기본 장치가 이미 선택되어 있습니다. Sokuji 가상 마이크는 선택하지 마세요 — 이것은 회의 앱용입니다."
+        "content": "내 음성이 여기로 들어옵니다. 시스템 기본 장치가 이미 선택되어 있습니다. ExTrans 가상 마이크는 선택하지 마세요 — 이것은 회의 앱용입니다."
       },
       "monitor": {
         "title": "번역된 내 목소리 듣기",
@@ -1492,15 +1492,15 @@
       "output-routing": {
         "title": "상대방이 내 목소리를 듣는 방법",
         "content": "번역된 내 목소리는 가상 마이크로 전송됩니다. 회의 앱에서 이를 마이크로 선택하세요.",
-        "content_extension": "Google Meet, Zoom, Teams에서 \"Sokuji Virtual Microphone\"을 마이크로 선택하세요. Sokuji가 지원되는 회의 사이트에 자동으로 추가합니다.",
-        "content_electronLinux": "Sokuji가 이 시스템에 가상 마이크를 생성했습니다. 회의 앱에서 이를 마이크로 선택하세요.",
-        "content_electronOther": "가상 오디오 케이블(예: VB-Cable)이 필요합니다. Sokuji의 출력을 여기로 보낸 후, 회의 앱에서 이를 마이크로 선택하세요."
+        "content_extension": "Google Meet, Zoom, Teams에서 \"ExTrans Virtual Microphone\"을 마이크로 선택하세요. ExTrans가 지원되는 회의 사이트에 자동으로 추가합니다.",
+        "content_electronLinux": "ExTrans가 이 시스템에 가상 마이크를 생성했습니다. 회의 앱에서 이를 마이크로 선택하세요.",
+        "content_electronOther": "가상 오디오 케이블(예: VB-Cable)이 필요합니다. ExTrans의 출력을 여기로 보낸 후, 회의 앱에서 이를 마이크로 선택하세요."
       },
       "participant-source": {
         "title": "상대방의 목소리",
-        "content": "Sokuji가 여기서 상대방의 소리를 듣습니다.",
+        "content": "ExTrans가 여기서 상대방의 소리를 듣습니다.",
         "content_electron": "번역할 앱을 선택하거나 전체 시스템 오디오를 선택하세요. 상대방의 원음은 평소처럼 계속 재생됩니다.",
-        "content_extension": "Sokuji는 현재 탭의 오디오를 번역합니다. 상대방의 원음은 평소처럼 계속 재생됩니다."
+        "content_extension": "ExTrans는 현재 탭의 오디오를 번역합니다. 상대방의 원음은 평소처럼 계속 재생됩니다."
       },
       "subtitle": {
         "title": "자막 모드",
@@ -1562,7 +1562,7 @@
     "lineup_source_not_fixed": "{{provider}} 서비스는 말하는 언어를 알아야 합니다. ‘자동 감지’ 대신 언어를 선택하거나 다른 번역 서비스를 선택하세요.",
     "lineup_pair_not_translated": "{{provider}} 서비스는 {{source}} → {{target}} 번역을 지원하지 않습니다. 다른 언어를 선택하거나 다른 번역 서비스를 선택하세요.",
     "lineup_face_to_face_apart": "‘대면’에는 받아쓰기와 번역을 함께 하는 하나의 서비스가 필요합니다. 번역에도 {{provider}} 서비스를 선택하거나 ‘상대방 위치’ 설정을 ‘온라인 회의’(으)로 바꾸세요.",
-    "session_in_use": "다른 창이나 기기에서 이 계정을 사용하고 있습니다. 그곳에서 세션을 중지하거나, Sokuji가 방금 예기치 않게 종료되었다면 1분 후에 다시 시도하세요.",
+    "session_in_use": "다른 창이나 기기에서 이 계정을 사용하고 있습니다. 그곳에서 세션을 중지하거나, ExTrans가 방금 예기치 않게 종료되었다면 1분 후에 다시 시도하세요.",
     "previous_session_ending": "이전 세션이 아직 종료되는 중입니다. 1분 후에 다시 시도해 주세요.",
     "app_capture_lost_using_system_audio": "앱 캡처가 중지되어 지금은 시스템 오디오 전체가 대신 번역되고 있습니다.",
     "app_capture_monitor_missing": "앱 캡처가 시작되지 않아 지금은 시스템 오디오 전체가 대신 번역되고 있습니다.",
@@ -1591,7 +1591,7 @@
     "mic_now_using": "이제 마이크 ‘{{device}}’을(를) 사용합니다.",
     "mic_in_use": "마이크 ‘{{device}}’을(를) {{apps}}에서 사용 중입니다. {{apps}}을(를) 닫고 다시 시작하거나, 다른 마이크를 선택하세요.",
     "mic_unreadable": "Windows에서 마이크 ‘{{device}}’을(를) 열 수 없습니다. 다른 앱이 사용 중이거나 드라이버가 응답하지 않을 수 있습니다. 마이크를 사용하는 앱을 닫거나 마이크를 다시 연결한 뒤 다시 시작하세요.",
-    "mic_blocked": "Windows에서 Sokuji의 마이크 사용을 허용하지 않습니다. 설정 › 개인 정보 및 보안 › 마이크에서 데스크톱 앱의 마이크 액세스를 켠 뒤 다시 시작하세요.",
+    "mic_blocked": "Windows에서 ExTrans의 마이크 사용을 허용하지 않습니다. 설정 › 개인 정보 및 보안 › 마이크에서 데스크톱 앱의 마이크 액세스를 켠 뒤 다시 시작하세요.",
     "speaker_tts_missing": "상대방에게 들리는 번역은 텍스트로만 표시됩니다: {{target}}용 음성 모델이 없습니다.",
     "participant_tts_missing": "내가 듣는 번역은 텍스트로만 표시됩니다: {{target}}용 음성 모델이 없습니다.",
     "participant_tts_over_budget": "내가 듣는 번역은 텍스트로만 표시됩니다: 상대방 쪽 음성 모델까지 불러올 메모리가 부족합니다.",
@@ -1604,8 +1604,8 @@
     "not_org_member_unnamed": "더 이상 해당 조직에 속해 있지 않습니다.",
     "org_wallet_frozen": "{{organization}}의 계정이 일시 중지되었습니다. 소유자에게 문의하거나 개인 잔액을 사용하세요.",
     "org_wallet_frozen_unnamed": "조직의 계정이 일시 중지되었습니다. 소유자에게 문의하거나 개인 잔액을 사용하세요.",
-    "org_wallet_frozen_owner": "{{organization}}의 계정이 일시 중지되었습니다. Sokuji 지원팀에 문의하거나 개인 잔액을 사용하세요.",
-    "org_wallet_frozen_owner_unnamed": "조직의 계정이 일시 중지되었습니다. Sokuji 지원팀에 문의하거나 개인 잔액을 사용하세요.",
+    "org_wallet_frozen_owner": "{{organization}}의 계정이 일시 중지되었습니다. ExTrans 지원팀에 문의하거나 개인 잔액을 사용하세요.",
+    "org_wallet_frozen_owner_unnamed": "조직의 계정이 일시 중지되었습니다. ExTrans 지원팀에 문의하거나 개인 잔액을 사용하세요.",
     "model_missing": "서비스가 이 모델을 제공하지 않습니다: {{detail}}",
     "quota": "서비스 계정에 남은 크레딧이 없습니다: {{detail}}",
     "text_model_unset": "‘언어와 구성’에서 번역 모델을 고르거나 모델 이름을 입력하세요.",
@@ -1613,7 +1613,7 @@
     "address_invalid": "호환 서비스의 주소를 사용할 수 없습니다: {{detail}}"
   },
   "viewer": {
-    "title": "Sokuji 자막",
+    "title": "ExTrans 자막",
     "connecting": "연결 중…",
     "original": "원문",
     "enter": {
@@ -1671,7 +1671,7 @@
     },
     "shortcuts": "+ − 글자 크기 · B 두 언어 · F 전체 화면 · End 최신으로 이동",
     "transcript": {
-      "header": "Sokuji 자막, {{time}} 저장"
+      "header": "ExTrans 자막, {{time}} 저장"
     },
     "present": {
       "title": "휴대폰이나 컴퓨터에서 자막을 보세요",
@@ -1684,7 +1684,7 @@
       "androidChrome": "Android Chrome에서 열리지 않나요? 설정 → 애플리케이션 → Chrome → 권한 → 근처 기기에서 허용하세요.",
       "watching": "시청 중: {{count}}",
       "fullscreen": "전체 화면",
-      "windowTitle": "Sokuji 프로젝터 화면",
+      "windowTitle": "ExTrans 프로젝터 화면",
       "ended": "공유가 종료되었습니다"
     }
   },
@@ -1904,8 +1904,8 @@
         "key": "키",
         "held": "누르고 있을 때",
         "notHeld": "누르고 있지 않을 때",
-        "talkHeld": "Sokuji가 듣습니다. 키를 떼면 그 토막이 번역되고, 상대방은 번역을 듣습니다. 원음 패스스루가 켜져 있으면 상대방에게 내 목소리도 작게 들립니다.",
-        "talkNotHeld": "Sokuji가 듣지 않습니다. 무슨 말을 해도 번역되지 않고 상대방에게도 전달되지 않습니다.",
+        "talkHeld": "ExTrans가 듣습니다. 키를 떼면 그 토막이 번역되고, 상대방은 번역을 듣습니다. 원음 패스스루가 켜져 있으면 상대방에게 내 목소리도 작게 들립니다.",
+        "talkNotHeld": "ExTrans가 듣지 않습니다. 무슨 말을 해도 번역되지 않고 상대방에게도 전달되지 않습니다.",
         "translateHeld": "내가 하는 말이 번역됩니다. 상대방은 내 목소리가 아닌 번역만 듣습니다.",
         "translateNotHeld": "내 목소리가 번역 없이 바로 상대방에게 갑니다.",
         "change": "변경",
@@ -2061,7 +2061,7 @@
     "foundInNotes": "메모에서 찾음",
     "foundInTitle": "제목에서 찾음",
     "unavailable": "기록을 열 수 없습니다.",
-    "unavailableNewer": "이 기록은 더 최신 버전의 Sokuji가 만든 것입니다. 열려면 Sokuji를 업데이트하세요.",
+    "unavailableNewer": "이 기록은 더 최신 버전의 ExTrans가 만든 것입니다. 열려면 ExTrans를 업데이트하세요.",
     "failed": "실패했습니다. 다시 시도하세요.",
     "me": "나",
     "other": "상대방",
@@ -2175,7 +2175,7 @@
       "wallet-frozen": "Kizuna AI 지갑이 동결되었습니다.",
       "not-member": "Kizuna AI 비용을 내는 조직의 구성원이 더 이상 아닙니다.",
       "too-large": "이 기록은 너무 길어서 Kizuna AI가 메모를 작성할 수 없습니다.",
-      "update-required": "Kizuna AI로 메모를 작성하려면 Sokuji를 업데이트하세요.",
+      "update-required": "Kizuna AI로 메모를 작성하려면 ExTrans를 업데이트하세요.",
       "other": "메모 서비스가 요청을 거부했습니다."
     },
     "notesLatestFailed": "가장 최근 시도는 작성하지 못했습니다: {{reason}}",

@@ -82,7 +82,7 @@ describe('openTab', () => {
     const reason = 'Extension has not been invoked for the current page (see activeTab permission). Chrome pages cannot be captured.';
     const tab = fakeTab({ begins: false, failure: new Error(reason) });
     await expect(openTab(settingsFixture().settings, live(), () => tab)).rejects.toThrow(
-      `The meeting tab could not be captured (${reason}). Click the Sokuji icon in the browser toolbar on the meeting tab, then start again.`,
+      `The meeting tab could not be captured (${reason}). Click the ExTrans icon in the browser toolbar on the meeting tab, then start again.`,
     );
   });
 

@@ -2,7 +2,7 @@
 // Do not edit: change the catalogs, then run `node scripts/gen-viewer-strings.mjs`.
 export const VIEWER_WORDS: Record<string, unknown> = {
   "ar": {
-    "title": "ترجمة Sokuji",
+    "title": "ترجمة ExTrans",
     "connecting": "جاري الاتصال…",
     "original": "الأصل",
     "enter": {
@@ -60,7 +60,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − حجم النص · B اللغتان · F ملء الشاشة · End العودة إلى المباشر",
     "transcript": {
-      "header": "ترجمة Sokuji، حُفظت في {{time}}"
+      "header": "ترجمة ExTrans، حُفظت في {{time}}"
     },
     "present": {
       "title": "اقرأ الترجمة على هاتفك أو حاسوبك",
@@ -73,12 +73,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "لا يفتحها Chrome على Android؟ اسمح بذلك من الإعدادات ← التطبيقات ← Chrome ← الأذونات ← الأجهزة المجاورة.",
       "watching": "المشاهدون: {{count}}",
       "fullscreen": "ملء الشاشة",
-      "windowTitle": "صفحة عرض Sokuji",
+      "windowTitle": "صفحة عرض ExTrans",
       "ended": "انتهت المشاركة"
     }
   },
   "bn": {
-    "title": "Sokuji সাবটাইটেল",
+    "title": "ExTrans সাবটাইটেল",
     "connecting": "সংযোগ হচ্ছে…",
     "original": "মূল",
     "enter": {
@@ -136,7 +136,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − লেখার আকার · B দুই ভাষাই · F পূর্ণস্ক্রিন · End লাইভে ফিরুন",
     "transcript": {
-      "header": "Sokuji সাবটাইটেল, সংরক্ষণের সময় {{time}}"
+      "header": "ExTrans সাবটাইটেল, সংরক্ষণের সময় {{time}}"
     },
     "present": {
       "title": "আপনার ফোন বা কম্পিউটারে সাবটাইটেল পড়ুন",
@@ -149,12 +149,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Android-এ Chrome খুলছে না? সেটিংস → অ্যাপ → Chrome → অনুমতি → আশেপাশের ডিভাইস থেকে অনুমতি দিন।",
       "watching": "দেখছেন: {{count}}",
       "fullscreen": "পূর্ণস্ক্রিন",
-      "windowTitle": "Sokuji প্রজেক্টর পেজ",
+      "windowTitle": "ExTrans প্রজেক্টর পেজ",
       "ended": "শেয়ারিং শেষ হয়েছে"
     }
   },
   "de": {
-    "title": "Sokuji-Untertitel",
+    "title": "ExTrans-Untertitel",
     "connecting": "Verbinden…",
     "original": "Original",
     "enter": {
@@ -212,7 +212,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − Schriftgröße · B beide Sprachen · F Vollbild · End zurück zu Live",
     "transcript": {
-      "header": "Sokuji-Untertitel, gespeichert am {{time}}"
+      "header": "ExTrans-Untertitel, gespeichert am {{time}}"
     },
     "present": {
       "title": "Untertitel auf dem Smartphone oder Computer lesen",
@@ -225,12 +225,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Öffnet Chrome auf Android die Seite nicht? Unter Einstellungen → Apps → Chrome → Berechtigungen → Geräte in der Nähe erlauben.",
       "watching": "Zuschauer: {{count}}",
       "fullscreen": "Vollbild",
-      "windowTitle": "Sokuji-Projektionsseite",
+      "windowTitle": "ExTrans-Projektionsseite",
       "ended": "Das Teilen wurde beendet"
     }
   },
   "en": {
-    "title": "Sokuji captions",
+    "title": "ExTrans captions",
     "connecting": "Connecting…",
     "original": "Original",
     "enter": {
@@ -288,7 +288,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − text size · B both languages · F full screen · End back to live",
     "transcript": {
-      "header": "Sokuji captions, saved {{time}}"
+      "header": "ExTrans captions, saved {{time}}"
     },
     "present": {
       "title": "Read the captions on your phone or computer",
@@ -301,12 +301,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Android Chrome won't open it? Allow it in Settings → Apps → Chrome → Permissions → Nearby devices.",
       "watching": "Watching: {{count}}",
       "fullscreen": "Full screen",
-      "windowTitle": "Sokuji projector page",
+      "windowTitle": "ExTrans projector page",
       "ended": "Sharing has ended"
     }
   },
   "es": {
-    "title": "Subtítulos de Sokuji",
+    "title": "Subtítulos de ExTrans",
     "connecting": "Conectando…",
     "original": "Original",
     "enter": {
@@ -364,7 +364,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − tamaño de fuente · B ambos idiomas · F pantalla completa · End volver al directo",
     "transcript": {
-      "header": "Subtítulos de Sokuji, guardados el {{time}}"
+      "header": "Subtítulos de ExTrans, guardados el {{time}}"
     },
     "present": {
       "title": "Lee los subtítulos en tu móvil u ordenador",
@@ -377,12 +377,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "¿Chrome en Android no la abre? Permítelo en Ajustes → Aplicaciones → Chrome → Permisos → Dispositivos cercanos.",
       "watching": "Espectadores: {{count}}",
       "fullscreen": "Pantalla completa",
-      "windowTitle": "Página de proyección de Sokuji",
+      "windowTitle": "Página de proyección de ExTrans",
       "ended": "Se ha dejado de compartir"
     }
   },
   "fa": {
-    "title": "زیرنویس Sokuji",
+    "title": "زیرنویس ExTrans",
     "connecting": "در حال اتصال…",
     "original": "اصلی",
     "enter": {
@@ -440,7 +440,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − اندازهٔ متن · B هر دو زبان · F تمام‌صفحه · End بازگشت به پخش زنده",
     "transcript": {
-      "header": "زیرنویس Sokuji، ذخیره‌شده در {{time}}"
+      "header": "زیرنویس ExTrans، ذخیره‌شده در {{time}}"
     },
     "present": {
       "title": "زیرنویس را روی گوشی یا رایانهٔ خود بخوانید",
@@ -453,12 +453,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Chrome در Android آن را باز نمی‌کند؟ در تنظیمات ← برنامه‌ها ← Chrome ← اجازه‌ها ← دستگاه‌های اطراف اجازه دهید.",
       "watching": "بینندگان: {{count}}",
       "fullscreen": "تمام‌صفحه",
-      "windowTitle": "صفحهٔ پروژکتور Sokuji",
+      "windowTitle": "صفحهٔ پروژکتور ExTrans",
       "ended": "اشتراک‌گذاری پایان یافت"
     }
   },
   "fi": {
-    "title": "Sokuji-tekstitys",
+    "title": "ExTrans-tekstitys",
     "connecting": "Yhdistetään…",
     "original": "Alkuperäinen",
     "enter": {
@@ -516,7 +516,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − fonttikoko · B molemmat kielet · F koko näyttö · End takaisin uusimpaan",
     "transcript": {
-      "header": "Sokuji-tekstitys, tallennettu {{time}}"
+      "header": "ExTrans-tekstitys, tallennettu {{time}}"
     },
     "present": {
       "title": "Lue tekstitys puhelimella tai tietokoneella",
@@ -529,12 +529,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Eikö Chrome avaa sivua Androidissa? Salli se kohdassa Asetukset → Sovellukset → Chrome → Käyttöoikeudet → Lähellä olevat laitteet.",
       "watching": "Katsojia: {{count}}",
       "fullscreen": "Koko näyttö",
-      "windowTitle": "Sokuji-projektorisivu",
+      "windowTitle": "ExTrans-projektorisivu",
       "ended": "Jakaminen on päättynyt"
     }
   },
   "fil": {
-    "title": "Mga subtitle ng Sokuji",
+    "title": "Mga subtitle ng ExTrans",
     "connecting": "Kumokonekta…",
     "original": "Orihinal",
     "enter": {
@@ -592,7 +592,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − laki ng teksto · B parehong wika · F fullscreen · End bumalik sa live",
     "transcript": {
-      "header": "Mga subtitle ng Sokuji, na-save noong {{time}}"
+      "header": "Mga subtitle ng ExTrans, na-save noong {{time}}"
     },
     "present": {
       "title": "Basahin ang mga subtitle sa phone o computer mo",
@@ -605,12 +605,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Hindi mabuksan sa Chrome sa Android? Payagan ito sa Settings → Apps → Chrome → Permissions → Nearby devices.",
       "watching": "Nanonood: {{count}}",
       "fullscreen": "Fullscreen",
-      "windowTitle": "Projector page ng Sokuji",
+      "windowTitle": "Projector page ng ExTrans",
       "ended": "Tapos na ang pagbabahagi"
     }
   },
   "fr": {
-    "title": "Sous-titres Sokuji",
+    "title": "Sous-titres ExTrans",
     "connecting": "Connexion…",
     "original": "Original",
     "enter": {
@@ -668,7 +668,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − taille du texte · B les deux langues · F plein écran · End retour au direct",
     "transcript": {
-      "header": "Sous-titres Sokuji, enregistrés le {{time}}"
+      "header": "Sous-titres ExTrans, enregistrés le {{time}}"
     },
     "present": {
       "title": "Lisez les sous-titres sur votre téléphone ou votre ordinateur",
@@ -681,12 +681,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Chrome sur Android ne l'ouvre pas ? Autorisez-le dans Paramètres → Applications → Chrome → Autorisations → Appareils à proximité.",
       "watching": "Spectateurs : {{count}}",
       "fullscreen": "Plein écran",
-      "windowTitle": "Page de projection Sokuji",
+      "windowTitle": "Page de projection ExTrans",
       "ended": "Le partage est terminé"
     }
   },
   "he": {
-    "title": "כתוביות Sokuji",
+    "title": "כתוביות ExTrans",
     "connecting": "מתחבר…",
     "original": "מקור",
     "enter": {
@@ -744,7 +744,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − גודל טקסט · B שתי השפות · F מסך מלא · End חזרה לשידור החי",
     "transcript": {
-      "header": "כתוביות Sokuji, נשמרו ב-{{time}}"
+      "header": "כתוביות ExTrans, נשמרו ב-{{time}}"
     },
     "present": {
       "title": "קראו את הכתוביות בטלפון או במחשב",
@@ -757,12 +757,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Chrome ב-Android לא פותח את הדף? אפשרו זאת בהגדרות ← אפליקציות ← Chrome ← הרשאות ← מכשירים בקרבת מקום.",
       "watching": "צופים: {{count}}",
       "fullscreen": "מסך מלא",
-      "windowTitle": "דף ההקרנה של Sokuji",
+      "windowTitle": "דף ההקרנה של ExTrans",
       "ended": "השיתוף הסתיים"
     }
   },
   "hi": {
-    "title": "Sokuji सबटाइटल",
+    "title": "ExTrans सबटाइटल",
     "connecting": "जुड़ रहे हैं…",
     "original": "मूल",
     "enter": {
@@ -820,7 +820,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − टेक्स्ट आकार · B दोनों भाषाएँ · F फ़ुलस्क्रीन · End लाइव पर लौटें",
     "transcript": {
-      "header": "Sokuji सबटाइटल, {{time}} पर सहेजे गए"
+      "header": "ExTrans सबटाइटल, {{time}} पर सहेजे गए"
     },
     "present": {
       "title": "अपने फ़ोन या कंप्यूटर पर सबटाइटल पढ़ें",
@@ -833,12 +833,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Android पर Chrome में नहीं खुल रहा? सेटिंग → ऐप्लिकेशन → Chrome → अनुमतियां → आस-पास के डिवाइस में अनुमति दें।",
       "watching": "देख रहे हैं: {{count}}",
       "fullscreen": "फ़ुलस्क्रीन",
-      "windowTitle": "Sokuji प्रोजेक्टर पेज",
+      "windowTitle": "ExTrans प्रोजेक्टर पेज",
       "ended": "शेयरिंग समाप्त हो गई"
     }
   },
   "id": {
-    "title": "Subtitle Sokuji",
+    "title": "Subtitle ExTrans",
     "connecting": "Menghubungkan…",
     "original": "Asli",
     "enter": {
@@ -896,7 +896,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − ukuran teks · B kedua bahasa · F layar penuh · End ke terbaru",
     "transcript": {
-      "header": "Subtitle Sokuji, disimpan {{time}}"
+      "header": "Subtitle ExTrans, disimpan {{time}}"
     },
     "present": {
       "title": "Baca subtitle di ponsel atau komputer Anda",
@@ -909,12 +909,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Chrome di Android tidak bisa membukanya? Izinkan di Setelan → Aplikasi → Chrome → Izin → Perangkat di sekitar.",
       "watching": "Menonton: {{count}}",
       "fullscreen": "Layar penuh",
-      "windowTitle": "Halaman proyektor Sokuji",
+      "windowTitle": "Halaman proyektor ExTrans",
       "ended": "Berbagi telah berakhir"
     }
   },
   "it": {
-    "title": "Sottotitoli Sokuji",
+    "title": "Sottotitoli ExTrans",
     "connecting": "Connessione…",
     "original": "Originale",
     "enter": {
@@ -972,7 +972,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − dimensione carattere · B entrambe le lingue · F schermo intero · End torna alla diretta",
     "transcript": {
-      "header": "Sottotitoli Sokuji, salvati il {{time}}"
+      "header": "Sottotitoli ExTrans, salvati il {{time}}"
     },
     "present": {
       "title": "Leggi i sottotitoli sul telefono o sul computer",
@@ -985,12 +985,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Chrome su Android non la apre? Consentilo in Impostazioni → App → Chrome → Autorizzazioni → Dispositivi nelle vicinanze.",
       "watching": "Spettatori: {{count}}",
       "fullscreen": "Schermo intero",
-      "windowTitle": "Pagina di proiezione Sokuji",
+      "windowTitle": "Pagina di proiezione ExTrans",
       "ended": "La condivisione è terminata"
     }
   },
   "ja": {
-    "title": "Sokuji 字幕",
+    "title": "ExTrans 字幕",
     "connecting": "接続中…",
     "original": "原文",
     "enter": {
@@ -1048,7 +1048,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − 文字サイズ · B 両方の言語 · F 全画面 · End 最新に戻る",
     "transcript": {
-      "header": "Sokuji 字幕（{{time}} 保存）"
+      "header": "ExTrans 字幕（{{time}} 保存）"
     },
     "present": {
       "title": "お手元のスマートフォンやパソコンで字幕をご覧ください",
@@ -1061,12 +1061,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Android の Chrome で開けない場合は、「設定 → アプリ → Chrome → 権限 → 付近のデバイス」で許可してください。",
       "watching": "閲覧中：{{count}}",
       "fullscreen": "全画面表示",
-      "windowTitle": "Sokuji 投影ページ",
+      "windowTitle": "ExTrans 投影ページ",
       "ended": "共有は終了しました"
     }
   },
   "ko": {
-    "title": "Sokuji 자막",
+    "title": "ExTrans 자막",
     "connecting": "연결 중…",
     "original": "원문",
     "enter": {
@@ -1124,7 +1124,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − 글자 크기 · B 두 언어 · F 전체 화면 · End 최신으로 이동",
     "transcript": {
-      "header": "Sokuji 자막, {{time}} 저장"
+      "header": "ExTrans 자막, {{time}} 저장"
     },
     "present": {
       "title": "휴대폰이나 컴퓨터에서 자막을 보세요",
@@ -1137,12 +1137,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Android Chrome에서 열리지 않나요? 설정 → 애플리케이션 → Chrome → 권한 → 근처 기기에서 허용하세요.",
       "watching": "시청 중: {{count}}",
       "fullscreen": "전체 화면",
-      "windowTitle": "Sokuji 프로젝터 화면",
+      "windowTitle": "ExTrans 프로젝터 화면",
       "ended": "공유가 종료되었습니다"
     }
   },
   "ms": {
-    "title": "Sari kata Sokuji",
+    "title": "Sari kata ExTrans",
     "connecting": "Menyambung…",
     "original": "Asal",
     "enter": {
@@ -1200,7 +1200,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − saiz teks · B kedua-dua bahasa · F skrin penuh · End ke terkini",
     "transcript": {
-      "header": "Sari kata Sokuji, disimpan {{time}}"
+      "header": "Sari kata ExTrans, disimpan {{time}}"
     },
     "present": {
       "title": "Baca sari kata pada telefon atau komputer anda",
@@ -1213,12 +1213,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Chrome di Android tidak dapat membukanya? Benarkan dalam Tetapan → Apl → Chrome → Kebenaran → Peranti berdekatan.",
       "watching": "Menonton: {{count}}",
       "fullscreen": "Skrin penuh",
-      "windowTitle": "Halaman projektor Sokuji",
+      "windowTitle": "Halaman projektor ExTrans",
       "ended": "Perkongsian telah tamat"
     }
   },
   "nl": {
-    "title": "Sokuji-ondertiteling",
+    "title": "ExTrans-ondertiteling",
     "connecting": "Verbinden…",
     "original": "Origineel",
     "enter": {
@@ -1276,7 +1276,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − lettergrootte · B beide talen · F volledig scherm · End terug naar live",
     "transcript": {
-      "header": "Sokuji-ondertiteling, opgeslagen op {{time}}"
+      "header": "ExTrans-ondertiteling, opgeslagen op {{time}}"
     },
     "present": {
       "title": "Lees de ondertiteling op uw telefoon of computer",
@@ -1289,12 +1289,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Opent Chrome op Android de pagina niet? Sta het toe via Instellingen → Apps → Chrome → Rechten → Apparaten in de buurt.",
       "watching": "Kijkers: {{count}}",
       "fullscreen": "Volledig scherm",
-      "windowTitle": "Sokuji-projectiepagina",
+      "windowTitle": "ExTrans-projectiepagina",
       "ended": "Het delen is gestopt"
     }
   },
   "pl": {
-    "title": "Napisy Sokuji",
+    "title": "Napisy ExTrans",
     "connecting": "Łączenie…",
     "original": "Oryginał",
     "enter": {
@@ -1352,7 +1352,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − rozmiar czcionki · B oba języki · F pełny ekran · End wróć do bieżących",
     "transcript": {
-      "header": "Napisy Sokuji, zapisano {{time}}"
+      "header": "Napisy ExTrans, zapisano {{time}}"
     },
     "present": {
       "title": "Czytaj napisy na telefonie lub komputerze",
@@ -1365,12 +1365,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Chrome na Androidzie nie otwiera strony? Zezwól w Ustawienia → Aplikacje → Chrome → Uprawnienia → Urządzenia w pobliżu.",
       "watching": "Oglądający: {{count}}",
       "fullscreen": "Pełny ekran",
-      "windowTitle": "Strona projektora Sokuji",
+      "windowTitle": "Strona projektora ExTrans",
       "ended": "Udostępnianie zakończone"
     }
   },
   "pt_BR": {
-    "title": "Legendas do Sokuji",
+    "title": "Legendas do ExTrans",
     "connecting": "Conectando…",
     "original": "Original",
     "enter": {
@@ -1428,7 +1428,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − tamanho do texto · B os dois idiomas · F tela cheia · End voltar ao vivo",
     "transcript": {
-      "header": "Legendas do Sokuji, salvas em {{time}}"
+      "header": "Legendas do ExTrans, salvas em {{time}}"
     },
     "present": {
       "title": "Leia as legendas no celular ou no computador",
@@ -1441,12 +1441,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "O Chrome no Android não abre? Permita em Configurações → Apps → Chrome → Permissões → Dispositivos por perto.",
       "watching": "Assistindo: {{count}}",
       "fullscreen": "Tela cheia",
-      "windowTitle": "Página de projeção do Sokuji",
+      "windowTitle": "Página de projeção do ExTrans",
       "ended": "O compartilhamento terminou"
     }
   },
   "pt_PT": {
-    "title": "Legendas do Sokuji",
+    "title": "Legendas do ExTrans",
     "connecting": "A ligar…",
     "original": "Original",
     "enter": {
@@ -1504,7 +1504,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − tamanho do texto · B os dois idiomas · F ecrã inteiro · End voltar ao direto",
     "transcript": {
-      "header": "Legendas do Sokuji, guardadas em {{time}}"
+      "header": "Legendas do ExTrans, guardadas em {{time}}"
     },
     "present": {
       "title": "Leia as legendas no telemóvel ou no computador",
@@ -1517,12 +1517,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "O Chrome no Android não abre? Permita em Definições → Apps → Chrome → Autorizações → Dispositivos próximos.",
       "watching": "A ver: {{count}}",
       "fullscreen": "Ecrã inteiro",
-      "windowTitle": "Página de projeção do Sokuji",
+      "windowTitle": "Página de projeção do ExTrans",
       "ended": "A partilha terminou"
     }
   },
   "ru": {
-    "title": "Субтитры Sokuji",
+    "title": "Субтитры ExTrans",
     "connecting": "Подключение…",
     "original": "Оригинал",
     "enter": {
@@ -1580,7 +1580,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − размер текста · B оба языка · F полный экран · End к прямому эфиру",
     "transcript": {
-      "header": "Субтитры Sokuji, сохранены {{time}}"
+      "header": "Субтитры ExTrans, сохранены {{time}}"
     },
     "present": {
       "title": "Читайте субтитры на телефоне или компьютере",
@@ -1593,12 +1593,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Chrome на Android не открывает страницу? Разрешите в Настройки → Приложения → Chrome → Разрешения → Устройства поблизости.",
       "watching": "Смотрят: {{count}}",
       "fullscreen": "Полный экран",
-      "windowTitle": "Sokuji — страница для проектора",
+      "windowTitle": "ExTrans — страница для проектора",
       "ended": "Показ завершён"
     }
   },
   "sv": {
-    "title": "Sokuji-undertexter",
+    "title": "ExTrans-undertexter",
     "connecting": "Ansluter…",
     "original": "Original",
     "enter": {
@@ -1656,7 +1656,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − textstorlek · B båda språken · F helskärm · End tillbaka till live",
     "transcript": {
-      "header": "Sokuji-undertexter, sparade {{time}}"
+      "header": "ExTrans-undertexter, sparade {{time}}"
     },
     "present": {
       "title": "Läs undertexterna i din telefon eller dator",
@@ -1669,12 +1669,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Öppnar inte Chrome på Android sidan? Tillåt det i Inställningar → Appar → Chrome → Behörigheter → Enheter i närheten.",
       "watching": "Tittare: {{count}}",
       "fullscreen": "Helskärm",
-      "windowTitle": "Sokujis projektorsida",
+      "windowTitle": "ExTranss projektorsida",
       "ended": "Delningen har avslutats"
     }
   },
   "ta": {
-    "title": "Sokuji துணைத்தலைப்புகள்",
+    "title": "ExTrans துணைத்தலைப்புகள்",
     "connecting": "இணைக்கிறது…",
     "original": "மூலம்",
     "enter": {
@@ -1732,7 +1732,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − எழுத்தளவு · B இரு மொழிகளும் · F முழுத்திரை · End நேரலைக்குத் திரும்பு",
     "transcript": {
-      "header": "Sokuji துணைத்தலைப்புகள், சேமித்தது: {{time}}"
+      "header": "ExTrans துணைத்தலைப்புகள், சேமித்தது: {{time}}"
     },
     "present": {
       "title": "உங்கள் ஃபோனிலோ கணினியிலோ துணைத்தலைப்புகளைப் படியுங்கள்",
@@ -1745,12 +1745,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Android-இல் Chrome திறக்கவில்லையா? அமைப்புகள் → ஆப்ஸ் → Chrome → அனுமதிகள் → அருகிலுள்ள சாதனங்கள் என்பதில் அனுமதியுங்கள்.",
       "watching": "பார்ப்பவர்கள்: {{count}}",
       "fullscreen": "முழுத்திரை",
-      "windowTitle": "Sokuji புரொஜெக்டர் பக்கம்",
+      "windowTitle": "ExTrans புரொஜெக்டர் பக்கம்",
       "ended": "பகிர்வு முடிந்தது"
     }
   },
   "te": {
-    "title": "Sokuji సబ్‌టైటిల్స్",
+    "title": "ExTrans సబ్‌టైటిల్స్",
     "connecting": "కనెక్ట్ అవుతోంది…",
     "original": "మూలం",
     "enter": {
@@ -1808,7 +1808,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − అక్షర పరిమాణం · B రెండు భాషలూ · F పూర్తి స్క్రీన్ · End లైవ్‌కు తిరిగి వెళ్ళు",
     "transcript": {
-      "header": "Sokuji సబ్‌టైటిల్స్, సేవ్ చేసిన సమయం {{time}}"
+      "header": "ExTrans సబ్‌టైటిల్స్, సేవ్ చేసిన సమయం {{time}}"
     },
     "present": {
       "title": "మీ ఫోన్ లేదా కంప్యూటర్‌లో సబ్‌టైటిల్స్ చదవండి",
@@ -1821,12 +1821,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Android‌లో Chrome తెరవడం లేదా? సెట్టింగ్‌లు → యాప్‌లు → Chrome → అనుమతులు → సమీపంలోని పరికరాలు‌లో అనుమతించండి.",
       "watching": "చూస్తున్నవారు: {{count}}",
       "fullscreen": "పూర్తి స్క్రీన్",
-      "windowTitle": "Sokuji ప్రొజెక్టర్ పేజీ",
+      "windowTitle": "ExTrans ప్రొజెక్టర్ పేజీ",
       "ended": "షేరింగ్ ముగిసింది"
     }
   },
   "th": {
-    "title": "คำบรรยาย Sokuji",
+    "title": "คำบรรยาย ExTrans",
     "connecting": "กำลังเชื่อมต่อ…",
     "original": "ต้นฉบับ",
     "enter": {
@@ -1884,7 +1884,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − ขนาดตัวอักษร · B ทั้งสองภาษา · F เต็มหน้าจอ · End ไปที่ล่าสุด",
     "transcript": {
-      "header": "คำบรรยาย Sokuji บันทึกเมื่อ {{time}}"
+      "header": "คำบรรยาย ExTrans บันทึกเมื่อ {{time}}"
     },
     "present": {
       "title": "อ่านคำบรรยายบนโทรศัพท์หรือคอมพิวเตอร์ของคุณ",
@@ -1897,12 +1897,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Chrome บน Android เปิดไม่ได้ใช่ไหม อนุญาตได้ที่ การตั้งค่า → แอป → Chrome → สิทธิ์ → อุปกรณ์ที่อยู่ใกล้เคียง",
       "watching": "กำลังดู: {{count}}",
       "fullscreen": "เต็มหน้าจอ",
-      "windowTitle": "หน้าโปรเจกเตอร์ Sokuji",
+      "windowTitle": "หน้าโปรเจกเตอร์ ExTrans",
       "ended": "การแชร์สิ้นสุดแล้ว"
     }
   },
   "tr": {
-    "title": "Sokuji altyazıları",
+    "title": "ExTrans altyazıları",
     "connecting": "Bağlanıyor…",
     "original": "Orijinal",
     "enter": {
@@ -1960,7 +1960,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − metin boyutu · B her iki dil · F tam ekran · End canlıya dön",
     "transcript": {
-      "header": "Sokuji altyazıları, kaydedilme zamanı: {{time}}"
+      "header": "ExTrans altyazıları, kaydedilme zamanı: {{time}}"
     },
     "present": {
       "title": "Altyazıları telefonunuzda veya bilgisayarınızda okuyun",
@@ -1973,12 +1973,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Android'de Chrome açmıyor mu? Ayarlar → Uygulamalar → Chrome → İzinler → Yakındaki cihazlar bölümünden izin verin.",
       "watching": "İzleyen: {{count}}",
       "fullscreen": "Tam ekran",
-      "windowTitle": "Sokuji projeksiyon sayfası",
+      "windowTitle": "ExTrans projeksiyon sayfası",
       "ended": "Paylaşım sona erdi"
     }
   },
   "uk": {
-    "title": "Субтитри Sokuji",
+    "title": "Субтитри ExTrans",
     "connecting": "Підключення…",
     "original": "Оригінал",
     "enter": {
@@ -2036,7 +2036,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − розмір тексту · B обидві мови · F повний екран · End до прямого ефіру",
     "transcript": {
-      "header": "Субтитри Sokuji, збережено {{time}}"
+      "header": "Субтитри ExTrans, збережено {{time}}"
     },
     "present": {
       "title": "Читайте субтитри на телефоні чи комп'ютері",
@@ -2049,12 +2049,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Chrome на Android не відкриває сторінку? Дозвольте в Налаштування → Додатки → Chrome → Дозволи → Пристрої поблизу.",
       "watching": "Дивляться: {{count}}",
       "fullscreen": "Повний екран",
-      "windowTitle": "Sokuji — сторінка для проєктора",
+      "windowTitle": "ExTrans — сторінка для проєктора",
       "ended": "Показ завершено"
     }
   },
   "vi": {
-    "title": "Phụ đề Sokuji",
+    "title": "Phụ đề ExTrans",
     "connecting": "Đang kết nối…",
     "original": "Bản gốc",
     "enter": {
@@ -2112,7 +2112,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − cỡ chữ · B hai ngôn ngữ · F toàn màn hình · End về mới nhất",
     "transcript": {
-      "header": "Phụ đề Sokuji, lưu lúc {{time}}"
+      "header": "Phụ đề ExTrans, lưu lúc {{time}}"
     },
     "present": {
       "title": "Đọc phụ đề trên điện thoại hoặc máy tính của bạn",
@@ -2125,12 +2125,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Chrome trên Android không mở được? Hãy cho phép trong Cài đặt → Ứng dụng → Chrome → Quyền → Thiết bị ở gần.",
       "watching": "Đang xem: {{count}}",
       "fullscreen": "Toàn màn hình",
-      "windowTitle": "Trang trình chiếu Sokuji",
+      "windowTitle": "Trang trình chiếu ExTrans",
       "ended": "Đã kết thúc chia sẻ"
     }
   },
   "zh_CN": {
-    "title": "Sokuji 字幕",
+    "title": "ExTrans 字幕",
     "connecting": "正在连接…",
     "original": "原文",
     "enter": {
@@ -2188,7 +2188,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − 字号 · B 双语 · F 全屏 · End 回到当前",
     "transcript": {
-      "header": "Sokuji 字幕，保存于 {{time}}"
+      "header": "ExTrans 字幕，保存于 {{time}}"
     },
     "present": {
       "title": "用手机或电脑看字幕",
@@ -2201,12 +2201,12 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "安卓 Chrome 打不开？在「设置 → 应用 → Chrome → 权限 → 附近设备」里允许。",
       "watching": "在看：{{count}}",
       "fullscreen": "全屏",
-      "windowTitle": "Sokuji 投屏页",
+      "windowTitle": "ExTrans 投屏页",
       "ended": "分享已结束"
     }
   },
   "zh_TW": {
-    "title": "Sokuji 字幕",
+    "title": "ExTrans 字幕",
     "connecting": "正在連線…",
     "original": "原文",
     "enter": {
@@ -2264,7 +2264,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
     },
     "shortcuts": "+ − 字級 · B 雙語 · F 全螢幕 · End 回到最新",
     "transcript": {
-      "header": "Sokuji 字幕，儲存於 {{time}}"
+      "header": "ExTrans 字幕，儲存於 {{time}}"
     },
     "present": {
       "title": "用手機或電腦看字幕",
@@ -2277,7 +2277,7 @@ export const VIEWER_WORDS: Record<string, unknown> = {
       "androidChrome": "Android 的 Chrome 打不開？請到「設定 → 應用程式 → Chrome → 權限 → 鄰近裝置」中允許。",
       "watching": "在看：{{count}}",
       "fullscreen": "全螢幕",
-      "windowTitle": "Sokuji 投影頁",
+      "windowTitle": "ExTrans 投影頁",
       "ended": "分享已結束"
     }
   }

@@ -1,15 +1,15 @@
 {
   "extensionName": {
-    "message": "Sokuji - Tłumacz Spotkań AI"
+    "message": "ExTrans - Tłumacz Spotkań AI"
   },
   "extensionDescription": {
     "message": "Natychmiastowe tłumaczenie mowy z AI dla wszystkich wideokonferencji. Przełam bariery językowe dzięki tłumaczeniu głosu w czasie rzeczywistym."
   },
   "popupTitle": {
-    "message": "Sokuji - Obsługiwane Strony"
+    "message": "ExTrans - Obsługiwane Strony"
   },
   "openSokuji": {
-    "message": "Otwórz Sokuji"
+    "message": "Otwórz ExTrans"
   },
   "chromeWebStore": {
     "message": "Sklep internetowy Chrome"
@@ -18,7 +18,7 @@
     "message": "Dodatki Edge"
   },
   "sokujiAvailable": {
-    "message": "✓ Sokuji jest dostępne na $SITE_NAME$!",
+    "message": "✓ ExTrans jest dostępne na $SITE_NAME$!",
     "placeholders": {
       "site_name": {
         "content": "$1",
@@ -27,25 +27,25 @@
     }
   },
   "clickToStart": {
-    "message": "Kliknij \"Otwórz Sokuji\" poniżej, aby rozpocząć tłumaczenie w czasie rzeczywistym."
+    "message": "Kliknij \"Otwórz ExTrans\" poniżej, aby rozpocząć tłumaczenie w czasie rzeczywistym."
   },
   "quickStart": {
     "message": "Szybki Start:"
   },
   "quickStartInstructions": {
-    "message": "Na spotkaniu wybierz \"Sokuji Virtual Microphone\" jako mikrofon → Zacznij mówić!"
+    "message": "Na spotkaniu wybierz \"ExTrans Virtual Microphone\" jako mikrofon → Zacznij mówić!"
   },
   "gatherTownTitle": {
-    "message": "Sokuji for Gather Town"
+    "message": "ExTrans for Gather Town"
   },
   "gatherTownGuidance": {
-    "message": "Aby używać Sokuji, wybierz <strong>\"Sokuji Virtual Microphone\"</strong> w ustawieniach mikrofonu."
+    "message": "Aby używać ExTrans, wybierz <strong>\"ExTrans Virtual Microphone\"</strong> w ustawieniach mikrofonu."
   },
   "wherebyTitle": {
-    "message": "Sokuji for Whereby"
+    "message": "ExTrans for Whereby"
   },
   "wherebyGuidance": {
-    "message": "Aby używać Sokuji, proszę wybrać <strong>\"Sokuji Virtual Microphone\"</strong> w ustawieniach mikrofonu i <strong>wyłączyć redukcję szumów</strong> dla lepszej wydajności."
+    "message": "Aby używać ExTrans, proszę wybrać <strong>\"ExTrans Virtual Microphone\"</strong> w ustawieniach mikrofonu i <strong>wyłączyć redukcję szumów</strong> dla lepszej wydajności."
   },
   "gotIt": {
     "message": "Rozumiem"
@@ -54,37 +54,37 @@
     "message": "Przypomnij później"
   },
   "defaultTitle": {
-    "message": "Sokuji"
+    "message": "ExTrans"
   },
   "defaultGuidance": {
-    "message": "Aby używać Sokuji, wybierz \"Sokuji Virtual Microphone\" w ustawieniach mikrofonu."
+    "message": "Aby używać ExTrans, wybierz \"ExTrans Virtual Microphone\" w ustawieniach mikrofonu."
   },
   "discordTitle": {
-    "message": "Sokuji for Discord"
+    "message": "ExTrans for Discord"
   },
   "discordGuidance": {
-    "message": "Aby używać Sokuji, wybierz <strong>\"Sokuji Virtual Microphone\"</strong> w ustawieniach mikrofonu i <strong>wyłącz Tłumienie szumów</strong> w ustawieniach głosu Discord dla lepszej wydajności."
+    "message": "Aby używać ExTrans, wybierz <strong>\"ExTrans Virtual Microphone\"</strong> w ustawieniach mikrofonu i <strong>wyłącz Tłumienie szumów</strong> w ustawieniach głosu Discord dla lepszej wydajności."
   },
   "slackTitle": {
-    "message": "Sokuji for Slack"
+    "message": "ExTrans for Slack"
   },
   "slackGuidance": {
-    "message": "Aby używać Sokuji w Slack Huddles, proszę <strong>rozpocząć Huddle</strong>, następnie wybrać <strong>\"Sokuji Virtual Microphone\"</strong> w ustawieniach Wideo i Mikrofonu oraz <strong>wyłączyć Tłumienie szumów</strong> w preferencjach Dźwięku i Wideo dla lepszej wydajności."
+    "message": "Aby używać ExTrans w Slack Huddles, proszę <strong>rozpocząć Huddle</strong>, następnie wybrać <strong>\"ExTrans Virtual Microphone\"</strong> w ustawieniach Wideo i Mikrofonu oraz <strong>wyłączyć Tłumienie szumów</strong> w preferencjach Dźwięku i Wideo dla lepszej wydajności."
   },
   "teamsTitle": {
-    "message": "Sokuji dla Microsoft Teams"
+    "message": "ExTrans dla Microsoft Teams"
   },
   "teamsGuidance": {
-    "message": "Jeśli nie widzisz pełnej listy urządzeń audio w ustawieniach Teams:<br><strong>1)</strong> Tymczasowo wyłącz rozszerzenie Sokuji i odśwież stronę<br><strong>2)</strong> Zezwól Teams na dostęp do mikrofonu i kamery po wyświetleniu monitu<br><strong>3)</strong> Włącz ponownie rozszerzenie Sokuji i odśwież stronę ponownie<br><strong>4)</strong> Zezwól Sokuji na dostęp do mikrofonu po wyświetleniu monitu. Teraz powinieneś widzieć zarówno rzeczywiste urządzenia, jak i <strong>\"Sokuji Virtual Microphone\"</strong> w swoich ustawieniach."
+    "message": "Jeśli nie widzisz pełnej listy urządzeń audio w ustawieniach Teams:<br><strong>1)</strong> Tymczasowo wyłącz rozszerzenie ExTrans i odśwież stronę<br><strong>2)</strong> Zezwól Teams na dostęp do mikrofonu i kamery po wyświetleniu monitu<br><strong>3)</strong> Włącz ponownie rozszerzenie ExTrans i odśwież stronę ponownie<br><strong>4)</strong> Zezwól ExTrans na dostęp do mikrofonu po wyświetleniu monitu. Teraz powinieneś widzieć zarówno rzeczywiste urządzenia, jak i <strong>\"ExTrans Virtual Microphone\"</strong> w swoich ustawieniach."
   },
   "jitsiTitle": {
-    "message": "Sokuji for Jitsi Meet"
+    "message": "ExTrans for Jitsi Meet"
   },
   "jitsiGuidance": {
-    "message": "Aby używać Sokuji w Jitsi Meet, otwórz <strong>Settings > Devices</strong> i wybierz <strong>\"Sokuji Virtual Microphone\"</strong> jako mikrofon. Następnie otwórz <strong>Advanced audio settings</strong> i <strong>wyłącz Tłumienie szumów, Redukcję echa oraz Automatyczną regulację wzmocnienia</strong>, aby uzyskać czysty przetłumaczony dźwięk."
+    "message": "Aby używać ExTrans w Jitsi Meet, otwórz <strong>Settings > Devices</strong> i wybierz <strong>\"ExTrans Virtual Microphone\"</strong> jako mikrofon. Następnie otwórz <strong>Advanced audio settings</strong> i <strong>wyłącz Tłumienie szumów, Redukcję echa oraz Automatyczną regulację wzmocnienia</strong>, aby uzyskać czysty przetłumaczony dźwięk."
   },
   "unsupportedHeadline": {
-    "message": "Sokuji nie jest jeszcze dostępny na $HOSTNAME$.",
+    "message": "ExTrans nie jest jeszcze dostępny na $HOSTNAME$.",
     "placeholders": {
       "hostname": {
         "content": "$1",
@@ -102,7 +102,7 @@
     "message": "Pobierz aplikację desktopową"
   },
   "browserSitesHeading": {
-    "message": "Wolisz przeglądarkę? Sokuji działa na tych stronach — kliknij, aby otworzyć:"
+    "message": "Wolisz przeglądarkę? ExTrans działa na tych stronach — kliknij, aby otworzyć:"
   },
   "requestSiteLink": {
     "message": "Poproś o stronę"
@@ -114,6 +114,6 @@
     "message": "Nie można wykryć tej karty"
   },
   "detectFailBody": {
-    "message": "Odśwież stronę i otwórz Sokuji ponownie."
+    "message": "Odśwież stronę i otwórz ExTrans ponownie."
   }
 }

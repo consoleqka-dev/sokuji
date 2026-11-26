@@ -27,7 +27,7 @@ export function describeMicrophoneFailure(cause: unknown): string {
     case 'SecurityError':
       return isElectron()
         ? `Microphone access is blocked (${kind}). Allow Sokuji to use the microphone in your system's privacy settings (macOS: System Settings › Privacy & Security › Microphone), then start again.`
-        : `Microphone access is blocked (${kind}). Allow the microphone for Sokuji in your browser's site permissions, then start again.`;
+        : `Microphone access is blocked (${kind}). Allow the microphone for ExTrans in your browser's site permissions, then start again.`;
     case 'NotFoundError':
     case 'OverconstrainedError':
       return `The selected microphone is no longer available (${kind}). Choose another input device and start again.`;

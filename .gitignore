@@ -149,3 +149,6 @@ benchmark/punctuation-restoration/tools/*.out.txt
 # E2E (Playwright) output
 /e2e/test-results/
 /e2e/report/
+
+# User-guide video output (large binary, reviewed in place)
+docs/user-guide/media/

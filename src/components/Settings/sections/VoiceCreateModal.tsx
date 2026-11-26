@@ -241,7 +241,7 @@ const VoiceCreateModal: React.FC<VoiceCreateModalProps> = ({
 
   const startRecording = useCallback(async () => {
     if (!onRecord || transcriptMissing) return;
-    const startFailed = t('voiceLibrary.recordStartFailed', 'Could not start recording. Check that a microphone is connected and that Sokuji may use it.');
+    const startFailed = t('voiceLibrary.recordStartFailed', 'Could not start recording. Check that a microphone is connected and that ExTrans may use it.');
     // No microphone API at all (an insecure page, an old browser) is the same
     // failure to the user as a refused one.
     if (!navigator.mediaDevices?.getUserMedia) {

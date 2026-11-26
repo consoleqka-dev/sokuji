@@ -111,7 +111,7 @@ export const fakeVoiceProvider: Provider<FakeVoiceSettings, FakeVoiceCredentials
   kind: 'own-key',
   platforms: ['electron', 'extension', 'web'],
   icon: Volume2,
-  vendor: 'Sokuji',
+  vendor: 'ExTrans',
 
   settings: { key: 'fakeVoice', defaults: {} },
   Settings: () => null,

@@ -1,15 +1,15 @@
 {
   "extensionName": {
-    "message": "Sokuji - AI Találkozófordító"
+    "message": "ExTrans - AI Találkozófordító"
   },
   "extensionDescription": {
     "message": "AI-alapú azonnali beszédfordítás minden videótalálkozóhoz. Törje át a nyelvi akadályokat valós idejű hangfordítással."
   },
   "popupTitle": {
-    "message": "Sokuji - Támogatott Oldalak"
+    "message": "ExTrans - Támogatott Oldalak"
   },
   "openSokuji": {
-    "message": "Sokuji Megnyitása"
+    "message": "ExTrans Megnyitása"
   },
   "chromeWebStore": {
     "message": "Chrome Webáruház"
@@ -18,7 +18,7 @@
     "message": "Edge bővítmények"
   },
   "sokujiAvailable": {
-    "message": "✓ A Sokuji elérhető a(z) $SITE_NAME$ oldalon!",
+    "message": "✓ A ExTrans elérhető a(z) $SITE_NAME$ oldalon!",
     "placeholders": {
       "site_name": {
         "content": "$1",
@@ -27,25 +27,25 @@
     }
   },
   "clickToStart": {
-    "message": "Kattintson a \"Sokuji Megnyitása\" gombra alább a valós idejű fordítás elindításához."
+    "message": "Kattintson a \"ExTrans Megnyitása\" gombra alább a valós idejű fordítás elindításához."
   },
   "quickStart": {
     "message": "Gyors Kezdés:"
   },
   "quickStartInstructions": {
-    "message": "A megbeszélésen válassza a \"Sokuji Virtual Microphone\"-t mikrofonként → Kezdjen el beszélni!"
+    "message": "A megbeszélésen válassza a \"ExTrans Virtual Microphone\"-t mikrofonként → Kezdjen el beszélni!"
   },
   "gatherTownTitle": {
-    "message": "Sokuji for Gather Town"
+    "message": "ExTrans for Gather Town"
   },
   "gatherTownGuidance": {
-    "message": "A Sokuji használatához válassza ki a <strong>\"Sokuji Virtual Microphone\"</strong> opciót a mikrofon beállításaiban."
+    "message": "A ExTrans használatához válassza ki a <strong>\"ExTrans Virtual Microphone\"</strong> opciót a mikrofon beállításaiban."
   },
   "wherebyTitle": {
-    "message": "Sokuji for Whereby"
+    "message": "ExTrans for Whereby"
   },
   "wherebyGuidance": {
-    "message": "A Sokuji használatához kérjük válassza ki a <strong>\"Sokuji Virtual Microphone\"</strong> opciót a mikrofon beállításokban és <strong>kapcsolja ki a zajcsökkentést</strong> a jobb teljesítmény érdekében."
+    "message": "A ExTrans használatához kérjük válassza ki a <strong>\"ExTrans Virtual Microphone\"</strong> opciót a mikrofon beállításokban és <strong>kapcsolja ki a zajcsökkentést</strong> a jobb teljesítmény érdekében."
   },
   "gotIt": {
     "message": "Értem"
@@ -54,37 +54,37 @@
     "message": "Emlékeztessen később"
   },
   "defaultTitle": {
-    "message": "Sokuji"
+    "message": "ExTrans"
   },
   "defaultGuidance": {
-    "message": "To use Sokuji, please select \"Sokuji Virtual Microphone\" in your microphone settings."
+    "message": "To use ExTrans, please select \"ExTrans Virtual Microphone\" in your microphone settings."
   },
   "discordTitle": {
-    "message": "Sokuji for Discord"
+    "message": "ExTrans for Discord"
   },
   "discordGuidance": {
-    "message": "To use Sokuji, please select <strong>\"Sokuji Virtual Microphone\"</strong> in your microphone settings and <strong>disable Noise Suppression</strong> in Discord's Voice settings for better performance."
+    "message": "To use ExTrans, please select <strong>\"ExTrans Virtual Microphone\"</strong> in your microphone settings and <strong>disable Noise Suppression</strong> in Discord's Voice settings for better performance."
   },
   "slackTitle": {
-    "message": "Sokuji for Slack"
+    "message": "ExTrans for Slack"
   },
   "slackGuidance": {
-    "message": "To use Sokuji in Slack Huddles, please <strong>start a Huddle</strong>, then select <strong>\"Sokuji Virtual Microphone\"</strong> in your Video and Mic settings, and <strong>disable Noise Suppression</strong> in Audio & Video preferences for better performance."
+    "message": "To use ExTrans in Slack Huddles, please <strong>start a Huddle</strong>, then select <strong>\"ExTrans Virtual Microphone\"</strong> in your Video and Mic settings, and <strong>disable Noise Suppression</strong> in Audio & Video preferences for better performance."
   },
   "teamsTitle": {
-    "message": "Sokuji a Microsoft Teamshez"
+    "message": "ExTrans a Microsoft Teamshez"
   },
   "teamsGuidance": {
-    "message": "Ha nem látja a teljes hangeszközlistát a Teams beállításaiban:<br><strong>1)</strong> Ideiglenesen tiltsa le a Sokuji bővítményt és frissítse az oldalt<br><strong>2)</strong> Engedélyezze a Teams számára a mikrofon és a kamera elérését, amikor a rendszer kéri<br><strong>3)</strong> Engedélyezze újra a Sokuji bővítményt és frissítse újra az oldalt<br><strong>4)</strong> Engedélyezze a Sokuji számára a mikrofon elérését, amikor a rendszer kéri. Most már látnia kell mind a valódi eszközöket, mind a <strong>\"Sokuji Virtual Microphone\"</strong> virtuális eszközt a beállításaiban."
+    "message": "Ha nem látja a teljes hangeszközlistát a Teams beállításaiban:<br><strong>1)</strong> Ideiglenesen tiltsa le a ExTrans bővítményt és frissítse az oldalt<br><strong>2)</strong> Engedélyezze a Teams számára a mikrofon és a kamera elérését, amikor a rendszer kéri<br><strong>3)</strong> Engedélyezze újra a ExTrans bővítményt és frissítse újra az oldalt<br><strong>4)</strong> Engedélyezze a ExTrans számára a mikrofon elérését, amikor a rendszer kéri. Most már látnia kell mind a valódi eszközöket, mind a <strong>\"ExTrans Virtual Microphone\"</strong> virtuális eszközt a beállításaiban."
   },
   "jitsiTitle": {
-    "message": "Sokuji for Jitsi Meet"
+    "message": "ExTrans for Jitsi Meet"
   },
   "jitsiGuidance": {
-    "message": "A Sokuji Jitsi Meetben való használatához nyissa meg a <strong>Settings > Devices</strong> menüt, és válassza ki a <strong>\"Sokuji Virtual Microphone\"</strong> opciót mikrofonként. Ezután nyissa meg az <strong>Advanced audio settings</strong> beállításokat, és <strong>kapcsolja ki a zajcsökkentést, a visszhangszűrést és az automatikus erősítésszabályozást</strong> a tiszta lefordított hang érdekében."
+    "message": "A ExTrans Jitsi Meetben való használatához nyissa meg a <strong>Settings > Devices</strong> menüt, és válassza ki a <strong>\"ExTrans Virtual Microphone\"</strong> opciót mikrofonként. Ezután nyissa meg az <strong>Advanced audio settings</strong> beállításokat, és <strong>kapcsolja ki a zajcsökkentést, a visszhangszűrést és az automatikus erősítésszabályozást</strong> a tiszta lefordított hang érdekében."
   },
   "unsupportedHeadline": {
-    "message": "A Sokuji még nem érhető el a(z) $HOSTNAME$ oldalon.",
+    "message": "A ExTrans még nem érhető el a(z) $HOSTNAME$ oldalon.",
     "placeholders": {
       "hostname": {
         "content": "$1",
@@ -102,7 +102,7 @@
     "message": "Töltse le az asztali alkalmazást"
   },
   "browserSitesHeading": {
-    "message": "A böngészőt részesíti előnyben? A Sokuji működik ezeken az oldalakon — kattintson a megnyitáshoz:"
+    "message": "A böngészőt részesíti előnyben? A ExTrans működik ezeken az oldalakon — kattintson a megnyitáshoz:"
   },
   "requestSiteLink": {
     "message": "Oldal kérése"
@@ -114,6 +114,6 @@
     "message": "Ez a lap nem volt észlelhető"
   },
   "detectFailBody": {
-    "message": "Frissítse az oldalt, majd nyissa meg újra a Sokuji-t."
+    "message": "Frissítse az oldalt, majd nyissa meg újra a ExTrans-t."
   }
 }

@@ -62,12 +62,12 @@
     },
     "echoCancellation": "Yankı Giderme",
     "echoCancellationTooltip": {
-      "app": "Yalnızca Sokuji — Mikrofon Sokuji'nin çevrilmiş konuşmasını alırsa onu kaldırır. Mikrofon BlackHole gibi sanal bir kablo ise bunu seçin.",
+      "app": "Yalnızca ExTrans — Mikrofon ExTrans'nin çevrilmiş konuşmasını alırsa onu kaldırır. Mikrofon BlackHole gibi sanal bir kablo ise bunu seçin.",
       "browser": "Yalnızca tarayıcı — Mikrofon bu tarayıcının çaldığı sesleri (toplantı sekmeleri dahil) alırsa onları kaldırır. Mikrofon, başka bir uygulamanın sesini taşıyan BlackHole gibi sanal bir kablo ise bunu seçin.",
       "all": "Tüm sesler — Toplantı uygulaması gibi diğer uygulamaların hoparlörden çaldığı sesleri de kaldırır. Mikrofon olarak kullanılan sanal kablo tam olarak bu sesi taşıdığından sessiz kalır."
     },
     "echoCancellationMode": {
-      "app": "Yalnızca Sokuji",
+      "app": "Yalnızca ExTrans",
       "browser": "Yalnızca tarayıcı",
       "all": "Tüm sesler"
     },
@@ -368,9 +368,9 @@
     "virtualMicrophone": "Sanal mikrofon",
     "virtualMicrophoneNotice": "Sanal Mikrofon Uyarısı",
     "iUnderstand": "Anladım",
-    "virtualMicWarningTitle": "Bu, Sokuji tarafından oluşturulan bir sanal mikrofondur.",
+    "virtualMicWarningTitle": "Bu, ExTrans tarafından oluşturulan bir sanal mikrofondur.",
     "virtualMicWarningText1": "Lütfen burada bu cihazı seçmeyin. Bunun yerine, canlı konuşma çevirisi çıktısını almak için bu sanal mikrofonu video konferans uygulamalarınızda (Google Meet, Zoom, Microsoft Teams vb.) kullanın.",
-    "virtualMicWarningText2": "Sokuji'nin düzgün çalışması için lütfen listeden gerçek fiziksel mikrofonunuzu seçin.",
+    "virtualMicWarningText2": "ExTrans'nin düzgün çalışması için lütfen listeden gerçek fiziksel mikrofonunuzu seçin.",
     "realVoicePassthrough": "Doğrudan geçiş",
     "passthroughManagedByPushToTranslate": "Bas-Çevir modunda ses geçişi otomatik yönetilir: tuşu basılı tutmadığınızda %100 ses düzeyinde geçer, tuşu basılı tuttuğunuzda ise kayıt ve çeviri yapılır (geçiş olmaz).",
     "speechTitle": "Konuşma",
@@ -427,7 +427,7 @@
     "participantFellBackToSystemAudio": "Seçili uygulamanın yakalaması durdu, bu yüzden artık tüm sistem sesi çevriliyor. Kapsamı yeniden daraltmak için uygulamayı tekrar seçin.",
     "loopbackMicNotice": "Loopback Girişi Bildirimi",
     "loopbackMicWarningTitle": "Bu giriş, bilgisayarın çaldığı sesi yeniden yakalar.",
-    "loopbackMicWarningText1": "\"Stereo Mix\" veya \"Monitor of ...\" gibi loopback girişleri sistemin kendi ses çıkışını kaydeder. Sokuji'nin çevrilmiş sesini içeren bir oturumda Sokuji kendini duyar ve döngü hâlinde çevirir.",
+    "loopbackMicWarningText1": "\"Stereo Mix\" veya \"Monitor of ...\" gibi loopback girişleri sistemin kendi ses çıkışını kaydeder. ExTrans'nin çevrilmiş sesini içeren bir oturumda ExTrans kendini duyar ve döngü hâlinde çevirir.",
     "loopbackMicWarningText2": "Bu yönlendirme kasıtlıysa aygıt seçili kalır, ancak normal kullanım için lütfen fiziksel bir mikrofon seçin.",
     "participantNoAudioYet": "Seçilen kaynaktan henüz ses gelmedi. Kaynak oynatılıyor ve hiçbir şey çevrilmiyorsa Sistem Ayarları > Gizlilik ve Güvenlik > Yalnızca Sistem Sesi Kaydı (macOS) altında Sokuji'ye izin verin, ardından oturumu yeniden başlatın.",
     "audioCaptureUnprovenNotice": "Henüz hiçbir şey yakalanmadı",
@@ -473,7 +473,7 @@
     "verificationEmailFailed": "Doğrulama e-postası gönderilemedi. Lütfen tekrar deneyin",
     "alreadyVerified": "E-postanız zaten doğrulandı!",
     "cooldownMessage": "Lütfen {{seconds}} saniye bekleyin",
-    "checkYourEmail": "Doğrulama e-postası gönderildi. Gelen kutunuzdan doğrulamayı tamamlayıp geri dönün — Sokuji bunu otomatik olarak algılar.",
+    "checkYourEmail": "Doğrulama e-postası gönderildi. Gelen kutunuzdan doğrulamayı tamamlayıp geri dönün — ExTrans bunu otomatik olarak algılar.",
     "emailVerifiedToast": "E-posta doğrulandı",
     "sessionExpired": "Oturumunuzun süresi doldu. Lütfen tekrar oturum açın.",
     "forgotPassword": "Şifrenizi mi unuttunuz?",
@@ -497,16 +497,16 @@
   },
   "simpleConfig": {
     "interfaceLanguage": "Arayüz Dili",
-    "interfaceLanguageDesc": "Bu, Sokuji'nin menülerinin ve düğmelerinin dilini değiştirir. Çeviri yapabileceğiniz dilleri ETKİLEMEZ.",
+    "interfaceLanguageDesc": "Bu, ExTrans'nin menülerinin ve düğmelerinin dilini değiştirir. Çeviri yapabileceğiniz dilleri ETKİLEMEZ.",
     "translationLanguages": "Çeviri Dilleri",
     "translationLanguagesDesc": "Hangi dilde konuştuğunuzu (Benim dilim) ve çeviriyi hangi dilde duymak istediğinizi (Karşı tarafın dili) seçin. Hangi dili konuşacağınızdan emin değilseniz 'Otomatik Algılama'yı seçin.",
     "yourLanguage": "Benim dilim",
     "userAccount": "Kullanıcı Hesabı",
     "userAccountTooltip": "Teknik kullanıcılar kendi API anahtarlarını kullanabilir. Kullanıcı hesabı basitleştirilmiş kurulum için tasarlanmıştır.",
-    "signInRequired": "Sokuji'nin yerleşik çeviri hizmetini kullanmak için kayıt olun — API anahtarı gerekmez. Dilerseniz kendi sağlayıcınızı ve anahtarınızı kullanmaya devam edebilirsiniz.",
+    "signInRequired": "ExTrans'nin yerleşik çeviri hizmetini kullanmak için kayıt olun — API anahtarı gerekmez. Dilerseniz kendi sağlayıcınızı ve anahtarınızı kullanmaya devam edebilirsiniz.",
     "targetLanguage": "Karşı tarafın dili",
     "microphone": "Mikrofon",
-    "microphoneDesc": "Konuşmanızı yakalamak için mikrofonu seçin. Bu mikrofona dilinizle konuşun, Sokuji duyduğu her şeyi gerçek zamanda çevirecektir.",
+    "microphoneDesc": "Konuşmanızı yakalamak için mikrofonu seçin. Bu mikrofona dilinizle konuşun, ExTrans duyduğu her şeyi gerçek zamanda çevirecektir.",
     "swapLanguages": "Dilleri değiştir",
     "swapNotSpoken": "Konuşma hizmeti bu dilleri ters yönde okumaz.",
     "textOnly": "Yalnızca metin",
@@ -715,7 +715,7 @@
       "scopeLabel": "Dahil et",
       "scopeItemAria": "{{scope}} — {{line}}",
       "scopeEmpty": "Hiçbir şey seçilmedi",
-      "headerTitle": "Sokuji sohbet dışa aktarma",
+      "headerTitle": "ExTrans sohbet dışa aktarma",
       "headerSessionStarted": "Oturum başlangıcı",
       "headerExported": "Dışa aktarıldı",
       "headerProvider": "Sağlayıcı",
@@ -959,7 +959,7 @@
     "gpuSoftwareOnly": "GPU hızlandırma kullanılamıyor — CPU üzerinde çalışıyor",
     "gpuUnavailable": "GPU hızlandırma kullanılamıyor",
     "gpuSlowWarning": "Yerel modeller çalışmaya devam eder, ancak deşifre ve çeviri belirgin şekilde yavaşlar.",
-    "gpuWaylandRemedy": "Wayland oturumunda Chromium bunun için GPU'yu kullanamaz. Sokuji'yi --ozone-platform=x11 ile başlatmak hızlandırmayı geri getirir.",
+    "gpuWaylandRemedy": "Wayland oturumunda Chromium bunun için GPU'yu kullanamaz. ExTrans'yi --ozone-platform=x11 ile başlatmak hızlandırmayı geri getirir.",
     "othersGroup": "Diğer modeller",
     "requiresGpu": "GPU gerektirir",
     "licenseConsent": {
@@ -970,7 +970,7 @@
       "viewLicense": "Lisans metninin tamamını görüntüle",
       "nonCommercial": "Bu lisans yalnızca ticari olmayan kullanıma izin verir — bu modeli hiçbir ticari ürün veya hizmette kullanmayın.",
       "restrictedTerms": "Bu bir açık kaynak lisansı değildir. Modelin ve çıktısının nasıl kullanılabileceğine koşullar getirir — ona güvenmeden önce metnin tamamını okuyun.",
-      "disclaimer": "Sokuji, model yazarlarıyla bağlantılı değildir ve onlarla hiçbir ilişkisi yoktur. Bu entegrasyon resmî değildir ve hiçbir garanti olmaksızın olduğu gibi sunulur.",
+      "disclaimer": "ExTrans, model yazarlarıyla bağlantılı değildir ve onlarla hiçbir ilişkisi yoktur. Bu entegrasyon resmî değildir ve hiçbir garanti olmaksızın olduğu gibi sunulur.",
       "attribution": "Atıf: {{attribution}}",
       "cancel": "İptal",
       "accept": "Anladım — yalnızca ticari olmayan kullanım",
@@ -1052,9 +1052,9 @@
     "linuxMigrateTitle": "Yeni sürüm v{{version}} mevcut"
   },
   "audioSystem": {
-    "pactlMissingBody": "pactl (PulseAudio komut satırı araçları) bulunamadığı için Sokuji sanal mikrofonunu/hoparlörünü kuramadı. Kurun ve ardından yeniden deneyin:",
+    "pactlMissingBody": "pactl (PulseAudio komut satırı araçları) bulunamadığı için ExTrans sanal mikrofonunu/hoparlörünü kuramadı. Kurun ve ardından yeniden deneyin:",
     "installCommand": "sudo apt install pulseaudio-utils",
-    "unavailableBody": "Sokuji sanal mikrofonunu/hoparlörünü kuramadı. PulseAudio veya PipeWire'ın çalıştığından emin olun.",
+    "unavailableBody": "ExTrans sanal mikrofonunu/hoparlörünü kuramadı. PulseAudio veya PipeWire'ın çalıştığından emin olun.",
     "retry": "Yeniden dene",
     "retrying": "Yeniden deneniyor...",
     "macDriverNotLoadedBody": "Sokuji'nin sanal mikrofonu yüklü ancak macOS onu yüklemedi; bu yüzden toplantı uygulamaları çevirinizi duyamıyor. Onarın; macOS yönetici parolanızı isteyecek.",
@@ -1065,12 +1065,12 @@
   },
   "vbCable": {
     "title": "Karşı taraf çeviriyi duysun",
-    "body": "Toplantı uygulamaları sesli çeviriyi sanal bir mikrofon üzerinden alır. Windows'ta bu, VB-Audio'nun ücretsiz sürücüsü VB-CABLE'dır. Sokuji'deki diğer her şey onsuz da çalışır.",
+    "body": "Toplantı uygulamaları sesli çeviriyi sanal bir mikrofon üzerinden alır. Windows'ta bu, VB-Audio'nun ücretsiz sürücüsü VB-CABLE'dır. ExTrans'deki diğer her şey onsuz da çalışır.",
     "install": "VB-CABLE'ı yükle",
     "about": "VB-CABLE hakkında",
     "adminOnce": "Windows bir kez yönetici izni ister.",
     "installingTitle": "VB-CABLE yükleniyor…",
-    "installingBody": "Windows isteğini onaylayın, ardından VB-CABLE penceresinde \"Install Driver\" düğmesine tıklayın. Sokuji, yüklenir yüklenmez onu tanır.",
+    "installingBody": "Windows isteğini onaylayın, ardından VB-CABLE penceresinde \"Install Driver\" düğmesine tıklayın. ExTrans, yüklenir yüklenmez onu tanır.",
     "installingBusy": "Yükleniyor…",
     "failedTitle": "VB-CABLE yüklenmedi",
     "failedBody": "Yükleme iptal edildi veya tamamlanmadı. Yeniden deneyin ya da VB-Audio'nun web sitesinden kendiniz yükleyin.",
@@ -1083,7 +1083,7 @@
     "storeStep3": "\"Install Driver\" düğmesine tıklayın, ardından bilgisayarınızı yeniden başlatın.",
     "openWebsite": "VB-Audio web sitesini aç",
     "checkAgain": "Yeniden denetle",
-    "picksUp": "Sokuji, yüklendikten sonra onu otomatik olarak tanır.",
+    "picksUp": "ExTrans, yüklendikten sonra onu otomatik olarak tanır.",
     "notNow": "Şimdi değil"
   },
   "subtitle": {
@@ -1182,7 +1182,7 @@
     "previewChargedToBalance": "Önizlemeyi dinlemek kısa bir örnek sentezler ve hesap bakiyenizden düşülür.",
     "previewFailed": "Bu ses için önizleme oluşturulamadı.",
     "renameFailed": "Bu ses yeniden adlandırılamadı.",
-    "recordStartFailed": "Kayıt başlatılamadı. Bir mikrofonun bağlı olduğunu ve Sokuji'nin onu kullanmasına izin verildiğini kontrol edin.",
+    "recordStartFailed": "Kayıt başlatılamadı. Bir mikrofonun bağlı olduğunu ve ExTrans'nin onu kullanmasına izin verildiğini kontrol edin.",
     "previewLanguageUnsupported": "Bu modelin konuştuğu bir dilde örnek cümlesi yok.",
     "previewNeedsBalance": "Bu sesin önizlemesini dinlemek için bakiyenizi yükleyin.",
     "previewNeedsSessionStopped": "Bu sesin önizlemesini dinlemek için oturumu sonlandırın.",
@@ -1290,10 +1290,10 @@
     }
   },
   "echoNotice": {
-    "ttsEcho": "Hoparlörleriniz Sokuji'nin çevrilmiş sesini mikrofona geri besliyor.",
+    "ttsEcho": "Hoparlörleriniz ExTrans'nin çevrilmiş sesini mikrofona geri besliyor.",
     "meetingEcho": "Hoparlörlerinizden gelen toplantı sesi mikrofona ulaşıyor.",
     "farEndEcho": "Bir katılımcının cihazı çevirinizi toplantıya yankı olarak geri gönderiyor.",
-    "selfCapture": "Karşı tarafın ses kaynağı Sokuji'nin kendi sesini yakalıyor.",
+    "selfCapture": "Karşı tarafın ses kaynağı ExTrans'nin kendi sesini yakalıyor.",
     "routingLoop": "Seçili giriş aygıtı bu bilgisayarın çalınan sesini doğrudan yakalıyor.",
     "actionHeadphones": "Kulaklık kullanmak döngüyü kıracaktır.",
     "actionAskRemote": "O katılımcıdan kulaklık kullanmasını isteyin.",
@@ -1315,7 +1315,7 @@
     "clearAllKeepsPicks": "Seçimleriniz hatırlanır ve modeller tekrar indirildiğinde geri döner."
   },
   "setup": {
-    "title": "Sokuji kurulumu",
+    "title": "ExTrans kurulumu",
     "stepOf": "Adım {{current}} / {{total}}",
     "back": "Geri",
     "next": "İleri",
@@ -1325,7 +1325,7 @@
     "rerun": "Kurulumu tekrar çalıştır",
     "steps": {
       "language": {
-        "title": "Sokuji sizinle hangi dilde konuşsun?",
+        "title": "ExTrans sizinle hangi dilde konuşsun?",
         "desc": "Bu, menülerin ve düğmelerin dilidir. Aralarında çeviri yapılacak dilleri daha sonra seçersiniz.",
         "label": "Arayüz dili"
       },
@@ -1442,7 +1442,7 @@
       "guide": "Bu anahtarı nasıl alırım",
       "verifyEmail": "Giriş yapıldı. Adresinizi doğrulamak için size e-postayla gönderdiğimiz bağlantıyı açın — doğruladığınızda deneme kredisi hesabınıza geçer.",
       "onFile": "Zaten kayıtlı bir anahtar var — onu korumak için bu alanı boş bırakın.",
-      "offlineHardware": "Sokuji, GPU ve yeterli VRAM ile iyi çalışır; yalnızca CPU ile belirgin şekilde yavaştır.",
+      "offlineHardware": "ExTrans, GPU ve yeterli VRAM ile iyi çalışır; yalnızca CPU ile belirgin şekilde yavaştır.",
       "openaiOneKey": "Bu tek anahtar OpenAI Realtime, Translate ve Live için geçerlidir.",
       "baseUrl": "Adres",
       "baseUrlPlaceholder": "Adres, örneğin https://openrouter.ai/api/v1",
@@ -1472,7 +1472,7 @@
     "steps": {
       "welcome": {
         "title": "Kurulumunuz tamam",
-        "content": "Sokuji senaryonuza göre yapılandırıldı. İşte kısa bir tur — bir dakikadan az sürer."
+        "content": "ExTrans senaryonuza göre yapılandırıldı. İşte kısa bir tur — bir dakikadan az sürer."
       },
       "mode-picker": {
         "title": "Çeviri modu",
@@ -1483,7 +1483,7 @@
       },
       "microphone": {
         "title": "Mikrofonunuz",
-        "content": "Konuşmanız buradan alınır. Sistem varsayılanı zaten seçili. Sokuji sanal mikrofonunu seçmeyin — o, toplantı uygulamanız içindir."
+        "content": "Konuşmanız buradan alınır. Sistem varsayılanı zaten seçili. ExTrans sanal mikrofonunu seçmeyin — o, toplantı uygulamanız içindir."
       },
       "monitor": {
         "title": "Kendi çevirinizi duyun",
@@ -1492,15 +1492,15 @@
       "output-routing": {
         "title": "Karşı taraf sizi nasıl duyar",
         "content": "Çevrilmiş sesiniz bir sanal mikrofona gider; toplantı uygulamanızda mikrofon olarak onu seçin.",
-        "content_extension": "Google Meet, Zoom veya Teams'te mikrofon olarak \"Sokuji Virtual Microphone\" öğesini seçin. Sokuji bunu desteklenen toplantı sitelerine otomatik olarak ekler.",
-        "content_electronLinux": "Sokuji bu sistemde bir sanal mikrofon oluşturdu. Toplantı uygulamanızda mikrofon olarak onu seçin.",
-        "content_electronOther": "Bir sanal ses kablosuna ihtiyacınız var (örneğin VB-Cable). Sokuji'nin çıkışını buna gönderin ve toplantı uygulamanızda mikrofon olarak onu seçin."
+        "content_extension": "Google Meet, Zoom veya Teams'te mikrofon olarak \"ExTrans Virtual Microphone\" öğesini seçin. ExTrans bunu desteklenen toplantı sitelerine otomatik olarak ekler.",
+        "content_electronLinux": "ExTrans bu sistemde bir sanal mikrofon oluşturdu. Toplantı uygulamanızda mikrofon olarak onu seçin.",
+        "content_electronOther": "Bir sanal ses kablosuna ihtiyacınız var (örneğin VB-Cable). ExTrans'nin çıkışını buna gönderin ve toplantı uygulamanızda mikrofon olarak onu seçin."
       },
       "participant-source": {
         "title": "Karşı tarafın sesi",
-        "content": "Sokuji karşı tarafı burada dinler.",
+        "content": "ExTrans karşı tarafı burada dinler.",
         "content_electron": "Çevrilecek uygulamayı veya tüm sistem sesini seçin. Onların orijinal sesi her zamanki gibi çalmaya devam eder.",
-        "content_extension": "Sokuji geçerli sekmenin sesini çevirir. Onların orijinal sesi her zamanki gibi çalmaya devam eder."
+        "content_extension": "ExTrans geçerli sekmenin sesini çevirir. Onların orijinal sesi her zamanki gibi çalmaya devam eder."
       },
       "subtitle": {
         "title": "Altyazı modu",
@@ -1562,7 +1562,7 @@
     "lineup_source_not_fixed": "{{provider}} konuşulan dili bilmelidir. “Otomatik Algılama” yerine dili seçin veya başka bir çeviri hizmeti seçin.",
     "lineup_pair_not_translated": "{{provider}} {{source}} → {{target}} çevirisi yapmaz. Başka diller veya başka bir çeviri hizmeti seçin.",
     "lineup_face_to_face_apart": "“Yüz yüze” için yazıya dökmeyi ve çeviriyi tek bir hizmetin yapması gerekir. Çeviri için de {{provider}} seçin veya “Karşı taraf nerede” ayarını “Bir toplantıda” yapın.",
-    "session_in_use": "Bu hesabı başka bir pencere veya cihaz kullanıyor. Oturumu orada durdurun ya da Sokuji az önce beklenmedik şekilde kapandıysa bir dakika sonra tekrar deneyin.",
+    "session_in_use": "Bu hesabı başka bir pencere veya cihaz kullanıyor. Oturumu orada durdurun ya da ExTrans az önce beklenmedik şekilde kapandıysa bir dakika sonra tekrar deneyin.",
     "previous_session_ending": "Önceki oturumunuz hâlâ sonlandırılıyor. Lütfen bir dakika sonra tekrar deneyin.",
     "app_capture_lost_using_system_audio": "Uygulama yakalaması durdu, bu yüzden artık tüm sistem sesi çevriliyor.",
     "app_capture_monitor_missing": "Uygulama yakalaması başlamadı, bu yüzden artık tüm sistem sesi çevriliyor.",
@@ -1591,7 +1591,7 @@
     "mic_now_using": "Artık “{{device}}” mikrofonu kullanılıyor.",
     "mic_in_use": "“{{device}}” mikrofonu şu anda kullanımda ({{apps}}). Yeniden başlatmadan önce kapatın: {{apps}}. Ya da başka bir mikrofon seçin.",
     "mic_unreadable": "Windows “{{device}}” mikrofonunu açamadı. Başka bir uygulama kullanıyor olabilir veya sürücüsü yanıt vermiyor olabilir. Mikrofonu kullanan uygulamaları kapatın veya mikrofonu yeniden bağlayın, ardından yeniden başlatın.",
-    "mic_blocked": "Windows, Sokuji'nin mikrofonu kullanmasına izin vermiyor. Ayarlar › Gizlilik ve güvenlik › Mikrofon bölümünden masaüstü uygulamalarının mikrofon erişimini açın, ardından yeniden başlatın.",
+    "mic_blocked": "Windows, ExTrans'nin mikrofonu kullanmasına izin vermiyor. Ayarlar › Gizlilik ve güvenlik › Mikrofon bölümünden masaüstü uygulamalarının mikrofon erişimini açın, ardından yeniden başlatın.",
     "speaker_tts_missing": "Karşı tarafın duyduğu çeviri yalnızca metin: {{target}} konuşan bir ses modeli yok.",
     "participant_tts_missing": "Duyduğum çeviri yalnızca metin: {{target}} konuşan bir ses modeli yok.",
     "participant_tts_over_budget": "Duyduğum çeviri yalnızca metin: karşı tarafın ses modelini de yüklemeye yetecek bellek yok.",
@@ -1604,8 +1604,8 @@
     "not_org_member_unnamed": "Artık kuruluşunuzda değilsiniz.",
     "org_wallet_frozen": "{{organization}} hesabı duraklatıldı. Sahibiyle iletişime geçin veya kendi bakiyenizi kullanın.",
     "org_wallet_frozen_unnamed": "Kuruluşun hesabı duraklatıldı. Sahibiyle iletişime geçin veya kendi bakiyenizi kullanın.",
-    "org_wallet_frozen_owner": "{{organization}} hesabı duraklatıldı. Sokuji desteğiyle iletişime geçin veya kendi bakiyenizi kullanın.",
-    "org_wallet_frozen_owner_unnamed": "Kuruluşun hesabı duraklatıldı. Sokuji desteğiyle iletişime geçin veya kendi bakiyenizi kullanın.",
+    "org_wallet_frozen_owner": "{{organization}} hesabı duraklatıldı. ExTrans desteğiyle iletişime geçin veya kendi bakiyenizi kullanın.",
+    "org_wallet_frozen_owner_unnamed": "Kuruluşun hesabı duraklatıldı. ExTrans desteğiyle iletişime geçin veya kendi bakiyenizi kullanın.",
     "model_missing": "Hizmet bu modeli sunmuyor: {{detail}}",
     "quota": "Hizmetteki hesabın kredisi kalmadı: {{detail}}",
     "text_model_unset": "“Diller ve düzen” bölümünde çeviri için bir model seçin veya adını yazın.",
@@ -1613,7 +1613,7 @@
     "address_invalid": "Uyumlu hizmetin adresi kullanılamıyor: {{detail}}"
   },
   "viewer": {
-    "title": "Sokuji altyazıları",
+    "title": "ExTrans altyazıları",
     "connecting": "Bağlanıyor…",
     "original": "Orijinal",
     "enter": {
@@ -1671,7 +1671,7 @@
     },
     "shortcuts": "+ − metin boyutu · B her iki dil · F tam ekran · End canlıya dön",
     "transcript": {
-      "header": "Sokuji altyazıları, kaydedilme zamanı: {{time}}"
+      "header": "ExTrans altyazıları, kaydedilme zamanı: {{time}}"
     },
     "present": {
       "title": "Altyazıları telefonunuzda veya bilgisayarınızda okuyun",
@@ -1684,7 +1684,7 @@
       "androidChrome": "Android'de Chrome açmıyor mu? Ayarlar → Uygulamalar → Chrome → İzinler → Yakındaki cihazlar bölümünden izin verin.",
       "watching": "İzleyen: {{count}}",
       "fullscreen": "Tam ekran",
-      "windowTitle": "Sokuji projeksiyon sayfası",
+      "windowTitle": "ExTrans projeksiyon sayfası",
       "ended": "Paylaşım sona erdi"
     }
   },
@@ -1904,8 +1904,8 @@
         "key": "Tuş",
         "held": "Basılıyken",
         "notHeld": "Basılı değilken",
-        "talkHeld": "Sokuji dinler; bıraktığınızda o parça çevrilir ve karşı taraf çeviriyi duyar. “Doğrudan geçiş” açıkken karşı taraf kendi sesinizi de kısık sesle duyar.",
-        "talkNotHeld": "Sokuji dinlemez; söylediğiniz hiçbir şey çevrilmez ve karşı tarafa ulaşmaz.",
+        "talkHeld": "ExTrans dinler; bıraktığınızda o parça çevrilir ve karşı taraf çeviriyi duyar. “Doğrudan geçiş” açıkken karşı taraf kendi sesinizi de kısık sesle duyar.",
+        "talkNotHeld": "ExTrans dinlemez; söylediğiniz hiçbir şey çevrilmez ve karşı tarafa ulaşmaz.",
         "translateHeld": "Söyledikleriniz çevrilir; karşı taraf kendi sesinizi değil, yalnızca çeviriyi duyar.",
         "translateNotHeld": "Kendi sesiniz çevrilmeden doğrudan karşı tarafa gider.",
         "change": "Değiştir",
@@ -2061,7 +2061,7 @@
     "foundInNotes": "Notlarda bulundu",
     "foundInTitle": "Başlıkta bulundu",
     "unavailable": "Geçmiş açılamadı.",
-    "unavailableNewer": "Bu geçmiş Sokuji’nin daha yeni bir sürümüyle yazıldı. Açmak için Sokuji’yi güncelleyin.",
+    "unavailableNewer": "Bu geçmiş ExTrans’nin daha yeni bir sürümüyle yazıldı. Açmak için ExTrans’yi güncelleyin.",
     "failed": "Olmadı. Yeniden deneyin.",
     "me": "Ben",
     "other": "Karşı taraf",
@@ -2175,7 +2175,7 @@
       "wallet-frozen": "Kizuna AI cüzdanınız donduruldu.",
       "not-member": "Artık Kizuna AI'ın ücretini ödeyen kuruluşun üyesi değilsiniz.",
       "too-large": "Bu kayıt, Kizuna AI'ın not yazabilmesi için fazla uzun.",
-      "update-required": "Kizuna AI ile not yazmak için Sokuji'yi güncelleyin.",
+      "update-required": "Kizuna AI ile not yazmak için ExTrans'yi güncelleyin.",
       "other": "Not hizmeti isteği reddetti."
     },
     "notesLatestFailed": "Son deneme yazılamadı: {{reason}}",

@@ -62,12 +62,12 @@
     },
     "echoCancellation": "Pag-alis ng Echo",
     "echoCancellationTooltip": {
-      "app": "Sokuji lang — Inaalis ang isinaling boses ng Sokuji kapag nasagap ito ng mikropono. Piliin ito kapag ang mikropono ay virtual cable gaya ng BlackHole.",
+      "app": "ExTrans lang — Inaalis ang isinaling boses ng ExTrans kapag nasagap ito ng mikropono. Piliin ito kapag ang mikropono ay virtual cable gaya ng BlackHole.",
       "browser": "Browser lang — Inaalis ang pinapatugtog ng browser na ito, kasama ang mga tab ng meeting, kapag nasagap ito ng mikropono. Piliin ito kapag ang mikropono ay virtual cable gaya ng BlackHole na nagdadala ng tunog ng ibang app.",
       "all": "Lahat ng tunog — Inaalis din ang pinapatugtog ng ibang app sa speaker, gaya ng meeting app. Ang virtual cable na ginagamit bilang mikropono ay nagdadala mismo ng tunog na iyon, kaya mawawalan ito ng tunog."
     },
     "echoCancellationMode": {
-      "app": "Sokuji lang",
+      "app": "ExTrans lang",
       "browser": "Browser lang",
       "all": "Lahat ng tunog"
     },
@@ -368,9 +368,9 @@
     "virtualMicrophone": "Virtual na mikropono",
     "virtualMicrophoneNotice": "Paalala sa Virtual Microphone",
     "iUnderstand": "Naiintindihan ko",
-    "virtualMicWarningTitle": "Ito ay isang virtual na mikropono na ginawa ng Sokuji.",
+    "virtualMicWarningTitle": "Ito ay isang virtual na mikropono na ginawa ng ExTrans.",
     "virtualMicWarningText1": "Huwag piliin ang device na ito dito. Sa halip, gamitin ang virtual na mikroponong ito sa inyong mga video conferencing application (tulad ng Google Meet, Zoom, Microsoft Teams, atbp.) para matanggap ang live na output ng pagsasalin ng pananalita.",
-    "virtualMicWarningText2": "Para gumana nang maayos ang Sokuji, pakipili ang inyong tunay na pisikal na mikropono mula sa listahan.",
+    "virtualMicWarningText2": "Para gumana nang maayos ang ExTrans, pakipili ang inyong tunay na pisikal na mikropono mula sa listahan.",
     "realVoicePassthrough": "Passthrough",
     "passthroughManagedByPushToTranslate": "Sa Push-to-Translate mode, awtomatiko ang passthrough: tumutugtog ito sa 100% volume kapag hindi mo pinipindot nang matagal ang key, at humihinto (ipinapadala sa pagsasalin ang audio) habang pinipindot mo ito.",
     "speechTitle": "Pananalita",
@@ -427,7 +427,7 @@
     "participantFellBackToSystemAudio": "Huminto ang capture ng napiling application, kaya isinasalin na ngayon ang buong system audio. Piliin muli ang application para paliitin ulit ang saklaw.",
     "loopbackMicNotice": "Abiso sa Loopback Input",
     "loopbackMicWarningTitle": "Muling kinukuha ng input na ito ang pinapatugtog ng computer.",
-    "loopbackMicWarningText1": "Ang mga loopback input tulad ng \"Stereo Mix\" o \"Monitor of ...\" na device ay nagre-record ng sariling audio output ng system. Sa session na may isinaling boses ng Sokuji, maririnig at isasalin ng Sokuji ang sarili nito nang paulit-ulit.",
+    "loopbackMicWarningText1": "Ang mga loopback input tulad ng \"Stereo Mix\" o \"Monitor of ...\" na device ay nagre-record ng sariling audio output ng system. Sa session na may isinaling boses ng ExTrans, maririnig at isasalin ng ExTrans ang sarili nito nang paulit-ulit.",
     "loopbackMicWarningText2": "Mananatiling napili ang device kung sinadya ang routing na ito, ngunit para sa normal na paggamit ay pumili ng pisikal na mikropono.",
     "participantNoAudioYet": "Wala pang audio na dumarating mula sa napiling source. Kung tumutugtog ito at walang naisasalin, payagan ang Sokuji sa System Settings > Privacy & Security > System Audio Recording Only (macOS), pagkatapos ay simulan muli ang session.",
     "audioCaptureUnprovenNotice": "Wala pang nakukuha",
@@ -473,7 +473,7 @@
     "verificationEmailFailed": "Hindi naipadala ang verification email. Pakisubukang muli",
     "alreadyVerified": "Na-verify na ang iyong email!",
     "cooldownMessage": "Pakihintay ng {{seconds}} segundo",
-    "checkYourEmail": "Naipadala na ang verification email. Kumpletuhin ang pag-verify sa iyong inbox at bumalik — awtomatikong malalaman ni Sokuji kapag nakumpirma na ito.",
+    "checkYourEmail": "Naipadala na ang verification email. Kumpletuhin ang pag-verify sa iyong inbox at bumalik — awtomatikong malalaman ni ExTrans kapag nakumpirma na ito.",
     "emailVerifiedToast": "Na-verify na ang email",
     "sessionExpired": "Nag-expire na ang iyong session. Mag-sign in ulit.",
     "forgotPassword": "Nakalimutan ang Password?",
@@ -497,16 +497,16 @@
   },
   "simpleConfig": {
     "interfaceLanguage": "Wika ng Interface",
-    "interfaceLanguageDesc": "Binabago nito ang wika ng mga menu at button ng Sokuji. HINDI nito naaapektuhan kung anong mga wika ang pwede ninyong i-translate.",
+    "interfaceLanguageDesc": "Binabago nito ang wika ng mga menu at button ng ExTrans. HINDI nito naaapektuhan kung anong mga wika ang pwede ninyong i-translate.",
     "translationLanguages": "Mga Wika ng Translation",
     "translationLanguagesDesc": "Piliin kung anong wika ang ginagamit ninyo (Aking wika) at kung anong wika ang gusto ninyong marinig sa translation (Wika ng kausap). Piliin ang \"Awtomatikong Detekta\" kung hindi kayo sigurado kung anong wika ang inyong sasalitain.",
     "yourLanguage": "Aking wika",
     "userAccount": "Account ng User",
     "userAccountTooltip": "Ang mga technical na user ay pwedeng gumamit ng sarili nilang API keys. Ang User Account ay ginawa para sa simplified na setup.",
-    "signInRequired": "Mag-sign up para gamitin ang built-in na serbisyo ng pagsasalin ng Sokuji — hindi kailangan ng API key. Maaari mo ring ipagpatuloy ang paggamit ng sarili mong provider at key.",
+    "signInRequired": "Mag-sign up para gamitin ang built-in na serbisyo ng pagsasalin ng ExTrans — hindi kailangan ng API key. Maaari mo ring ipagpatuloy ang paggamit ng sarili mong provider at key.",
     "targetLanguage": "Wika ng kausap",
     "microphone": "Microphone",
-    "microphoneDesc": "Piliin ang microphone para ma-capture ang inyong pagsasalita. Magsalita sa inyong wika sa microphone na ito, at i-translate ng Sokuji ang lahat ng maririnig niya nang real-time.",
+    "microphoneDesc": "Piliin ang microphone para ma-capture ang inyong pagsasalita. Magsalita sa inyong wika sa microphone na ito, at i-translate ng ExTrans ang lahat ng maririnig niya nang real-time.",
     "swapLanguages": "Palitan ang mga wika",
     "swapNotSpoken": "Hindi binabasa ng serbisyo sa pagsasalita ang mga wikang ito nang pabaligtad.",
     "textOnly": "Teksto lamang",
@@ -715,7 +715,7 @@
       "scopeLabel": "Isama",
       "scopeItemAria": "{{scope}} — {{line}}",
       "scopeEmpty": "Walang napili",
-      "headerTitle": "Sokuji na pag-export ng usapan",
+      "headerTitle": "ExTrans na pag-export ng usapan",
       "headerSessionStarted": "Nagsimula ang session",
       "headerExported": "Na-export",
       "headerProvider": "Provider",
@@ -959,7 +959,7 @@
     "gpuSoftwareOnly": "Hindi available ang GPU acceleration — tumatakbo sa CPU",
     "gpuUnavailable": "Hindi available ang GPU acceleration",
     "gpuSlowWarning": "Gagana pa rin ang mga lokal na modelo, ngunit magiging kapansin-pansing mas mabagal ang transcription at pagsasalin.",
-    "gpuWaylandRemedy": "Sa isang Wayland session, hindi magagamit ng Chromium ang GPU para dito. Ang pagbukas ng Sokuji gamit ang --ozone-platform=x11 ay nagbabalik ng acceleration.",
+    "gpuWaylandRemedy": "Sa isang Wayland session, hindi magagamit ng Chromium ang GPU para dito. Ang pagbukas ng ExTrans gamit ang --ozone-platform=x11 ay nagbabalik ng acceleration.",
     "othersGroup": "Iba pang mga modelo",
     "requiresGpu": "Nangangailangan ng GPU",
     "licenseConsent": {
@@ -970,7 +970,7 @@
       "viewLicense": "Tingnan ang buong teksto ng lisensya",
       "nonCommercial": "Pinapayagan lamang ng lisensyang ito ang hindi pangkomersyong paggamit — huwag gamitin ang modelong ito sa anumang komersyal na produkto o serbisyo.",
       "restrictedTerms": "Hindi ito open-source na lisensya. Naglalagay ito ng mga kondisyon sa kung paano magagamit ang modelo at ang output nito — basahin ang buong teksto bago ka umasa rito.",
-      "disclaimer": "Ang Sokuji ay walang kaugnayan sa mga may-akda ng modelo. Hindi opisyal ang integrasyong ito at ibinibigay ito nang walang anumang garantiya.",
+      "disclaimer": "Ang ExTrans ay walang kaugnayan sa mga may-akda ng modelo. Hindi opisyal ang integrasyong ito at ibinibigay ito nang walang anumang garantiya.",
       "attribution": "Pagkilala: {{attribution}}",
       "cancel": "Kanselahin",
       "accept": "Nauunawaan ko — hindi pangkomersyo lamang",
@@ -1052,9 +1052,9 @@
     "linuxMigrateTitle": "Bagong bersyon v{{version}} ay magagamit na"
   },
   "audioSystem": {
-    "pactlMissingBody": "Hindi nahanap ang pactl (mga command-line tool ng PulseAudio), kaya hindi ma-set up ng Sokuji ang virtual na mikropono/speaker nito. I-install ito, pagkatapos ay subukang muli:",
+    "pactlMissingBody": "Hindi nahanap ang pactl (mga command-line tool ng PulseAudio), kaya hindi ma-set up ng ExTrans ang virtual na mikropono/speaker nito. I-install ito, pagkatapos ay subukang muli:",
     "installCommand": "sudo apt install pulseaudio-utils",
-    "unavailableBody": "Hindi ma-set up ng Sokuji ang virtual na mikropono/speaker nito. Tiyaking tumatakbo ang PulseAudio o PipeWire.",
+    "unavailableBody": "Hindi ma-set up ng ExTrans ang virtual na mikropono/speaker nito. Tiyaking tumatakbo ang PulseAudio o PipeWire.",
     "retry": "Subukang muli",
     "retrying": "Sinusubukang muli...",
     "macDriverNotLoadedBody": "Naka-install ang virtual na mikropono ng Sokuji, pero hindi ito na-load ng macOS, kaya hindi marinig ng mga meeting app ang iyong pagsasalin. Ayusin ito; hihingin ng macOS ang iyong administrator password.",
@@ -1065,12 +1065,12 @@
   },
   "vbCable": {
     "title": "Ipadinig sa kabilang panig ang salin",
-    "body": "Tinatanggap ng mga meeting app ang binibigkas na salin sa pamamagitan ng virtual na mikropono. Sa Windows, iyon ay ang VB-CABLE, isang libreng driver mula sa VB-Audio. Gumagana ang lahat ng iba pa sa Sokuji kahit wala ito.",
+    "body": "Tinatanggap ng mga meeting app ang binibigkas na salin sa pamamagitan ng virtual na mikropono. Sa Windows, iyon ay ang VB-CABLE, isang libreng driver mula sa VB-Audio. Gumagana ang lahat ng iba pa sa ExTrans kahit wala ito.",
     "install": "I-install ang VB-CABLE",
     "about": "Tungkol sa VB-CABLE",
     "adminOnce": "Hihingi ang Windows ng pahintulot ng administrator nang isang beses.",
     "installingTitle": "Ini-install ang VB-CABLE…",
-    "installingBody": "Aprubahan ang prompt ng Windows, pagkatapos ay i-click ang \"Install Driver\" sa window ng VB-CABLE. Makikilala ito ng Sokuji sa sandaling ma-install.",
+    "installingBody": "Aprubahan ang prompt ng Windows, pagkatapos ay i-click ang \"Install Driver\" sa window ng VB-CABLE. Makikilala ito ng ExTrans sa sandaling ma-install.",
     "installingBusy": "Ini-install…",
     "failedTitle": "Hindi na-install ang VB-CABLE",
     "failedBody": "Kinansela o hindi natapos ang pag-install. Subukang muli, o i-install ito mismo mula sa website ng VB-Audio.",
@@ -1083,7 +1083,7 @@
     "storeStep3": "I-click ang \"Install Driver\", pagkatapos ay i-restart ang iyong PC.",
     "openWebsite": "Buksan ang website ng VB-Audio",
     "checkAgain": "Suriin muli",
-    "picksUp": "Awtomatiko itong makikilala ng Sokuji kapag na-install na.",
+    "picksUp": "Awtomatiko itong makikilala ng ExTrans kapag na-install na.",
     "notNow": "Hindi ngayon"
   },
   "subtitle": {
@@ -1182,7 +1182,7 @@
     "previewChargedToBalance": "Ang pag-preview ay gumagawa ng maikling sample at sinisingil sa balanse ng iyong account.",
     "previewFailed": "Hindi ma-synthesize ang preview para sa boses na ito.",
     "renameFailed": "Hindi mapalitan ang pangalan ng boses na ito.",
-    "recordStartFailed": "Hindi masimulan ang pag-record. Tiyaking may nakakonektang mikropono at pinapayagan ang Sokuji na gamitin ito.",
+    "recordStartFailed": "Hindi masimulan ang pag-record. Tiyaking may nakakonektang mikropono at pinapayagan ang ExTrans na gamitin ito.",
     "previewLanguageUnsupported": "Ang modelong ito ay walang sample na pangungusap sa wikang kaya nitong sabihin.",
     "previewNeedsBalance": "Mag-top up ng iyong balanse para i-preview ang boses na ito.",
     "previewNeedsSessionStopped": "Tapusin ang session para i-preview ang boses na ito.",
@@ -1290,10 +1290,10 @@
     }
   },
   "echoNotice": {
-    "ttsEcho": "Ibinabalik ng iyong speaker ang isinaling boses ng Sokuji sa mikropono.",
+    "ttsEcho": "Ibinabalik ng iyong speaker ang isinaling boses ng ExTrans sa mikropono.",
     "meetingEcho": "Umaabot sa mikropono ang audio ng meeting mula sa iyong speaker.",
     "farEndEcho": "Ini-echo ng device ng isang kalahok ang iyong salin pabalik sa meeting.",
-    "selfCapture": "Kinukuha ng pinagmulan ng audio ng kausap ang sariling audio ng Sokuji.",
+    "selfCapture": "Kinukuha ng pinagmulan ng audio ng kausap ang sariling audio ng ExTrans.",
     "routingLoop": "Direktang kinukuha ng napiling input device ang playback ng computer na ito.",
     "actionHeadphones": "Mapuputol ang loop kapag gumamit ng headphones.",
     "actionAskRemote": "Pakiusapan ang kalahok na iyon na gumamit ng headphones.",
@@ -1315,7 +1315,7 @@
     "clearAllKeepsPicks": "Naaalala ang mga napili mo at babalik ang mga ito kapag na-download muli ang mga modelo."
   },
   "setup": {
-    "title": "Pag-setup ng Sokuji",
+    "title": "Pag-setup ng ExTrans",
     "stepOf": "Hakbang {{current}} sa {{total}}",
     "back": "Bumalik",
     "next": "Susunod",
@@ -1325,7 +1325,7 @@
     "rerun": "Patakbuhin muli ang setup",
     "steps": {
       "language": {
-        "title": "Anong wika ang gagamitin ng Sokuji sa pakikipag-usap sa inyo?",
+        "title": "Anong wika ang gagamitin ng ExTrans sa pakikipag-usap sa inyo?",
         "desc": "Ito ang wika ng mga menu at button. Pipiliin ninyo ang mga wikang isasalin sa isa't isa mamaya.",
         "label": "Wika ng Interface"
       },
@@ -1442,7 +1442,7 @@
       "guide": "Paano makuha ang key na ito",
       "verifyEmail": "Naka-sign in na. Buksan ang link na ipinadala namin sa inyong email para i-verify ang inyong address — makukuha ang trial credit kapag nagawa na ninyo ito.",
       "onFile": "Mayroon nang naka-save na key — iwanan itong blangko para mapanatili ito.",
-      "offlineHardware": "Maayos ang Sokuji kapag may GPU at sapat na VRAM; kapansin-pansing mas mabagal kung CPU lang.",
+      "offlineHardware": "Maayos ang ExTrans kapag may GPU at sapat na VRAM; kapansin-pansing mas mabagal kung CPU lang.",
       "openaiOneKey": "Itong iisang key ang gamit ng OpenAI Realtime, Translate at Live.",
       "baseUrl": "Address",
       "baseUrlPlaceholder": "Address, gaya ng https://openrouter.ai/api/v1",
@@ -1472,7 +1472,7 @@
     "steps": {
       "welcome": {
         "title": "Naka-set up na kayo",
-        "content": "Naka-configure na ang Sokuji para sa inyong scenario. Narito ang maikling paligid-ligid — aabutin ito ng wala pang isang minuto."
+        "content": "Naka-configure na ang ExTrans para sa inyong scenario. Narito ang maikling paligid-ligid — aabutin ito ng wala pang isang minuto."
       },
       "mode-picker": {
         "title": "Mode ng pagsasalin",
@@ -1483,7 +1483,7 @@
       },
       "microphone": {
         "title": "Ang inyong mikropono",
-        "content": "Dito pumapasok ang inyong pagsasalita. Ang default ng system ay napili na. Huwag piliin ang virtual na mikropono ng Sokuji — iyon ay para sa inyong meeting app."
+        "content": "Dito pumapasok ang inyong pagsasalita. Ang default ng system ay napili na. Huwag piliin ang virtual na mikropono ng ExTrans — iyon ay para sa inyong meeting app."
       },
       "monitor": {
         "title": "Marinig ang sarili ninyong isinalin",
@@ -1492,15 +1492,15 @@
       "output-routing": {
         "title": "Paano kayo naririnig ng kabilang panig",
         "content": "Napupunta ang inyong isinaling boses sa isang virtual na mikropono; piliin ito bilang mic sa inyong meeting app.",
-        "content_extension": "Sa Google Meet, Zoom, o Teams, piliin ang \"Sokuji Virtual Microphone\" bilang inyong mikropono. Awtomatikong idinaragdag ito ng Sokuji sa mga suportadong meeting site.",
-        "content_electronLinux": "Gumawa ang Sokuji ng virtual na mikropono sa system na ito. Piliin ito bilang mikropono sa inyong meeting app.",
-        "content_electronOther": "Kailangan ninyo ng virtual audio cable (halimbawa, VB-Cable). Ipadala ang output ng Sokuji dito, at piliin ito bilang mikropono sa inyong meeting app."
+        "content_extension": "Sa Google Meet, Zoom, o Teams, piliin ang \"ExTrans Virtual Microphone\" bilang inyong mikropono. Awtomatikong idinaragdag ito ng ExTrans sa mga suportadong meeting site.",
+        "content_electronLinux": "Gumawa ang ExTrans ng virtual na mikropono sa system na ito. Piliin ito bilang mikropono sa inyong meeting app.",
+        "content_electronOther": "Kailangan ninyo ng virtual audio cable (halimbawa, VB-Cable). Ipadala ang output ng ExTrans dito, at piliin ito bilang mikropono sa inyong meeting app."
       },
       "participant-source": {
         "title": "Ang boses ng kabilang panig",
-        "content": "Dito nakikinig ang Sokuji sa kabilang panig.",
+        "content": "Dito nakikinig ang ExTrans sa kabilang panig.",
         "content_electron": "Piliin ang app na isasalin, o ang lahat ng system audio. Patuloy na tumutugtog ang kanilang orihinal na boses gaya ng dati.",
-        "content_extension": "Isinasalin ng Sokuji ang audio ng kasalukuyang tab. Patuloy na tumutugtog ang kanilang orihinal na boses gaya ng dati."
+        "content_extension": "Isinasalin ng ExTrans ang audio ng kasalukuyang tab. Patuloy na tumutugtog ang kanilang orihinal na boses gaya ng dati."
       },
       "subtitle": {
         "title": "Subtitle mode",
@@ -1562,7 +1562,7 @@
     "lineup_source_not_fixed": "Kailangang malaman ng {{provider}} ang wikang sinasalita. Piliin ito sa halip na “Awtomatikong Detekta”, o pumili ng ibang serbisyo sa pagsasalin.",
     "lineup_pair_not_translated": "Hindi isinasalin ng {{provider}} ang {{source}} → {{target}}. Pumili ng ibang mga wika, o ibang serbisyo sa pagsasalin.",
     "lineup_face_to_face_apart": "Kailangan ng “Magkaharap” ng iisang serbisyo para sa transkripsyon at pagsasalin. Piliin din ang {{provider}} para sa pagsasalin, o itakda ang “Nasaan ang kausap” sa “Nasa meeting”.",
-    "session_in_use": "May ibang window o device na gumagamit ng account na ito. Ihinto roon ang session, o kung biglang nagsara ang Sokuji, subukang muli pagkalipas ng isang minuto.",
+    "session_in_use": "May ibang window o device na gumagamit ng account na ito. Ihinto roon ang session, o kung biglang nagsara ang ExTrans, subukang muli pagkalipas ng isang minuto.",
     "previous_session_ending": "Tinatapos pa ang iyong nakaraang session. Pakisubukang muli pagkalipas ng isang minuto.",
     "app_capture_lost_using_system_audio": "Huminto ang capture ng app, kaya isinasalin na ngayon ang buong system audio.",
     "app_capture_monitor_missing": "Hindi nagsimula ang capture ng app, kaya isinasalin na ngayon ang buong system audio.",
@@ -1591,7 +1591,7 @@
     "mic_now_using": "Ginagamit na ngayon ang mikroponong “{{device}}”.",
     "mic_in_use": "Ginagamit ng {{apps}} ang mikroponong “{{device}}”. Isara ang {{apps}} at magsimula ulit, o pumili ng ibang mikropono.",
     "mic_unreadable": "Hindi mabuksan ng Windows ang mikroponong “{{device}}”. Maaaring ginagamit ito ng ibang app, o hindi na tumutugon ang driver nito. Isara ang mga app na gumagamit nito o ikonekta itong muli, pagkatapos ay magsimula ulit.",
-    "mic_blocked": "Hindi pinapayagan ng Windows ang Sokuji na gamitin ang mikropono. I-on ang access sa mikropono para sa mga desktop app sa Settings › Privacy & security › Microphone, pagkatapos ay magsimula ulit.",
+    "mic_blocked": "Hindi pinapayagan ng Windows ang ExTrans na gamitin ang mikropono. I-on ang access sa mikropono para sa mga desktop app sa Settings › Privacy & security › Microphone, pagkatapos ay magsimula ulit.",
     "speaker_tts_missing": "Teksto lang ang salin na naririnig ng kabilang panig: walang modelo ng pananalita na nagsasalita ng {{target}}.",
     "participant_tts_missing": "Teksto lang ang salin na naririnig ko: walang modelo ng pananalita na nagsasalita ng {{target}}.",
     "participant_tts_over_budget": "Teksto lang ang salin na naririnig ko: kulang ang memory para i-load din ang modelo ng pananalita ng kabilang panig.",
@@ -1604,8 +1604,8 @@
     "not_org_member_unnamed": "Wala ka na sa iyong organisasyon.",
     "org_wallet_frozen": "Naka-pause ang account ng {{organization}}. Makipag-ugnayan sa may-ari nito, o gamitin ang sarili mong balanse.",
     "org_wallet_frozen_unnamed": "Naka-pause ang account ng organisasyon. Makipag-ugnayan sa may-ari nito, o gamitin ang sarili mong balanse.",
-    "org_wallet_frozen_owner": "Naka-pause ang account ng {{organization}}. Makipag-ugnayan sa suporta ng Sokuji, o gamitin ang sarili mong balanse.",
-    "org_wallet_frozen_owner_unnamed": "Naka-pause ang account ng organisasyon. Makipag-ugnayan sa suporta ng Sokuji, o gamitin ang sarili mong balanse.",
+    "org_wallet_frozen_owner": "Naka-pause ang account ng {{organization}}. Makipag-ugnayan sa suporta ng ExTrans, o gamitin ang sarili mong balanse.",
+    "org_wallet_frozen_owner_unnamed": "Naka-pause ang account ng organisasyon. Makipag-ugnayan sa suporta ng ExTrans, o gamitin ang sarili mong balanse.",
     "model_missing": "Hindi iniaalok ng serbisyo ang modelong ito: {{detail}}",
     "quota": "Wala nang credit ang account sa serbisyo: {{detail}}",
     "text_model_unset": "Pumili ng modelo para sa pagsasalin, o i-type ang pangalan nito, sa “Mga wika at line-up”.",
@@ -1613,7 +1613,7 @@
     "address_invalid": "Hindi magagamit ang address ng compatible na serbisyo: {{detail}}"
   },
   "viewer": {
-    "title": "Mga subtitle ng Sokuji",
+    "title": "Mga subtitle ng ExTrans",
     "connecting": "Kumokonekta…",
     "original": "Orihinal",
     "enter": {
@@ -1671,7 +1671,7 @@
     },
     "shortcuts": "+ − laki ng teksto · B parehong wika · F fullscreen · End bumalik sa live",
     "transcript": {
-      "header": "Mga subtitle ng Sokuji, na-save noong {{time}}"
+      "header": "Mga subtitle ng ExTrans, na-save noong {{time}}"
     },
     "present": {
       "title": "Basahin ang mga subtitle sa phone o computer mo",
@@ -1684,7 +1684,7 @@
       "androidChrome": "Hindi mabuksan sa Chrome sa Android? Payagan ito sa Settings → Apps → Chrome → Permissions → Nearby devices.",
       "watching": "Nanonood: {{count}}",
       "fullscreen": "Fullscreen",
-      "windowTitle": "Projector page ng Sokuji",
+      "windowTitle": "Projector page ng ExTrans",
       "ended": "Tapos na ang pagbabahagi"
     }
   },
@@ -1904,8 +1904,8 @@
         "key": "Key",
         "held": "Kapag pinipindot",
         "notHeld": "Kapag hindi pinipindot",
-        "talkHeld": "Nakikinig ang Sokuji; pagbitaw mo, isinasalin ang bahaging iyon at naririnig ng kabilang panig ang salin. Kapag naka-on ang Passthrough, naririnig din ng kabilang panig ang sarili mong boses, nang mahina.",
-        "talkNotHeld": "Hindi nakikinig ang Sokuji; walang anuman sa sinasabi mo ang naisasalin o nakararating sa kabilang panig.",
+        "talkHeld": "Nakikinig ang ExTrans; pagbitaw mo, isinasalin ang bahaging iyon at naririnig ng kabilang panig ang salin. Kapag naka-on ang Passthrough, naririnig din ng kabilang panig ang sarili mong boses, nang mahina.",
+        "talkNotHeld": "Hindi nakikinig ang ExTrans; walang anuman sa sinasabi mo ang naisasalin o nakararating sa kabilang panig.",
         "translateHeld": "Isinasalin ang sinasabi mo; ang salin lang ang naririnig ng kabilang panig, hindi ang sarili mong boses.",
         "translateNotHeld": "Diretsong napupunta sa kabilang panig ang sarili mong boses, walang salin.",
         "change": "Palitan",
@@ -2061,7 +2061,7 @@
     "foundInNotes": "Nakita sa mga tala",
     "foundInTitle": "Nakita sa pamagat",
     "unavailable": "Hindi mabuksan ang Kasaysayan.",
-    "unavailableNewer": "Isinulat ang Kasaysayang ito ng mas bagong bersyon ng Sokuji. I-update ang Sokuji para mabuksan ito.",
+    "unavailableNewer": "Isinulat ang Kasaysayang ito ng mas bagong bersyon ng ExTrans. I-update ang ExTrans para mabuksan ito.",
     "failed": "Hindi iyon gumana. Subukan ulit.",
     "me": "Ako",
     "other": "Kausap",
@@ -2175,7 +2175,7 @@
       "wallet-frozen": "Naka-freeze ang wallet mo sa Kizuna AI.",
       "not-member": "Hindi ka na miyembro ng organisasyong nagbabayad para sa Kizuna AI.",
       "too-large": "Masyadong mahaba ang record na ito para makasulat ang Kizuna AI ng mga tala mula rito.",
-      "update-required": "I-update ang Sokuji para makasulat ng mga tala gamit ang Kizuna AI.",
+      "update-required": "I-update ang ExTrans para makasulat ng mga tala gamit ang Kizuna AI.",
       "other": "Tinanggihan ng serbisyo ng tala ang kahilingan."
     },
     "notesLatestFailed": "Hindi naisulat ang huling pagtatangka: {{reason}}",

@@ -1,15 +1,15 @@
 {
   "extensionName": {
-    "message": "Sokuji - مترجم اجتماعات AI"
+    "message": "ExTrans - مترجم اجتماعات AI"
   },
   "extensionDescription": {
     "message": "ترجمة فورية للكلام بالذكاء الاصطناعي لجميع اجتماعات الفيديو. كسر حواجز اللغة مع الترجمة الصوتية في الوقت الفعلي."
   },
   "popupTitle": {
-    "message": "Sokuji - المواقع المدعومة"
+    "message": "ExTrans - المواقع المدعومة"
   },
   "openSokuji": {
-    "message": "فتح Sokuji"
+    "message": "فتح ExTrans"
   },
   "chromeWebStore": {
     "message": "متجر Chrome الإلكتروني"
@@ -18,7 +18,7 @@
     "message": "إضافات Edge"
   },
   "sokujiAvailable": {
-    "message": "✓ Sokuji متاح على $SITE_NAME$!",
+    "message": "✓ ExTrans متاح على $SITE_NAME$!",
     "placeholders": {
       "site_name": {
         "content": "$1",
@@ -27,25 +27,25 @@
     }
   },
   "clickToStart": {
-    "message": "انقر على \"فتح Sokuji\" أدناه لبدء الترجمة في الوقت الفعلي."
+    "message": "انقر على \"فتح ExTrans\" أدناه لبدء الترجمة في الوقت الفعلي."
   },
   "quickStart": {
     "message": "البدء السريع:"
   },
   "quickStartInstructions": {
-    "message": "في اجتماعك، حدد \"Sokuji Virtual Microphone\" كميكروفون ← ابدأ بالتحدث!"
+    "message": "في اجتماعك، حدد \"ExTrans Virtual Microphone\" كميكروفون ← ابدأ بالتحدث!"
   },
   "gatherTownTitle": {
-    "message": "Sokuji لـ Gather Town"
+    "message": "ExTrans لـ Gather Town"
   },
   "gatherTownGuidance": {
-    "message": "لاستخدام Sokuji، يرجى تحديد <strong>\"Sokuji Virtual Microphone\"</strong> في إعدادات الميكروفون الخاص بك."
+    "message": "لاستخدام ExTrans، يرجى تحديد <strong>\"ExTrans Virtual Microphone\"</strong> في إعدادات الميكروفون الخاص بك."
   },
   "wherebyTitle": {
-    "message": "Sokuji لـ Whereby"
+    "message": "ExTrans لـ Whereby"
   },
   "wherebyGuidance": {
-    "message": "لاستخدام Sokuji، يرجى تحديد <strong>\"Sokuji Virtual Microphone\"</strong> في إعدادات الميكروفون و<strong>إلغاء تنشيط تقليل الضوضاء</strong> للحصول على أداء أفضل."
+    "message": "لاستخدام ExTrans، يرجى تحديد <strong>\"ExTrans Virtual Microphone\"</strong> في إعدادات الميكروفون و<strong>إلغاء تنشيط تقليل الضوضاء</strong> للحصول على أداء أفضل."
   },
   "gotIt": {
     "message": "فهمت"
@@ -54,37 +54,37 @@
     "message": "ذكرني لاحقاً"
   },
   "defaultTitle": {
-    "message": "Sokuji"
+    "message": "ExTrans"
   },
   "defaultGuidance": {
-    "message": "لاستخدام Sokuji، يرجى تحديد \"Sokuji Virtual Microphone\" في إعدادات الميكروفون."
+    "message": "لاستخدام ExTrans، يرجى تحديد \"ExTrans Virtual Microphone\" في إعدادات الميكروفون."
   },
   "discordTitle": {
-    "message": "Sokuji لـ Discord"
+    "message": "ExTrans لـ Discord"
   },
   "discordGuidance": {
-    "message": "لاستخدام Sokuji، يرجى تحديد <strong>\"Sokuji Virtual Microphone\"</strong> في إعدادات الميكروفون و<strong>إلغاء تفعيل قمع الضوضاء</strong> في إعدادات الصوت في Discord للحصول على أداء أفضل."
+    "message": "لاستخدام ExTrans، يرجى تحديد <strong>\"ExTrans Virtual Microphone\"</strong> في إعدادات الميكروفون و<strong>إلغاء تفعيل قمع الضوضاء</strong> في إعدادات الصوت في Discord للحصول على أداء أفضل."
   },
   "slackTitle": {
-    "message": "Sokuji لـ Slack"
+    "message": "ExTrans لـ Slack"
   },
   "slackGuidance": {
-    "message": "لاستخدام Sokuji في Slack Huddles، يرجى <strong>بدء Huddle</strong>، ثم حدد <strong>\"Sokuji Virtual Microphone\"</strong> في إعدادات الفيديو والميكروفون، و<strong>قم بإلغاء تنشيط كبت الضوضاء</strong> في تفضيلات الصوت والفيديو للحصول على أداء أفضل."
+    "message": "لاستخدام ExTrans في Slack Huddles، يرجى <strong>بدء Huddle</strong>، ثم حدد <strong>\"ExTrans Virtual Microphone\"</strong> في إعدادات الفيديو والميكروفون، و<strong>قم بإلغاء تنشيط كبت الضوضاء</strong> في تفضيلات الصوت والفيديو للحصول على أداء أفضل."
   },
   "teamsTitle": {
-    "message": "Sokuji لـ Microsoft Teams"
+    "message": "ExTrans لـ Microsoft Teams"
   },
   "teamsGuidance": {
-    "message": "إذا لم تشاهد القائمة الكاملة لأجهزة الصوت في إعدادات Teams:<br><strong>1)</strong> قم بتعطيل ملحق Sokuji مؤقتًا وحدّث الصفحة<br><strong>2)</strong> اسمح لـ Teams بالوصول إلى الميكروفون والكاميرا عند المطالبة<br><strong>3)</strong> أعد تمكين ملحق Sokuji وحدّث الصفحة مرة أخرى<br><strong>4)</strong> اسمح لـ Sokuji بالوصول إلى الميكروفون عند المطالبة. الآن يجب أن ترى كلاً من الأجهزة الحقيقية و <strong>\"Sokuji Virtual Microphone\"</strong> في إعداداتك."
+    "message": "إذا لم تشاهد القائمة الكاملة لأجهزة الصوت في إعدادات Teams:<br><strong>1)</strong> قم بتعطيل ملحق ExTrans مؤقتًا وحدّث الصفحة<br><strong>2)</strong> اسمح لـ Teams بالوصول إلى الميكروفون والكاميرا عند المطالبة<br><strong>3)</strong> أعد تمكين ملحق ExTrans وحدّث الصفحة مرة أخرى<br><strong>4)</strong> اسمح لـ ExTrans بالوصول إلى الميكروفون عند المطالبة. الآن يجب أن ترى كلاً من الأجهزة الحقيقية و <strong>\"ExTrans Virtual Microphone\"</strong> في إعداداتك."
   },
   "jitsiTitle": {
-    "message": "Sokuji لـ Jitsi Meet"
+    "message": "ExTrans لـ Jitsi Meet"
   },
   "jitsiGuidance": {
-    "message": "لاستخدام Sokuji في Jitsi Meet، افتح <strong>Settings > Devices</strong> وحدد <strong>\"Sokuji Virtual Microphone\"</strong> كميكروفون لك. ثم افتح <strong>Advanced audio settings</strong> و<strong>قم بإيقاف قمع الضوضاء وإلغاء الصدى والتحكم التلقائي في مستوى الصوت</strong> للحصول على صوت مترجم واضح."
+    "message": "لاستخدام ExTrans في Jitsi Meet، افتح <strong>Settings > Devices</strong> وحدد <strong>\"ExTrans Virtual Microphone\"</strong> كميكروفون لك. ثم افتح <strong>Advanced audio settings</strong> و<strong>قم بإيقاف قمع الضوضاء وإلغاء الصدى والتحكم التلقائي في مستوى الصوت</strong> للحصول على صوت مترجم واضح."
   },
   "unsupportedHeadline": {
-    "message": "Sokuji غير متاح على $HOSTNAME$ بعد.",
+    "message": "ExTrans غير متاح على $HOSTNAME$ بعد.",
     "placeholders": {
       "hostname": {
         "content": "$1",
@@ -102,7 +102,7 @@
     "message": "تحميل تطبيق سطح المكتب"
   },
   "browserSitesHeading": {
-    "message": "تفضّل المتصفح؟ Sokuji يعمل على هذه المواقع — انقر للفتح:"
+    "message": "تفضّل المتصفح؟ ExTrans يعمل على هذه المواقع — انقر للفتح:"
   },
   "requestSiteLink": {
     "message": "طلب إضافة موقع"
@@ -114,6 +114,6 @@
     "message": "تعذّر اكتشاف هذه الصفحة"
   },
   "detectFailBody": {
-    "message": "حدّث الصفحة وأعد فتح Sokuji."
+    "message": "حدّث الصفحة وأعد فتح ExTrans."
   }
 }

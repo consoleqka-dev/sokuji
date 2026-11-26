@@ -196,7 +196,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({ variant, onClose }) => {
       {...(isModal ? getFloatingProps() : {})}
     >
       <header className="setup-wizard__header">
-        <h1 id="setup-wizard-title">{t('setup.title', 'Set up Sokuji')}</h1>
+        <h1 id="setup-wizard-title">{t('setup.title', 'Set up ExTrans')}</h1>
         <span className="setup-wizard__progress" aria-live="polite">
           {t('setup.stepOf', 'Step {{current}} of {{total}}', { current: draft.step + 1, total: LAST_STEP + 1 })}
         </span>
