@@ -4,16 +4,16 @@
 
 The extension now has a navy and blue look in both the dark and the light scheme. It uses
 gradient pill actions, softer cards, a progress meter in the setup wizard and a matching popup,
-and the product is renamed ExTrans with an original icon. The biggest remaining gap predates this
-work: at 420 px the main panel's bottom bar is wider than the panel, so the Start Session pill is
-clipped. The DONE contract holds except for that item and the items marked N/A below.
+and the product is renamed ExTrans with an original icon. The 420 px bottom bar overflow, which
+predated this work, is fixed (P7). The DONE contract holds except for the items marked N/A below.
 
 ## Scope and environment
 
 - Mode `--auto`, run overnight from the parent session. Worktree `sokuji-ui-exchain`, branch
   `ui-exchain-theme`. Nothing is pushed.
 - Commits: `7e14a223` (restyle), `b484804f` (ExTrans rebrand), `9ce2f6b5` (dark conversation
-  area), plus the docs commit that adds this report.
+  area), `61367ab6` (docs), `7b690505` (bottom bar), `dbcb900f` (status fills), `4b9569e3`
+  (Nunito), `d9a6854e` (Electron name) and `8161542b` (guide).
 - Surfaces: `fullpage.html` (the six wizard steps, the tour, the main panel, settings) and
   `popup.html`, each in the dark and the light scheme.
 - Viewports: the extension is a side panel, so it was captured at 420×860 (the real panel width)
@@ -39,7 +39,7 @@ before-and-after pairs side by side.
 | Content punch | 2 → 2 | The copy is unchanged apart from the name. |
 | Hierarchy | 2 → 3 | One gradient primary action per view; secondary actions are outlined pills; the step badge is a chip. |
 | Motion | 1 → 2 | 1 px lift and shadow on cards and buttons, with reduced-motion fallbacks. |
-| Responsive (420 px) | 2 → 2 | The wizard and popup fit. The bottom bar overflow is pre-existing and unchanged. |
+| Responsive (420 px) | 2 → 3 | The wizard and popup fit, and the bottom bar now fits at 420 and 360 px (P7). |
 | Trust | 2 → 3 | A consistent palette across the popup, the panel and the wizard, and a calm fintech-style navy. |
 | Accessibility | 2 → 3 | Dark text and accent fills now have test-enforced contrast floors (`DARK_FLOORS`). Fill-hover contrast is fixed on 8 buttons. Focus rings are added in the popup. |
 
@@ -72,12 +72,12 @@ before-and-after pairs side by side.
 ### P6 — ExTrans rebrand (user request, done in `b484804f`)
 - See `review-notes-261127-extrans.md`.
 
-### P7 — Bottom bar at 420 px (Should, not done)
-- **Evidence:** the Start Session pill is clipped on the right in both `before/dark-main-420.png`
-  and `after/dark-main-420.png`.
-- **Change:** wrap the control row or collapse the device selects into an icon at narrow widths.
-- **Why not done:** it is a layout change to `MainPanel` beyond a restyle. It is left for the
-  owner's decision.
+### P7 — Bottom bar at 420 px (Should, done in `7b690505` at the owner's request)
+- **Evidence:** in the built extension the advanced footer needed 576 px at 420 px.
+- **Change:** below a 480 px container the input level narrows to 64 px, the output waveform is
+  hidden and the language pair ends in an ellipsis.
+- **Acceptance:** the footer's `scrollWidth` equals its width at 420 and 360 px, and
+  `advancedFooterNarrow.test.ts` passes. Passed.
 
 ### P8 — Settings at 420 px (Could)
 - At 420 px the settings button on the title bar shows as pressed, but the capture still shows
@@ -86,26 +86,31 @@ before-and-after pairs side by side.
 
 ## DONE contract
 
-1. Must and Should items meet their checks, except P7, which is not done for the reason given above.
+1. Must and Should items meet their checks.
 2. Discovery scan: N/A (an extension has no public site).
 3. Screenshots in both schemes at 420 and 1280: no new overflow, clipping or overlap. The bottom
-   bar overflow is pre-existing (P7).
+   bar overflow is fixed (P7).
 4. No rubric area regressed.
 5. Reduced-motion fallbacks are present on every new transform and transition. Focus-visible rings
    are present. This was checked in the code; the UI was not driven by keyboard.
 6. Build passes. The full suite passed after the rebrand (14782 tests, with one load-flaky
    timeout that passes on rerun). The affected suites passed again after the later fix (1398
    tests). On this machine the style tests need `--testTimeout=120000` (load average about 38).
+   After the Electron rename and the guide, the full suite ran again: 14804 passed and 1 failed
+   (`noticeText.test.ts`: its copy of the macOS permission notice still said Sokuji while the
+   English locale said ExTrans). The copy now says ExTrans and that test passes (45 tests).
 7. `DESIGN.md` and `REVIEW.md` are added. `CLAUDE.md` points to them, which is this repo's
    equivalent of `AGENTS.md`.
 8. No dev server was started. Each capture browser was closed by its script, and the profiles are
    deleted at cleanup.
 
-## Unresolved questions
+## Owner's answers (2026-11-27 morning)
 
-1. Should Nunito (exchain's font) be bundled? It is not: `uiFont.test.ts` pins the system stack.
-2. White on the dark error (3.70:1) and usage (2.85:1) fills is below 4.5:1. This predates the
-   restyle and these are the owner's status hues. Should they change?
-3. Should P7 (the bottom bar at 420 px) be fixed in this branch or separately?
-4. Should the Electron app's own packaging be renamed to ExTrans? Until it is, the macOS
-   permission strings say "Sokuji".
+1. Nunito: bundled (`4b9569e3`).
+2. Dark error and usage fills: changed so white labels reach 4.5:1 (`dbcb900f`).
+3. P7: fixed in this branch (`7b690505`).
+4. Electron packaging: renamed to ExTrans in `d9a6854e`, with the user-data folder pinned to
+   `Sokuji`. No packaged build was run; the release checks are in `review-notes-261127-extrans.md`.
+5. The guide and video: recorded in the light theme from an unpacked install, with a text-only
+   Gemini key section and without the attribution card or the store line (`8161542b`). The live
+   run needs the owner's key and is theirs to run.
