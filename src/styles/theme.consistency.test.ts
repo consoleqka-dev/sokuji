@@ -78,8 +78,8 @@ const DARK_PINNED: Record<string, string> = {
   'primary': '#6f9bff', 'primary-hover': '#8fb1ff', 'primary-fill': '#2d5bd2', 'primary-fill-hover': '#244bb3', 'primary-fill-end': '#1572b8',
   'speaker': 'var(--sk-primary)', 'speaker-fill': 'var(--sk-primary-fill)', 'speaker-person-3': '#1d3f99',
   'participant': '#f39c12', 'participant-person-2': '#f8c471', 'participant-person-3': '#ca6f1e',
-  'success': '#10a37f', 'error': '#e74c3c', 'error-deep': '#c0392b', 'warning': '#ffc107', 'recommended': '#f59e0b',
-  'degraded': '#f39c12', 'usage': '#e67e22', 'usage-hover': '#f39c12', 'usage-deep': '#d35400', 'info': '#38c3ee',
+  'success': '#10a37f', 'error': '#e74c3c', 'error-deep': '#a93226', 'error-fill': '#c0392b', 'warning': '#ffc107', 'recommended': '#f59e0b',
+  'degraded': '#f39c12', 'usage': '#e67e22', 'usage-hover': '#f39c12', 'usage-deep': '#d35400', 'usage-fill': '#b34700', 'info': '#38c3ee',
   'toolbar-icon': '#8494b6',
   'waveform-speaker': '#5b8cff', 'waveform-participant': '#f59e0b', 'waveform-output': '#22b8e6',
   'window-edge': '#000000', 'window-edge-inner': 'rgba(255,255,255,0.12)',
@@ -90,17 +90,19 @@ const SURFACES = ['bg-page', 'bg-surface', 'bg-control'];
 const LIGHT_FLOORS: [string, string, number][] = [
   ...['text-primary', 'text-secondary', 'text-tertiary', 'text-muted', 'text-source'].flatMap((fg) => SURFACES.map((bg): [string, string, number] => [fg, bg, 4.5])),
   ...['text-dim', 'toolbar-icon'].flatMap((fg) => SURFACES.map((bg): [string, string, number] => [fg, bg, 3])),
-  ...['primary-fill', 'primary-fill-end', 'error', 'usage'].map((bg): [string, string, number] => ['on-accent', bg, 4.5]),
+  ...['primary-fill', 'primary-fill-end', 'error', 'usage', 'error-fill', 'usage-fill'].map((bg): [string, string, number] => ['on-accent', bg, 4.5]),
   ...['primary', 'participant', 'success', 'error', 'warning', 'degraded', 'info'].flatMap((fg) => ['bg-page', 'bg-surface'].map((bg): [string, string, number] => [fg, bg, 4.5])),
 ];
 
 // The dark block's floors for the roles the restyle re-valued: body text and
 // the accent on the three surfaces, and the label on both ends of the accent
-// gradient and its hover.
+// gradient and its hover. The white label on the error and usage fills (Stop,
+// recording, the attention banner) and on the error fill's hover reaches 4.5:1
+// too; the bright error and usage hues stay for text, where white never sits on them.
 const DARK_FLOORS: [string, string, number][] = [
   ...['text-primary', 'text-secondary', 'text-tertiary', 'text-muted', 'text-source', 'primary'].flatMap((fg) => SURFACES.map((bg): [string, string, number] => [fg, bg, 4.5])),
   ...['text-dim', 'toolbar-icon'].flatMap((fg) => SURFACES.map((bg): [string, string, number] => [fg, bg, 3])),
-  ...['primary-fill', 'primary-fill-hover', 'primary-fill-end'].map((bg): [string, string, number] => ['on-accent', bg, 4.5]),
+  ...['primary-fill', 'primary-fill-hover', 'primary-fill-end', 'error-fill', 'error-deep', 'usage-fill'].map((bg): [string, string, number] => ['on-accent', bg, 4.5]),
 ];
 
 /** `color-mix(in srgb, fg p, bg)`: a component-wise blend of the two sRGB colours, as a hex. */
@@ -135,7 +137,7 @@ describe('theme.scss', () => {
     expect(names(LIGHT)).toEqual(names(DARK));
     expect(names(TONE_DARK)).toEqual(names(DARK));
     expect(names(TONE_LIGHT)).toEqual(names(DARK));
-    expect(names(DARK)).toHaveLength(54);
+    expect(names(DARK)).toHaveLength(56);
   });
 
   it('sets color-scheme on the two root blocks only', () => {

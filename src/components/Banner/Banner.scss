@@ -13,7 +13,7 @@
   color: tk.$color-on-primary;
   flex-shrink: 0;
 
-  &--attention { background-color: tk.$color-usage; }
+  &--attention { background-color: tk.$color-usage-fill; }
   &--brand { background-color: tk.$color-primary-fill; }
 
   &__content {

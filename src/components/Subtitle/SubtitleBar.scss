@@ -226,7 +226,7 @@
     transition: background 120ms ease, opacity 120ms ease;
 
     &.is-start { background: tk.$color-primary; }
-    &.is-stop  { background: tk.$color-error; }
+    &.is-stop  { background: tk.$color-error-fill; }
 
     &:disabled {
       background: color-mix(in srgb, vars.$overlay-fg 12%, transparent);

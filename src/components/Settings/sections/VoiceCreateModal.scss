@@ -101,7 +101,7 @@
     &--danger {
       border-color: vars.$color-error;
       color: vars.$color-error;
-      &:hover:not(:disabled) { background: vars.$color-error; color: tk.$color-on-primary; }
+      &:hover:not(:disabled) { background: tk.$color-error-fill; color: tk.$color-on-primary; }
     }
   }
 }

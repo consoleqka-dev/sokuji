@@ -346,8 +346,8 @@
 
   &--danger:hover:not(:disabled) {
     color: vars.$color-on-primary;
-    background: vars.$color-error;
-    border-color: vars.$color-error;
+    background: vars.$color-error-fill;
+    border-color: vars.$color-error-fill;
   }
 
   // The row currently sounding — the Square icon already says "playing", this

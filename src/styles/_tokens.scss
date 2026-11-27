@@ -47,6 +47,7 @@ $color-degraded:    var(--sk-degraded);     // reconnecting, split degraded — 
 $color-usage:       var(--sk-usage);        // spending, quota, an unverified account
 $color-usage-hover: var(--sk-usage-hover);  // the hover those controls already used
 $color-usage-deep:  var(--sk-usage-deep);   // the far stop of the high-usage gradient
+$color-usage-fill:  var(--sk-usage-fill);   // a usage fill under a white label; darker than the text hue in dark mode
 
 // ── Status ──
 // "It worked": a validated key, a connected session, a finished download,
@@ -54,6 +55,7 @@ $color-usage-deep:  var(--sk-usage-deep);   // the far stop of the high-usage gr
 $color-success:     var(--sk-success);
 $color-error:       var(--sk-error);
 $color-error-deep:  var(--sk-error-deep);   // the close button's and Stop's hover
+$color-error-fill:  var(--sk-error-fill);   // an error fill under a white label (Stop, recording); darker than the text hue in dark mode
 $color-warning:     var(--sk-warning);
 $color-recommended: var(--sk-recommended);  // the Recommended badge, an attention chip
 $color-info:        var(--sk-info);
