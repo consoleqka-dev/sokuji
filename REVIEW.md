@@ -23,8 +23,10 @@ for the direction and `CLAUDE.md` ("UI Design System") for the token mechanics.
 
 ## Brand and copy
 
-- User-visible text says **ExTrans**; identifiers, keys and storage names stay as they are.
-- Strings about the Electron app's macOS permissions keep the name macOS shows (see `DESIGN.md`).
+- User-visible text says **ExTrans**, the Electron app included; identifiers, keys, storage names
+  and the installed virtual audio device and driver names stay as they are (see `DESIGN.md`).
+- Do not remove the user-data pin in `electron/app-identity.js`: the app's folder name now differs
+  from its product name, and without the pin users start from an empty profile.
 - A new string goes into all catalogs (`src/locales/*/translation.json`, and
   `extension/_locales/*/messages.json` for the extension shell).
 - The AGPL attribution to Sokuji by Kizuna AI Lab stays in the READMEs and the user guide.

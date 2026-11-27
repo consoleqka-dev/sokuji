@@ -99,8 +99,8 @@ async function listAppSources({
           rows
             .filter((r) => r && typeof r.id === 'string')
             // The helper excludes its own short-lived process but cannot know
-            // which app spawned it. A Sokuji row here would let the user pick
-            // Sokuji as the participant source and translate its own TTS in a
+            // which app spawned it. An ExTrans row here would let the user pick
+            // ExTrans as the participant source and translate its own TTS in a
             // loop, so the running app filters itself out.
             .filter((r) => !isOwnAppSource({ pid: pidOfId(r.id), exe: r.exe, label: r.label }, selfIdentity))
             // appKey identifies the application across restarts, unlike the
@@ -165,10 +165,10 @@ function startCapture(deviceId, onPcm, onEvent, {
   const args = ['--target', target];
   // The macOS helper decides "the target is rendering yet every sample is
   // zero" (its silent_no_permission warning) by asking Core Audio which
-  // processes hold an active output stream. Sokuji's own audio service holds
+  // processes hold an active output stream. ExTrans's own audio service holds
   // one from the moment a session starts - a running AudioContext keeps the
   // stream open even while it plays nothing - so on a whole-system tap that
-  // check was satisfied by Sokuji itself and the warning fired on every quiet
+  // check was satisfied by ExTrans itself and the warning fired on every quiet
   // session start (#492). The helper cannot know which pids are its parent app,
   // so the list crosses here; the helper treats each as a root and excludes
   // its descendants by walking the live parent chain, so a utility process
@@ -229,7 +229,7 @@ function stopCapture() {
  *
  * macOS stores that volume itself and restores it onto the driver, so it
  * survives reinstalling the driver - and a macOS 15 -> 26 upgrade was measured
- * leaving Sokuji's device at scalar 0.5, which the driver's logarithmic control
+ * leaving ExTrans's device at scalar 0.5, which the driver's logarithmic control
  * turns into -32 dB. The audio still flows, so nothing reports an error; the
  * other application simply hears silence. See the helper's --ensure-unity-gain
  * documentation for the measurement.

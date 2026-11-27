@@ -135,7 +135,8 @@ describe('installerLaunchCommand', () => {
 });
 
 describe('isInstallerName', () => {
-  it('matches only Sokuji Setup executables', () => {
+  it('matches only ExTrans Setup executables, and the Sokuji ones earlier releases left behind', () => {
+    expect(isInstallerName('ExTrans-0.51.3.Setup.exe')).toBe(true);
     expect(isInstallerName('Sokuji-0.46.4.Setup.exe')).toBe(true);
     expect(isInstallerName('sokuji-0.46.4.setup.EXE')).toBe(true);
     expect(isInstallerName('Sokuji-0.46.4-full.nupkg')).toBe(false);
@@ -152,7 +153,8 @@ describe('staleInstallers', () => {
       { name: 'Sokuji-0.46.4.Setup.exe', mtimeMs: now - 60_000 },
       { name: 'other.txt', mtimeMs: now - 9 * day },
       { name: 'Sokuji-0.32.1.Setup.exe', mtimeMs: now - 100 * day },
+      { name: 'ExTrans-0.51.3.Setup.exe', mtimeMs: now - 2 * day },
     ];
-    expect(staleInstallers(entries, { now, maxAgeMs: day })).toEqual(['Sokuji-0.46.1.Setup.exe', 'Sokuji-0.32.1.Setup.exe']);
+    expect(staleInstallers(entries, { now, maxAgeMs: day })).toEqual(['Sokuji-0.46.1.Setup.exe', 'Sokuji-0.32.1.Setup.exe', 'ExTrans-0.51.3.Setup.exe']);
   });
 });

@@ -10,6 +10,7 @@ const fs = require('fs');
 const os = require('os');
 const { execFile } = require('child_process');
 const { createCaptionShareServer } = require('./caption-share-server.js');
+const { PRODUCT_NAME } = require('./app-identity.js');
 const { rankAddresses, parseHardwarePorts } = require('./caption-share-net.js');
 const { viewerAssets } = require('./caption-share-core.js');
 
@@ -215,7 +216,7 @@ function setupCaptionShare({
 
   ipcMain.handle('caption-share:present', (event, payload) => {
     if (!isTrustedSender(event.sender) || !server.running()) return;
-    // Sokuji's UI language, for the page's words: this window's navigator.languages
+    // ExTrans's UI language, for the page's words: this window's navigator.languages
     // is the OS locale. Only a catalog-shaped id (`ja`, `zh_CN`, `pt-BR`) goes into the URL.
     const lang = typeof payload?.lang === 'string' && /^[A-Za-z]{2,3}([_-][A-Za-z0-9]{2,8})?$/.test(payload.lang) ? payload.lang : null;
     const url = `http://127.0.0.1:${server.port()}/present${lang ? `?lang=${lang}` : ''}`;
@@ -228,7 +229,7 @@ function setupCaptionShare({
     presentWindow = new BrowserWindow({
       width: 1100,
       height: 700,
-      title: 'Sokuji',
+      title: PRODUCT_NAME,
       backgroundColor: '#111111',
       autoHideMenuBar: true,
       webPreferences: { contextIsolation: true, nodeIntegration: false, sandbox: true },

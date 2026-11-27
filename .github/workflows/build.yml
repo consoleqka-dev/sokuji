@@ -349,8 +349,8 @@ jobs:
               sys.exit('Only the Store package may carry resources/distribution.json')
           EOF
           mkdir -p out/installers
-          cp "out/make-web/squirrel.windows/x64/Sokuji-${VERSION} Setup.exe" out/installers/
-          cp "out/make/squirrel.windows/x64/Sokuji-${VERSION} Setup.exe" "out/installers/Sokuji-${VERSION}-store-installer.exe"
+          cp "out/make-web/squirrel.windows/x64/ExTrans-${VERSION} Setup.exe" out/installers/
+          cp "out/make/squirrel.windows/x64/ExTrans-${VERSION} Setup.exe" "out/installers/ExTrans-${VERSION}-store-installer.exe"
           ls -la out/installers
 
       # electron-builder bundles an x86_64-only `fpm` for building .deb packages.
@@ -529,9 +529,9 @@ jobs:
         timeout-minutes: 15
         run: |
           set -euo pipefail
-          APP=$(find out/make-mac -name 'Sokuji.app' -maxdepth 3 | head -1)
+          APP=$(find out/make-mac -name 'ExTrans.app' -maxdepth 3 | head -1)
           if [ -z "$APP" ]; then
-            echo "No Sokuji.app found under out/make-mac" >&2
+            echo "No ExTrans.app found under out/make-mac" >&2
             exit 1
           fi
           DR=$(codesign -d -r- "$APP" 2>&1 | grep 'designated =>' | sed 's/^#* *designated => //')
@@ -641,12 +641,12 @@ jobs:
           rm -rf "$UNZIPPED"
           mkdir -p "$UNZIPPED"
           ditto -x -k "$ZIP" "$UNZIPPED"
-          [ -d "$UNZIPPED/Sokuji.app" ] || { echo "FAIL: no Sokuji.app at the top of $(basename "$ZIP")." >&2; exit 1; }
-          if ! codesign --verify --deep --strict --test-requirement="=$BRIDGE_REQUIREMENT" "$UNZIPPED/Sokuji.app"; then
+          [ -d "$UNZIPPED/ExTrans.app" ] || { echo "FAIL: no ExTrans.app at the top of $(basename "$ZIP")." >&2; exit 1; }
+          if ! codesign --verify --deep --strict --test-requirement="=$BRIDGE_REQUIREMENT" "$UNZIPPED/ExTrans.app"; then
             echo "FAIL: an installed v0.46.4 would refuse this update." >&2
             exit 1
           fi
-          stapled "$UNZIPPED/Sokuji.app"
+          stapled "$UNZIPPED/ExTrans.app"
           echo "OK: the zip's app is stapled, and installed v0.46.4 accepts it as an update."
 
           # The pkg is what a new user downloads and opens.
@@ -915,7 +915,7 @@ jobs:
           find macos-x64-artifacts -name "*.zip" -exec cp {} release-assets/ \;
           find macos-arm64-artifacts -name "*.blockmap" -exec cp {} release-assets/ \;
           find macos-x64-artifacts -name "*.blockmap" -exec cp {} release-assets/ \;
-          # Squirrel generates filenames with spaces (e.g. "Sokuji-0.15.12 Setup.exe").
+          # Squirrel generates filenames with spaces (e.g. "ExTrans-0.15.12 Setup.exe").
           # Rename to use dots so asset names are consistent and latest.yml URLs match.
           cd release-assets
           for f in *' '*; do

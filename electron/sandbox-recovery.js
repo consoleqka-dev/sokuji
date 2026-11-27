@@ -4,7 +4,7 @@
  * On some Windows machines, other software (e.g. OpenAI Codex CLI's elevated
  * sandbox, Google Antigravity's Gemini sandbox, or MSIX installers that leave
  * ACEs behind on uninstall) writes an orphaned AppContainer SID ACE onto
- * %LOCALAPPDATA% or %USERPROFILE%. That ACE is inherited by Sokuji's install
+ * %LOCALAPPDATA% or %USERPROFILE%. That ACE is inherited by ExTrans's install
  * and data directories. Chromium's sandboxed child processes (GPU, renderer)
  * launch under a restricted token that the corrupted DACL then locks out of
  * the install directory, so the child dies at CHECK(InitializeICU()) while
@@ -200,7 +200,7 @@ function repairDirectory(dir, sids, deps) {
  * @returns {string}
  */
 function buildBackupLog(scanResults, isoStamp) {
-  let log = `Sokuji sandbox recovery backup — ${isoStamp}\n`;
+  let log = `ExTrans sandbox recovery backup — ${isoStamp}\n`;
   log += `Issue:    ${ISSUE_URL}\n`;
   log += `Upstream: ${UPSTREAM_URL}\n`;
   log += `\nThe explicit orphan AppContainer ACEs listed below were removed with\n`;
@@ -447,12 +447,12 @@ function showConfirmedDialog(dialog, confirmed) {
   const dirs = confirmed.map((r) => r.dir).join('\n');
   return dialog.showMessageBoxSync({
     type: 'warning',
-    title: 'Sokuji — Sandbox Startup Problem',
+    title: 'ExTrans — Sandbox Startup Problem',
     message:
-      "Another program corrupted Windows permissions, preventing Sokuji's security sandbox from starting.",
+      "Another program corrupted Windows permissions, preventing ExTrans's security sandbox from starting.",
     detail:
       'This is a known problem caused by leftover sandbox permissions from tools such as ' +
-      'OpenAI Codex CLI or Google Antigravity. Sokuji can repair it without administrator ' +
+      'OpenAI Codex CLI or Google Antigravity. ExTrans can repair it without administrator ' +
       'rights — only the orphaned permission entries are removed; nothing else is touched.\n\n' +
       `Affected locations:\n${dirs}\n\n` +
       `More details: ${ISSUE_URL}`,
@@ -466,8 +466,8 @@ function showConfirmedDialog(dialog, confirmed) {
 function showUnconfirmedDialog(dialog) {
   return dialog.showMessageBoxSync({
     type: 'warning',
-    title: 'Sokuji — Sandbox Startup Problem',
-    message: "Sokuji's security sandbox process repeatedly failed to start.",
+    title: 'ExTrans — Sandbox Startup Problem',
+    message: "ExTrans's security sandbox process repeatedly failed to start.",
     detail:
       'The cause could not be confirmed automatically. It is often corrupted Windows ' +
       'permissions or antivirus injection. You can continue with the sandbox disabled ' +
@@ -487,7 +487,7 @@ function showRepairFailedDialog(dialog, repairResult) {
     : '';
   return dialog.showMessageBoxSync({
     type: 'error',
-    title: 'Sokuji — Repair Incomplete',
+    title: 'ExTrans — Repair Incomplete',
     message: 'The permission repair did not fully succeed.',
     detail:
       'Some orphaned entries could not be removed (they may require different ownership).\n' +

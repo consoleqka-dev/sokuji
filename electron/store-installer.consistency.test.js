@@ -44,14 +44,14 @@ describe('the Microsoft Store installer pipeline', () => {
   });
 
   it('puts both installers side by side under the names the rest of the pipeline expects', () => {
-    expect(make).toContain('"out/make-web/squirrel.windows/x64/Sokuji-${VERSION} Setup.exe" out/installers/');
-    expect(make).toContain('"out/installers/Sokuji-${VERSION}-store-installer.exe"');
+    expect(make).toContain('"out/make-web/squirrel.windows/x64/ExTrans-${VERSION} Setup.exe" out/installers/');
+    expect(make).toContain('"out/installers/ExTrans-${VERSION}-store-installer.exe"');
   });
 
   it('signs both installers in one request, each matched by exactly one pattern', () => {
     const patterns = [...signpath.matchAll(/<pe-file path="([^"]+)">/g)].map((m) => glob(m[1]));
     expect(patterns).toHaveLength(2);
-    for (const name of ['Sokuji-1.2.3 Setup.exe', 'Sokuji-1.2.3-store-installer.exe']) {
+    for (const name of ['ExTrans-1.2.3 Setup.exe', 'ExTrans-1.2.3-store-installer.exe']) {
       expect(patterns.filter((p) => p.test(name)), name).toHaveLength(1);
     }
   });

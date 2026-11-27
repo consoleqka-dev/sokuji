@@ -3,7 +3,7 @@ const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 const fs = require('fs');
 const path = require('path');
 
-// Sokuji localizes its product UI through i18next. Electron's locale packs
+// ExTrans localizes its product UI through i18next. Electron's locale packs
 // only cover Chromium-native UI, which intentionally falls back to English.
 // Windows/Linux use en-US.pak; macOS uses en.lproj.
 const ELECTRON_LANGUAGES = new Set([
@@ -35,7 +35,10 @@ module.exports = {
     icon: process.platform === 'win32' ? 'assets/icon.ico' : 'assets/icon',
     appId: 'ai.kizunaai.sokuji',
     executableName: 'sokuji',
-    name: 'Sokuji',
+    // What users see (bundle name, installer title, shortcuts). The Squirrel
+    // package id below stays 'Sokuji' so installed copies keep updating, and
+    // userData stays where it was (electron/app-identity.js).
+    name: 'ExTrans',
     // Whitelist-based ignore: only include package.json, dist-electron/,
     // build/ (minus wasm/), and node_modules/ (pruned by Forge).
     // Everything else (src/, public/, model-packs/, extension/, etc.) is excluded.
@@ -96,6 +99,8 @@ module.exports = {
     {
       name: '@electron-forge/maker-squirrel',
       config: {
+        // Squirrel package id and %LocalAppData% install folder: not user-visible
+        // naming, and changing it would orphan installed copies from updates.
         name: 'Sokuji',
         authors: 'Kizuna AI Lab',
         exe: 'sokuji.exe',
@@ -112,7 +117,7 @@ module.exports = {
     {
       name: '@electron-forge/maker-dmg',
       config: {
-        name: 'Sokuji',
+        name: 'ExTrans',
         overwrite: true
       }
     }

@@ -5,7 +5,7 @@
 // and loads by restarting coreaudiod.
 //
 // PackageKit runs that script twice per install: electron-builder lists it both
-// as the package's postinstall and as the Sokuji.app component's (the pkg's
+// as the package's postinstall and as the ExTrans.app component's (the pkg's
 // PackageInfo has two <postinstall> entries). The second run used to delete the
 // driver the first had just installed, a moment after the first had restarted
 // CoreAudio, and restart it again. Measured on macOS 26.6.1 with the v0.42.2 pkg:
@@ -31,7 +31,7 @@ let dest;
 let bundledBinary;
 
 function writeBundledDriver(content) {
-  const macos = path.join(root, 'Applications/Sokuji.app/Contents/Resources/resources/drivers/SokujiVirtualAudio.driver/Contents/MacOS');
+  const macos = path.join(root, 'Applications/ExTrans.app/Contents/Resources/resources/drivers/SokujiVirtualAudio.driver/Contents/MacOS');
   mkdirSync(macos, { recursive: true });
   bundledBinary = path.join(macos, 'SokujiVirtualAudio');
   writeFileSync(bundledBinary, content);

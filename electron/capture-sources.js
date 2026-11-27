@@ -16,7 +16,7 @@ const PORTAL_NAME_FALLBACK = 'Shared screen';
 
 /**
  * The rows worth offering: windows first, then screens, each kind in the order
- * it was listed. A window of this app is left out (a picture of Sokuji sent to
+ * it was listed. A window of this app is left out (a picture of ExTrans sent to
  * the engine is never what a user means, and the picker itself would be in it),
  * and so is one that is neither a window nor a screen. A source with no name is
  * left out of a list (nothing to show for it there); in 'portal' mode it is the
@@ -90,7 +90,7 @@ function screenRecordingState(platform, read) {
 
 /**
  * The bundle a release is built as (package.json `build.appId`), the identifier
- * in its designated requirement. `tccutil reset` takes it to clear Sokuji's
+ * in its designated requirement. `tccutil reset` takes it to clear ExTrans's
  * Screen Recording entry and no other app's.
  */
 const MAC_BUNDLE_ID = 'ai.kizunaai.sokuji';
@@ -105,8 +105,8 @@ const REASK_WAIT_MS = 10_000;
  * 'denied', never 'not-determined'. So a Mac that was never asked reads
  * 'denied', and so does one whose grant is pinned to an older build's code
  * hash (a grant given to an ad-hoc or development build): System Settings shows
- * Sokuji switched on, and it never counts again. Both are fixed the same way:
- * Sokuji's own entry is reset (tccutil needs no admin rights for that), then
+ * ExTrans switched on, and it never counts again. Both are fixed the same way:
+ * ExTrans's own entry is reset (tccutil needs no admin rights for that), then
  * the window list is asked for once, which is what raises macOS's prompt. The
  * new grant is recorded against the signing identity, so it survives updates.
  *

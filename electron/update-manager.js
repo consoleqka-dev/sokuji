@@ -188,7 +188,7 @@ class UpdateManager {
           if (this._squirrel) {
             if (isSquirrelFirstRun(process.argv)) {
               // Update.exe still holds its lock on this launch (Electron docs).
-              throw new Error('Sokuji was just installed; restart it before updating again.');
+              throw new Error('ExTrans was just installed; restart it before updating again.');
             }
             // Nothing is installable until THIS download has applied: a staged
             // older package must not be restarted into while a newer one is
@@ -243,7 +243,7 @@ class UpdateManager {
       }
 
       // Windows: Squirrel restarts into the applied package, or the fallback
-      // runs Setup.exe once every Sokuji process has exited.
+      // runs Setup.exe once every ExTrans process has exited.
       try {
         await this._installUpdate();
         return { success: true };
@@ -383,7 +383,7 @@ class UpdateManager {
    * Install what was downloaded. Squirrel: hand over, it restarts the app
    * from app-<new version>. Setup.exe fallback: its --install deletes the
    * install directory before writing the new version, so it must not start
-   * until every Sokuji process is gone — a detached PowerShell waits for that,
+   * until every ExTrans process is gone — a detached PowerShell waits for that,
    * then runs it (electron/update-install-windows.js). Opening the installer
    * and quitting 500 ms later is what left a machine with no app (2026-10-27).
    */
@@ -395,7 +395,7 @@ class UpdateManager {
     if (this._installing) {
       // A second click must not spawn a second installer; the first is
       // waiting for this app to exit, which is the one thing left to do.
-      return Promise.reject(new Error('The installer is already waiting for Sokuji to quit; close the app to continue.'));
+      return Promise.reject(new Error('The installer is already waiting for ExTrans to quit; close the app to continue.'));
     }
     this._installing = true;
     let child;
@@ -404,7 +404,8 @@ class UpdateManager {
         installerPath: this.downloadPath,
         pid: process.pid,
         // Where Setup.exe will install — and first delete: Squirrel's root is
-        // %LocalAppData%\Sokuji whatever directory this run came from.
+        // %LocalAppData%\Sokuji whatever directory this run came from. The folder is Squirrel's
+        // package id, which the rename leaves alone so installed copies keep updating in place.
         installRoot: process.env.LOCALAPPDATA ? path.join(process.env.LOCALAPPDATA, 'Sokuji') : path.resolve(path.dirname(process.execPath), '..'),
         systemRoot: process.env.SystemRoot || 'C:\\Windows',
       });
@@ -428,7 +429,7 @@ class UpdateManager {
         // A vetoed or held quit leaves the app running and the helper
         // waiting; the renderer hears about it instead of a silent success.
         setTimeout(() => {
-          this._sendStatus({ status: 'error', message: 'Sokuji is still running; the installer starts once it has quit, or gives up after a few minutes.' });
+          this._sendStatus({ status: 'error', message: 'ExTrans is still running; the installer starts once it has quit, or gives up after a few minutes.' });
         }, 10_000).unref();
         app.quit();
         resolve();

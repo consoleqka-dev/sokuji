@@ -3,7 +3,7 @@
 // The Microsoft Store's build never reaches this (main.js 'install-vbcable').
 //
 // The user still approves the administrator prompt and clicks "Install Driver"
-// in VB-Audio's own window; Sokuji only fetches the pack and starts its setup.
+// in VB-Audio's own window; ExTrans only fetches the pack and starts its setup.
 const path = require('path').win32;
 const fsPromises = require('fs').promises;
 const { execFile } = require('child_process');

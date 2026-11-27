@@ -63,7 +63,7 @@ describe('buildUpdatePayload on linux', () => {
   it('keeps the AppImage auto-update path', () => {
     const p = buildUpdatePayload(info, { platform: 'linux', arch: 'x64', isAppImage: true });
     expect(p.supportsAutoUpdate).toBe(true);
-    expect(p.appImageUrl).toContain('Sokuji-1.2.3-x86_64.AppImage');
+    expect(p.appImageUrl).toContain('ExTrans-1.2.3-x86_64.AppImage');
     expect(p.downloadUrl).toBeUndefined();
   });
 

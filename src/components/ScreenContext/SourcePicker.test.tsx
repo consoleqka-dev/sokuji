@@ -96,28 +96,28 @@ describe('SourcePicker', () => {
     expect(dialog().textContent).toContain('given to an older version');
     expect(screen.queryAllByRole('img')).toEqual([]);
     expect(sourceButtons()).toEqual([]);
-    expect(screen.queryByRole('button', { name: 'Restart Sokuji' })).toBeNull();
+    expect(screen.queryByRole('button', { name: 'Restart ExTrans' })).toBeNull();
     fireEvent.click(screen.getByRole('button', { name: 'Ask macOS again' }));
     expect(p.onReask).toHaveBeenCalledTimes(1);
     fireEvent.click(screen.getByRole('button', { name: 'Open System Settings' }));
     expect(p.onOpenPrivacy).toHaveBeenCalledTimes(1);
 
-    // Asked: macOS applies a new grant only after a restart, so Restart Sokuji takes Ask macOS again's place.
+    // Asked: macOS applies a new grant only after a restart, so Restart ExTrans takes Ask macOS again's place.
     rerender(<SourcePicker {...p} asked />);
-    expect(dialog().textContent).toContain('only after Sokuji restarts');
+    expect(dialog().textContent).toContain('only after ExTrans restarts');
     expect(screen.queryByRole('button', { name: 'Ask macOS again' })).toBeNull();
-    fireEvent.click(screen.getByRole('button', { name: 'Restart Sokuji' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Restart ExTrans' }));
     expect(p.onRestart).toHaveBeenCalledTimes(1);
     expect(screen.getByRole('button', { name: 'Open System Settings' })).toBeTruthy();
   });
 
-  it('Ask macOS again is off while an ask is out, and Restart Sokuji once the restart is asked for', () => {
+  it('Ask macOS again is off while an ask is out, and Restart ExTrans once the restart is asked for', () => {
     const { rerender } = render(<SourcePicker {...props({ screenRecording: 'denied', reasking: true })} />);
     expect(screen.getByRole('button', { name: 'Ask macOS again' })).toBeDisabled();
     rerender(<SourcePicker {...props({ screenRecording: 'denied', asked: true, restarting: true })} />);
-    expect(screen.getByRole('button', { name: 'Restart Sokuji' })).toBeDisabled();
+    expect(screen.getByRole('button', { name: 'Restart ExTrans' })).toBeDisabled();
     rerender(<SourcePicker {...props({ screenRecording: 'denied', asked: true })} />);
-    expect(screen.getByRole('button', { name: 'Restart Sokuji' })).not.toBeDisabled();
+    expect(screen.getByRole('button', { name: 'Restart ExTrans' })).not.toBeDisabled();
   });
 
   it('in portal mode shows one button that asks the desktop to choose', () => {

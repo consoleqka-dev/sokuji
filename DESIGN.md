@@ -6,11 +6,15 @@ those tokens serve.
 
 ## Brand
 
-- The product name users see is **ExTrans**. Code identifiers, storage keys, message keys, URLs and
-  the Kizuna AI provider name keep "Sokuji", so settings carry over between versions.
-- Strings that name the Electron app as macOS shows it (screen and system audio permissions, the
-  driver repair prompts, the caption-share firewall note) keep "Sokuji" until the desktop
-  packaging is renamed, so they match what the user sees in System Settings.
+- The product name users see is **ExTrans**, in the extension and in the Electron app (window
+  titles, menus, dialogs, installers, and the macOS permission, driver repair and caption-share
+  firewall strings, which match the name System Settings shows). `electron/app-identity.js` holds
+  the name for main-process code.
+- Code identifiers, storage keys, message keys, URLs, the `ai.kizunaai.sokuji` app id, the Squirrel
+  package id, the Kizuna AI provider name and the installed virtual audio device and driver names
+  keep "Sokuji", so settings, permission grants and updates carry over between versions. The
+  Electron user-data and log folders stay named `Sokuji` for the same reason
+  (`pinStorageLocations` in `electron/app-identity.js`); do not drop that pin.
 - The mark is a white "Ex" on a rounded square with the accent gradient
   (`extension/icons/source/extrans-icon.svg`; the PNGs are rendered from it).
 - ExTrans is based on Sokuji by Kizuna AI Lab, licensed under AGPL-3.0. Keep that line in the

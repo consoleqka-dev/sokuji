@@ -371,11 +371,11 @@ async function listAppSources({
   try {
     streams = parseAppStreams(await dumpGraph(exec))
       // A crashed session can leave our capture sink behind; offering it would
-      // let the user capture Sokuji's own tap.
+      // let the user capture ExTrans's own tap.
       .filter((s) => s.label !== CAPTURE_SINK_DESCRIPTION)
-      // Sokuji's own TTS playback is an ordinary stream in this graph, owned
+      // ExTrans's own TTS playback is an ordinary stream in this graph, owned
       // by Chromium's audio-service utility process; listing it would let the
-      // user translate Sokuji's own output in a loop. The pid set from
+      // user translate ExTrans's own output in a loop. The pid set from
       // app.getAppMetrics() covers the utility process, the binary name
       // covers a graph enumerated before that process spun up.
       .filter((s) => !isOwnAppSource({ pid: s.pid, exe: s.binary, label: s.label }, selfIdentity));

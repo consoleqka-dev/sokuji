@@ -63,7 +63,7 @@ export const INVOKE_CHANNELS = [
   // Screen context: how the picker gets its choices, and the windows and screens it offers
   'capture-source-mode',
   'list-capture-sources',
-  // macOS: ask for Screen Recording again (Sokuji's entry reset, then the prompt), and the restart a new grant needs
+  // macOS: ask for Screen Recording again (ExTrans's entry reset, then the prompt), and the restart a new grant needs
   'reask-screen-recording',
   'relaunch-app',
   // Linux: fix PipeWire monitor source volume after loopback capture starts

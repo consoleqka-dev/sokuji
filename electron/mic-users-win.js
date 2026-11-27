@@ -116,7 +116,7 @@ function deviceNameOf(label) {
  *
  * @param {string} label  The device label the renderer knows the microphone by
  * @param {{ ownPids?: number[], execFile?: Function, timeoutMs?: number }} [options]
- *   `ownPids`: Sokuji's own processes, left out of the answer
+ *   `ownPids`: ExTrans's own processes, left out of the answer
  */
 function listMicrophoneUsers(label, { ownPids = [], execFile = nodeExecFile, timeoutMs = 4000 } = {}) {
   const encoded = Buffer.from(PROBE, 'utf16le').toString('base64');

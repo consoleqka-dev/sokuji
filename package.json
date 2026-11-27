@@ -1,6 +1,6 @@
 {
   "name": "sokuji",
-  "productName": "Sokuji",
+  "productName": "ExTrans",
   "version": "0.51.2",
   "sidecarVersion": "0.4.0",
   "private": true,
@@ -13,7 +13,7 @@
   },
   "build": {
     "appId": "ai.kizunaai.sokuji",
-    "productName": "Sokuji",
+    "productName": "ExTrans",
     "asar": true,
     "electronLanguages": [
       "en",
@@ -88,7 +88,7 @@
       "entitlements": "electron/entitlements.mac.plist",
       "entitlementsInherit": "electron/entitlements.mac.plist",
       "extendInfo": {
-        "NSDownloadsFolderUsageDescription": "Sokuji saves conversation transcripts to your Downloads folder when auto-save is on."
+        "NSDownloadsFolderUsageDescription": "ExTrans saves conversation transcripts to your Downloads folder when auto-save is on."
       },
       "notarize": true
     },

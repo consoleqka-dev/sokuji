@@ -148,7 +148,7 @@ describe('the macOS signing pipeline (build.yml)', () => {
 
   it('fails a build whose app or pkg is not notarized and stapled', () => {
     const verify = step('Verify the macOS update artifacts (signature + notarization + zip + manifest)');
-    for (const target of ['"$APP"', '"$UNZIPPED/Sokuji.app"', '"$PKG"']) {
+    for (const target of ['"$APP"', '"$UNZIPPED/ExTrans.app"', '"$PKG"']) {
       expect(verify, target).toContain(`stapled ${target}`);
     }
     expect(verify).toContain(`Developer ID Installer: jiang zhuo (${TEAM_ID})`);

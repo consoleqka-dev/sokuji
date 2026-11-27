@@ -114,7 +114,7 @@ function installerLaunchCommand({ installerPath, pid, installRoot, systemRoot = 
 }
 
 /**
- * Earlier Sokuji installers left in the temp directory: every update left its
+ * Earlier installers left in the temp directory: every update left its
  * Setup.exe behind (a dozen of 150–280 MB each on one machine). Only files
  * named like one and older than `maxAgeMs`, so a download in progress or just
  * finished is never touched.
@@ -127,9 +127,12 @@ function staleInstallers(entries, { now, maxAgeMs }) {
     .map((e) => e.name);
 }
 
-/** Whether a file name is one of our Setup executables (CI names them `Sokuji-<version>.Setup.exe`). */
+/**
+ * Whether a file name is one of our Setup executables (CI names them `ExTrans-<version>.Setup.exe`;
+ * releases from before the rename are `Sokuji-<version>.Setup.exe`, and their leftovers still count).
+ */
 function isInstallerName(name) {
-  return /^Sokuji-.*\.Setup\.exe$/i.test(name);
+  return /^(ExTrans|Sokuji)-.*\.Setup\.exe$/i.test(name);
 }
 
 module.exports = { verifyDownloadedInstaller, installerLaunchCommand, staleInstallers, isInstallerName, describesInstaller, HELPER_MAX_WAIT_MS };

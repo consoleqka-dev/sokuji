@@ -165,6 +165,7 @@ export default defineConfig(({ command, mode }) => {
             'audio-host-path': 'electron/audio-host-path.js',
             'output-form-factor': 'electron/output-form-factor.js',
             'output-form-factor-parse': 'electron/output-form-factor-parse.js',
+            'app-identity': 'electron/app-identity.js',
             'own-app-source': 'electron/own-app-source.js',
             'vb-cable-installer': 'electron/vb-cable-installer.js',
             'squirrel-events': 'electron/squirrel-events.js',

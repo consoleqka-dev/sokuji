@@ -5,10 +5,11 @@
 // is tested on a real socket; electron/caption-share.js wires it to IPC.
 const http = require('http');
 const core = require('./caption-share-core.js');
+const { PRODUCT_NAME } = require('./app-identity.js');
 
 const PORTS = Array.from({ length: 10 }, (_, i) => 7788 + i);
 const HEARTBEAT_MS = 15_000;
-const WRONG_HOST = 'Open the address Sokuji shows. It starts with http:// and a number such as 192.168.1.23.';
+const WRONG_HOST = `Open the address ${PRODUCT_NAME} shows. It starts with http:// and a number such as 192.168.1.23.`;
 const FORWARDED_HEADERS = ['accept', 'accept-encoding', 'accept-language', 'if-none-match', 'if-modified-since', 'cache-control'];
 
 function listen(server, port) {

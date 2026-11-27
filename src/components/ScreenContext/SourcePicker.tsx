@@ -8,7 +8,7 @@
  * Its states, one at a time: macOS refused Screen Recording (the setting that
  * fixes it, no list); the chosen area being checked for its first frame
  * (nothing to choose, Cancel off — the pick has been answered); the portal's one
- * button (Wayland, where the desktop shows its own chooser); or Sokuji's own
+ * button (Wayland, where the desktop shows its own chooser); or ExTrans's own
  * list, windows first, then whole screens. The privacy line sits above
  * whichever picker shows.
  */
@@ -43,7 +43,7 @@ export interface SourcePickerProps {
   onCancel(): void;
   onOpenPrivacy(): void;
   /**
-   * macOS refused: Sokuji's Screen Recording entry reset and its prompt raised. It also clears a grant pinned to an
+   * macOS refused: ExTrans's Screen Recording entry reset and its prompt raised. It also clears a grant pinned to an
    * older build, which System Settings shows switched on while it never counts.
    */
   onReask(): void;
@@ -52,7 +52,7 @@ export interface SourcePickerProps {
   /** macOS was asked again: a new grant applies only after a restart, so the denied state offers it. */
   asked?: boolean;
   onRestart(): void;
-  /** The restart is asked for: Restart Sokuji is off, since each relaunch starts one more instance. */
+  /** The restart is asked for: Restart ExTrans is off, since each relaunch starts one more instance. */
   restarting?: boolean;
   /** Asks the desktop for its windows and screens again: the list is a snapshot, a window opened since is not on it. */
   onRefresh(): void;
@@ -78,13 +78,13 @@ export function SourcePicker(p: SourcePickerProps) {
               <p className="source-picker__denied-title">{t('screenContext.picker.deniedTitle', 'Screen Recording permission needed')}</p>
               <p className="source-picker__text">
                 {p.asked
-                  ? t('screenContext.picker.askedText', 'Allow Sokuji when macOS asks, or switch it on in System Settings. macOS applies the permission only after Sokuji restarts.')
-                  : t('screenContext.picker.deniedText', 'macOS is not letting Sokuji see the screen. This also happens when Sokuji is switched on in System Settings, if that permission was given to an older version.')}
+                  ? t('screenContext.picker.askedText', 'Allow ExTrans when macOS asks, or switch it on in System Settings. macOS applies the permission only after ExTrans restarts.')
+                  : t('screenContext.picker.deniedText', 'macOS is not letting ExTrans see the screen. This also happens when ExTrans is switched on in System Settings, if that permission was given to an older version.')}
               </p>
               <div className="source-picker__denied-actions">
                 {p.asked ? (
                   <button type="button" className="source-picker__primary" onClick={p.onRestart} disabled={p.restarting}>
-                    {t('screenContext.picker.restart', 'Restart Sokuji')}
+                    {t('screenContext.picker.restart', 'Restart ExTrans')}
                   </button>
                 ) : (
                   <button type="button" className="source-picker__primary" onClick={p.onReask} disabled={p.reasking}>
@@ -134,7 +134,7 @@ export function SourcePicker(p: SourcePickerProps) {
           </>
         )}
         <div className="source-picker__footer">
-          {/* Only where Sokuji's own list shows: the portal and the denied state have no list to look at again. */}
+          {/* Only where ExTrans's own list shows: the portal and the denied state have no list to look at again. */}
           {!denied && !p.checking && p.mode === 'list' && (
             <button type="button" className="source-picker__refresh" onClick={p.onRefresh} disabled={p.sources === null || p.refreshing}>
               <RefreshCw size={14} className={p.refreshing ? 'source-picker__spinner' : undefined} aria-hidden="true" />
@@ -150,7 +150,7 @@ export function SourcePicker(p: SourcePickerProps) {
   );
 }
 
-/** Sokuji's own list: loading, nothing found, or the windows then the screens. */
+/** ExTrans's own list: loading, nothing found, or the windows then the screens. */
 function SourceList({ sources, onPick }: { sources: CaptureSourceInfo[] | null; onPick(source: CaptureSourceInfo): void }) {
   const { t } = useTranslation();
   if (sources === null) {

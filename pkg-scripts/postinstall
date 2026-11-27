@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Sokuji PKG Installer - Postinstall Script
+# ExTrans PKG Installer - Postinstall Script
 # Installs the Sokuji Virtual Audio driver
 
 echo "Sokuji postinstall: Starting installation..."
@@ -13,14 +13,14 @@ echo "Sokuji postinstall: Starting installation..."
 # replace it. Handing it to the console user is what drag-installed apps look
 # like anyway (Brave, Cursor and Firefox all install user-owned).
 # See docs/build/macos-auto-update.md.
-if [ -d "/Applications/Sokuji.app" ]; then
+if [ -d "/Applications/ExTrans.app" ]; then
     echo "Sokuji postinstall: Setting app permissions..."
-    chmod -R 755 /Applications/Sokuji.app
+    chmod -R 755 /Applications/ExTrans.app
 
     CONSOLE_USER=$(stat -f%Su /dev/console 2>/dev/null)
     if [ -n "$CONSOLE_USER" ] && [ "$CONSOLE_USER" != "root" ]; then
         echo "Sokuji postinstall: Handing the app bundle to $CONSOLE_USER so updates can replace it..."
-        chown -R "$CONSOLE_USER" /Applications/Sokuji.app || \
+        chown -R "$CONSOLE_USER" /Applications/ExTrans.app || \
             echo "Sokuji postinstall: WARNING - chown failed; in-app updates will not be able to replace the bundle"
     else
         echo "Sokuji postinstall: WARNING - no console user found; leaving the bundle root-owned"
@@ -28,7 +28,7 @@ if [ -d "/Applications/Sokuji.app" ]; then
 fi
 
 # Install the virtual audio driver from the app bundle
-DRIVER_SOURCE="/Applications/Sokuji.app/Contents/Resources/resources/drivers/SokujiVirtualAudio.driver"
+DRIVER_SOURCE="/Applications/ExTrans.app/Contents/Resources/resources/drivers/SokujiVirtualAudio.driver"
 DRIVER_DEST="/Library/Audio/Plug-Ins/HAL/SokujiVirtualAudio.driver"
 
 # Ensure HAL plugins directory exists
@@ -46,7 +46,7 @@ fi
 
 if [ -d "$DRIVER_SOURCE" ]; then
     # PackageKit runs this script twice per install: electron-builder lists it
-    # both as the package's postinstall and as the Sokuji.app component's (see
+    # both as the package's postinstall and as the ExTrans.app component's (see
     # the pkg's PackageInfo). The second run used to delete the driver the first
     # had just installed, a moment after the first restarted CoreAudio, so the
     # surviving coreaudiod could scan this directory while the driver was missing

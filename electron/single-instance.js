@@ -1,6 +1,6 @@
 // Single-instance enforcement.
 //
-// Sokuji looked single-instance on macOS and nowhere else, and the macOS
+// ExTrans looked single-instance on macOS and nowhere else, and the macOS
 // behaviour was never ours: Launch Services refuses to start a second copy of
 // the same .app bundle (`open -n` bypasses it and does start two). Windows and
 // Linux have no equivalent, so every Start-menu click and every .desktop
@@ -40,10 +40,10 @@ function acquireSingleInstanceLock(app, { onSecondInstance, env = process.env } 
   // The dev build and the installed build both call app.setName('sokuji'), so
   // they share one userData directory and therefore one lock: without an escape
   // hatch, `npm run electron:dev` would exit on the spot whenever the installed
-  // Sokuji happened to be open. Opt-in only -- two instances still fight over
+  // ExTrans happened to be open. Opt-in only -- two instances still fight over
   // the virtual audio devices, so this is a debugging tool, not a supported mode.
   //
-  // Honoured in development builds only. A packaged Sokuji that inherited the
+  // Honoured in development builds only. A packaged ExTrans that inherited the
   // variable -- from a shell profile, a hand-edited .desktop Exec line -- would
   // resurrect the exact failure this lock exists to prevent, for a user who
   // never asked to debug anything. Gating on isPackaged costs the dev case
@@ -60,7 +60,7 @@ function acquireSingleInstanceLock(app, { onSecondInstance, env = process.env } 
   }
 
   app.on('second-instance', () => {
-    // The user asked for Sokuji again; the honest answer to that is the window
+    // The user asked for ExTrans again; the honest answer to that is the window
     // they already have, brought to the front.
     if (onSecondInstance) onSecondInstance();
   });

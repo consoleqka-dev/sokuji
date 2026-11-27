@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Sokuji PKG Installer - Preinstall Script
+# ExTrans PKG Installer - Preinstall Script
 # Prepares the system for Sokuji Virtual Audio driver installation
 
 echo "Sokuji preinstall: Preparing system for installation..."
@@ -19,7 +19,7 @@ if [ -d "/Library/Audio/Plug-Ins/HAL/SokujiVirtualAudio.driver" ]; then
 fi
 
 # Also check for the app in case of reinstallation
-if [ -d "/Applications/Sokuji.app" ]; then
+if [ -d "/Applications/ExTrans.app" ]; then
     echo "Sokuji preinstall: Found existing Sokuji.app, will be replaced..."
 fi
 

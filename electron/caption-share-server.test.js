@@ -101,7 +101,7 @@ describe('caption share server', () => {
     const { port } = await server.start(STATE);
     const res = await get(port, '/', `DESKTOP-ABC:${port}`);
     expect(res.status).toBe(403);
-    expect(res.body).toMatch(/address Sokuji shows/);
+    expect(res.body).toMatch(/address ExTrans shows/);
     expect(res.body).toMatch(/192\.168\.1\.23/);
   });
 

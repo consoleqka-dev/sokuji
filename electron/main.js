@@ -1,6 +1,12 @@
 const { app, BrowserWindow, ipcMain, Menu, dialog, shell, session, systemPreferences, desktopCapturer, nativeTheme, powerMonitor, protocol } = require('electron');
 const path = require('path');
 const { pathToFileURL } = require('url');
+const { PRODUCT_NAME, pinStorageLocations } = require('./app-identity');
+
+// The product is renamed but its data stays where earlier versions kept it. Must run before any
+// module below reads userData (the sign-in store resolves it when it is required).
+pinStorageLocations(app);
+
 const { betterAuthAdapter, PACKAGED_ORIGIN } = require('./better-auth-adapter');
 const { setupSubtitleHandlers } = require('./subtitle-window.js');
 const { setupCaptionDoubleClick } = require('./window-caption-dblclick.js');
@@ -104,7 +110,7 @@ if (process.platform === 'linux') {
 
 // The virtual devices are system-global (the PulseAudio modules are found and
 // unloaded by name, whoever made them), so an E2E run must neither create nor
-// clean them: a Sokuji the user has open on the same machine would lose its
+// clean them: an ExTrans the user has open on the same machine would lose its
 // audio. The app then reports the virtual microphone as unavailable, which is
 // what it does on a machine without PulseAudio.
 if (IS_E2E) {
@@ -141,7 +147,7 @@ app.setName('sokuji');
 app.commandLine.appendSwitch('application-name', 'sokuji');
 app.commandLine.appendSwitch('jack-name', 'sokuji');
 
-// Single instance. Sokuji was only ever single-instance on macOS, and that was
+// Single instance. ExTrans was only ever single-instance on macOS, and that was
 // Launch Services refusing to start a second copy of the .app bundle rather
 // than anything we did -- on Windows and Linux every Start-menu click started
 // another process that then fought the first one over the PulseAudio modules
@@ -186,8 +192,8 @@ const appliedGpuFlags = applyLinuxGpuFlags(app);
 console.log('[Sokuji] [Main] GPU flags:', JSON.stringify(appliedGpuFlags));
 
 // Keep the renderer (and its local-inference Web Worker) running at full speed when
-// the Sokuji window is minimized/hidden/occluded — the common case while the user is
-// in a video call with Sokuji translating in the background. Without these, Chromium
+// the ExTrans window is minimized/hidden/occluded — the common case while the user is
+// in a video call with ExTrans translating in the background. Without these, Chromium
 // backgrounds the hidden renderer and throttles its timers, which stalls the WASM
 // inference loop (its setTimeout-based yields get clamped). See issue #263.
 app.commandLine.appendSwitch('disable-renderer-backgrounding');
@@ -321,15 +327,15 @@ function createApplicationMenu() {
   const menuTemplate = [
     // App menu (macOS only)
     ...(isMac ? [{
-      label: app.getName(),
+      label: PRODUCT_NAME,
       submenu: [
         {
-          label: `About ${app.getName()}`,
+          label: `About ${PRODUCT_NAME}`,
           click: () => {
             dialog.showMessageBox({
               type: 'info',
-              title: `About ${app.getName()}`,
-              message: 'Sokuji - Real-time AI Translation',
+              title: `About ${PRODUCT_NAME}`,
+              message: `${PRODUCT_NAME} - Real-time AI Translation`,
               detail: `Version: ${app.getVersion()}\n\nAI-powered real-time translation application\n\n© 2026 Kizuna AI Lab`,
               buttons: ['OK'],
               icon: path.join(__dirname, '../assets/icon.png')
@@ -421,12 +427,12 @@ function createApplicationMenu() {
       role: 'help',
       submenu: [
         ...(isMac ? [] : [{
-          label: `About ${app.getName()}`,
+          label: `About ${PRODUCT_NAME}`,
           click: () => {
             dialog.showMessageBox({
               type: 'info',
-              title: `About ${app.getName()}`,
-              message: 'Sokuji - Real-time AI Translation',
+              title: `About ${PRODUCT_NAME}`,
+              message: `${PRODUCT_NAME} - Real-time AI Translation`,
               detail: `Version: ${app.getVersion()}\n\nAI-powered real-time translation application\n\n© 2026 Kizuna AI Lab`,
               buttons: ['OK'],
               icon: path.join(__dirname, '../assets/icon.png')
@@ -488,7 +494,7 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     width: 1200,
     height: 800,
-    title: 'Sokuji',
+    title: PRODUCT_NAME,
     icon: iconPath,
     frame: false,
     transparent: true,
@@ -1098,7 +1104,7 @@ ipcMain.handle('repair-virtual-audio', async (_event, data) => {
   if (process.platform !== 'darwin' || !audioUtils.repairVirtualDevice) {
     return { ok: false, cancelled: false, error: 'Only the macOS driver can be repaired' };
   }
-  const prompt = typeof data?.prompt === 'string' && data.prompt ? data.prompt.slice(0, 300) : 'Sokuji wants to repair its virtual microphone.';
+  const prompt = typeof data?.prompt === 'string' && data.prompt ? data.prompt.slice(0, 300) : `${PRODUCT_NAME} wants to repair its virtual microphone.`;
   const result = await audioUtils.repairVirtualDevice({ prompt });
   // The repair's last probe found the device (and put its gain back to unity),
   // so the status follows from that same check: a second one could disagree
@@ -1335,23 +1341,22 @@ const PRIVACY_PANES = {
 /**
  * The name macOS shows for this process in the privacy lists.
  *
- * In a packaged build that is "Sokuji", but `npm run dev` runs Electron's own
- * bundle (com.github.Electron), so the user has to grant the permission to
- * "Electron". Telling them to look for "Sokuji" there sends them hunting for an
- * entry that does not exist.
+ * In a packaged build that is the product name (the bundle's), but `npm run dev` runs Electron's
+ * own bundle (com.github.Electron), so the user has to grant the permission to "Electron".
+ * Telling them to look for ExTrans there sends them hunting for an entry that does not exist.
  */
 ipcMain.handle('get-tcc-display-name', async () => {
-  if (process.platform !== 'darwin') return { name: app.getName(), isDev: false };
-  // app.getName() is overridden to 'sokuji' at startup, so read the bundle the
+  if (process.platform !== 'darwin') return { name: PRODUCT_NAME, isDev: false };
+  // app.getName() is overridden to 'sokuji' at startup (PulseAudio's name), so read the bundle the
   // OS actually launched instead of what the app calls itself.
   const exe = app.getPath('exe');
   const isDev = exe.includes('node_modules/electron/dist/');
-  return { name: isDev ? 'Electron' : app.getName(), isDev };
+  return { name: isDev ? 'Electron' : PRODUCT_NAME, isDev };
 });
 
 /**
  * The applications using a microphone that would not open (Windows): see
- * mic-users-win.js. Sokuji's own processes are left out, so its own capture on
+ * mic-users-win.js. ExTrans's own processes are left out, so its own capture on
  * the same device never reads as the culprit.
  */
 ipcMain.handle('list-microphone-users', async (event, label) => {
@@ -1458,7 +1463,7 @@ ipcMain.handle('list-capture-sources', async () => {
 
 /**
  * The picker's "Ask macOS again" (reaskScreenRecording in capture-sources.js):
- * Sokuji's own Screen Recording entry reset, then one listing, which raises the
+ * ExTrans's own Screen Recording entry reset, then one listing, which raises the
  * macOS prompt. Clears a grant pinned to an older build's code hash, which
  * System Settings shows switched on while it never counts.
  */
@@ -1475,7 +1480,7 @@ ipcMain.handle('reask-screen-recording', async () => {
   });
 });
 
-/** macOS applies a new Screen Recording grant only after a restart: the picker's Restart Sokuji. */
+/** macOS applies a new Screen Recording grant only after a restart: the picker's Restart ExTrans. */
 let relaunching = false;
 ipcMain.handle('relaunch-app', () => {
   // Each relaunch asked for starts one more instance once this one exits.

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { isOwnAppSource, makeSelfIdentity } from './own-app-source.js';
+import { isOwnAppSource, makeSelfIdentity, currentSelfIdentity } from './own-app-source.js';
 
 // The participant-source lists are "applications playing audio", and Sokuji
 // plays audio: its own translated TTS. These tests pin the identity rules that
@@ -35,6 +35,20 @@ describe('isOwnAppSource', () => {
     const self = makeSelfIdentity({ execPath: '/x/Electron', pids: [100], appName: 'Sokuji' });
     expect(isOwnAppSource({ pid: null, exe: 'ai.kizuna.sokuji', label: 'sokuji' }, self)).toBe(true);
     expect(isOwnAppSource({ pid: null, exe: 'com.example.notes', label: 'My Sokuji Notes' }, self)).toBe(false);
+  });
+
+  it('matches any of several app names, so the product name and the internal name both count', () => {
+    // macOS lists the app by the name users see ("ExTrans") while Electron's
+    // app.name stays "sokuji" for the Linux audio naming.
+    const self = makeSelfIdentity({ execPath: '/x/Electron', pids: [100], appName: ['sokuji', 'ExTrans', null, '  '] });
+    expect(isOwnAppSource({ pid: null, exe: 'ai.kizunaai.sokuji', label: 'ExTrans' }, self)).toBe(true);
+    expect(isOwnAppSource({ pid: null, exe: 'ai.kizunaai.sokuji', label: 'sokuji' }, self)).toBe(true);
+    expect(isOwnAppSource({ pid: null, exe: 'com.example.notes', label: 'ExTrans Notes' }, self)).toBe(false);
+  });
+
+  it('always recognises the product name, even outside Electron', () => {
+    const self = currentSelfIdentity();
+    expect(isOwnAppSource({ pid: null, exe: 'ai.kizunaai.sokuji', label: 'ExTrans' }, self)).toBe(true);
   });
 
   it('never matches on absent fields', () => {
