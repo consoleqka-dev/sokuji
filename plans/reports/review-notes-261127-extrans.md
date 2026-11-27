@@ -66,10 +66,6 @@ Written overnight on 2026-11-27 for review in the morning. Branch `ui-exchain-th
 
 - At 420 px the settings capture still shows the conversation; check how settings opens at that
   width.
-- **Wizard, step 4, with Gemini chosen:** it shows "This one key serves OpenAI Realtime, Translate
-  and Live." The note is drawn for any provider whose key is shared (`storedAt`), and Gemini's is
-  shared with its text model. This predates the restyle and shows in the guide's still 11 and the
-  video.
 - **Desktop release, not yet built or run.** No packaged app was built after the rename. Check before
   a release:
   - A Mac that already has `/Applications/Sokuji.app` and installs the new `.pkg` may end up with
@@ -85,6 +81,11 @@ Written overnight on 2026-11-27 for review in the morning. Branch `ui-exchain-th
   level narrows to 64 px, the output waveform is hidden and the language pair ends in an ellipsis.
   Measured in the built extension, the row is exactly 420 px and 360 px wide at those widths, with
   Nunito, and Start stays inside (`advancedFooterNarrow.test.ts`).
+- **Wizard, step 4, with Gemini chosen.** It said "This one key serves OpenAI Realtime, Translate
+  and Live", because the note was drawn for any provider whose key is shared (`storedAt`), and
+  Gemini's is shared with its text model. This predated the restyle. The note is now drawn only for
+  the shared OpenAI key, with a test for the Gemini case, and the guide's still 11 and the video
+  were recorded again.
 
 ## Environment notes
 

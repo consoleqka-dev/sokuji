@@ -13,6 +13,7 @@ import { legsFor } from '../../../lib/session/appShape';
 import { getScenario } from '../../../lib/setup/scenarios';
 import { wizardProvider } from '../providerPaths';
 import { CredentialChoiceControl } from '../../providers/CredentialChoiceControl';
+import { OPENAI_KEY_STORED_AT } from '../../../providers/openaiKey';
 import Button from '../../Settings/shared/Button';
 import FormInput from '../../Settings/shared/FormInput';
 import StatusMessage from '../../Settings/shared/StatusMessage';
@@ -179,8 +180,9 @@ const OwnKeyCredentials: React.FC<Props & { skipButton(keepExisting: boolean): R
           />
         </label>
       ))}
-      {/* One key for the three OpenAI providers (Plan 4): the user should know it before typing it. */}
-      {p.credentials.storedAt && (
+      {/* One key for the three OpenAI providers: the user should know it before typing it. Other
+          shared keys (Gemini's, kept with its text model) are not OpenAI's, so they get no note. */}
+      {p.credentials.storedAt?.key === OPENAI_KEY_STORED_AT.key && (
         <p className="setup-step__note">{t('setup.credentials.openaiOneKey', 'This one key serves OpenAI Realtime, Translate and Live.')}</p>
       )}
       {keyOnFile && (

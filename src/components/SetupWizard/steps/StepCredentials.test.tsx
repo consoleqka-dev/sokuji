@@ -34,6 +34,7 @@ import { SONIOX_DEFAULTS } from '../../../providers/soniox/settings';
 import { volcengineAst2Provider } from '../../../providers/volcengine_ast2/provider';
 import { AST2_DEFAULTS, type Ast2AuthMode } from '../../../providers/volcengine_ast2/settings';
 import { TRANSLATE_DEFAULTS } from '../../../providers/openai_translate/settings';
+import { GEMINI_DEFAULTS } from '../../../providers/gemini/settings';
 import en from '../../../locales/en/translation.json';
 
 const ownKeyDraft = (patch: Partial<SetupDraft> = {}): SetupDraft => ({
@@ -337,6 +338,15 @@ describe('StepCredentials — the line-up', () => {
     } as never);
     render(<StepCredentials draft={ownKeyDraft({ provider: Provider.OPENAI_TRANSLATE })} dispatch={vi.fn()} />);
     expect(screen.getByText('setup.credentials.openaiOneKey')).toBeInTheDocument();
+  });
+
+  it('does not call a shared Gemini key an OpenAI one', () => {
+    useProviderStore.setState({
+      entries: { gemini: { settings: GEMINI_DEFAULTS, credentials: { apiKey: '' }, pair: { source: 'en', target: 'vi' } } },
+      readiness: {},
+    } as never);
+    render(<StepCredentials draft={ownKeyDraft({ provider: Provider.GEMINI })} dispatch={vi.fn()} />);
+    expect(screen.queryByText('setup.credentials.openaiOneKey')).toBeNull();
   });
 
   it('says nothing of the kind for a provider with a key of its own', () => {
