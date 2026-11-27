@@ -630,12 +630,14 @@
       flex-shrink: 0;
     }
 
+    // As in basic mode, the language pair is what gives way at a narrow width: it ends in an ellipsis so Start stays
+    // inside the footer.
     .footer-metadata {
       display: inline-flex;
       align-items: center;
       gap: 6px;
       padding: 2px 6px;
-      flex-shrink: 0;
+      min-width: 0;
 
       .language-pair {
         color: vars.$text-secondary;
@@ -643,6 +645,9 @@
         cursor: pointer;
         padding: 2px 6px;
         border-radius: 3px;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
         white-space: nowrap;
 
         &:hover { color: vars.$text-primary; background: color-mix(in srgb, vars.$overlay-fg 5%, transparent); }
@@ -652,6 +657,7 @@
         color: vars.$text-muted;
         font-size: 11px;
         white-space: nowrap;
+        flex-shrink: 0;
       }
     }
   }
@@ -676,7 +682,7 @@
 
     &:hover { background: vars.$bg-elevated-hover; }
     &.recording {
-      background: tk.$color-error;
+      background: tk.$color-error-fill;
       color: tk.$color-on-primary;
       &:hover { background: tk.$color-error-deep; }
     }
@@ -717,7 +723,7 @@
     &:hover:not(:disabled) { filter: brightness(1.08); }
     &:disabled { background: vars.$bg-elevated; color: vars.$text-dim; box-shadow: none; cursor: not-allowed; }
     &.stop {
-      background: tk.$color-error;
+      background: tk.$color-error-fill;
       box-shadow: none;
       &:hover { background: tk.$color-error-deep; }
     }
@@ -815,6 +821,18 @@
       gap: 0;
       span { display: none; }
     }
+  }
+}
+
+// At the side panel's width (360 to 420px) the advanced footer's two 110px waveforms and the language pair do not fit
+// beside the mode picker and Start. The input level narrows, the output waveform (which only echoes the spoken
+// translation) is hidden, and the spacers may close, so the row fits and Start stays inside.
+@container (max-width: 480px) {
+  .control-footer.advanced {
+    .footer-spacer { min-width: 4px; }
+    .waveform-input-group { width: 64px; }
+    .waveform-input-group .waveform-strip--full { width: 100%; }
+    > .waveform-strip--output { display: none; }
   }
 }
 
