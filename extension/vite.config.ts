@@ -90,6 +90,8 @@ export default defineConfig(({ mode }) => {
           { src: 'requestPermission.js', dest: '.' },
           // Popup styles
           { src: 'popup.css', dest: '.' },
+          // The licence of the bundled Nunito font (SIL OFL 1.1) ships beside it
+          { src: '../src/assets/fonts/nunito/OFL.txt', dest: 'fonts/nunito' },
           // The first-paint scheme script fullpage.html loads before its stylesheets
           { src: '../public/theme-boot.js', dest: '.' },
           // Bundled ONNX Runtime WASM (avoids cdn.jsdelivr.net CSP violation)

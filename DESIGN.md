@@ -41,13 +41,20 @@ exchain.jp's palette and shapes, not its logo, images or copy). Two schemes, bot
   alone.
 - **Glows.** The wizard page and the popup have two soft radial glows (accent and info) at the
   top corners. Keep them under 15% so text contrast is measured against the flat colour.
-- **Type.** The system font stack (pinned by `uiFont.test.ts`); headings weight 700 with
-  slight letter-spacing. No webfont is bundled.
+- **Type.** Nunito (variable weight, SIL OFL 1.1), bundled from `src/assets/fonts/nunito` with
+  only its upright Latin, Vietnamese and Cyrillic subsets, then the system stack and the CJK tail
+  (pinned by `uiFont.test.ts`). Headings weight 700 with slight letter-spacing. The popup loads the
+  same files.
 - **Contrast.** Body text 4.5:1 and large or secondary icons 3:1 on every surface, in both schemes;
   white on every accent fill 4.5:1. `theme.consistency.test.ts` enforces these.
+- **Status fills.** In dark mode the bright `error` and `usage` hues are for text and outlines;
+  a fill under a white label (Stop, recording, the attention banner) uses `error-fill` or
+  `usage-fill`, and its hover `error-deep`.
 - **Motion.** Transitions 120 to 200 ms on colour, shadow and a 1 px lift. Every transform and
   transition has a `prefers-reduced-motion` fallback.
 - **Width.** The side panel is used at 360 to 420 px. Every new layout is checked there first.
+  Below a 480 px container the advanced footer narrows its input level, hides the output
+  waveform and cuts the language pair with an ellipsis (`advancedFooterNarrow.test.ts`).
 
 ## Surfaces
 
